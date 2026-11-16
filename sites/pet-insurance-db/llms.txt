@@ -6,6 +6,7 @@
 - https://pet-insurance-db.vercel.app/ トップ（収録6社の入口、保険料の例ハイライト、選び方の基礎、FAQ抜粋）
 - https://pet-insurance-db.vercel.app/dogs/ 犬の保険料例（アニコム損保の品種クラス別保険料表、第一アイペット損保の犬種分類別保険料表、FPC・PS保険・ペット＆ファミリー損保・楽天ペット保険）
 - https://pet-insurance-db.vercel.app/cats/ 猫の保険料例（アニコム損保・第一アイペット損保の年齢別保険料表、うちの子ライト、FPC・PS保険・ペット＆ファミリー損保・楽天ペット保険）
+- https://pet-insurance-db.vercel.app/lookup/ 保険料ルックアップ（種別・クラス・年齢・補償割合を選んで6社の公式保険料 全345件を横並びで引ける。犬種からアニコムのクラスを探す補助つき）
 - https://pet-insurance-db.vercel.app/guide/ 選び方ガイド（補償割合・支払限度額・免責金額・保険料の上がり方・新規加入年齢、収録6社のプラン概要）
 - https://pet-insurance-db.vercel.app/faq/ よくある質問
 - https://pet-insurance-db.vercel.app/about/ このサイトについて（収録方針・出典一覧・免責事項）

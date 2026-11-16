@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<title>保険料ルックアップ｜ペット保険料データベース</title>
+<meta name="description" content="種別・クラス・年齢・補償割合を選ぶと、6社の公式保険料を横並びで引けるルックアップ。犬・猫ページに掲載した公式保険料表・保険料の例（全345件）をもとに、条件に合う月払保険料を安い順に表示します。">
+<link rel="canonical" href="https://pet-insurance-db.vercel.app/lookup/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ペット保険料データベース">
+<meta property="og:title" content="保険料ルックアップ｜ペット保険料データベース">
+<meta property="og:description" content="種別・クラス・年齢・補償割合を選ぶと、6社の公式保険料を横並びで引けるルックアップ。掲載数値はすべて各社の公式公表値です。">
+<meta property="og:url" content="https://pet-insurance-db.vercel.app/lookup/">
+<meta property="og:image" content="https://pet-insurance-db.vercel.app/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<style>*{box-sizing:border-box}
+:root{--ink:#222;--muted:#666;--line:#ececec;--paper:#fff;--teal:#2e7d74;--teal-dark:#25665e;--teal-pale:#e2efec;--grad:linear-gradient(120deg,#2e7d74,#25665e)}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic",Meiryo,"Noto Sans JP",sans-serif;line-height:1.75;font-size:16px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:var(--teal-pale)}
+.container{max-width:1180px;margin:0 auto;padding:0 26px}
+.site-head{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line)}
+.head-in{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:72px}
+.logo{color:var(--ink);text-decoration:none;line-height:1.2}
+.logo small{display:block;color:var(--teal-dark);font-size:10px;font-weight:800;letter-spacing:.22em}
+.logo strong{display:block;font-size:20px;font-weight:800;letter-spacing:-.03em}
+.nav{display:flex;flex-wrap:wrap;gap:4px 22px}
+.nav a{color:#444;text-decoration:none;font-size:14px;font-weight:650}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--teal-dark)}
+.hero{overflow:hidden;background:radial-gradient(circle at 90% 38%,#d6eae4 0%,#eaf3f0 30%,#fff 62%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:54px 0 58px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 13px;color:var(--teal-dark);font-size:12px;font-weight:800;letter-spacing:.14em}
+.hero h1,.page-hero h1{margin:22px 0 18px;font-size:clamp(34px,4.4vw,54px);line-height:1.12;font-weight:800;letter-spacing:-.045em;text-wrap:balance}
+.hero h1 span{color:var(--teal)}
+.lead{max-width:640px;color:#4d4d4d;font-size:18px;line-height:1.9}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;padding:12px 22px;text-decoration:none;font-weight:800;border:1px solid var(--teal)}
+.btn.primary{background:var(--grad);color:#fff;box-shadow:0 10px 24px rgba(46,125,116,.25)}
+.btn.secondary{background:#fff;color:var(--teal-dark)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}
+.stat{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.9);padding:15px}
+.stat b{display:block;font-size:25px;line-height:1.1;letter-spacing:-.03em}
+.stat span{color:var(--muted);font-size:12px}
+.stat-note{margin:10px 2px 0;color:var(--muted);font-size:12.5px}
+.card .cond{margin:10px 0 0;border-radius:10px;background:var(--teal-pale);padding:8px 11px;color:var(--teal-dark);font-size:12.5px;font-weight:700;line-height:1.55}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.toc a{border:1px solid var(--line);border-radius:999px;background:#fff;padding:8px 14px;color:var(--teal-dark);font-size:13.5px;font-weight:750;text-decoration:none;box-shadow:0 4px 14px rgba(17,17,17,.04)}
+.toc a:hover{border-color:var(--teal)}
+.summary-note{margin:12px 2px 0;color:var(--muted);font-size:13px}
+.hero-photo{position:relative}
+.hero-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 30%;border-radius:26px;box-shadow:0 24px 60px rgba(17,17,17,.13)}
+.photo-tag{position:absolute;left:18px;bottom:18px;max-width:calc(100% - 36px);border-radius:14px;background:rgba(255,255,255,.94);padding:12px 15px;font-size:13px;line-height:1.55}
+.photo-tag b{color:var(--teal-dark)}
+.page-hero{padding:62px 0 20px;background:radial-gradient(circle at 88% 20%,#e2efec 0%,#fff 52%)}
+.page-hero p{max-width:760px;color:#4d4d4d;font-size:17px}
+main section{padding:72px 0 0}
+main section:last-child{padding-bottom:78px}
+.section-head{max-width:780px;margin-bottom:30px}
+.section-head .kicker{color:var(--teal);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.section-head h2{margin:8px 0 10px;font-size:clamp(28px,3.6vw,42px);line-height:1.22;font-weight:800;letter-spacing:-.035em}
+.section-head p{color:#555}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{display:block;border:1px solid var(--line);border-radius:20px;background:#fff;padding:24px;text-decoration:none;box-shadow:0 8px 28px rgba(17,17,17,.05);transition:transform .18s ease,box-shadow .18s ease}
+a.card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(17,17,17,.08)}
+.card h3{margin:8px 0 8px;font-size:21px;line-height:1.35;letter-spacing:-.02em}
+.card p{margin:0;color:#5b5b5b;font-size:14.5px}
+.card .price{margin-top:14px;color:var(--teal-dark);font-size:24px;font-weight:800;letter-spacing:-.02em}
+.card .price small{font-size:12px;color:var(--muted);font-weight:650}
+.kind{display:inline-block;border-radius:999px;background:var(--teal-pale);color:var(--teal-dark);padding:4px 10px;font-size:11.5px;font-weight:800;letter-spacing:.04em}
+.kind.note{background:#f1f1f1;color:#555}
+.arrow{display:inline-block;margin-top:16px;color:var(--teal-dark);font-weight:800;font-size:14px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 8px 28px rgba(17,17,17,.05)}
+table{width:100%;border-collapse:collapse;min-width:640px;font-size:14.5px}
+caption{padding:16px 18px 4px;text-align:left;font-weight:800;font-size:16px;letter-spacing:-.01em}
+caption small{display:block;color:var(--muted);font-weight:600;font-size:12.5px;margin-top:2px}
+th,td{padding:12px 14px;text-align:left;vertical-align:top}
+thead th{background:#eff6f3;color:var(--teal-dark);font-size:13px;white-space:nowrap}
+tbody th{font-weight:750;white-space:nowrap}
+tbody tr+tr td,tbody tr+tr th{border-top:1px solid #f0f0f0}
+tbody tr:nth-child(even) td,tbody tr:nth-child(even) th{background:#fafcfb}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+td .sub{display:block;color:var(--muted);font-size:12px;font-weight:600}
+.srcbox{margin-top:14px;border-radius:16px;background:#f7faf9;padding:16px 18px;color:#555;font-size:13.5px}
+.srcbox b{color:var(--teal-dark)}
+.srcbox a{color:var(--teal-dark);word-break:break-all}
+.notice{border:1px solid #ead9a8;border-radius:18px;background:#fffaf0;padding:20px 22px;color:#5d5326}
+.notice h3{margin:0 0 8px;font-size:17px}
+.notice p{margin:0;font-size:14.5px}
+.faq-item{border:1px solid var(--line);border-radius:18px;background:#fff;padding:22px 24px;box-shadow:0 8px 28px rgba(17,17,17,.04)}
+.faq-item+.faq-item{margin-top:14px}
+.faq-item h3{margin:0 0 8px;font-size:18px;line-height:1.5}
+.faq-item p{margin:0;color:#555;font-size:15px}
+.adslot{border:1px dashed #cfe0dc;border-radius:20px;background:#f4f9f7;padding:26px;text-align:center;color:#55706a}
+.adslot b{display:block;color:var(--teal-dark);font-size:17px;margin-bottom:6px}
+.adslot p{margin:0 auto;max-width:640px;font-size:14px}
+.checklist{margin:0;padding-left:1.2em;color:#444}
+.checklist li{margin:7px 0}
+.prose{max-width:820px;color:#444}
+.prose h3{color:var(--ink);font-size:20px;margin:28px 0 8px;letter-spacing:-.02em}
+.prose p{margin:0 0 12px}
+footer{border-top:1px solid var(--line);background:#fafcfb;padding:44px 0 52px;color:#666;font-size:13.5px}
+.fname{color:var(--ink);font-size:17px;font-weight:800;letter-spacing:-.02em}
+.foot-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin:16px 0}
+.foot-links a{text-decoration:none}
+.foot-links a:hover{color:var(--teal-dark)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;padding:44px 0 48px}.grid3,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){
+ .head-in{align-items:flex-start;flex-direction:column;padding:14px 0}
+ .nav{gap:4px 14px}
+ main section{padding-top:54px}
+ table{display:block;min-width:0}
+ thead{display:none}
+ tbody,tbody tr,tbody td,tbody th{display:block;width:100%}
+ tbody tr{padding:10px 0;border-top:1px solid #f0f0f0}
+ tbody tr:first-child{border-top:0}
+ tbody th{padding:8px 16px 2px;font-size:15px}
+ tbody td{display:flex;justify-content:space-between;gap:18px;padding:7px 16px;border-top:0!important;text-align:right}
+ tbody td::before{content:attr(data-label);color:var(--muted);font-weight:700;text-align:left}
+ tbody td:first-child{font-weight:750}
+}
+
+.lookup-form{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 8px}
+.lookup-form label{display:block;font-size:13px;font-weight:800;color:var(--teal-dark);letter-spacing:.02em}
+.lookup-form select{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid #cfd8d5;border-radius:12px;background:#fff;font-size:16px;color:var(--ink)}
+.lookup-note{color:var(--muted);font-size:13px;margin:10px 2px 0}
+#result-meta{font-weight:800;margin:26px 0 12px;font-size:17px}
+tr.missing td,tr.missing th{color:#999;background:#f7f7f7!important}
+td .kindtag{display:inline-block;border-radius:999px;background:#f1f1f1;color:#555;padding:2px 8px;font-size:11px;font-weight:800;margin-right:6px}
+.breed-hit{outline:2px solid var(--teal);outline-offset:-2px}
+#breed-input{display:block;width:100%;max-width:480px;padding:12px;border:1px solid #cfd8d5;border-radius:12px;font-size:16px}
+@media(max-width:900px){.lookup-form{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:720px){#result-table{display:table;min-width:640px} #result-table thead{display:table-header-group} #result-table tbody{display:table-row-group} #result-table tbody tr{display:table-row;padding:0;border-top:0} #result-table tbody td,#result-table tbody th{display:table-cell;width:auto;text-align:left;padding:12px 14px} #result-table tbody td::before{content:none} #result-table td.num{text-align:right}}
+</style>
+
+</head>
+<body>
+<header class="site-head"><div class="container head-in">
+<a class="logo" href="/"><small>PET INSURANCE DATABASE</small><strong>ペット保険料データベース</strong></a>
+<nav class="nav" aria-label="サイト内メニュー"><a href="/">トップ</a><a href="/dogs/">犬の保険料</a><a href="/cats/">猫の保険料</a><a href="/guide/">選び方ガイド</a><a href="/faq/">よくある質問</a><a href="/about/">このサイトについて</a></nav>
+</div></header>
+<main>
+<div class="page-hero"><div class="container">
+<span class="eyebrow">PREMIUM LOOKUP</span>
+<h1>保険料ルックアップ（条件で引く）</h1>
+<p>公式の見積りシミュレーションのように、条件を選んで各社の保険料をその場で引けるページです。もとになる数値は、<a href="/dogs/">犬の保険料</a>・<a href="/cats/">猫の保険料</a>のページに掲載した6社の公式保険料表・保険料の例（全345件）で、すべて公式の公表値です。年齢は各社が公表している区分（年齢帯）に当てはめて表示し、区分をまたぐ補間や推定はしていません。</p>
+</div></div>
+
+<section><div class="container">
+<div class="section-head"><div class="kicker">Lookup</div><h2>条件を選んで保険料を引く</h2>
+<p>クラス・サイズの区分は会社ごとに体系が異なります（アニコムの「Aクラス〜Eクラス」、アイペットの「犬A〜犬C」、FPC・PS保険などの「小型犬・中型犬・大型犬」など）。区分を選ぶと、その区分で公表している会社の保険料が表示され、該当する公表値がない会社は「この条件の公表値なし」と明示します。犬の飼い主の方は、下の「犬種からアニコムのクラスを探す」も参考にしてください。</p></div>
+
+<form class="lookup-form" id="lookup-form">
+<div><label for="f-sp">種別</label><select id="f-sp"><option value="dog">犬</option><option value="cat">猫</option></select></div>
+<div><label for="f-cls">クラス・サイズ区分</label><select id="f-cls"></select></div>
+<div><label for="f-age">年齢</label><select id="f-age"></select></div>
+<div><label for="f-cov">補償割合</label><select id="f-cov"></select></div>
+</form>
+<p class="lookup-note">年齢は、選んだ年齢を含む公表区分の保険料を表示します（例：4歳を選ぶと「0〜4歳」区分の保険料が当たります）。「保険料の例」「目安」と表示される行は、公式が全年齢の保険料表ではなく、特定条件の例・目安として公表している値です。楽天ペット保険の「〜」は公式表示どおりの最低水準の目安です。</p>
+
+<p id="result-meta" role="status"></p>
+<div class="table-wrap"><table id="result-table">
+<caption>条件に合う月払保険料（安い順）<small>補償内容・支払限度額・免責金額は会社ごとに異なるため、金額の安さだけで中身は比べられません。確認日：2026-11-17</small></caption>
+<thead><tr><th>会社・商品</th><th>区分</th><th>年齢区分（公表どおり）</th><th>補償割合</th><th class="num">月払保険料</th><th>備考</th></tr></thead>
+<tbody id="result-body"></tbody>
+</table></div>
+<div class="srcbox"><b>データの出どころ</b><br>本ページの数値は、犬・猫ページに掲載した各社公式の保険料表・保険料の例（確認日：2026-11-17）から、会社・商品・種別・区分・年齢・補償割合・月払保険料を正規化したものです。掲載のない条件を推定で埋めることはしていません。各社の全表と出典は<a href="/dogs/">犬の保険料</a>・<a href="/cats/">猫の保険料</a>のページにあります。実際の保険料は、ペットの種類・品種・年齢・補償プラン・各種割引や特約の有無などによって変わります。申込みの前に、必ず各保険会社の公式サイト・重要事項説明書・約款で最新の内容をご確認ください。</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="kicker">Breeds</div><h2>犬種からアニコムのクラスを探す</h2>
+<p>アニコム損保「どうぶつ健保ふぁみりぃ」の保険料は、品種別クラス（A〜E）で決まります。犬種名を入力すると、公式の「品種別クラス分類の例」に載っている犬種とクラスを照合します。これはアニコムの分類表の範囲内の補助で、他社（アイペットの犬A〜犬Cなど）の分類とは別体系です。表にない犬種や混血犬の扱いは、アニコム損保の公式サイトでご確認ください。</p></div>
+<label for="breed-input" style="font-size:13px;font-weight:800;color:var(--teal-dark)">犬種名（例：柴、トイ・プードル）</label>
+<input id="breed-input" type="text" placeholder="犬種名を入力" autocomplete="off" style="margin-top:6px">
+<p class="lookup-note" id="breed-result" role="status"></p>
+<div class="table-wrap" style="margin-top:14px"><table>
+<caption>アニコム損保 品種別クラス分類の例<small>公式の品種別クラス分類表より（犬ページに掲載した表と同じ内容です）</small></caption>
+<thead><tr><th>クラス</th><th>犬種の例</th></tr></thead>
+<tbody id="breed-body">
+<tr data-breeds="Aクラス チワワ、カニーンヘン・ダックスフンド、日本スピッツ、混血犬（10kg未満）"><th scope="row" data-label="クラス">Aクラス</th><td data-label="犬種の例">チワワ、カニーンヘン・ダックスフンド、日本スピッツ、混血犬（10kg未満）</td></tr><tr data-breeds="Bクラス 柴、トイ・プードル、ミニチュア・ダックスフンド、パピヨン"><th scope="row" data-label="クラス">Bクラス</th><td data-label="犬種の例">柴、トイ・プードル、ミニチュア・ダックスフンド、パピヨン</td></tr><tr data-breeds="Cクラス ポメラニアン、マルチーズ、ビーグル、ウェルシュ・コーギー・ペンブローク、混血犬（10kg以上30kg未満）"><th scope="row" data-label="クラス">Cクラス</th><td data-label="犬種の例">ポメラニアン、マルチーズ、ビーグル、ウェルシュ・コーギー・ペンブローク、混血犬（10kg以上30kg未満）</td></tr><tr data-breeds="Dクラス ゴールデン・レトリーバー、ラブラドール・レトリーバー、パグ、シー・ズー"><th scope="row" data-label="クラス">Dクラス</th><td data-label="犬種の例">ゴールデン・レトリーバー、ラブラドール・レトリーバー、パグ、シー・ズー</td></tr><tr data-breeds="Eクラス フレンチ・ブルドッグ、ブルドッグ、バーニーズ・マウンテン・ドッグ、アメリカン・コッカー・スパニエル"><th scope="row" data-label="クラス">Eクラス</th><td data-label="犬種の例">フレンチ・ブルドッグ、ブルドッグ、バーニーズ・マウンテン・ドッグ、アメリカン・コッカー・スパニエル</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section><div class="container">
+<div class="section-head"><div class="kicker">Guide</div><h2>金額の前に確認したいこと</h2>
+<p>同じ補償割合でも、1日あたり・年間の支払限度額、免責金額の有無、対象になる診療の範囲が異なります。ルックアップで候補を絞ったあとは、<a href="/guide/">選び方ガイド</a>で比較のポイントを確認してください。</p></div>
+<div class="grid3">
+<a class="card" href="/dogs/"><span class="kind">DOGS</span><h3>犬の保険料例（全表）</h3><p>6社の公式保険料表・保険料の例を、犬種分類と年齢の表で掲載しています。</p><span class="arrow">犬のページへ →</span></a>
+<a class="card" href="/cats/"><span class="kind">CATS</span><h3>猫の保険料例（全表）</h3><p>猫は犬種のような分類がなく、年齢区分で保険料が決まる会社が中心です。</p><span class="arrow">猫のページへ →</span></a>
+<a class="card" href="/guide/"><span class="kind">GUIDE</span><h3>選び方ガイド</h3><p>補償割合、支払限度額、免責金額、保険料の上がり方など、比較の前に確認したい項目を解説します。</p><span class="arrow">ガイドを読む →</span></a>
+</div>
+</div></section>
+</main>
+
+<script>
+var RECORDS = [["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "0歳", 0, 0, "70%", 3270, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "0歳", 0, 0, "70%", 3590, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "0歳", 0, 0, "70%", 3910, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "0歳", 0, 0, "70%", 4480, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "0歳", 0, 0, "70%", 5130, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "1歳", 1, 1, "70%", 3110, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "1歳", 1, 1, "70%", 3420, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "1歳", 1, 1, "70%", 3740, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "1歳", 1, 1, "70%", 4270, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "1歳", 1, 1, "70%", 4910, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "2歳", 2, 2, "70%", 3160, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "2歳", 2, 2, "70%", 3440, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "2歳", 2, 2, "70%", 3800, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "2歳", 2, 2, "70%", 4350, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "2歳", 2, 2, "70%", 5060, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "3歳", 3, 3, "70%", 3690, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "3歳", 3, 3, "70%", 3930, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "3歳", 3, 3, "70%", 4430, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "3歳", 3, 3, "70%", 5070, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "3歳", 3, 3, "70%", 5970, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "4歳", 4, 4, "70%", 4210, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "4歳", 4, 4, "70%", 4690, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "4歳", 4, 4, "70%", 5050, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "4歳", 4, 4, "70%", 6170, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "4歳", 4, 4, "70%", 7270, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "5歳", 5, 5, "70%", 4770, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "5歳", 5, 5, "70%", 5260, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "5歳", 5, 5, "70%", 5690, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "5歳", 5, 5, "70%", 7160, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "5歳", 5, 5, "70%", 8540, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "6歳", 6, 6, "70%", 5260, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "6歳", 6, 6, "70%", 5700, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "6歳", 6, 6, "70%", 6210, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "6歳", 6, 6, "70%", 7850, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "6歳", 6, 6, "70%", 9460, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "7歳", 7, 7, "70%", 5870, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "7歳", 7, 7, "70%", 6210, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "7歳", 7, 7, "70%", 6850, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "7歳", 7, 7, "70%", 8610, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "7歳", 7, 7, "70%", 10270, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "8歳", 8, 8, "70%", 6560, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "8歳", 8, 8, "70%", 6800, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "8歳", 8, 8, "70%", 7590, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "8歳", 8, 8, "70%", 9460, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "8歳", 8, 8, "70%", 11680, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "9歳", 9, 9, "70%", 7620, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "9歳", 9, 9, "70%", 7660, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "9歳", 9, 9, "70%", 8810, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "9歳", 9, 9, "70%", 11010, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "9歳", 9, 9, "70%", 13730, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "10歳", 10, 10, "70%", 8470, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "10歳", 10, 10, "70%", 8730, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "10歳", 10, 10, "70%", 10120, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "10歳", 10, 10, "70%", 12400, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "10歳", 10, 10, "70%", 14620, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "0歳", 0, 0, "50%", 2450, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "0歳", 0, 0, "50%", 2680, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "0歳", 0, 0, "50%", 2920, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "0歳", 0, 0, "50%", 3320, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "0歳", 0, 0, "50%", 3790, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "1歳", 1, 1, "50%", 2340, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "1歳", 1, 1, "50%", 2560, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "1歳", 1, 1, "50%", 2780, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "1歳", 1, 1, "50%", 3170, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "1歳", 1, 1, "50%", 3630, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "2歳", 2, 2, "50%", 2370, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "2歳", 2, 2, "50%", 2570, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "2歳", 2, 2, "50%", 2830, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "2歳", 2, 2, "50%", 3230, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "2歳", 2, 2, "50%", 3730, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "3歳", 3, 3, "50%", 2770, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "3歳", 3, 3, "50%", 2940, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "3歳", 3, 3, "50%", 3290, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "3歳", 3, 3, "50%", 3750, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "3歳", 3, 3, "50%", 4390, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "4歳", 4, 4, "50%", 3120, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "4歳", 4, 4, "50%", 3470, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "4歳", 4, 4, "50%", 3730, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "4歳", 4, 4, "50%", 4550, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "4歳", 4, 4, "50%", 5330, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "5歳", 5, 5, "50%", 3520, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "5歳", 5, 5, "50%", 3880, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "5歳", 5, 5, "50%", 4190, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "5歳", 5, 5, "50%", 5240, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "5歳", 5, 5, "50%", 6240, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "6歳", 6, 6, "50%", 3870, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "6歳", 6, 6, "50%", 4180, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "6歳", 6, 6, "50%", 4570, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "6歳", 6, 6, "50%", 5740, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "6歳", 6, 6, "50%", 6900, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "7歳", 7, 7, "50%", 4320, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "7歳", 7, 7, "50%", 4560, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "7歳", 7, 7, "50%", 5020, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "7歳", 7, 7, "50%", 6280, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "7歳", 7, 7, "50%", 7480, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "8歳", 8, 8, "50%", 4820, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "8歳", 8, 8, "50%", 4980, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "8歳", 8, 8, "50%", 5550, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "8歳", 8, 8, "50%", 6870, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "8歳", 8, 8, "50%", 8450, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "9歳", 9, 9, "50%", 5550, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "9歳", 9, 9, "50%", 5590, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "9歳", 9, 9, "50%", 6400, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "9歳", 9, 9, "50%", 7980, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "9歳", 9, 9, "50%", 9850, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Aクラス", "10歳", 10, 10, "50%", 6050, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Bクラス", "10歳", 10, 10, "50%", 6350, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Cクラス", "10歳", 10, 10, "50%", 7340, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Dクラス", "10歳", 10, 10, "50%", 8970, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "dog", "Eクラス", "10歳", 10, 10, "50%", 10440, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "0歳", 0, 0, "30%", 1840, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "0歳", 0, 0, "50%", 2480, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "0歳", 0, 0, "70%", 3090, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "1歳", 1, 1, "30%", 1840, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "1歳", 1, 1, "50%", 2610, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "1歳", 1, 1, "70%", 3230, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "2歳", 2, 2, "30%", 1840, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "2歳", 2, 2, "50%", 2640, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "2歳", 2, 2, "70%", 3270, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "3歳", 3, 3, "30%", 2010, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "3歳", 3, 3, "50%", 2920, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "3歳", 3, 3, "70%", 3660, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "4歳", 4, 4, "30%", 2190, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "4歳", 4, 4, "50%", 3220, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "4歳", 4, 4, "70%", 4070, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "5歳", 5, 5, "30%", 2370, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "5歳", 5, 5, "50%", 3530, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "5歳", 5, 5, "70%", 4510, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "6歳", 6, 6, "30%", 2560, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "6歳", 6, 6, "50%", 3860, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "6歳", 6, 6, "70%", 4970, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "7歳", 7, 7, "30%", 2750, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "7歳", 7, 7, "50%", 4230, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "7歳", 7, 7, "70%", 5530, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "8歳", 8, 8, "30%", 2940, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "8歳", 8, 8, "50%", 4620, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "8歳", 8, 8, "70%", 6400, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "9歳", 9, 9, "30%", 3150, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "9歳", 9, 9, "50%", 5120, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "9歳", 9, 9, "70%", 7320, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "10歳", 10, 10, "30%", 3450, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "10歳", 10, 10, "50%", 5630, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "10歳", 10, 10, "70%", 8290, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "11歳", 11, 11, "30%", 3760, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "11歳", 11, 11, "50%", 6190, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "11歳", 11, 11, "70%", 9230, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "12歳〜終身", 12, null, "30%", 4130, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "12歳〜終身", 12, null, "50%", 6810, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬A", "12歳〜終身", 12, null, "70%", 10240, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "0歳", 0, 0, "30%", 2090, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "0歳", 0, 0, "50%", 2890, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "0歳", 0, 0, "70%", 3660, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "1歳", 1, 1, "30%", 2090, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "1歳", 1, 1, "50%", 3000, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "1歳", 1, 1, "70%", 3770, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "2歳", 2, 2, "30%", 2090, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "2歳", 2, 2, "50%", 2980, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "2歳", 2, 2, "70%", 3740, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "3歳", 3, 3, "30%", 2190, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "3歳", 3, 3, "50%", 3220, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "3歳", 3, 3, "70%", 4070, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "4歳", 4, 4, "30%", 2340, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "4歳", 4, 4, "50%", 3480, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "4歳", 4, 4, "70%", 4430, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "5歳", 5, 5, "30%", 2490, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "5歳", 5, 5, "50%", 3740, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "5歳", 5, 5, "70%", 4800, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "6歳", 6, 6, "30%", 2650, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "6歳", 6, 6, "50%", 4020, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "6歳", 6, 6, "70%", 5180, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "7歳", 7, 7, "30%", 2880, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "7歳", 7, 7, "50%", 4420, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "7歳", 7, 7, "70%", 5740, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "8歳", 8, 8, "30%", 3140, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "8歳", 8, 8, "50%", 4950, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "8歳", 8, 8, "70%", 6750, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "9歳", 9, 9, "30%", 3490, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "9歳", 9, 9, "50%", 5580, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "9歳", 9, 9, "70%", 7820, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "10歳", 10, 10, "30%", 3850, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "10歳", 10, 10, "50%", 6230, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "10歳", 10, 10, "70%", 8950, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "11歳", 11, 11, "30%", 4300, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "11歳", 11, 11, "50%", 7030, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "11歳", 11, 11, "70%", 10150, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "12歳〜終身", 12, null, "30%", 4920, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "12歳〜終身", 12, null, "50%", 8080, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬B", "12歳〜終身", 12, null, "70%", 11550, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "0歳", 0, 0, "30%", 2580, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "0歳", 0, 0, "50%", 3840, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "0歳", 0, 0, "70%", 4990, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "1歳", 1, 1, "30%", 2580, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "1歳", 1, 1, "50%", 4020, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "1歳", 1, 1, "70%", 5190, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "2歳", 2, 2, "30%", 2580, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "2歳", 2, 2, "50%", 3930, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "2歳", 2, 2, "70%", 5070, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "3歳", 3, 3, "30%", 2840, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "3歳", 3, 3, "50%", 4470, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "3歳", 3, 3, "70%", 5830, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "4歳", 4, 4, "30%", 3180, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "4歳", 4, 4, "50%", 5090, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "4歳", 4, 4, "70%", 6700, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "5歳", 5, 5, "30%", 3530, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "5歳", 5, 5, "50%", 5730, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "5歳", 5, 5, "70%", 7590, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "6歳", 6, 6, "30%", 3880, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "6歳", 6, 6, "50%", 6380, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "6歳", 6, 6, "70%", 8490, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "7歳", 7, 7, "30%", 4260, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "7歳", 7, 7, "50%", 7140, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "7歳", 7, 7, "70%", 9610, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "8歳", 8, 8, "30%", 4650, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "8歳", 8, 8, "50%", 7880, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "8歳", 8, 8, "70%", 11250, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "9歳", 9, 9, "30%", 5160, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "9歳", 9, 9, "50%", 8820, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "9歳", 9, 9, "70%", 12550, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "10歳", 10, 10, "30%", 5660, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "10歳", 10, 10, "50%", 9750, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "10歳", 10, 10, "70%", 14260, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "11歳", 11, 11, "30%", 6160, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "11歳", 11, 11, "50%", 10680, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "11歳", 11, 11, "70%", 16050, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "12歳〜終身", 12, null, "30%", 6970, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "12歳〜終身", 12, null, "50%", 12240, 0, "table", ""], ["第一アイペット損保", "うちの子", "dog", "犬C", "12歳〜終身", 12, null, "70%", 17030, 0, "table", ""], ["ペット＆ファミリー損保", "げんきナンバーわんスリム", "dog", "小型犬", "1歳", 1, 1, "50%", 1560, 0, "example", "公式サイト掲載の保険料の例"], ["ペット＆ファミリー損保", "げんきナンバーわんスリム", "cat", "猫", "2歳", 2, 2, "50%", 1410, 0, "example", "公式サイト掲載の保険料の例"], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "0〜4歳", 0, 4, "50%", 1210, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "0〜4歳", 0, 4, "50%", 1800, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "0〜4歳", 0, 4, "50%", 2280, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "5〜8歳", 5, 8, "50%", 1700, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "5〜8歳", 5, 8, "50%", 2100, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "5〜8歳", 5, 8, "50%", 3530, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "0〜4歳", 0, 4, "70%", 1550, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "0〜4歳", 0, 4, "70%", 2300, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "0〜4歳", 0, 4, "70%", 2920, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "5〜8歳", 5, 8, "70%", 2180, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "5〜8歳", 5, 8, "70%", 2710, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "5〜8歳", 5, 8, "70%", 4560, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "0〜4歳", 0, 4, "90%", 2040, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "0〜4歳", 0, 4, "90%", 3030, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "0〜4歳", 0, 4, "90%", 3830, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "小型犬", "5〜8歳", 5, 8, "90%", 2870, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "中型犬", "5〜8歳", 5, 8, "90%", 3600, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "dog", "大型犬", "5〜8歳", 5, 8, "90%", 6040, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "1歳", 1, 1, "50%", 1430, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "1歳", 1, 1, "70%", 2120, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "1歳", 1, 1, "100%", 2640, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "中型犬", "1歳", 1, 1, "50%", 1590, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "中型犬", "1歳", 1, 1, "70%", 2360, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "中型犬", "1歳", 1, 1, "100%", 2920, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "大型犬", "1歳", 1, 1, "50%", 1700, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "大型犬", "1歳", 1, 1, "70%", 2520, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "大型犬", "1歳", 1, 1, "100%", 3110, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "0〜2歳（加入時 生後120日以上）", 0, 2, "70%", 2120, 0, "table", "加入時 生後120日以上"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "0〜2歳（加入時 生後30日以上120日未満）", 0, 2, "70%", 2150, 0, "table", "加入時 生後30日以上120日未満"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "3〜5歳", 3, 5, "70%", 2390, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "6〜8歳", 6, 8, "70%", 3020, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "9〜11歳（継続時）", 9, 11, "70%", 3180, 0, "table", "継続時"], ["ペットメディカルサポート", "PS保険", "dog", "小型犬", "12歳〜（継続時・定額）", 12, null, "70%", 3590, 0, "table", "継続時・定額"], ["楽天ペット保険", "スーパーペット保険", "dog", "小型犬", "2歳", 2, 2, "90%", 740, 1, "example", "手術・入院プラン（補償割合90%）／公式掲載の保険料の例（最低水準の目安）"], ["楽天ペット保険", "スーパーペット保険", "dog", "小型犬", "6歳", 6, 6, "90%", 1490, 1, "example", "手術・入院プラン（補償割合90%）／公式掲載の保険料の例（最低水準の目安）"], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "0歳", 0, 0, "70%", 3330, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "0歳", 0, 0, "50%", 2500, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "1歳", 1, 1, "70%", 3170, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "1歳", 1, 1, "50%", 2380, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "2歳", 2, 2, "70%", 3150, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "2歳", 2, 2, "50%", 2370, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "3歳", 3, 3, "70%", 3190, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "3歳", 3, 3, "50%", 2390, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "4歳", 4, 4, "70%", 3350, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "4歳", 4, 4, "50%", 2480, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "5歳", 5, 5, "70%", 3470, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "5歳", 5, 5, "50%", 2570, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "6歳", 6, 6, "70%", 3640, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "6歳", 6, 6, "50%", 2690, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "7歳", 7, 7, "70%", 3860, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "7歳", 7, 7, "50%", 2850, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "8歳", 8, 8, "70%", 4130, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "8歳", 8, 8, "50%", 3040, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "9歳", 9, 9, "70%", 4460, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "9歳", 9, 9, "50%", 3270, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "10歳", 10, 10, "70%", 4820, 0, "table", ""], ["アニコム損保", "どうぶつ健保ふぁみりぃ", "cat", "猫", "10歳", 10, 10, "50%", 3530, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "0〜3歳", 0, 3, "30%", 1780, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "0〜3歳", 0, 3, "50%", 2400, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "0〜3歳", 0, 3, "70%", 2990, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "4歳", 4, 4, "30%", 1850, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "4歳", 4, 4, "50%", 2470, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "4歳", 4, 4, "70%", 3120, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "5歳", 5, 5, "30%", 1930, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "5歳", 5, 5, "50%", 2610, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "5歳", 5, 5, "70%", 3260, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "6歳", 6, 6, "30%", 2090, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "6歳", 6, 6, "50%", 2850, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "6歳", 6, 6, "70%", 3550, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "7歳", 7, 7, "30%", 2300, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "7歳", 7, 7, "50%", 3150, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "7歳", 7, 7, "70%", 3940, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "8歳", 8, 8, "30%", 2560, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "8歳", 8, 8, "50%", 3530, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "8歳", 8, 8, "70%", 4410, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "9歳〜終身", 9, null, "30%", 2870, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "9歳〜終身", 9, null, "50%", 3980, 0, "table", ""], ["第一アイペット損保", "うちの子", "cat", "猫", "9歳〜終身", 9, null, "70%", 4990, 0, "table", ""], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "0歳", 0, 0, "50%", 670, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "0歳", 0, 0, "90%", 780, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "1歳", 1, 1, "50%", 710, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "1歳", 1, 1, "90%", 830, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "2歳", 2, 2, "50%", 750, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "2歳", 2, 2, "90%", 890, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "3歳", 3, 3, "50%", 800, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "3歳", 3, 3, "90%", 960, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "4歳", 4, 4, "50%", 840, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "4歳", 4, 4, "90%", 1040, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "5歳", 5, 5, "50%", 880, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "5歳", 5, 5, "90%", 1130, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "6歳", 6, 6, "50%", 930, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "6歳", 6, 6, "90%", 1230, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "7歳", 7, 7, "50%", 990, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "7歳", 7, 7, "90%", 1330, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "8歳", 8, 8, "50%", 1010, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "8歳", 8, 8, "90%", 1430, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "9歳〜終身", 9, null, "50%", 1050, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["第一アイペット損保", "うちの子ライト", "cat", "猫", "9歳〜終身", 9, null, "90%", 1540, 0, "table", "手術と手術に伴う連続入院のみを補償するプラン"], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "0〜4歳", 0, 4, "50%", 940, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "0〜4歳", 0, 4, "70%", 1190, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "0〜4歳", 0, 4, "90%", 1560, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "5〜8歳", 5, 8, "50%", 1160, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "5〜8歳", 5, 8, "70%", 1490, 0, "table", ""], ["株式会社FPC", "ペットほけんフィット", "cat", "猫", "5〜8歳", 5, 8, "90%", 1950, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "cat", "猫", "1歳", 1, 1, "50%", 1320, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "1歳", 1, 1, "70%", 1950, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "1歳", 1, 1, "100%", 2440, 0, "estimate", "公式の保険料の目安（1歳）"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "0〜2歳（加入時 生後120日以上）", 0, 2, "70%", 1950, 0, "table", "加入時 生後120日以上"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "0〜2歳（加入時 生後30日以上120日未満）", 0, 2, "70%", 1970, 0, "table", "加入時 生後30日以上120日未満"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "3〜5歳", 3, 5, "70%", 2170, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "cat", "猫", "6〜8歳", 6, 8, "70%", 2600, 0, "table", ""], ["ペットメディカルサポート", "PS保険", "cat", "猫", "9〜11歳（継続時）", 9, 11, "70%", 2750, 0, "table", "継続時"], ["ペットメディカルサポート", "PS保険", "cat", "猫", "12歳〜（継続時・定額）", 12, null, "70%", 3110, 0, "table", "継続時・定額"], ["楽天ペット保険", "スーパーペット保険", "cat", "猫", "2歳", 2, 2, "90%", 730, 1, "example", "手術・入院プラン（補償割合90%）／公式掲載の保険料の例（最低水準の目安）"], ["楽天ペット保険", "スーパーペット保険", "cat", "猫", "6歳", 6, 6, "90%", 1340, 1, "example", "手術・入院プラン（補償割合90%）／公式掲載の保険料の例（最低水準の目安）"], ["楽天ペット保険", "スーパーペット保険", "cat", "猫", "2歳", 2, 2, "", 440, 1, "example", "スーパーペット保険ねこ（猫専用）／公式掲載の保険料の例（最低水準の目安）"]];
+var COMPANIES = {
+  dog: [["アニコム損保","どうぶつ健保ふぁみりぃ"],["第一アイペット損保","うちの子"],["ペット＆ファミリー損保","げんきナンバーわんスリム"],["株式会社FPC","ペットほけんフィット"],["ペットメディカルサポート","PS保険"],["楽天ペット保険","スーパーペット保険"]],
+  cat: [["アニコム損保","どうぶつ健保ふぁみりぃ"],["第一アイペット損保","うちの子"],["第一アイペット損保","うちの子ライト"],["ペット＆ファミリー損保","げんきナンバーわんスリム"],["株式会社FPC","ペットほけんフィット"],["ペットメディカルサポート","PS保険"],["楽天ペット保険","スーパーペット保険"]]
+};
+var fSp = document.getElementById('f-sp'), fCls = document.getElementById('f-cls'),
+    fAge = document.getElementById('f-age'), fCov = document.getElementById('f-cov');
+function yen(n) { return n.toLocaleString('ja-JP') + '円'; }
+function fillSelect(sel, values, allLabel) {
+  sel.innerHTML = '';
+  if (allLabel) { var o = document.createElement('option'); o.value = ''; o.textContent = allLabel; sel.appendChild(o); }
+  values.forEach(function(v) { var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o); });
+}
+function distinct(key, sp) {
+  var seen = {}, out = [];
+  RECORDS.forEach(function(r) { if (r[2] === sp && !seen[r[key]]) { seen[r[key]] = 1; out.push(r[key]); } });
+  return out;
+}
+function refreshCls() {
+  fillSelect(fCls, distinct(3, fSp.value), 'すべての区分');
+}
+function refreshCov() {
+  var covs = distinct(7, fSp.value).filter(function(c) { return c !== ''; });
+  covs.sort(function(a, b) { return parseInt(a) - parseInt(b); });
+  fillSelect(fCov, covs, 'すべての補償割合');
+}
+function refreshAge() {
+  var ages = [];
+  for (var a = 0; a <= 15; a++) ages.push(a + '歳');
+  fillSelect(fAge, ages, null);
+  fAge.value = '0歳';
+}
+function run() {
+  var sp = fSp.value, cls = fCls.value, cov = fCov.value;
+  var age = parseInt(fAge.value, 10);
+  var hits = RECORDS.filter(function(r) {
+    if (r[2] !== sp) return false;
+    if (cls && r[3] !== cls) return false;
+    if (cov && r[7] !== cov) return false;
+    return r[5] <= age && (r[6] === null || age <= r[6]);
+  });
+  hits.sort(function(a, b) { return a[8] - b[8]; });
+  var body = document.getElementById('result-body');
+  body.innerHTML = '';
+  var hitKeys = {};
+  hits.forEach(function(r) {
+    hitKeys[r[0] + '|' + r[1]] = 1;
+    var tr = document.createElement('tr');
+    var kind = r[10] === 'example' ? '<span class="kindtag">保険料の例</span>' : (r[10] === 'estimate' ? '<span class="kindtag">目安</span>' : '');
+    var note = (kind + (r[11] ? r[11] : '')) || '—';
+    tr.innerHTML = '<th scope="row" data-label="会社・商品">' + r[0] + '「' + r[1] + '」</th>' +
+      '<td data-label="区分">' + r[3] + '</td>' +
+      '<td data-label="年齢区分">' + r[4] + '</td>' +
+      '<td data-label="補償割合">' + (r[7] ? r[7] : '（例に記載なし）') + '</td>' +
+      '<td class="num" data-label="月払保険料">' + yen(r[8]) + (r[9] ? '〜' : '') + '</td>' +
+      '<td data-label="備考">' + note + '</td>';
+    body.appendChild(tr);
+  });
+  COMPANIES[sp].forEach(function(cp) {
+    if (hitKeys[cp[0] + '|' + cp[1]]) return;
+    var tr = document.createElement('tr');
+    tr.className = 'missing';
+    tr.innerHTML = '<th scope="row" data-label="会社・商品">' + cp[0] + '「' + cp[1] + '」</th>' +
+      '<td data-label="区分">—</td><td data-label="年齢区分">—</td><td data-label="補償割合">—</td>' +
+      '<td class="num" data-label="月払保険料">この条件の公表値なし</td>' +
+      '<td data-label="備考">この条件では公式の公表値を確認できませんでした</td>';
+    body.appendChild(tr);
+  });
+  var cond = (sp === 'dog' ? '犬' : '猫') + '・' + (cls ? cls : 'すべての区分') + '・' + age + '歳・' + (cov ? '補償割合' + cov : 'すべての補償割合');
+  document.getElementById('result-meta').textContent = cond + ' → ' + hits.length + '件の公表値';
+}
+fSp.addEventListener('change', function() { refreshCls(); refreshCov(); run(); });
+fCls.addEventListener('change', run);
+fAge.addEventListener('change', run);
+fCov.addEventListener('change', run);
+refreshCls(); refreshCov(); refreshAge(); run();
+// breed aid
+var bInput = document.getElementById('breed-input');
+bInput.addEventListener('input', function() {
+  var q = bInput.value.trim();
+  var rows = document.querySelectorAll('#breed-body tr');
+  var matched = [];
+  rows.forEach(function(tr) {
+    tr.classList.remove('breed-hit');
+    if (q && tr.getAttribute('data-breeds').indexOf(q) >= 0) {
+      tr.classList.add('breed-hit');
+      matched.push(tr.getAttribute('data-breeds').split(' ')[0]);
+    }
+  });
+  var res = document.getElementById('breed-result');
+  if (!q) { res.textContent = ''; return; }
+  res.textContent = matched.length ? ('「' + q + '」は ' + matched.join('、') + ' に載っています（アニコムの分類の例）') : ('「' + q + '」は分類の例に載っていません。アニコム損保の公式サイトでご確認ください');
+});
+</script>
+<footer><div class="container">
+<div class="fname">ペット保険料データベース</div>
+<p>運営：ペット保険料データベース運営事務局／本サイトは、各保険会社が公式サイト等で公表している保険料例・プラン情報を、条件と出典を明記して整理したデータベースです。保険商品の販売・勧誘・仲介は行っていません。</p>
+<div class="foot-links"><a href="/">トップ</a><a href="/dogs/">犬の保険料</a><a href="/cats/">猫の保険料</a><a href="/guide/">選び方ガイド</a><a href="/faq/">よくある質問</a><a href="/about/">このサイトについて</a></div>
+<p>掲載している保険料は、各社公式の保険料表・保険料例を確認日（2026-11-17）時点で転記したものです。実際の保険料は、ペットの種類・品種・年齢・補償プラン・各種割引や特約の有無などによって変わります。申込みの前に、必ず各保険会社の公式サイト・重要事項説明書・約款で最新の内容をご確認ください。</p>
+<p>© ペット保険料データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
