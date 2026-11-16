@@ -1,0 +1,14 @@
+# 切手・骨董・コイン買取相場DB
+
+切手・骨董・コイン買取相場DBは、買取各社の公式サイトで公開された相場（上限額・参考価格）と、出典付きで公開された買取実績だけを収録したデータベースです（確認日：2026-11-17）。
+収録：切手7件・古銭8件・古紙幣7件・骨董品（鉄瓶）11件、合計33件。「上限額」と「買取実績」は区分を分けて掲載しています。価格の保証はしません。
+運営：切手・骨董・コイン買取相場DB運営事務局
+
+## ページ一覧
+- トップ（カテゴリ入口・高額品TOP10）: https://stamp-antique-coin-db.vercel.app/
+- 切手の買取相場: https://stamp-antique-coin-db.vercel.app/stamps/
+- 古銭・古紙幣の買取相場: https://stamp-antique-coin-db.vercel.app/coins/
+- 骨董品（鉄瓶）の買取実績: https://stamp-antique-coin-db.vercel.app/antiques/
+- 売る前にやること: https://stamp-antique-coin-db.vercel.app/guide/
+- FAQ: https://stamp-antique-coin-db.vercel.app/faq/
+- このサイトについて（収録方針・出典）: https://stamp-antique-coin-db.vercel.app/about/

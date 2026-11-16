@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://stamp-antique-coin-db.vercel.app/sitemap.xml
