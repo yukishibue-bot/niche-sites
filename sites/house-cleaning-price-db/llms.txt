@@ -1,0 +1,26 @@
+# ハウスクリーニング料金相場データベース
+
+ハウスクリーニング料金相場データベースは、大手ハウスクリーニング各社の公式サイトに掲載された通常料金（確認日：2026-11-16）だけを収録した料金相場データベースです。
+収録：6社・料金データ52件。確認できない料金は「公表なし」と明示しています。
+運営：ハウスクリーニング料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（メニュー別相場・全社比較）: https://house-cleaning-price-db.vercel.app/
+- おそうじ本舗の料金一覧: https://house-cleaning-price-db.vercel.app/companies/osouji-honpo/
+- ダスキン（サービスマスター）の料金一覧: https://house-cleaning-price-db.vercel.app/companies/duskin/
+- ベアーズの料金一覧: https://house-cleaning-price-db.vercel.app/companies/bears/
+- カジタクの料金一覧: https://house-cleaning-price-db.vercel.app/companies/kajitaku/
+- おそうじ革命の料金一覧: https://house-cleaning-price-db.vercel.app/companies/osouji-kakumei/
+- 東京ガス（ハウスクリーニング）の料金一覧: https://house-cleaning-price-db.vercel.app/companies/tokyo-gas/
+- エアコン（壁掛け・お掃除機能なし）の料金相場: https://house-cleaning-price-db.vercel.app/menus/aircon-wall/
+- エアコン（壁掛け・お掃除機能付き）の料金相場: https://house-cleaning-price-db.vercel.app/menus/aircon-auto/
+- エアコン（天井埋込）の料金相場: https://house-cleaning-price-db.vercel.app/menus/aircon-ceiling/
+- キッチンの料金相場: https://house-cleaning-price-db.vercel.app/menus/kitchen/
+- レンジフード・換気扇の料金相場: https://house-cleaning-price-db.vercel.app/menus/rangehood/
+- 浴室の料金相場: https://house-cleaning-price-db.vercel.app/menus/bathroom/
+- トイレの料金相場: https://house-cleaning-price-db.vercel.app/menus/toilet/
+- 洗面所・洗面台の料金相場: https://house-cleaning-price-db.vercel.app/menus/washbasin/
+- 水回りセットの料金相場: https://house-cleaning-price-db.vercel.app/menus/water-set/
+- 空室クリーニング（引っ越し前後）の料金相場: https://house-cleaning-price-db.vercel.app/menus/vacant/
+- FAQ: https://house-cleaning-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://house-cleaning-price-db.vercel.app/about/

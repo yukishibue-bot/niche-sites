@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>よくある質問｜ハウスクリーニング料金相場DB</title>
+<meta name="description" content="ハウスクリーニングの料金相場、追加料金、「公表なし」の意味、中央値の算出方法についてのFAQ。">
+<link rel="canonical" href="https://house-cleaning-price-db.vercel.app/faq/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ハウスクリーニング料金相場データベース">
+<meta property="og:title" content="よくある質問｜ハウスクリーニング料金相場DB">
+<meta property="og:description" content="ハウスクリーニングの料金相場、追加料金、「公表なし」の意味、中央値の算出方法についてのFAQ。">
+<meta property="og:url" content="https://house-cleaning-price-db.vercel.app/faq/">
+<style>
+:root{
+  --ink:#17303a; --muted:#5c6f78; --accent:#0e7c86; --accent-dark:#095a62;
+  --soft:#eef6f6; --line:#d8e6e7; --amber:#e8a13a; --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP","Yu Gothic UI",sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.75;background:#fbfdfe;-webkit-text-size-adjust:100%}
+a{color:var(--accent-dark)}
+img{max-width:100%}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.06rem;color:var(--ink);text-decoration:none;line-height:1.35}
+.logo small{display:block;font-size:.68rem;letter-spacing:.14em;color:var(--accent);font-weight:700}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 10px;border-radius:8px}
+nav.main a:hover{background:var(--soft)}
+.hero{background:linear-gradient(120deg,#0a323b 0%,#0e7c86 78%);color:#fff;padding:56px 0 46px}
+.hero .eyebrow{letter-spacing:.22em;font-size:.78rem;font-weight:700;color:#a9e6dd;margin:0 0 10px}
+.hero h1{font-size:2.15rem;line-height:1.4;margin:0 0 14px;font-weight:800}
+.hero p.lead{font-size:1.05rem;max-width:720px;margin:0 0 20px;color:#e6f4f2}
+.badge{display:inline-block;background:var(--amber);color:#402d05;font-weight:700;font-size:.85rem;
+  padding:6px 14px;border-radius:999px;margin-bottom:16px}
+.hero-stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+.hero-stats .stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);
+  border-radius:12px;padding:12px 18px;min-width:140px}
+.hero-stats .stat b{display:block;font-size:1.5rem;line-height:1.2}
+.hero-stats .stat span{font-size:.82rem;color:#d8efec}
+section{padding:44px 0 8px}
+.sec-head{margin-bottom:18px}
+.sec-head .eyebrow{letter-spacing:.2em;font-size:.74rem;font-weight:700;color:var(--accent);margin:0 0 4px}
+.sec-head h2{font-size:1.55rem;margin:0;line-height:1.45}
+.sec-head p{color:var(--muted);margin:8px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.trust .tcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:6px;color:var(--accent-dark)}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.mcard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.mcard .en{letter-spacing:.16em;font-size:.68rem;font-weight:700;color:var(--accent);margin:0}
+.mcard h3{margin:4px 0 8px;font-size:1.12rem}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--accent-dark);text-decoration:underline}
+.mcard .median{font-size:1.6rem;font-weight:800;color:var(--accent-dark)}
+.mcard .median small{font-size:.85rem;color:var(--muted);font-weight:600}
+.mcard .range{color:var(--muted);font-size:.9rem;margin-top:2px}
+.bar{position:relative;height:8px;background:var(--soft);border-radius:99px;margin:14px 0 6px}
+.bar .fill{position:absolute;top:0;bottom:0;background:#9fd4d9;border-radius:99px}
+.bar .tick{position:absolute;top:-4px;width:3px;height:16px;background:var(--accent-dark);border-radius:2px}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--muted)}
+table.compare{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+table.compare th,table.compare td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+table.compare th{background:var(--soft);font-size:.88rem}
+table.compare td.price{font-weight:800;color:var(--accent-dark);white-space:nowrap}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+.none{color:var(--muted)}
+table.compare tr:last-child td{border-bottom:none}
+.adslot{border:1.5px dashed #b9cfd2;border-radius:12px;color:#7d969c;text-align:center;
+  padding:16px;margin:26px 0;font-size:.85rem;letter-spacing:.08em;background:#fbfdfd}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ccard{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+.ccard h3{margin:0 0 4px;font-size:1.05rem}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--accent-dark);text-decoration:underline}
+.ccard .type{font-size:.8rem;color:var(--accent);font-weight:700}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:12px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem}
+.faq-item p{margin:0;color:var(--muted)}
+.crumb{font-size:.85rem;color:var(--muted);padding:16px 0 0}
+.crumb a{color:var(--muted)}
+.page-hero{padding:30px 0 6px}
+.page-hero .eyebrow{letter-spacing:.2em;font-size:.74rem;font-weight:700;color:var(--accent);margin:0 0 4px}
+.page-hero h1{font-size:1.8rem;margin:0;line-height:1.45}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:16px 20px;font-size:.92rem}
+.srcbox b{color:var(--accent-dark)}
+.note-list{color:var(--muted);font-size:.93rem}
+footer.site{margin-top:56px;background:#0d2b33;color:#cfe4e6;padding:36px 0 30px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:#a9e6dd}
+.foot-links{display:flex;gap:16px;flex-wrap:wrap;margin:12px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:40px 0 34px}
+  .hero h1{font-size:1.62rem}
+  .trust,.cards,.company-grid{grid-template-columns:1fr}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{border-bottom:1px solid var(--line);padding:10px 4px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--muted);font-weight:700}
+  table.compare td.price{font-size:1.15rem}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://house-cleaning-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://house-cleaning-price-db.vercel.app"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ハウスクリーニングの相場はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "大手各社の公式掲載料金（2026-11-16確認）では、エアコン壁掛け（お掃除機能なし）の中央値は14,245円、キッチンは19,690円、浴室は18,755円でした。メニューごとの中央値と価格帯は各メニューページに掲載しています。"}}, {"@type": "Question", "name": "同じメニューでも会社によって料金が違うのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "作業範囲（分解の程度や対象パーツ）、サイズ条件（間口・床面積など）、税込・税別の表記、複数台割引の有無が会社ごとに違うためです。本サイトでは各社の公式表記どおりに掲載し、条件は備考に明記しています。"}}, {"@type": "Question", "name": "掲載料金のほかに追加料金はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "会社や状況により、駐車場代、汚れの状態による追加費用、オプション料金がかかる場合があります。申し込み前に各社の公式サイトと見積もりでご確認ください。本サイトの料金は公式掲載の通常料金で、キャンペーン価格は含みません。"}}, {"@type": "Question", "name": "「公表なし」とはどういう意味ですか？", "acceptedAnswer": {"@type": "Answer", "text": "その会社の公式サイトで、該当メニューの料金を確認できなかったことを示します。推測で金額を埋めることはせず、確認できた範囲だけを掲載しています。「取扱なし」は公式ページで対象外と明記されていた場合の表示です。"}}, {"@type": "Question", "name": "相場の中央値はどうやって計算していますか？", "acceptedAnswer": {"@type": "Answer", "text": "収録した各社の公式掲載料金（税込）だけを使い、メニューごとに並べ替えた中央の値です。「〜（から）」表示の料金はその下限額で集計しています。算出方法の詳細は「このサイトについて」に掲載しています。"}}, {"@type": "Question", "name": "空室クリーニングと在宅のクリーニングは何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "空室クリーニングは引っ越し前後など荷物のない状態で家全体を清掃するメニューで、間取り・広さで料金が決まります。在宅の場合は箇所ごとの単品メニューや、水回りセットなどを組み合わせるのが一般的です。"}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>HOUSE CLEANING PRICE DB</small>ハウスクリーニング料金相場DB</a>
+<nav class="main">
+<a href="/#menus">メニュー別相場</a>
+<a href="/#companies">会社別料金</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ FAQ</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">FAQ</p>
+<h1>よくある質問</h1>
+<p>ハウスクリーニングの料金相場と、このデータベースの使い方についての質問にお答えします。</p>
+</div></div>
+<section><div class="wrap">
+<div class="faq-item"><h3>Q. ハウスクリーニングの相場はいくらですか？</h3><p>大手各社の公式掲載料金（2026-11-16確認）では、エアコン壁掛け（お掃除機能なし）の中央値は14,245円、キッチンは19,690円、浴室は18,755円でした。メニューごとの中央値と価格帯は各メニューページに掲載しています。</p></div><div class="faq-item"><h3>Q. 同じメニューでも会社によって料金が違うのはなぜですか？</h3><p>作業範囲（分解の程度や対象パーツ）、サイズ条件（間口・床面積など）、税込・税別の表記、複数台割引の有無が会社ごとに違うためです。本サイトでは各社の公式表記どおりに掲載し、条件は備考に明記しています。</p></div><div class="faq-item"><h3>Q. 掲載料金のほかに追加料金はかかりますか？</h3><p>会社や状況により、駐車場代、汚れの状態による追加費用、オプション料金がかかる場合があります。申し込み前に各社の公式サイトと見積もりでご確認ください。本サイトの料金は公式掲載の通常料金で、キャンペーン価格は含みません。</p></div><div class="faq-item"><h3>Q. 「公表なし」とはどういう意味ですか？</h3><p>その会社の公式サイトで、該当メニューの料金を確認できなかったことを示します。推測で金額を埋めることはせず、確認できた範囲だけを掲載しています。「取扱なし」は公式ページで対象外と明記されていた場合の表示です。</p></div><div class="faq-item"><h3>Q. 相場の中央値はどうやって計算していますか？</h3><p>収録した各社の公式掲載料金（税込）だけを使い、メニューごとに並べ替えた中央の値です。「〜（から）」表示の料金はその下限額で集計しています。算出方法の詳細は「このサイトについて」に掲載しています。</p></div><div class="faq-item"><h3>Q. 空室クリーニングと在宅のクリーニングは何が違いますか？</h3><p>空室クリーニングは引っ越し前後など荷物のない状態で家全体を清掃するメニューで、間取り・広さで料金が決まります。在宅の場合は箇所ごとの単品メニューや、水回りセットなどを組み合わせるのが一般的です。</p></div>
+<div class="adslot">PR（広告枠）</div>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">ハウスクリーニング料金相場データベース</p>
+<p>運営：ハウスクリーニング料金相場データベース運営事務局</p>
+<p>掲載料金は各社の公式サイトで確認した通常料金（確認日：2026-11-16）です。料金は変更される場合があります。お申し込み前に各社の公式サイトで最新の料金をご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（出典・算出方法）</a>
+</div>
+<p>© ハウスクリーニング料金相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
