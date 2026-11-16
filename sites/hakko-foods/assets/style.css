@@ -90,8 +90,9 @@ h2.sec{margin-top:56px}
 .spec{padding:4px 18px}
 .spec .row{flex-direction:column;gap:2px;padding:13px 0}
 .spec dt{min-width:0}
-nav.main a{margin-left:13px;font-size:13px}
+nav.main a{margin-left:13px;font-size:13px;min-height:44px}
 .hero-stats{gap:8px 22px}
+.fbtn{min-height:44px}
 }
 
 /* --- 2026-11-16 improvement: editorial serif, a11y, filter --- */
