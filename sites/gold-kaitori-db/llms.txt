@@ -1,0 +1,13 @@
+# 金・貴金属買取相場DB
+
+金・貴金属買取相場DBは、田中貴金属工業が公式サイトで公表した店頭価格（小売価格・買取価格）だけを収録したデータベースです（確認日：2026-11-17）。
+収録：金地金3件・プラチナ地金3件（公表時刻別）・金貨4件・プラチナコイン4件、合計14件。銀は公式の最新公表値を確認できなかったため未収録です。買取価格は日々変動し、地金価格と買取価格は異なります。価格の保証はしません。
+運営：金・貴金属買取相場DB運営事務局
+
+## ページ一覧
+- トップ（直近の公式公表価格ハイライト・高額品目）: https://gold-kaitori-db.vercel.app/
+- 金・金貨の価格: https://gold-kaitori-db.vercel.app/gold/
+- プラチナ・銀の価格: https://gold-kaitori-db.vercel.app/platinum/
+- 売る前に知ること: https://gold-kaitori-db.vercel.app/guide/
+- FAQ: https://gold-kaitori-db.vercel.app/faq/
+- このサイトについて（収録方針・出典）: https://gold-kaitori-db.vercel.app/about/
