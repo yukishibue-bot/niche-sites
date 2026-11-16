@@ -158,6 +158,25 @@ table.compare{box-shadow:none;border:none;border-radius:0}
 .cards .mcard:first-child{grid-column:span 2}
 .mcard:hover,.trust .tcard:hover{transform:none}
 @media(max-width:720px){.cards .mcard:first-child{grid-column:span 1}}
+/* --- total estimator simulator --- */
+.sim-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.sim-row{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--hair)}
+.sim-row:last-child{border-bottom:none}
+.sim-menu{font-weight:700}
+.sim-menu a{color:var(--ink);text-decoration:none}
+.sim-menu a:hover{color:var(--teal)}
+.sim-qty{white-space:nowrap;color:var(--muted)}
+.sim-qty select{font-size:1rem;padding:7px 10px;border:1px solid #d5d6d9;border-radius:9px;background:#fff;color:var(--ink)}
+.sim-subhead{font-weight:800;margin:22px 0 6px}
+.sim-opt-group{margin:0 0 10px}
+.sim-opt-head{font-weight:700;margin:8px 0 4px;color:var(--teal-dark)}
+.sim-opt{display:inline-block;margin:2px 18px 2px 0;font-size:.95rem}
+.sim-result-table{margin-top:22px}
+.sim-missing{margin-top:18px}
+.sim-missing h3{font-size:1rem;margin:0 0 8px;font-weight:800}
+.sim-missing ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.sim-break{font-size:.88rem;color:var(--muted)}
+button.btn{border:none;cursor:pointer;font-family:inherit}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script>
 <meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
@@ -166,6 +185,7 @@ table.compare{box-shadow:none;border:none;border-radius:0}
 <header class="site"><div class="wrap">
 <a class="logo" href="/"><small>HOUSE CLEANING PRICE DB</small>ハウスクリーニング料金相場DB</a>
 <nav class="main">
+<a href="/#simulator">合計見積もり</a>
 <a href="/#menus">メニュー別相場</a>
 <a href="/#companies">会社別料金</a>
 <a href="/faq/">FAQ</a>
@@ -201,6 +221,119 @@ table.compare{box-shadow:none;border:none;border-radius:0}
 </div>
 <div class="srcbox"><b style="font-size:1.05rem">料金相場の見方ガイド</b><p style="color:var(--muted);margin:8px 0 14px">メニューごとの相場と、見積もりで確認すべきポイントをまとめています。複数社の見積もりを比べる前の下調べにどうぞ。</p><a class="btn" href="/guide/">ガイドを読む</a></div>
 </div></section>
+
+
+<section id="simulator"><div class="wrap">
+<div class="sec-head"><p class="eyebrow">TOTAL ESTIMATOR</p><h2>合計見積もりシミュレーター</h2>
+<p>頼みたいメニューと台数・点数を選ぶと、収録している大手6社の公式掲載料金だけで会社別の合計を計算します。複数台割引（2台目以降の割引・まとめ割）も、公式ページに明記された条件は自動で反映します。</p></div>
+<div class="sim-box">
+<div class="sim-menus">
+<div class="sim-row"><label class="sim-menu" for="sim-aircon-wall"><a href="/menus/aircon-wall/">エアコン（壁掛け・お掃除機能なし）</a></label><span class="sim-qty"><select id="sim-aircon-wall" data-menu="aircon-wall"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 台</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-aircon-auto"><a href="/menus/aircon-auto/">エアコン（壁掛け・お掃除機能付き）</a></label><span class="sim-qty"><select id="sim-aircon-auto" data-menu="aircon-auto"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 台</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-aircon-ceiling"><a href="/menus/aircon-ceiling/">エアコン（天井埋込）</a></label><span class="sim-qty"><select id="sim-aircon-ceiling" data-menu="aircon-ceiling"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 台</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-kitchen"><a href="/menus/kitchen/">キッチン</a></label><span class="sim-qty"><select id="sim-kitchen" data-menu="kitchen"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> ヵ所</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-rangehood"><a href="/menus/rangehood/">レンジフード・換気扇</a></label><span class="sim-qty"><select id="sim-rangehood" data-menu="rangehood"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 台</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-bathroom"><a href="/menus/bathroom/">浴室</a></label><span class="sim-qty"><select id="sim-bathroom" data-menu="bathroom"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 室</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-toilet"><a href="/menus/toilet/">トイレ</a></label><span class="sim-qty"><select id="sim-toilet" data-menu="toilet"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 室</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-washbasin"><a href="/menus/washbasin/">洗面所・洗面台</a></label><span class="sim-qty"><select id="sim-washbasin" data-menu="washbasin"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> ヵ所</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-water-set"><a href="/menus/water-set/">水回りセット</a></label><span class="sim-qty"><select id="sim-water-set" data-menu="water-set"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 式</span></div>
+<div class="sim-row"><label class="sim-menu" for="sim-vacant"><a href="/menus/vacant/">空室クリーニング（引っ越し前後）</a></label><span class="sim-qty"><select id="sim-vacant" data-menu="vacant"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select> 件</span></div>
+</div>
+<p class="sim-subhead">エアコンのオプション（台数分を加算）</p>
+<div class="sim-opt-group"><p class="sim-opt-head">おそうじ本舗</p><label class="sim-opt"><input type="checkbox" data-opt-company="osouji-honpo" data-opt-idx="0"> エアコン完全分解洗浄（8,800円／台）</label><label class="sim-opt"><input type="checkbox" data-opt-company="osouji-honpo" data-opt-idx="1"> 防カビチタンコーティング（3,300円／台）</label><label class="sim-opt"><input type="checkbox" data-opt-company="osouji-honpo" data-opt-idx="2"> 室外機クリーニング（5,500円／台）</label></div>
+<div class="sim-opt-group"><p class="sim-opt-head">おそうじ革命</p><label class="sim-opt"><input type="checkbox" data-opt-company="osouji-kakumei" data-opt-idx="0"> 室外機クリーニング（3,300円）</label><label class="sim-opt"><input type="checkbox" data-opt-company="osouji-kakumei" data-opt-idx="1"> 防カビ抗菌コート（2,750円）</label></div>
+<p class="note-list">※ オプションは、その会社で選択したエアコン（壁掛け・お掃除機能付き・天井埋込）の合計台数分を加算します。おそうじ革命のオプションは公式ページに単位の明記がないため、エアコン1台あたりとして計算しています。</p>
+<p style="margin:18px 0 0"><button type="button" class="btn" id="sim-calc">会社別の合計を計算する</button></p>
+<div id="sim-result" aria-live="polite"></div>
+</div>
+<p class="note-list">計算の前提：公式掲載料金のみで計算した概算です。実際の見積もりは汚れ具合・オプション・サイズ条件などで変わります。「〜」と下限のみ表示された料金は、その下限額で計算しています（結果に「下限額を含む」と表示します）。水回りセットは単品メニューと対象が重なる場合があるため、セットか単品か一方での計算をおすすめします。料金の確認日：2026-11-16。各メニューの条件・備考は各メニューページをご確認ください。</p>
+</div></section>
+
+<script>
+(function(){
+"use strict";
+var DATA = {"menus": [{"id": "aircon-wall", "label": "エアコン（壁掛け・お掃除機能なし）", "unit": "台"}, {"id": "aircon-auto", "label": "エアコン（壁掛け・お掃除機能付き）", "unit": "台"}, {"id": "aircon-ceiling", "label": "エアコン（天井埋込）", "unit": "台"}, {"id": "kitchen", "label": "キッチン", "unit": "ヵ所"}, {"id": "rangehood", "label": "レンジフード・換気扇", "unit": "台"}, {"id": "bathroom", "label": "浴室", "unit": "室"}, {"id": "toilet", "label": "トイレ", "unit": "室"}, {"id": "washbasin", "label": "洗面所・洗面台", "unit": "ヵ所"}, {"id": "water-set", "label": "水回りセット", "unit": "式"}, {"id": "vacant", "label": "空室クリーニング（引っ越し前後）", "unit": "件"}], "companies": {"osouji-honpo": "おそうじ本舗", "duskin": "ダスキン（サービスマスター）", "bears": "ベアーズ", "kajitaku": "カジタク", "osouji-kakumei": "おそうじ革命", "tokyo-gas": "東京ガス（ハウスクリーニング）"}, "prices": {"aircon-wall": {"osouji-kakumei": {"kind": "second", "price": 9980, "second": 7980, "secondFrom": true}, "tokyo-gas": {"kind": "second", "price": 13200, "second": 9900}, "bears": {"kind": "flat", "price": 14190, "from": true}, "osouji-honpo": {"kind": "multi", "price": 14300, "multi": 12100}, "kajitaku": {"kind": "multi", "price": 14300, "multi": 11550}, "duskin": {"kind": "flat", "price": 15400}}, "aircon-auto": {"osouji-kakumei": {"kind": "second", "price": 18700, "second": 16700, "secondFrom": true}, "tokyo-gas": {"kind": "second", "price": 22000, "second": 16500}, "osouji-honpo": {"kind": "flat", "price": 24200}, "kajitaku": {"kind": "multi", "price": 25080, "multi": 18900}, "duskin": {"kind": "flat", "price": 26400}, "bears": {"kind": "none", "reason": "公表なし"}}, "aircon-ceiling": {"osouji-kakumei": {"kind": "second", "price": 20900, "second": 18900, "secondFrom": true}, "osouji-honpo": {"kind": "flat", "price": 27500}, "tokyo-gas": {"kind": "flat", "price": 27500}, "duskin": {"kind": "flat", "price": 34100, "from": true}, "bears": {"kind": "none", "reason": "公表なし"}, "kajitaku": {"kind": "none", "reason": "取扱なし"}}, "kitchen": {"bears": {"kind": "flat", "price": 12100, "from": true}, "osouji-kakumei": {"kind": "flat", "price": 17930}, "kajitaku": {"kind": "flat", "price": 19580}, "osouji-honpo": {"kind": "flat", "price": 19800}, "tokyo-gas": {"kind": "flat", "price": 19800}, "duskin": {"kind": "flat", "price": 20680}}, "rangehood": {"bears": {"kind": "flat", "price": 10780, "from": true}, "tokyo-gas": {"kind": "flat", "price": 17600}, "osouji-kakumei": {"kind": "flat", "price": 17930}, "kajitaku": {"kind": "flat", "price": 19580}, "osouji-honpo": {"kind": "flat", "price": 19800}, "duskin": {"kind": "flat", "price": 22000}}, "bathroom": {"bears": {"kind": "flat", "price": 13200, "from": true}, "tokyo-gas": {"kind": "flat", "price": 17600}, "osouji-kakumei": {"kind": "flat", "price": 17930, "from": true}, "kajitaku": {"kind": "flat", "price": 19580}, "osouji-honpo": {"kind": "flat", "price": 19800}, "duskin": {"kind": "flat", "price": 22000}}, "toilet": {"osouji-kakumei": {"kind": "flat", "price": 8250, "from": true}, "osouji-honpo": {"kind": "flat", "price": 9900}, "kajitaku": {"kind": "flat", "price": 9900}, "duskin": {"kind": "flat", "price": 10340}, "bears": {"kind": "flat", "price": 10340, "from": true}, "tokyo-gas": {"kind": "flat", "price": 13200}}, "washbasin": {"osouji-kakumei": {"kind": "flat", "price": 8250}, "osouji-honpo": {"kind": "flat", "price": 9350}, "kajitaku": {"kind": "flat", "price": 9900}, "duskin": {"kind": "flat", "price": 10340}, "bears": {"kind": "flat", "price": 10340, "from": true}, "tokyo-gas": {"kind": "flat", "price": 13200}}, "water-set": {"osouji-kakumei": {"kind": "flat", "price": 32890}, "kajitaku": {"kind": "flat", "price": 34800}, "osouji-honpo": {"kind": "flat", "price": 36300}, "tokyo-gas": {"kind": "flat", "price": 44000, "from": true}, "bears": {"kind": "flat", "price": 69740, "from": true}, "duskin": {"kind": "none", "reason": "公表なし"}}, "vacant": {"osouji-honpo": {"kind": "range", "min": 26400, "max": 52800}, "bears": {"kind": "flat", "price": 30800, "from": true}, "duskin": {"kind": "none", "reason": "公表なし"}, "kajitaku": {"kind": "none", "reason": "公表なし"}, "osouji-kakumei": {"kind": "none", "reason": "公表なし"}, "tokyo-gas": {"kind": "none", "reason": "公表なし"}}}, "options": {"osouji-honpo": [{"name": "エアコン完全分解洗浄", "price": 8800, "unit": "台"}, {"name": "防カビチタンコーティング", "price": 3300, "unit": "台"}, {"name": "室外機クリーニング", "price": 5500, "unit": "台"}], "osouji-kakumei": [{"name": "室外機クリーニング", "price": 3300, "unit": null}, {"name": "防カビ抗菌コート", "price": 2750, "unit": null}]}};
+var AIRCON = ['aircon-wall','aircon-auto','aircon-ceiling'];
+function fmt(n){ return n.toLocaleString('ja-JP') + '円'; }
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+function calcMenu(rec, qty){
+  if (rec.kind === 'flat') return {amount: rec.price * qty, from: !!rec.from, applied: null};
+  if (rec.kind === 'second') return {amount: rec.price + rec.second * (qty - 1), from: qty >= 2 && !!rec.secondFrom,
+    applied: qty >= 2 ? '2台目以降 ' + fmt(rec.second) + (rec.secondFrom ? '〜' : '') + '／台を適用' : null};
+  if (rec.kind === 'multi') {
+    if (qty >= 2) return {amount: rec.multi * qty, from: false, applied: 'まとめ割（2台以上 ' + fmt(rec.multi) + '／台）を適用'};
+    return {amount: rec.price * qty, from: false, applied: null};
+  }
+  return null;
+}
+document.getElementById('sim-calc').addEventListener('click', function(){
+  var qty = {}, selected = [];
+  DATA.menus.forEach(function(m){
+    var q = parseInt(document.getElementById('sim-' + m.id).value, 10) || 0;
+    qty[m.id] = q; if (q > 0) selected.push(m);
+  });
+  var checkedOpts = [];
+  document.querySelectorAll('input[data-opt-company]').forEach(function(cb){
+    if (cb.checked) checkedOpts.push({company: cb.getAttribute('data-opt-company'), idx: parseInt(cb.getAttribute('data-opt-idx'), 10)});
+  });
+  var box = document.getElementById('sim-result');
+  if (!selected.length && !checkedOpts.length) {
+    box.innerHTML = '<p class="note-list" style="margin-top:18px">メニューの台数・点数を1つ以上選んでください。</p>';
+    return;
+  }
+  var airconQty = AIRCON.reduce(function(s, id){ return s + (qty[id] || 0); }, 0);
+  var complete = [], partial = [];
+  Object.keys(DATA.companies).forEach(function(comp){
+    var total = 0, hasFrom = false, missing = [], lines = [];
+    selected.forEach(function(m){
+      var rec = DATA.prices[m.id][comp];
+      if (rec.kind === 'none') { missing.push(m.label + '：' + rec.reason + 'のため合計に含めていません'); return; }
+      if (rec.kind === 'range') { missing.push(m.label + '：料金が価格帯表示（' + fmt(rec.min) + '〜' + fmt(rec.max) + '）のため合計に含めていません'); return; }
+      var r = calcMenu(rec, qty[m.id]);
+      total += r.amount; if (r.from) hasFrom = true;
+      lines.push(m.label + ' ×' + qty[m.id] + m.unit + '：' + fmt(r.amount) + (r.applied ? '（' + r.applied + '）' : ''));
+    });
+    checkedOpts.filter(function(o){ return o.company === comp; }).forEach(function(o){
+      var opt = DATA.options[comp][o.idx];
+      if (airconQty > 0) {
+        total += opt.price * airconQty;
+        lines.push('オプション「' + opt.name + '」×エアコン' + airconQty + '台：' + fmt(opt.price * airconQty));
+      } else {
+        missing.push('オプション「' + opt.name + '」：エアコンが未選択のため加算していません');
+      }
+    });
+    var entry = {comp: comp, name: DATA.companies[comp], total: total, hasFrom: hasFrom, missing: missing, lines: lines};
+    if (missing.length) partial.push(entry); else complete.push(entry);
+  });
+  complete.sort(function(a, b){ return a.total - b.total; });
+  partial.sort(function(a, b){ return a.total - b.total; });
+  var out = '';
+  if (complete.length) {
+    out += '<table class="compare sim-result-table"><thead><tr><th>会社</th><th>合計（税込・概算）</th><th>内訳</th></tr></thead><tbody>';
+    complete.forEach(function(e){
+      out += '<tr><td data-label="会社"><a href="/companies/' + e.comp + '/">' + esc(e.name) + '</a></td>' +
+        '<td data-label="合計" class="price">' + fmt(e.total) + (e.hasFrom ? '〜' : '') + '</td>' +
+        '<td data-label="内訳" class="sim-break">' + e.lines.map(esc).join('<br>') + (e.hasFrom ? '<br>※「〜」表示の下限額を含む合計です' : '') + '</td></tr>';
+    });
+    out += '</tbody></table>';
+  } else {
+    out += '<p class="note-list" style="margin-top:18px">選択したメニューのすべてを計算できた会社はありませんでした。下記の「計算できた分のみの合計」と注記をご確認ください。</p>';
+  }
+  if (partial.length) {
+    out += '<div class="sim-missing"><h3>一部のメニューを合計に含められなかった会社</h3>';
+    partial.forEach(function(e){
+      out += '<p style="margin:10px 0 2px"><b><a href="/companies/' + e.comp + '/">' + esc(e.name) + '</a></b>：計算できた分のみの合計 ' +
+        (e.total > 0 ? fmt(e.total) + (e.hasFrom ? '〜' : '') : '―（計算できる項目なし）') + '</p><ul>' +
+        e.missing.map(function(s){ return '<li>' + esc(s) + '</li>'; }).join('') + '</ul>';
+      if (e.lines.length) out += '<p class="sim-break" style="margin:2px 0 8px">内訳：' + e.lines.map(esc).join('／') + '</p>';
+    });
+    out += '</div>';
+  }
+  out += '<p class="note-list" style="margin-top:16px">※ 公式掲載料金のみで計算した概算です。実際の見積もりは汚れ具合・オプション・サイズ条件などで変わります。申し込み前に各社の公式サイトでご確認ください。</p>';
+  box.innerHTML = out;
+});
+})();
+</script>
 
 <section id="menus"><div class="wrap">
 <div class="sec-head"><p class="eyebrow">PRICE BY MENU</p><h2>メニュー別の相場</h2>

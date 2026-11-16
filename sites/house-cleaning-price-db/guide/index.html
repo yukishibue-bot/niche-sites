@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>料金相場の見方ガイド｜ハウスクリーニング料金相場データベース</title>
+<meta name="description" content="ハウスクリーニングの料金相場の見方、中央値の算出方法、見積もりで確認すべきポイントをまとめたガイド。公式掲載料金のみで作った相場データベースの使い方。">
+<link rel="canonical" href="https://house-cleaning-price-db.vercel.app/guide/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ハウスクリーニング料金相場データベース">
+<meta property="og:title" content="料金相場の見方ガイド｜ハウスクリーニング料金相場データベース">
+<meta property="og:description" content="相場の見方、中央値の算出方法、見積もりで確認すべきポイント。">
+<meta property="og:url" content="https://house-cleaning-price-db.vercel.app/guide/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="よくある質問｜ハウスクリーニング料金相場DB">
+<meta name="twitter:description" content="ハウスクリーニングの料金相場、追加料金、「公表なし」の意味、中央値の算出方法についてのFAQ。">
+
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --teal:#0f766e; --teal-dark:#0b5f55; --teal-pale:#e2f2ee;
+  --grad:linear-gradient(120deg,#1fa08c,#0f766e);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--teal)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d8efe9 0%,#eef7f4 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--teal-pale);color:var(--teal-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:right center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--teal-pale);color:var(--teal-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--teal)}
+.mcard .median{font-size:1.7rem;font-weight:800;letter-spacing:-0.03em;color:var(--teal);margin:0}
+.mcard .median small{font-size:.85rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard .range{color:var(--muted);font-size:.9rem;margin:4px 0 0}
+.bar{position:relative;height:8px;background:#e9f3f0;border-radius:99px;margin:18px 0 8px}
+.bar .fill{position:absolute;top:0;bottom:0;background:var(--grad);border-radius:99px;opacity:.8}
+.bar .tick{position:absolute;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;
+  background:var(--grad);border:3px solid #fff;box-shadow:0 1px 5px rgba(17,17,17,.22)}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fafafa;font-size:.88rem;font-weight:700}
+table.compare td.price{font-weight:800;color:var(--teal);white-space:nowrap}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+.none{color:var(--muted)}
+table.compare tr:last-child td{border-bottom:none}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#a3a3a3;text-align:center;
+  padding:18px;margin:32px 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--teal)}
+.ccard .type{font-size:.8rem;color:var(--teal);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(15,118,110,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--teal)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem}
+  nav.main a{padding:10px}
+}
+
+/* --- 2026-11-16 polish: price readability, a11y --- */
+:root{--faint:#6e6e6e}
+table.compare td.price{font-variant-numeric:tabular-nums;font-size:1.05rem;color:var(--teal-dark)}
+table.compare tbody tr:nth-child(even){background:#fafcfb}
+table.compare th{background:#eef6f3;color:var(--teal-dark)}
+::selection{background:var(--teal-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+
+/* --- 2026-11-16 de-AI: solid text, flat table, featured card --- */
+.hero-stats .stat b{background:none;color:var(--teal-dark)}
+.logo small{background:none;color:var(--teal)}
+table.compare{box-shadow:none;border:none;border-radius:0}
+.cards .mcard:first-child{grid-column:span 2}
+.mcard:hover,.trust .tcard:hover{transform:none}
+@media(max-width:720px){.cards .mcard:first-child{grid-column:span 1}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://house-cleaning-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://house-cleaning-price-db.vercel.app"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ハウスクリーニングの相場はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "大手各社の公式掲載料金（2026-11-16確認）では、エアコン壁掛け（お掃除機能なし）の中央値は14,245円、キッチンは19,690円、浴室は18,755円でした。メニューごとの中央値と価格帯は各メニューページに掲載しています。"}}, {"@type": "Question", "name": "同じメニューでも会社によって料金が違うのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "作業範囲（分解の程度や対象パーツ）、サイズ条件（間口・床面積など）、税込・税別の表記、複数台割引の有無が会社ごとに違うためです。本サイトでは各社の公式表記どおりに掲載し、条件は備考に明記しています。"}}, {"@type": "Question", "name": "掲載料金のほかに追加料金はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "会社や状況により、駐車場代、汚れの状態による追加費用、オプション料金がかかる場合があります。申し込み前に各社の公式サイトと見積もりでご確認ください。本サイトの料金は公式掲載の通常料金で、キャンペーン価格は含みません。"}}, {"@type": "Question", "name": "「公表なし」とはどういう意味ですか？", "acceptedAnswer": {"@type": "Answer", "text": "その会社の公式サイトで、該当メニューの料金を確認できなかったことを示します。推測で金額を埋めることはせず、確認できた範囲だけを掲載しています。「取扱なし」は公式ページで対象外と明記されていた場合の表示です。"}}, {"@type": "Question", "name": "相場の中央値はどうやって計算していますか？", "acceptedAnswer": {"@type": "Answer", "text": "収録した各社の公式掲載料金（税込）だけを使い、メニューごとに並べ替えた中央の値です。「〜（から）」表示の料金はその下限額で集計しています。算出方法の詳細は「このサイトについて」に掲載しています。"}}, {"@type": "Question", "name": "空室クリーニングと在宅のクリーニングは何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "空室クリーニングは引っ越し前後など荷物のない状態で家全体を清掃するメニューで、間取り・広さで料金が決まります。在宅の場合は箇所ごとの単品メニューや、水回りセットなどを組み合わせるのが一般的です。"}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>HOUSE CLEANING PRICE DB</small>ハウスクリーニング料金相場DB</a>
+<nav class="main">
+<a href="/#menus">メニュー別相場</a>
+<a href="/#companies">会社別料金</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="/">ホーム</a> ＞ 料金相場の見方ガイド</p>
+<div class="page-hero"><span class="eyebrow">GUIDE</span><h1 style="font-size:clamp(28px,4.4vw,42px);line-height:1.25;margin:14px 0 10px;font-weight:800;letter-spacing:-0.03em">料金相場の見方ガイド</h1>
+<p style="color:var(--muted);max-width:760px">このデータベースの相場の読み方と、見積もりを比べるときに確認したいポイントをまとめています。掲載料金はすべて大手6社の公式掲載料金（税込）で、確認日を付けています。</p></div>
+
+<section class="section" style="padding-top:8px"><h2>相場（中央値）はどうやって出しているか</h2>
+<p style="color:var(--muted)">中央値は、メニューごとに収録した各社の公式掲載料金を小さい順に並べた中央の値です。収録社数が偶数の場合は中央2社の平均です。「14,190円〜」のように下限のみ示された料金は、その下限額をその会社の料金として集計しています（実際の料金は条件により変わります）。確認できなかった項目は「公表なし」と明示し、推測による金額の補完は行っていません。「取扱なし」は公式ページで対象外と明記されていた項目です。</p></section>
+
+<section class="section" style="padding-top:0"><h2>見積もりで確認すべきポイント</h2>
+<div class="grid">
+<div class="card"><h3>単品価格だけで比べない</h3><p class="note">エアコンは2台目以降の割引やまとめ割で単価が下がる会社があります。台数が多い場合は、トップページの合計見積もりシミュレーターで割引条件込みの総額を比べてください。</p></div>
+<div class="card"><h3>セットの対象箇所を確認する</h3><p class="note">水回りセットは各社で対象箇所・点数が大きく異なります。金額だけでなく、対象箇所を各メニューページの備考で必ずご確認ください。</p></div>
+<div class="card"><h3>「〜」は下限額</h3><p class="note">下限のみの料金表示は、汚れ具合・サイズ・オプションで上がる前提の価格です。見積もり時に確定額を確認してください。</p></div>
+<div class="card"><h3>ダスキンの料金について</h3><p class="note">ダスキン（サービスマスター）の料金は本部公式サイトの標準料金です。実際の料金は店舗・地域・条件により異なる場合があります。</p></div>
+</div></section>
+
+<section class="section" style="padding-top:0"><h2>料金が変わる主な条件</h2>
+<p style="color:var(--muted)">エアコンのタイプ（壁掛け／お掃除機能付き／天井埋込）、台数、オプション（完全分解洗浄・防カビコーティング・室外機など）、空室か在室か、間取りの広さで料金は変わります。各メニューページでは、公式に公表されている条件を備考に転記しています。料金は変更される場合があるため、お申し込み前に各社の公式サイトで最新の料金をご確認ください。</p>
+<p><a class="btn" href="/#simulator">合計見積もりシミュレーターで総額を比べる</a> <a class="btn" href="/about/">収録データと算出方法について</a></p></section>
+</div></main>
+<footer class="site"><div class="wrap">
+<p class="fname">ハウスクリーニング料金相場データベース</p>
+<p>運営：ハウスクリーニング料金相場データベース運営事務局</p>
+<p>掲載料金は各社の公式サイトで確認した通常料金（確認日：2026-11-16）です。料金は変更される場合があります。お申し込み前に各社の公式サイトで最新の料金をご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（出典・算出方法）</a>
+</div>
+<p>© ハウスクリーニング料金相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
