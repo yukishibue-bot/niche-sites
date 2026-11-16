@@ -1,0 +1,17 @@
+# お酒買取相場DB
+
+お酒買取相場DBは、買取各社の公式サイトで公表された買取価格だけを収録したデータベースです（確認日：2026-11-17）。
+収録：ウイスキー38銘柄・ブランデー10銘柄・ワイン／シャンパン23銘柄、合計71銘柄。業者ごとに表を分け、出典業者と確認日を明記しています。価格の保証はしません。お酒の買取は20歳以上の方のみが対象です。
+運営：お酒買取相場DB運営事務局
+
+## ページ一覧
+- トップ（カテゴリ入口・高額銘柄TOP10）: https://sake-kaitori-db.vercel.app/
+- ウイスキーの買取相場: https://sake-kaitori-db.vercel.app/whisky/
+- ブランデー・ワインの買取相場: https://sake-kaitori-db.vercel.app/brandy-wine/
+- 売る前にやること: https://sake-kaitori-db.vercel.app/guide/
+- FAQ: https://sake-kaitori-db.vercel.app/faq/
+- このサイトについて（収録方針・出典）: https://sake-kaitori-db.vercel.app/about/
+
+## 出典
+- JOYLAB公式 リアルタイムお酒買取価格・相場表: https://joylab.jp/assessment-table/
+- 買取大吉公式 お酒の買取: https://www.kaitori-daikichi.jp/list/sake/

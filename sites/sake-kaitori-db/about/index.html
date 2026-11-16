@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて｜お酒買取相場DB</title>
+<meta name="description" content="お酒買取相場DBの収録方針と出典一覧。JOYLAB・買取大吉の公式公表価格71銘柄を、出典業者と確認日付きで収録しています。">
+<link rel="canonical" href="https://sake-kaitori-db.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="お酒買取相場DB">
+<meta property="og:title" content="このサイトについて｜お酒買取相場DB">
+<meta property="og:description" content="お酒買取相場DBの収録方針と出典一覧。JOYLAB・買取大吉の公式公表価格71銘柄を、出典業者と確認日付きで収録しています。">
+<meta property="og:url" content="https://sake-kaitori-db.vercel.app/about/">
+<meta property="og:image" content="https://sake-kaitori-db.vercel.app/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="このサイトについて｜お酒買取相場DB">
+<meta name="twitter:description" content="お酒買取相場DBの収録方針と出典一覧。JOYLAB・買取大吉の公式公表価格71銘柄を、出典業者と確認日付きで収録しています。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --amber:#84501a; --amber-dark:#6d3f10; --amber-pale:#f7ead9;
+  --grad:linear-gradient(120deg,#a05c1e,#84501a);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--amber)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;color:var(--amber)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#f3e2c8 0%,#f9efe0 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--amber-pale);color:var(--amber-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--amber-dark)}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--amber-pale);color:var(--amber-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--amber)}
+.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--amber-dark);margin:0}
+.mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+table.compare{width:100%;border-collapse:collapse;background:#fff}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fbf6ee;font-size:.88rem;font-weight:700;color:var(--amber-dark)}
+table.compare td.price{font-weight:800;color:var(--amber-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tbody tr:nth-child(even){background:#fdfaf5}
+table.compare tr:last-child td{border-bottom:none}
+.kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--amber-pale);color:var(--amber-dark);white-space:nowrap}
+.kind.actual{background:#eef0e6;color:#4a5a2a}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
+  padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
+.adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
+.adslot p{margin:0;font-size:.85rem}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--amber)}
+.ccard .type{font-size:.8rem;color:var(--amber);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(132,80,26,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.gcard li{margin-bottom:6px}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--amber)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+::selection{background:var(--amber-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid,.guide-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem;white-space:normal}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"お酒買取相場DB","url":"https://sake-kaitori-db.vercel.app/"}</script>
+
+</head><body><header class="site"><div class="wrap">
+<a class="logo" href="/"><small>SAKE / LIQUOR PRICE DB</small>お酒買取相場DB</a>
+<nav class="main">
+<a href="/whisky/">ウイスキー</a>
+<a href="/brandy-wine/">ブランデー・ワイン</a>
+<a href="/guide/">売る前のガイド</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ このサイトについて</p></div>
+<main>
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">ABOUT</p>
+<h1>このサイトについて</h1>
+<p>お酒買取相場DBは、買取各社が公式サイトで公表している買取価格だけを収録した、独立した相場データベースです。特定の買取会社の宣伝を目的としたサイトではありません。</p>
+</div></div>
+<section><div class="wrap">
+<div class="sec-head"><h2>収録方針</h2></div>
+<div class="trust">
+<div class="tcard"><b>公式サイト公表の価格だけを収録</b><p>買取各社の公式サイトで公表された買取価格だけを載せています。公表価格が確認できない銘柄（「要問合せ」表記のもの等）は載せません。推測の相場は作りません。</p></div>
+<div class="tcard"><b>全データに出典業者と確認日</b><p>すべての価格に、出典（公表した業者）と確認日（2026-11-17）を付けています。元の公表ページで現在の価格をご確認いただけます。</p></div>
+<div class="tcard"><b>業者の違う価格を混ぜない</b><p>買取価格は業者ごとに異なります。本サイトでは表を業者ごとに分け、「公表買取価格」（JOYLAB）と「買取参考価格」（買取大吉）の区分を明記しています。</p></div>
+</div>
+<div class="srcbox" style="margin-top:22px">
+<b>収録データ（確認日：2026-11-17）</b><br>
+・ウイスキー 38銘柄：JOYLAB公式「リアルタイムお酒買取価格・相場表」（https://joylab.jp/assessment-table/、最終更新日2026/10/14）の公表買取価格28件＋買取大吉公式「お酒買取強化ランキング」（https://www.kaitori-daikichi.jp/list/sake/、更新日2026年11月17日）の買取参考価格10件<br>
+・ブランデー 10銘柄：買取大吉公式の買取参考価格8件＋JOYLAB公式の公表買取価格2件<br>
+・ワイン・シャンパン 23銘柄：JOYLAB公式の公表買取価格13件＋買取大吉公式の買取参考価格10件<br>
+合計 71銘柄
+</div>
+<p class="note-list" style="margin-top:18px">・買取価格は業者の公表値で、品物の状態・付属品・在庫状況・相場により変動します。当サイトは価格を保証しません。売却前に各社の公式サイトと査定で最新の価格をご確認ください。<br>
+・公表価格は未開栓・箱付き等の条件を前提とした目安です。開封済みのお酒は買取対象外となることがほとんどです。<br>
+・お酒の買取は20歳以上の方のみが対象です。買取時には古物営業法に基づく本人確認が必要です。<br>
+・山崎 25年・響 30年・白州 25年・ルイ13世・ロマネ・コンティ（DRC）はJOYLABの表では「ASK（要問合せ）」のため、JOYLABの価格は掲載していません（買取大吉の参考価格のみ掲載）。</p>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head"><h2>運営</h2></div>
+<div class="srcbox">
+運営：お酒買取相場DB運営事務局<br>
+当サイトは相場情報の提供を目的としたデータベースであり、買取の申し込みは受け付けていません。査定・買取のお申し込みは各社の公式サイトからお願いいたします。
+</div>
+<div class="adslot"><b>無料査定を比較する</b><p>複数社の無料査定を比較できる送客枠です（準備中）。査定は各社の公式サイトからお申し込みください。</p></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">お酒買取相場DB</p>
+<p>運営：お酒買取相場DB運営事務局</p>
+<p>掲載価格は各社の公式サイトで公開された買取価格（確認日：2026-11-17）です。買取価格は業者の公表値であり、品物の状態・付属品・在庫状況・相場により変動します。実際の買取価格を保証するものではありません。売却前に各社の公式サイトと査定でご確認ください。お酒の買取は20歳以上の方のみが対象です。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/whisky/">ウイスキーの相場</a><a href="/brandy-wine/">ブランデー・ワインの相場</a><a href="/guide/">売る前のガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a>
+</div>
+<p>© お酒買取相場DB運営事務局</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sake-kaitori-db.vercel.app/sitemap.xml
