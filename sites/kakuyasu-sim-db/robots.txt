@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kakuyasu-sim-db.vercel.app/sitemap.xml

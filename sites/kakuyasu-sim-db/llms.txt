@@ -1,0 +1,13 @@
+# 格安SIM料金データベース
+
+格安SIM料金データベースは、格安SIM各社の公式サイトで公表された料金プランの通常価格（税込）だけを収録したデータベースです（確認日：2026-11-17）。
+収録：11社・49件のプラン／料金。キャンペーン価格や条件付き割引の適用後価格は掲載していません。「最安」などの順位付けは行いません。
+運営：格安SIM料金データベース運営事務局
+
+## ページ一覧
+- トップ（容量帯別入口・料金ハイライト）: https://kakuyasu-sim-db.vercel.app/
+- 容量帯別の料金表: https://kakuyasu-sim-db.vercel.app/plans/
+- 会社別プラン一覧: https://kakuyasu-sim-db.vercel.app/carriers/
+- 選び方ガイド: https://kakuyasu-sim-db.vercel.app/guide/
+- FAQ: https://kakuyasu-sim-db.vercel.app/faq/
+- このサイトについて（収録方針・出典）: https://kakuyasu-sim-db.vercel.app/about/

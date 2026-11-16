@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>会社別プラン一覧｜格安SIM料金データベース</title>
+<meta name="description" content="IIJmio、mineo、LINEMO、povo、ahamo、楽天モバイル、UQモバイル、ワイモバイル、NUROモバイル、HISモバイル、日本通信SIMの料金プランを会社別に掲載。公式通常価格（税込）のみ。">
+<link rel="canonical" href="https://kakuyasu-sim-db.vercel.app/carriers/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="格安SIM料金データベース">
+<meta property="og:title" content="会社別プラン一覧｜格安SIM料金データベース">
+<meta property="og:description" content="IIJmio、mineo、LINEMO、povo、ahamo、楽天モバイル、UQモバイル、ワイモバイル、NUROモバイル、HISモバイル、日本通信SIMの料金プランを会社別に掲載。公式通常価格（税込）のみ。">
+<meta property="og:url" content="https://kakuyasu-sim-db.vercel.app/carriers/">
+<meta property="og:image" content="https://kakuyasu-sim-db.vercel.app/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="会社別プラン一覧｜格安SIM料金データベース">
+<meta name="twitter:description" content="IIJmio、mineo、LINEMO、povo、ahamo、楽天モバイル、UQモバイル、ワイモバイル、NUROモバイル、HISモバイル、日本通信SIMの料金プランを会社別に掲載。公式通常価格（税込）のみ。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --bronze:#276a9f; --bronze-dark:#1d5480; --bronze-pale:#e3eff9;
+  --grad:linear-gradient(120deg,#2f7fc4,#276a9f);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--bronze)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;color:var(--bronze)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d6e9f8 0%,#e9f3fb 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--bronze-pale);color:var(--bronze-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--bronze-dark)}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--bronze-pale);color:var(--bronze-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--bronze)}
+.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--bronze-dark);margin:0}
+.mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+table.compare{width:100%;border-collapse:collapse;background:#fff}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#f2f7fc;font-size:.88rem;font-weight:700;color:var(--bronze-dark)}
+table.compare td.price{font-weight:800;color:var(--bronze-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tbody tr:nth-child(even){background:#fbfdff}
+table.compare tr:last-child td{border-bottom:none}
+.kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--bronze-pale);color:var(--bronze-dark);white-space:nowrap}
+.kind.actual{background:#eef0e6;color:#4a5a2a}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
+  padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
+.adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
+.adslot p{margin:0;font-size:.85rem}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--bronze)}
+.ccard .type{font-size:.8rem;color:var(--bronze);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(39,106,159,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.gcard li{margin-bottom:6px}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--bronze)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+::selection{background:var(--bronze-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid,.guide-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem;white-space:normal}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"格安SIM料金データベース","url":"https://kakuyasu-sim-db.vercel.app/"}</script>
+
+</head>
+</head><body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>KAKUYASU SIM PRICE DB</small>格安SIM料金データベース</a>
+<nav class="main">
+<a href="/plans/">容量帯別料金</a>
+<a href="/carriers/">会社別プラン</a>
+<a href="/guide/">選び方ガイド</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ 会社別プラン</p></div>
+<main>
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">PLANS BY CARRIER</p>
+<h1>会社別プラン一覧</h1>
+<p>収録した11社の料金プランを会社ごとにまとめました。金額はすべて税込・通常価格（キャンペーン価格、各種割引の適用後価格は含みません）。確認日：2026-11-17。</p>
+</div></div>
+<section><div class="wrap">
+<div class="company-grid">
+<div class="ccard"><h3><a href="#c0">日本通信SIM</a></h3><p class="type">3プラン・料金を収録</p><p>ドコモ回線のMVNO。使った分だけ払う従量型の「合理的シンプル290プラン」と、20GB・50GBの「合理的プラン」があります。</p></div>
+<div class="ccard"><h3><a href="#c1">IIJmio</a></h3><p class="type">8プラン・料金を収録</p><p>ドコモ回線・au回線から選べるMVNO。「ギガプラン」は2GBから55GBまで8段階の容量があり、通話料は11円/30秒です。</p></div>
+<div class="ccard"><h3><a href="#c2">mineo</a></h3><p class="type">5プラン・料金を収録</p><p>ドコモ・au・ソフトバンクの3回線から選べるMVNO。容量で選ぶ「マイピタ」は3GBから50GBまでの5段階です。</p></div>
+<div class="ccard"><h3><a href="#c3">LINEMO</a></h3><p class="type">3プラン・料金を収録</p><p>ソフトバンクのオンライン専用プラン。「ベストプラン」は使った量で2段階、「ベストプランV」は30GB＋5分通話定額です。</p></div>
+<div class="ccard"><h3><a href="#c4">povo</a></h3><p class="type">7プラン・料金を収録</p><p>KDDI（au回線）のオンライン専用プラン。基本料0円で、データや通話を「トッピング」として都度購入する仕組みです。</p></div>
+<div class="ccard"><h3><a href="#c5">ahamo</a></h3><p class="type">2プラン・料金を収録</p><p>NTTドコモのオンライン専用プラン。30GB・2,970円の1プラン構成で、5分以内の国内通話無料が含まれます。</p></div>
+<div class="ccard"><h3><a href="#c6">楽天モバイル</a></h3><p class="type">3プラン・料金を収録</p><p>自社回線のMNO。「Rakuten最強プラン」は使ったデータ量で3段階に自動で変わり、20GB超はデータ無制限です。</p></div>
+<div class="ccard"><h3><a href="#c7">UQモバイル</a></h3><p class="type">3プラン・料金を収録</p><p>KDDIのサブブランド。35GB＋10分かけ放題込みの「コミコミプランバリュー」と、段階制の「トクトクプラン2」があります。</p></div>
+<div class="ccard"><h3><a href="#c8">ワイモバイル</a></h3><p class="type">3プラン・料金を収録</p><p>ソフトバンクのサブブランド。「シンプル3」は5GB・30GB・35GBの3段階で、掲載価格は割引前の月額基本料です。</p></div>
+<div class="ccard"><h3><a href="#c9">NUROモバイル</a></h3><p class="type">6プラン・料金を収録</p><p>ソニーグループのMVNO。3GB〜15GBの「バリュープラス」と、35GB・55GBの「NEOプラン」があります。</p></div>
+<div class="ccard"><h3><a href="#c10">HISモバイル</a></h3><p class="type">6プラン・料金を収録</p><p>ドコモ回線のMVNO。「自由自在3.0プラン」は通話料9円/30秒で、20GB・30GBには6分かけ放題が含まれます。</p></div>
+</div>
+<div class="adslot"><b>各社の公式申し込み</b><p>お申し込みは各社の公式サイトから行えます（公式サイトへの送客枠は準備中です）。</p></div>
+</div></section>
+<section id="c0"><div class="wrap">
+<div class="sec-head"><h2>日本通信SIM</h2><p>ドコモ回線のMVNO。使った分だけ払う従量型の「合理的シンプル290プラン」と、20GB・50GBの「合理的プラン」があります。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">日本通信SIM<span class="sub">合理的シンプル290プラン</span></td><td data-label="データ容量">1GB</td><td data-label="月額料金（税込）" class="price">290円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">1GBを超えた分は1GBあたり220円が加算（上限設定可）。通話5分かけ放題・月70分無料通話オプション 各+390円/月、通話かけ放題 +1,600円/月</span></td><td data-label="出典">出典：日本通信SIM公式<span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">日本通信SIM<span class="sub">合理的みんなのプラン</span></td><td data-label="データ容量">20GB</td><td data-label="月額料金（税込）" class="price">1,390円</td><td data-label="通話の扱い">通話5分かけ放題 または 月70分無料通話 のいずれかを含む<span class="sub">通話かけ放題オプション +1,600円/月</span></td><td data-label="出典">出典：日本通信SIM公式<span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">日本通信SIM<span class="sub">合理的50GBプラン</span></td><td data-label="データ容量">50GB</td><td data-label="月額料金（税込）" class="price">2,178円</td><td data-label="通話の扱い">通話5分かけ放題 または 月70分無料通話 のいずれかを含む<span class="sub">通話かけ放題オプション +1,200円/月</span></td><td data-label="出典">出典：日本通信SIM公式<span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+<p class="note-list">※ 旧「合理的かけほプラン」は新規申込受付を終了しているため掲載していません（日本通信SIM公式の案内による）。</p>
+</div></section>
+<section id="c1"><div class="wrap">
+<div class="sec-head"><h2>IIJmio</h2><p>ドコモ回線・au回線から選べるMVNO。「ギガプラン」は2GBから55GBまで8段階の容量があり、通話料は11円/30秒です。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">2GB</td><td data-label="月額料金（税込）" class="price">850円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">5GB</td><td data-label="月額料金（税込）" class="price">950円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">10GB</td><td data-label="月額料金（税込）" class="price">1,400円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">15GB</td><td data-label="月額料金（税込）" class="price">1,600円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">25GB</td><td data-label="月額料金（税込）" class="price">2,000円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">35GB</td><td data-label="月額料金（税込）" class="price">2,400円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">45GB</td><td data-label="月額料金（税込）" class="price">3,300円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">IIJmio<span class="sub">ギガプラン（音声SIM）</span></td><td data-label="データ容量">55GB</td><td data-label="月額料金（税込）" class="price">3,900円</td><td data-label="通話の扱い">従量制 11円/30秒<span class="sub">通話定額5分+ 500円／10分+ 700円／かけ放題+ 1,400円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.iijmio.jp/" rel="nofollow noopener" target="_blank">出典：IIJmio公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c2"><div class="wrap">
+<div class="sec-head"><h2>mineo</h2><p>ドコモ・au・ソフトバンクの3回線から選べるMVNO。容量で選ぶ「マイピタ」は3GBから50GBまでの5段階です。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">mineo<span class="sub">マイピタ（デュアルタイプ）</span></td><td data-label="データ容量">3GB</td><td data-label="月額料金（税込）" class="price">1,298円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">時間無制限かけ放題オプション 1,210円/月。A・D・Sプラン共通料金</span></td><td data-label="出典"><a href="https://mineo.jp/" rel="nofollow noopener" target="_blank">出典：mineo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">mineo<span class="sub">マイピタ（デュアルタイプ）</span></td><td data-label="データ容量">7GB</td><td data-label="月額料金（税込）" class="price">1,518円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">時間無制限かけ放題オプション 1,210円/月。A・D・Sプラン共通料金</span></td><td data-label="出典"><a href="https://mineo.jp/" rel="nofollow noopener" target="_blank">出典：mineo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">mineo<span class="sub">マイピタ（デュアルタイプ）</span></td><td data-label="データ容量">15GB</td><td data-label="月額料金（税込）" class="price">1,958円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">時間無制限かけ放題オプション 1,210円/月。A・D・Sプラン共通料金</span></td><td data-label="出典"><a href="https://mineo.jp/" rel="nofollow noopener" target="_blank">出典：mineo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">mineo<span class="sub">マイピタ（デュアルタイプ）</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">2,178円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">時間無制限かけ放題オプション 1,210円/月。A・D・Sプラン共通料金</span></td><td data-label="出典"><a href="https://mineo.jp/" rel="nofollow noopener" target="_blank">出典：mineo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">mineo<span class="sub">マイピタ（デュアルタイプ）</span></td><td data-label="データ容量">50GB</td><td data-label="月額料金（税込）" class="price">2,948円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">時間無制限かけ放題オプション 1,210円/月。A・D・Sプラン共通料金</span></td><td data-label="出典"><a href="https://mineo.jp/" rel="nofollow noopener" target="_blank">出典：mineo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c3"><div class="wrap">
+<div class="sec-head"><h2>LINEMO</h2><p>ソフトバンクのオンライン専用プラン。「ベストプラン」は使った量で2段階、「ベストプランV」は30GB＋5分通話定額です。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">LINEMO<span class="sub">ベストプラン</span></td><td data-label="データ容量">〜3GB</td><td data-label="月額料金（税込）" class="price">990円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">使ったデータ量で決まる段階制。通話準定額 550円／通話定額 1,650円（いずれも月額）</span></td><td data-label="出典"><a href="https://www.linemo.jp/plan/?s=ALzDu" rel="nofollow noopener" target="_blank">出典：LINEMO公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">LINEMO<span class="sub">ベストプラン</span></td><td data-label="データ容量">〜10GB</td><td data-label="月額料金（税込）" class="price">2,090円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">使ったデータ量で決まる段階制（3GB超〜10GB）</span></td><td data-label="出典"><a href="https://www.linemo.jp/plan/?s=ALzDu" rel="nofollow noopener" target="_blank">出典：LINEMO公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">LINEMO<span class="sub">ベストプランV</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">2,970円</td><td data-label="通話の扱い">5分以内の国内通話定額込み<span class="sub">通話定額 for ベストプランV 1,100円/月</span></td><td data-label="出典"><a href="https://www.linemo.jp/plan/?s=ALzDu" rel="nofollow noopener" target="_blank">出典：LINEMO公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c4"><div class="wrap">
+<div class="sec-head"><h2>povo</h2><p>KDDI（au回線）のオンライン専用プラン。基本料0円で、データや通話を「トッピング」として都度購入する仕組みです。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加1GB（7日間）</span></td><td data-label="データ容量">1GB</td><td data-label="月額料金（税込）" class="price">390円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入。5分以内通話かけ放題 550円/月、通話かけ放題 1,650円/月</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加3GB（30日間）</span></td><td data-label="データ容量">3GB</td><td data-label="月額料金（税込）" class="price">990円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加5GB（30日間）</span></td><td data-label="データ容量">5GB</td><td data-label="月額料金（税込）" class="price">1,380円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加30GB（30日間）</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">2,780円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加60GB（90日間）</span></td><td data-label="データ容量">60GB</td><td data-label="月額料金（税込）" class="price">6,490円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ追加150GB（180日間）</span></td><td data-label="データ容量">150GB</td><td data-label="月額料金（税込）" class="price">12,980円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">povo<span class="sub">データ使い放題（24時間）</span></td><td data-label="データ容量">無制限（24時間）</td><td data-label="月額料金（税込）" class="price">330円/回</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本料0円＋トッピング都度購入</span></td><td data-label="出典"><a href="https://povo.jp/consider/library/detail/article_033/" rel="nofollow noopener" target="_blank">出典：povo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c5"><div class="wrap">
+<div class="sec-head"><h2>ahamo</h2><p>NTTドコモのオンライン専用プラン。30GB・2,970円の1プラン構成で、5分以内の国内通話無料が含まれます。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">ahamo<span class="sub">ahamo</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">2,970円</td><td data-label="通話の扱い">5分以内の国内通話無料込み（超過分 22円/30秒）<span class="sub">2026年12月1日に料金改定が予定されています（ahamo公式発表）。本ページは確認日時点の現行料金</span></td><td data-label="出典"><a href="https://ahamo.com/special/lp/003.html?argument=phMVk6SJ&dmai=a6a1562ae41d67&da_uid=d0000001629_01M4QEFCAGBNXR0X2V6EKMS29T_30" rel="nofollow noopener" target="_blank">出典：ahamo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">ahamo<span class="sub">ahamo＋大盛りオプション</span></td><td data-label="データ容量">110GB</td><td data-label="月額料金（税込）" class="price">4,950円</td><td data-label="通話の扱い">5分以内の国内通話無料込み（超過分 22円/30秒）<span class="sub">基本プラン2,970円＋大盛りオプション（+80GB）1,980円の合計</span></td><td data-label="出典"><a href="https://ahamo.com/special/lp/003.html?argument=phMVk6SJ&dmai=a6a1562ae41d67&da_uid=d0000001629_01M4QEFCAGBNXR0X2V6EKMS29T_30" rel="nofollow noopener" target="_blank">出典：ahamo公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+<p class="note-list">※ ahamoは2026年12月1日に料金改定が予定されていると公式に発表しています。本ページの価格は確認日（2026-11-17）時点の現行料金です。改定後の料金は公式サイトでご確認ください。</p>
+</div></section>
+<section id="c6"><div class="wrap">
+<div class="sec-head"><h2>楽天モバイル</h2><p>自社回線のMNO。「Rakuten最強プラン」は使ったデータ量で3段階に自動で変わり、20GB超はデータ無制限です。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">楽天モバイル<span class="sub">Rakuten最強プラン</span></td><td data-label="データ容量">〜3GB</td><td data-label="月額料金（税込）" class="price">1,078円</td><td data-label="通話の扱い">Rakuten Linkアプリ利用で国内通話無料<span class="sub">使ったデータ量で決まる段階制。15分（標準）通話かけ放題オプション 1,100円/月</span></td><td data-label="出典"><a href="https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_mobile_voice_sim_pricelist.pdf?20250401" rel="nofollow noopener" target="_blank">出典：楽天モバイル公式 料金表</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">楽天モバイル<span class="sub">Rakuten最強プラン</span></td><td data-label="データ容量">〜20GB</td><td data-label="月額料金（税込）" class="price">2,178円</td><td data-label="通話の扱い">Rakuten Linkアプリ利用で国内通話無料<span class="sub">使ったデータ量で決まる段階制</span></td><td data-label="出典"><a href="https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_mobile_voice_sim_pricelist.pdf?20250401" rel="nofollow noopener" target="_blank">出典：楽天モバイル公式 料金表</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">楽天モバイル<span class="sub">Rakuten最強プラン</span></td><td data-label="データ容量">20GB超（無制限）</td><td data-label="月額料金（税込）" class="price">3,278円</td><td data-label="通話の扱い">Rakuten Linkアプリ利用で国内通話無料<span class="sub">20GBを超えた分はデータ無制限</span></td><td data-label="出典"><a href="https://network.mobile.rakuten.co.jp/terms/pdf/rakuten_mobile_voice_sim_pricelist.pdf?20250401" rel="nofollow noopener" target="_blank">出典：楽天モバイル公式 料金表</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c7"><div class="wrap">
+<div class="sec-head"><h2>UQモバイル</h2><p>KDDIのサブブランド。35GB＋10分かけ放題込みの「コミコミプランバリュー」と、段階制の「トクトクプラン2」があります。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">UQモバイル<span class="sub">トクトクプラン2</span></td><td data-label="データ容量">〜5GB</td><td data-label="月額料金（税込）" class="price">2,948円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本使用料4,048円から、5GB以下の利用月に自動で1,100円割引された金額。セット割・カード割は適用前</span></td><td data-label="出典"><a href="https://www.uqwimax.jp/mobile/beginner/point/?tbp_ptn=SetMobileDefault&tbp_num=4&tbp_idx=11" rel="nofollow noopener" target="_blank">出典：UQ mobile公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">UQモバイル<span class="sub">トクトクプラン2</span></td><td data-label="データ容量">5GB超〜30GB</td><td data-label="月額料金（税込）" class="price">4,048円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">基本使用料（セット割・家族セット割・au PAY カードお支払い割は適用前）</span></td><td data-label="出典"><a href="https://www.uqwimax.jp/mobile/beginner/point/?tbp_ptn=SetMobileDefault&tbp_num=4&tbp_idx=11" rel="nofollow noopener" target="_blank">出典：UQ mobile公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">UQモバイル<span class="sub">コミコミプランバリュー</span></td><td data-label="データ容量">35GB</td><td data-label="月額料金（税込）" class="price">3,828円</td><td data-label="通話の扱い">1回10分以内の国内通話かけ放題込み（超過分 22円/30秒）<span class="sub">通話放題オプション +1,100円/月。Pontaパス利用料込み</span></td><td data-label="出典"><a href="https://www.uqwimax.jp/mobile/beginner/point/?tbp_ptn=SetMobileDefault&tbp_num=4&tbp_idx=11" rel="nofollow noopener" target="_blank">出典：UQ mobile公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c8"><div class="wrap">
+<div class="sec-head"><h2>ワイモバイル</h2><p>ソフトバンクのサブブランド。「シンプル3」は5GB・30GB・35GBの3段階で、掲載価格は割引前の月額基本料です。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">ワイモバイル<span class="sub">シンプル3 S</span></td><td data-label="データ容量">5GB</td><td data-label="月額料金（税込）" class="price">3,278円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">月額基本料（おうち割・PayPayカード割などの割引は適用前）</span></td><td data-label="出典"><a href="https://www.ymobile.jp/language/?wovn=en&tabid=support-tab&tabnum=2&wovn=en" rel="nofollow noopener" target="_blank">出典：ワイモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">ワイモバイル<span class="sub">シンプル3 M</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">4,378円</td><td data-label="通話の扱い">従量制 22円/30秒<span class="sub">月額基本料（各種割引は適用前）</span></td><td data-label="出典"><a href="https://www.ymobile.jp/language/?wovn=en&tabid=support-tab&tabnum=2&wovn=en" rel="nofollow noopener" target="_blank">出典：ワイモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">ワイモバイル<span class="sub">シンプル3 L</span></td><td data-label="データ容量">35GB</td><td data-label="月額料金（税込）" class="price">5,478円</td><td data-label="通話の扱い">1回10分以内の国内通話かけ放題込み<span class="sub">月額基本料（各種割引は適用前）</span></td><td data-label="出典"><a href="https://www.ymobile.jp/language/?wovn=en&tabid=support-tab&tabnum=2&wovn=en" rel="nofollow noopener" target="_blank">出典：ワイモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c9"><div class="wrap">
+<div class="sec-head"><h2>NUROモバイル</h2><p>ソニーグループのMVNO。3GB〜15GBの「バリュープラス」と、35GB・55GBの「NEOプラン」があります。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">バリュープラス VS</span></td><td data-label="データ容量">3GB</td><td data-label="月額料金（税込）" class="price">792円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">バリュープラス VM</span></td><td data-label="データ容量">5GB</td><td data-label="月額料金（税込）" class="price">990円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">バリュープラス VL</span></td><td data-label="データ容量">10GB</td><td data-label="月額料金（税込）" class="price">1,485円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">バリュープラス VLL</span></td><td data-label="データ容量">15GB</td><td data-label="月額料金（税込）" class="price">1,790円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">NEOプラン</span></td><td data-label="データ容量">35GB</td><td data-label="月額料金（税込）" class="price">2,699円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">NUROモバイル<span class="sub">NEOプランW</span></td><td data-label="データ容量">55GB</td><td data-label="月額料金（税込）" class="price">3,980円</td><td data-label="通話の扱い">従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）<span class="sub">通話定額オプション：5分 490円／10分 880円／かけ放題 1,430円（いずれも月額）</span></td><td data-label="出典"><a href="https://mobile.nuro.jp/" rel="nofollow noopener" target="_blank">出典：NUROモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+<section id="c10"><div class="wrap">
+<div class="sec-head"><h2>HISモバイル</h2><p>ドコモ回線のMVNO。「自由自在3.0プラン」は通話料9円/30秒で、20GB・30GBには6分かけ放題が含まれます。</p></div>
+<table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">1GB</td><td data-label="月額料金（税込）" class="price">550円</td><td data-label="通話の扱い">従量制 9円/30秒<span class="sub">その月の利用量が100MB未満の月は280円。6分かけ放題オプション 500円/月、完全かけ放題 1,480円/月</span></td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">3GB</td><td data-label="月額料金（税込）" class="price">770円</td><td data-label="通話の扱い">従量制 9円/30秒</td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">7GB</td><td data-label="月額料金（税込）" class="price">990円</td><td data-label="通話の扱い">従量制 9円/30秒</td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">10GB</td><td data-label="月額料金（税込）" class="price">1,299円</td><td data-label="通話の扱い">従量制 9円/30秒</td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">20GB</td><td data-label="月額料金（税込）" class="price">1,699円</td><td data-label="通話の扱い">6分かけ放題込み（従量分 9円/30秒）</td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<tr><td data-label="会社・プラン">HISモバイル<span class="sub">自由自在3.0プラン</span></td><td data-label="データ容量">30GB</td><td data-label="月額料金（税込）" class="price">1,999円</td><td data-label="通話の扱い">6分かけ放題込み（従量分 9円/30秒）</td><td data-label="出典"><a href="https://his-mobile.com/news20260828-2.html" rel="nofollow noopener" target="_blank">出典：HISモバイル公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+</tbody></table>
+
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">格安SIM料金データベース</p>
+<p>運営：格安SIM料金データベース運営事務局</p>
+<p>掲載料金は各社の公式サイトで公表された通常料金（税込・確認日：2026-11-17）です。キャンペーン価格・各種割引の適用後価格は掲載していません。料金は改定されることがあります。契約前に各社の公式サイトで最新の料金と条件をご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/plans/">容量帯別料金</a><a href="/carriers/">会社別プラン</a><a href="/guide/">選び方ガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a>
+</div>
+<p>© 格安SIM料金データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
