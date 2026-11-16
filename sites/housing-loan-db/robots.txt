@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://housing-loan-db.vercel.app/sitemap.xml

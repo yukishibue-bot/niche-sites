@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>変動金利の一覧（2026年11月）｜住宅ローン金利データベース</title>
+<meta name="description" content="主要10行が公式に発表した変動金利（2026年11月適用・新規借入）を金利の低い順に掲載。最優遇金利の条件、店頭・基準金利もあわせて表示します。出典・確認日付き。">
+<link rel="canonical" href="https://housing-loan-db.vercel.app/variable/">
+<meta property="og:title" content="変動金利の一覧（2026年11月）｜住宅ローン金利データベース">
+<meta property="og:description" content="主要10行が公式に発表した変動金利（2026年11月適用・新規借入）を金利の低い順に掲載。最優遇金利の条件、店頭・基準金利もあわせて表示します。出典・確認日付き。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://housing-loan-db.vercel.app/variable/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --bronze:#2c4a7c; --bronze-dark:#223c66; --bronze-pale:#e8edf5;
+  --grad:linear-gradient(120deg,#2c4a7c,#223c66);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--bronze)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;color:var(--bronze)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d9e3f0 0%,#edf1f7 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--bronze-pale);color:var(--bronze-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--bronze-dark)}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--bronze-pale);color:var(--bronze-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--bronze)}
+.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--bronze-dark);margin:0}
+.mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+table.compare{width:100%;border-collapse:collapse;background:#fff}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#f0f3f9;font-size:.88rem;font-weight:700;color:var(--bronze-dark)}
+table.compare td.price{font-weight:800;color:var(--bronze-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tbody tr:nth-child(even){background:#fcfdfe}
+table.compare tr:last-child td{border-bottom:none}
+.kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--bronze-pale);color:var(--bronze-dark);white-space:nowrap}
+.kind.actual{background:#eef0e6;color:#4a5a2a}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
+  padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
+.adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
+.adslot p{margin:0;font-size:.85rem}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--bronze)}
+.ccard .type{font-size:.8rem;color:var(--bronze);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(44,74,124,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.gcard li{margin-bottom:6px}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--bronze)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+::selection{background:var(--bronze-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid,.guide-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem;white-space:normal}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"住宅ローン金利データベース","url":"https://housing-loan-db.vercel.app/"}</script>
+</head>
+<body>
+<header class="site-header"><div class="wrap header-in">
+<a class="logo" href="/"><span class="logo-sub">HOUSING LOAN RATE DB</span><span class="logo-main">住宅ローン金利データベース</span></a>
+<nav class="nav"><a href="/variable/">変動金利</a><a href="/fixed/">固定・フラット35</a><a href="/guide/">借りる前のガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a></nav>
+</div></header>
+<main><div class="wrap">
+<p class="crumb"><a href="/">ホーム</a> ＞ 変動金利</p>
+<div class="page-hero"><span class="eyebrow">VARIABLE RATE</span><h1>変動金利の一覧（2026年11月）</h1>
+<p>変動金利は、借入期間中に適用金利が見直されるタイプです（多くの銀行で半年ごと）。掲載は2026年11月適用・新規借入の金利で、各行が公式に発表した数値です。表示は最も優遇された金利や下限の金利が中心のため、必ず「条件・前提」をあわせてご確認ください。</p></div>
+<div class="tablewrap"><table class="compare"><thead><tr><th>銀行・プラン</th><th>適用金利（年率）</th><th>条件・前提</th></tr></thead><tbody>
+<tr><td data-label="銀行・プラン">三菱UFJ銀行<span class="sub">ずーっと一律優遇コース</span></td><td data-label="適用金利（年率）" class="price">年1.195%</td><td data-label="条件・前提">店頭表示金利 年3.375%から完済まで年2.18%引下げ（最も優遇される場合）。引下幅と適用金利は申込内容・審査結果によって決まります。</td></tr>
+<tr><td data-label="銀行・プラン">りそな銀行<span class="sub">融資手数料型</span></td><td data-label="適用金利（年率）" class="price">年1.250%</td><td data-label="条件・前提">最大引下げ時の金利。Web完結と給与振込等の所定サービスの利用、2つの条件を満たした場合です（満たさない場合は年1.330%）。基準金利 年3.375%。融資手数料は借入金額の2.2%（税込）。</td></tr>
+<tr><td data-label="銀行・プラン">みずほ銀行<span class="sub">全期間引下げプラン（ローン取扱手数料型）</span></td><td data-label="適用金利（年率）" class="price">年1.275%</td><td data-label="条件・前提">店頭金利からの引下げ幅（年1.65〜2.10%）が最大の場合の金利。引下げ幅は申込内容・審査結果によって決まります。</td></tr>
+<tr><td data-label="銀行・プラン">三井住友銀行<span class="sub">WEB申込専用住宅ローン（最後までずーっと引き下げプラン）・バランスパック</span></td><td data-label="適用金利（年率）" class="price">年1.325%〜</td><td data-label="条件・前提">表示はバランスパックの金利で、Oliveアカウントの開設と給与振込口座の当行指定が前提。通常プランのご融資利率は年1.525%〜年3.375%（店頭金利 年3.375%）。引下げ幅は審査結果等によって決まります。</td></tr>
+<tr><td data-label="銀行・プラン">イオン銀行<span class="sub">全期間優遇金利プラン</span></td><td data-label="適用金利（年率）" class="price">年1.540%</td><td data-label="条件・前提">物件価格の80%以内・ローン取扱手数料が定率型の場合。店頭表示利率 年3.72%から最大で年2.18%引下げ。80%超は年1.620%〜、手数料定額型は年0.20%上乗せ。</td></tr>
+<tr><td data-label="銀行・プラン">ドコモSMTBネット銀行<span class="sub">対面相談コース（通期引下げプラン）／旧・住信SBIネット銀行</span></td><td data-label="適用金利（年率）" class="price">年1.600%</td><td data-label="条件・前提">物件価格の80%以下の場合（80%超は年1.700%）。基準金利 年4.025%。審査結果により年0.1〜0.55%の上乗せとなる場合があります。WEB申込コースは2026年10月30日で仮審査申込の受付を終了しています。</td></tr>
+<tr><td data-label="銀行・プラン">SBI新生銀行<span class="sub">パワースマート住宅ローン（変動金利・半年型）</span></td><td data-label="適用金利（年率）" class="price">年1.680%</td><td data-label="条件・前提">通常金利。自己資金優遇（借入額が物件価格の90%以内）は年1.660%、SBIハイパー預金優遇は年1.590%。適用されるのは契約日（条件確定日）の金利です。</td></tr>
+<tr><td data-label="銀行・プラン">auじぶん銀行<span class="sub">全期間引下げプラン</span></td><td data-label="適用金利（年率）" class="price">年1.734%</td><td data-label="条件・前提">物件価格の80%以下・がん50%保障団信の特約付き（50歳以下）の場合。一般団信（特約なし）は年1.680%。80%超は年0.045%上乗せ。金利優遇割の適用は含みません。</td></tr>
+<tr><td data-label="銀行・プラン">楽天銀行<span class="sub">住宅ローン（金利選択型）</span></td><td data-label="適用金利（年率）" class="price">年1.797%〜</td><td data-label="条件・前提">新規借入の借入金利の下限。基準金利 年2.447%からの引下げ幅は借入内容・審査結果によって決まります（範囲は年1.797〜2.447%）。</td></tr>
+<tr><td data-label="銀行・プラン">ソニー銀行<span class="sub">変動セレクト住宅ローン</span></td><td data-label="適用金利（年率）" class="price">年1.847%</td><td data-label="条件・前提">公式の適用金利がそのまま適用される表示方式。取扱手数料は借入金額の2.20%（税込）。手数料定額の「住宅ローン」は年2.207%。</td></tr>
+</tbody></table></div><p class="src-note">掲載は2026年11月適用・新規借入の金利です。表は金利（年率）の低い順に並べています。これは数値の事実ソートであり、商品の推奨ではありません。表示金利には、条件を満たした場合の最も優遇された金利や下限の金利を含み、並び順はその表示金利の数値によります。たとえば三井住友銀行は、バランスパックの最優遇金利（年1.325%〜）を表示し、通常プランのご融資利率（年1.525%〜年3.375%）を「条件・前提」に併記しています。各行の「条件・前提」もあわせてご確認ください。</p>
+<div class="cards" style="margin-top:34px">
+<div class="mcard"><span class="cat">POINT 1</span><h3>「最も優遇された金利」には前提がある</h3><p>給与振込口座の指定、指定サービスの利用、物件価格に対する借入割合（80%以下・90%以内など）といった条件を満たした場合の金利です。条件を満たさない場合は、同じ銀行でも金利が高くなります。</p></div>
+<div class="mcard"><span class="cat">POINT 2</span><h3>団信の保障内容で金利が変わる</h3><p>がん保障などの特約付き団信を選ぶと金利が上乗せされる場合と、特約付きの金利が標準表示になっている場合があります。保障内容まで含めて比べてください。</p></div>
+<div class="mcard"><span class="cat">POINT 3</span><h3>見直しルールは銀行で異なる</h3><p>金利は半年ごとに見直される銀行が多い一方、返済額の見直しに「5年ルール」「125%ルール」を採用しない銀行もあります。借入後のルールも確認しておくと安心です。</p></div>
+</div>
+<div class="adslot"><b>各銀行の公式シミュレーションで返済額を試算する</b><p>この枠は、各銀行の公式シミュレーションへの案内枠です（準備中）。返済額の試算は、借入を検討している銀行の公式サイトのシミュレーションをご利用ください。</p></div>
+<div class="srcbox"><h3>金利データの出典（すべて公式発表）</h3><ul><li>三菱UFJ銀行 公式サイト（住宅ローンの金利表示）（確認日：2026-11-17）<span class="sub">https://www.bk.mufg.jp/</span></li><li>三井住友銀行「金利－住宅ローン」（確認日：2026-11-17）<span class="sub">https://www2.smbc.co.jp/kojin/jutaku_loan/kinri/</span></li><li>みずほ銀行「住宅ローンの金利一覧」（確認日：2026-11-17）<span class="sub">https://www.mizuhobank.co.jp/loan_housing/housingloancost/index.html</span></li><li>りそな銀行「住宅ローン金利」（確認日：2026-11-17）<span class="sub">https://www.resonabank.co.jp/kojin/jutaku/kinri/</span></li><li>イオン銀行「住宅ローン 金利プラン」（確認日：2026-11-17）<span class="sub">https://www.aeonbank.co.jp/housing-loan/refinance-plan/</span></li><li>ドコモSMTBネット銀行「対面相談コース」（確認日：2026-11-17）<span class="sub">https://www.netbk.co.jp/contents/lineup/home-loan/real/</span></li><li>SBI新生銀行「住宅ローンの金利一覧新規」（確認日：2026-11-17）<span class="sub">https://www.sbishinseibank.co.jp/retail/housing/interest/interest_rate_new/</span></li><li>auじぶん銀行「住宅ローン金利一覧」（確認日：2026-11-17）<span class="sub">https://spw.prod-at.allocation.jibunbank.co.jp/products/homeloan/rate/?lang=ja</span></li><li>楽天銀行「住宅ローン（金利選択型）」（確認日：2026-11-17）<span class="sub">https://www.rakuten-bank.co.jp/home-loan/refinance/homeloan.html</span></li><li>ソニー銀行 公式サイト「適用金利」（住宅ローン）（確認日：2026-11-17）</li><li>ゆうちょ銀行「ソニー銀行の住宅ローン」（銀行代理業者としての案内ページ。2026年11月適用金利を表示）（確認日：2026-11-17）<span class="sub">https://www.jp-bank.japanpost.jp/kojin/loan/kj_ln_sloan.html</span></li><li>住宅金融支援機構「最新の金利情報（フラット35等）」（確認日：2026-11-17）<span class="sub">https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top</span></li></ul></div>
+</div></main>
+<footer><div class="wrap">
+<p class="fname">住宅ローン金利データベース</p>
+<p>運営：住宅ローン金利データベース運営事務局</p>
+<p class="disc">掲載金利は各銀行・住宅金融支援機構が公式に発表した金利（2026年11月適用分、確認日：2026-11-17）です。住宅ローンの金利は毎月見直され、実際の適用金利は申込内容・審査結果・借入条件によって決まります。手数料・保証料などの費用は金利とは別にかかります。本サイトは金利や融資の可否を保証するものではなく、特定の金融機関・商品を推奨するものでもありません。お申込みの前に、各金融機関の公式サイトと商品説明書で最新情報をご確認ください。</p>
+<div class="foot-links"><a href="/variable/">変動金利</a><a href="/fixed/">固定・フラット35</a><a href="/guide/">借りる前のガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a></div>
+<p class="copy">© 住宅ローン金利データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# 住宅ローン金利データベース
+
+主要銀行が公式サイトで発表した住宅ローン金利（2026年11月適用・新規借入）を、金利タイプ別に整理したデータベース。全データに出典（公式発表）と確認日（2026-11-17）付き。掲載金利の多くは最も優遇された金利・下限の金利で、適用条件もあわせて表示。運営は住宅ローン金利データベース運営事務局。
+
+## ページ一覧
+- トップ（変動金利の一覧・金利タイプ別入口）: https://housing-loan-db.vercel.app/
+- 変動金利の一覧: https://housing-loan-db.vercel.app/variable/
+- 固定金利・フラット35の一覧: https://housing-loan-db.vercel.app/fixed/
+- 借りる前に知ること: https://housing-loan-db.vercel.app/guide/
+- このサイトについて（収録方針・出典一覧）: https://housing-loan-db.vercel.app/about/
+- よくある質問: https://housing-loan-db.vercel.app/faq/
+
+## 注意
+金利は毎月見直されます。実際の適用金利は申込内容・審査結果・借入条件によって決まります。手数料・保証料は金利とは別にかかります。
