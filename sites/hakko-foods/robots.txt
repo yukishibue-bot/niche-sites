@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hakko-foods.vercel.app/sitemap.xml

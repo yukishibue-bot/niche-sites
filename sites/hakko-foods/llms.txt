@@ -1,0 +1,60 @@
+# 発酵食品図鑑
+
+味噌・醤油・納豆・漬物・ヨーグルトなど、身近な発酵食品を分類・原料・発酵に関わる微生物・使い方・保存の目安で整理した図鑑です。効能の断定はせず、公的資料に基づく事実だけを掲載します。
+
+運営: 発酵食品図鑑運営事務局
+最終更新: 2026-11-16
+
+## ページ
+- [トップ](https://hakko-foods.vercel.app/)
+- [品目一覧](https://hakko-foods.vercel.app/items/)
+- [発酵の基本](https://hakko-foods.vercel.app/basics/)
+- [よくある質問](https://hakko-foods.vercel.app/faq/)
+- [出典・このサイトについて](https://hakko-foods.vercel.app/about/)
+
+## 分類
+- [調味料](https://hakko-foods.vercel.app/categories/seasoning/): 麹菌や酵母、酢酸菌の働きで生まれる、食卓の土台になる発酵調味料。
+- [漬物](https://hakko-foods.vercel.app/categories/pickles/): 乳酸菌の発酵で野菜を保存し、酸味と旨みを引き出した漬物。
+- [乳製品](https://hakko-foods.vercel.app/categories/dairy/): 乳酸菌やカビが牛乳を変える。ヨーグルトやチーズなどの発酵乳製品。
+- [飲料](https://hakko-foods.vercel.app/categories/drinks/): 酵母のアルコール発酵や麹の糖化から生まれる飲みもの。
+- [その他](https://hakko-foods.vercel.app/categories/other/): 納豆、パン、かつお節など、分類に収まらない多彩な発酵食品。
+
+## 品目
+- [味噌](https://hakko-foods.vercel.app/items/miso/): 調味料／原料：大豆、米・麦などの穀物、塩／微生物：麹菌（アスペルギルス・オリゼー）、酵母、乳酸菌
+- [醤油](https://hakko-foods.vercel.app/items/shoyu/): 調味料／原料：大豆、小麦、塩／微生物：麹菌、耐塩性の乳酸菌・酵母
+- [みりん](https://hakko-foods.vercel.app/items/mirin/): 調味料／原料：もち米、米麹、焼酎などのアルコール／微生物：麹菌の酵素（発酵というより糖化による甘みづくり）
+- [酢](https://hakko-foods.vercel.app/items/su/): 調味料／原料：米、酒粕、穀物、果実など（種類による）／微生物：酵母（アルコール発酵）、酢酸菌（酢酸発酵）
+- [魚醤](https://hakko-foods.vercel.app/items/gyosho/): 調味料／原料：小魚や魚介類、塩／微生物：原料由来の酵素、耐塩性の微生物
+- [豆板醤](https://hakko-foods.vercel.app/items/tobanjan/): 調味料／原料：そら豆、唐辛子、塩、小麦粉など／微生物：麹菌、乳酸菌、酵母
+- [塩麹](https://hakko-foods.vercel.app/items/shiokoji/): 調味料／原料：米麹、塩、水／微生物：麹菌の酵素
+- [コチュジャン](https://hakko-foods.vercel.app/items/gochujang/): 調味料／原料：唐辛子、もち米や麦の麹、塩、大豆など／微生物：麹菌、酵母、乳酸菌
+- [ぬか漬け](https://hakko-foods.vercel.app/items/nukazuke/): 漬物／原料：米ぬか、塩、水、野菜（きゅうり、なす、大根など）／微生物：乳酸菌、酵母
+- [奈良漬け](https://hakko-foods.vercel.app/items/narazuke/): 漬物／原料：白瓜などの野菜、酒粕、みりん粕など／微生物：酒粕に由来する酵母など
+- [キムチ](https://hakko-foods.vercel.app/items/kimchi/): 漬物／原料：白菜などの野菜、唐辛子、にんにく、魚醤、塩／微生物：乳酸菌
+- [たくあん漬け](https://hakko-foods.vercel.app/items/takuan/): 漬物／原料：大根、米ぬか、塩／微生物：乳酸菌（伝統的な製法の場合）
+- [しば漬け](https://hakko-foods.vercel.app/items/shibazuke/): 漬物／原料：なす、きゅうり、赤しそ、塩／微生物：乳酸菌
+- [ザワークラウト](https://hakko-foods.vercel.app/items/sauerkraut/): 漬物／原料：キャベツ、塩／微生物：乳酸菌
+- [ピクルス](https://hakko-foods.vercel.app/items/pickles/): 漬物／原料：きゅうりなどの野菜、酢、塩、香辛料／微生物：乳酸菌（発酵タイプの場合）
+- [すんき漬け](https://hakko-foods.vercel.app/items/sunki/): 漬物／原料：赤かぶの葉と茎／微生物：乳酸菌
+- [メンマ](https://hakko-foods.vercel.app/items/menma/): 漬物／原料：麻竹（マチク）などの竹／微生物：乳酸菌
+- [ヨーグルト](https://hakko-foods.vercel.app/items/yogurt/): 乳製品／原料：牛乳などの乳／微生物：乳酸菌（ブルガリア菌、サーモフィルス菌など）
+- [チーズ](https://hakko-foods.vercel.app/items/cheese/): 乳製品／原料：牛・山羊・羊などの乳／微生物：乳酸菌、種類によりカビ・酵母・プロピオン酸菌など
+- [発酵バター](https://hakko-foods.vercel.app/items/fermented-butter/): 乳製品／原料：クリーム（乳脂肪）／微生物：乳酸菌
+- [サワークリーム](https://hakko-foods.vercel.app/items/sour-cream/): 乳製品／原料：クリーム（乳脂肪）／微生物：乳酸菌
+- [ケフィア](https://hakko-foods.vercel.app/items/kefir/): 乳製品／原料：牛乳などの乳／微生物：乳酸菌と酵母（ケフィアグレインと呼ばれる粒状の菌の塊）
+- [甘酒](https://hakko-foods.vercel.app/items/amazake/): 飲料／原料：米麹と米（麹甘酒）、または酒粕（酒粕甘酒）／微生物：麹菌の酵素（麹甘酒）、酒粕甘酒は酒粕由来
+- [日本酒](https://hakko-foods.vercel.app/items/sake/): 飲料／原料：米、米麹、水／微生物：麹菌、酵母（酒母では乳酸菌が関わる製法もある）
+- [焼酎](https://hakko-foods.vercel.app/items/shochu/): 飲料／原料：芋、麦、米、黒糖などの原料、麹／微生物：麹菌（白麹・黒麹・黄麹）、酵母
+- [ワイン](https://hakko-foods.vercel.app/items/wine/): 飲料／原料：ぶどう／微生物：酵母、種類により乳酸菌（マロラクティック発酵）
+- [ビール](https://hakko-foods.vercel.app/items/beer/): 飲料／原料：麦芽、ホップ、水、副原料（種類による）／微生物：酵母（上面発酵・下面発酵）
+- [コンブチャ](https://hakko-foods.vercel.app/items/kombucha/): 飲料／原料：紅茶や緑茶、砂糖／微生物：酢酸菌と酵母の共生培養（スコビーと呼ばれる菌膜）
+- [発酵茶（烏龍茶・紅茶・黒茶）](https://hakko-foods.vercel.app/items/fermented-tea/): 飲料／原料：茶の葉／微生物：黒茶ではカビなどの微生物。烏龍茶・紅茶は主に茶葉の酵素による酸化
+- [納豆](https://hakko-foods.vercel.app/items/natto/): その他／原料：大豆／微生物：納豆菌（枯草菌の一種）
+- [テンペ](https://hakko-foods.vercel.app/items/tempe/): その他／原料：大豆／微生物：テンペ菌（クモノスカビの仲間、リゾープス属）
+- [パン](https://hakko-foods.vercel.app/items/bread/): その他／原料：小麦粉、水、塩、酵母／微生物：酵母（イースト）、サワードウでは乳酸菌も
+- [くず餅](https://hakko-foods.vercel.app/items/kuzumochi/): その他／原料：小麦でんぷん／微生物：乳酸菌
+- [酒粕](https://hakko-foods.vercel.app/items/sakekasu/): その他／原料：日本酒のもろみを搾った後に残る固形分（米、米麹由来）／微生物：酵母、麹菌の酵素が残る
+- [チョコレート](https://hakko-foods.vercel.app/items/chocolate/): その他／原料：カカオ豆／微生物：酵母、乳酸菌、酢酸菌
+- [かつお節](https://hakko-foods.vercel.app/items/katsuobushi/): その他／原料：カツオ／微生物：カツオブシカビ（ユーロチウム属などのカビ）
+- [塩辛](https://hakko-foods.vercel.app/items/shiokara/): その他／原料：イカや魚介の身・内臓、塩／微生物：原料由来の酵素、耐塩性の微生物
+- [なれずし](https://hakko-foods.vercel.app/items/narezushi/): その他／原料：魚（ふな、さばなど）、米飯、塩／微生物：乳酸菌
