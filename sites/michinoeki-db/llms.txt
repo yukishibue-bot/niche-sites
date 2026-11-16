@@ -14,6 +14,7 @@
 - 中国の道の駅一覧（108駅）: https://michinoeki-db.vercel.app/chugoku/
 - 四国の道の駅一覧（91駅）: https://michinoeki-db.vercel.app/shikoku/
 - 九州・沖縄の道の駅一覧（156駅）: https://michinoeki-db.vercel.app/kyushu-okinawa/
+- 全国の道の駅マップ（座標データが確認できた1,196駅）: https://michinoeki-db.vercel.app/map/
 - 道の駅の使い方・スタンプラリー基礎: https://michinoeki-db.vercel.app/guide/
 - FAQ: https://michinoeki-db.vercel.app/faq/
 - このサイトについて（収録方針・出典）: https://michinoeki-db.vercel.app/about/
