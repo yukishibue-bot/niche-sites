@@ -1,0 +1,32 @@
+# ケータリング料金相場データベース
+
+ケータリング各社の公式サイトに掲載された料金プラン・ドリンク料金・最低人数・最低金額・配送条件を、出典明記で横断比較できるデータベースです。
+
+運営: ケータリング料金相場データベース運営事務局
+データ取得日: 2026-11-13
+
+## ページ
+- [料金比較表](https://catering-price-db.vercel.app/)
+- [会社一覧](https://catering-price-db.vercel.app/companies/)
+- [よくある質問](https://catering-price-db.vercel.app/faq/)
+- [このサイトについて](https://catering-price-db.vercel.app/about/)
+
+## 収録会社
+- [NEO DINING.（ネオダイニング）](https://catering-price-db.vercel.app/companies/neodining/): フード単価 2,800円〜5,300円（税込）、最低人数 10名
+- [L for You](https://catering-price-db.vercel.app/companies/lforyou/): フード単価 2,000円〜6,000円（税表記なし）、最低人数 10名
+- [2ndTable（セカンドテーブル）](https://catering-price-db.vercel.app/companies/2ndtable/): フード単価 1,500円〜5,500円（税抜）、最低人数 ケータリング20名、デリバリー5名
+- [ケータリングジャパン（CATERING JAPAN）](https://catering-price-db.vercel.app/companies/catering-japan/): フード単価 2,200円〜7,480円（税込）、最低人数 公表なし
+- [ケータリングSEASON](https://catering-price-db.vercel.app/companies/catering-season/): フード単価 2,000円〜5,200円（税抜）、最低人数 ケータリング15〜24名（プラン別）、デリバリー10名〜
+- [Mr.BUFFET（ミスタービュッフェ）](https://catering-price-db.vercel.app/companies/mr-buffet/): フード単価 2,700円〜6,600円（税込）、最低人数 10名〜
+- [シェフコレ（Chef Colle）](https://catering-price-db.vercel.app/companies/chef-colle/): フード単価 1,950円〜12,000円（税表記なし）、最低人数 デリバリー5名〜、ケータリング20名〜
+- [ケータリングセレクション](https://catering-price-db.vercel.app/companies/catering-selection/): フード単価 1,100円〜7,000円（税表記なし）、最低人数 公表なし
+- [オレンジケータリング](https://catering-price-db.vercel.app/companies/orange-catering/): フード単価 2,200円〜7,480円（税込）、最低人数 公表なし
+- [CBSケータリング（CBケータリング）](https://catering-price-db.vercel.app/companies/cbs-catering/): フード単価 3,500円〜7,000円（税込）、最低人数 10名〜
+- [SIRCARS](https://catering-price-db.vercel.app/companies/sircars/): フード単価 2,200円〜5,000円（税表記なし）、最低人数 30名〜
+- [うちChef](https://catering-price-db.vercel.app/companies/uchi-chef/): フード単価 7,300円〜15,000円（税込）、最低人数 2名〜
+- [DEAN & DELUCA catering](https://catering-price-db.vercel.app/companies/dean-and-deluca/): フード単価 3,560円〜7,520円（税込）、最低人数 15名〜（デリバリー10名〜）
+- [ごちくる（ごちクル）](https://catering-price-db.vercel.app/companies/gochikuru/): フード単価 公表なし、最低人数 公表なし
+- [ボンディッシュ（BONDISH）](https://catering-price-db.vercel.app/companies/bondish/): フード単価 3,500円〜5,000円（税別）、最低人数 20名（最大10,000名）
+- [フィンガーフードケータリング](https://catering-price-db.vercel.app/companies/fingerfood-catering/): フード単価 1,980円〜8,400円（税込）、最低人数 想定規模 30〜150名のパーティー
+- [nonpi foodbox](https://catering-price-db.vercel.app/companies/nonpi-foodbox/): フード単価 公表なし、最低人数 公表なし
+- [East Catering Tokyo](https://catering-price-db.vercel.app/companies/east-catering-tokyo/): フード単価 3,000円〜6,600円（税込／税別（プランにより異なる））、最低人数 オールインワン30名〜
