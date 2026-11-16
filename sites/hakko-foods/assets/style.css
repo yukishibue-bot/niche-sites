@@ -128,3 +128,11 @@ h2.sec{scroll-margin-top:96px}
 footer.site{border-top:3px solid var(--accent-pale)}
 .crumb{letter-spacing:.02em}
 @media(max-width:720px){.spec .row:nth-child(even){margin:0 -18px;padding-left:18px;padding-right:18px}}
+
+/* --- 2026-11-16 de-AI: break template uniformity --- */
+.grid .fcard:first-child{grid-column:span 2}
+.grid .fcard:first-child p{font-size:15px}
+.wrap>.eyebrow{background:none;padding:0;border-radius:0}
+.fcard:hover,.chip:hover,.microbe:hover{transform:none}
+h2.sec{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+@media(max-width:720px){.grid .fcard:first-child{grid-column:span 1}}

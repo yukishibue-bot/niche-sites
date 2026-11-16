@@ -149,6 +149,14 @@ table.compare th{background:#eef6f3;color:var(--teal-dark)}
 ::selection{background:var(--teal-pale)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+
+/* --- 2026-11-16 de-AI: solid text, flat table, featured card --- */
+.hero-stats .stat b{background:none;color:var(--teal-dark)}
+.logo small{background:none;color:var(--teal)}
+table.compare{box-shadow:none;border:none;border-radius:0}
+.cards .mcard:first-child{grid-column:span 2}
+.mcard:hover,.trust .tcard:hover{transform:none}
+@media(max-width:720px){.cards .mcard:first-child{grid-column:span 1}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://house-cleaning-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "カジタク", "item": "https://house-cleaning-price-db.vercel.app"}]}</script>
 </head>
