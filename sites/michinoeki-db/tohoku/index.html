@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>東北の道の駅一覧（181駅）｜全国道の駅データベース</title>
+<meta name="description" content="東北地方の道の駅 全181駅の一覧。青森県・岩手県・宮城県・秋田県・山形県・福島県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<link rel="canonical" href="https://michinoeki-db.vercel.app/tohoku/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="全国道の駅データベース">
+<meta property="og:title" content="東北の道の駅一覧（181駅）｜全国道の駅データベース">
+<meta property="og:description" content="東北地方の道の駅 全181駅の一覧。青森県・岩手県・宮城県・秋田県・山形県・福島県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<meta property="og:url" content="https://michinoeki-db.vercel.app/tohoku/">
+<meta property="og:image" content="https://michinoeki-db.vercel.app/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="東北の道の駅一覧（181駅）｜全国道の駅データベース">
+<meta name="twitter:description" content="東北地方の道の駅 全181駅の一覧。青森県・岩手県・宮城県・秋田県・山形県・福島県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --forest:#356b42; --forest-dark:#26502e; --forest-pale:#e7f3e3;
+  --grad:linear-gradient(120deg,#3f7d4e,#356b42);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--forest)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;color:var(--forest)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#dcf0d4 0%,#eef7e9 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark)}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--forest)}
+.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark);margin:0}
+.mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+table.compare{width:100%;border-collapse:collapse;background:#fff}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#f2f7f0;font-size:.88rem;font-weight:700;color:var(--forest-dark)}
+table.compare td.price{font-weight:800;color:var(--forest-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tbody tr:nth-child(even){background:#fbfdf9}
+table.compare tr:last-child td{border-bottom:none}
+.kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--forest-pale);color:var(--forest-dark);white-space:nowrap}
+.kind.actual{background:#eef0e6;color:#4a5a2a}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
+  padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
+.adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
+.adslot p{margin:0;font-size:.85rem}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--forest)}
+.ccard .type{font-size:.8rem;color:var(--forest);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(53,107,66,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.gcard li{margin-bottom:6px}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--forest)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+::selection{background:var(--forest-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid,.guide-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem;white-space:normal}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"全国道の駅データベース","url":"https://michinoeki-db.vercel.app/"}</script>
+
+</head><body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>MICHI-NO-EKI DATABASE</small>全国道の駅データベース</a>
+<nav class="main">
+<a href="/hokkaido/">北海道</a><a href="/tohoku/">東北</a><a href="/kanto/">関東</a><a href="/hokuriku-chubu/">北陸・中部</a><a href="/kinki/">近畿</a><a href="/chugoku/">中国</a><a href="/shikoku/">四国</a><a href="/kyushu-okinawa/">九州・沖縄</a>
+<a href="/guide/">使い方ガイド</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ 東北の道の駅</p></div><main><div class="wrap"><div class="page-hero"><p class="eyebrow">TOHOKU — 181 STATIONS</p><h1>東北の道の駅一覧（181駅）</h1><p>東北地方の道の駅 全181駅です。出典は国土交通省「道の駅」登録一覧（令和8年9月4日現在）で、所在地は登録一覧の表記に合わせ市町村名までを掲載しています（確認日：2026-11-17）。</p></div></div><section><div class="wrap"><div class="sec-head"><p class="eyebrow">青森県</p><h2>青森県の道の駅（28駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>しちのへ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">上北郡七戸町</td></tr><tr><td data-label="駅名"><b>はしかみ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">三戸郡階上町</td></tr><tr><td data-label="駅名"><b>虹の湖</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">黒石市</td></tr><tr><td data-label="駅名"><b>わきのさわ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">むつ市</td></tr><tr><td data-label="駅名"><b>かわうち湖</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">むつ市</td></tr><tr><td data-label="駅名"><b>しんごう</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">三戸郡新郷村</td></tr><tr><td data-label="駅名"><b>ひろさき</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">弘前市</td></tr><tr><td data-label="駅名"><b>奥入瀬</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">十和田市</td></tr><tr><td data-label="駅名"><b>さんのへ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">三戸郡三戸町</td></tr><tr><td data-label="駅名"><b>なみおか</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">青森市</td></tr><tr><td data-label="駅名"><b>十三湖高原</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">五所川原市</td></tr><tr><td data-label="駅名"><b>いまべつ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">東津軽郡今別町</td></tr><tr><td data-label="駅名"><b>なんごう</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">八戸市</td></tr><tr><td data-label="駅名"><b>もりた</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">つがる市</td></tr><tr><td data-label="駅名"><b>浅虫温泉</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">青森市</td></tr><tr><td data-label="駅名"><b>いかりがせき</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">平川市</td></tr><tr><td data-label="駅名"><b>いなかだて</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">南津軽郡田舎館村</td></tr><tr><td data-label="駅名"><b>よこはま</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">上北郡横浜町</td></tr><tr><td data-label="駅名"><b>みんまや</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">東津軽郡外ヶ浜町</td></tr><tr><td data-label="駅名"><b>こどまり</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">北津軽郡中泊町</td></tr><tr><td data-label="駅名"><b>みさわ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">三沢市</td></tr><tr><td data-label="駅名"><b>とわだ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">十和田市</td></tr><tr><td data-label="駅名"><b>つるた</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">北津軽郡鶴田町</td></tr><tr><td data-label="駅名"><b>ふかうら</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">西津軽郡深浦町</td></tr><tr><td data-label="駅名"><b>おがわら湖</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">上北郡東北町</td></tr><tr><td data-label="駅名"><b>たいらだて</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">東津軽郡外ヶ浜町</td></tr><tr><td data-label="駅名"><b>ろくのへ</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">上北郡六戸町</td></tr><tr><td data-label="駅名"><b>津軽白神</b></td><td data-label="都道府県">青森県</td><td data-label="所在地">中津軽郡西目屋村</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">岩手県</p><h2>岩手県の道の駅（39駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>石鳥谷</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">花巻市</td></tr><tr><td data-label="駅名"><b>高田松原</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">陸前高田市</td></tr><tr><td data-label="駅名"><b>区界高原</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">宮古市</td></tr><tr><td data-label="駅名"><b>おおの</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">九戸郡洋野町</td></tr><tr><td data-label="駅名"><b>種山ヶ原</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">気仙郡住田町</td></tr><tr><td data-label="駅名"><b>いわいずみ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡岩泉町</td></tr><tr><td data-label="駅名"><b>のだ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">九戸郡野田村</td></tr><tr><td data-label="駅名"><b>たろう</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">宮古市</td></tr><tr><td data-label="駅名"><b>たのはた</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡田野畑村</td></tr><tr><td data-label="駅名"><b>みずさわ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">奥州市</td></tr><tr><td data-label="駅名"><b>にしね</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">八幡平市</td></tr><tr><td data-label="駅名"><b>白樺の里やまがた</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">久慈市</td></tr><tr><td data-label="駅名"><b>みやもり</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">遠野市</td></tr><tr><td data-label="駅名"><b>紫波</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">紫波郡紫波町</td></tr><tr><td data-label="駅名"><b>はやちね</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">花巻市</td></tr><tr><td data-label="駅名"><b>やまだ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡山田町</td></tr><tr><td data-label="駅名"><b>遠野風の丘</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">遠野市</td></tr><tr><td data-label="駅名"><b>さんりく</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">大船渡市</td></tr><tr><td data-label="駅名"><b>錦秋湖</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">和賀郡西和賀町</td></tr><tr><td data-label="駅名"><b>くずまき高原</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">岩手郡葛巻町</td></tr><tr><td data-label="駅名"><b>石神の丘</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">岩手郡岩手町</td></tr><tr><td data-label="駅名"><b>雫石あねっこ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">岩手郡雫石町</td></tr><tr><td data-label="駅名"><b>とうわ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">花巻市</td></tr><tr><td data-label="駅名"><b>厳美渓</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">一関市</td></tr><tr><td data-label="駅名"><b>おりつめ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">九戸郡九戸村</td></tr><tr><td data-label="駅名"><b>かわさき</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">一関市</td></tr><tr><td data-label="駅名"><b>やまびこ館</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">宮古市</td></tr><tr><td data-label="駅名"><b>みやこ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">宮古市</td></tr><tr><td data-label="駅名"><b>三田貝分校</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡岩泉町</td></tr><tr><td data-label="駅名"><b>くじ</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">久慈市</td></tr><tr><td data-label="駅名"><b>釜石仙人峠</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">釜石市</td></tr><tr><td data-label="駅名"><b>平泉</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">西磐井郡平泉町</td></tr><tr><td data-label="駅名"><b>むろね</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">一関市</td></tr><tr><td data-label="駅名"><b>はなまき西南</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">花巻市</td></tr><tr><td data-label="駅名"><b>青の国ふだい</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡普代村</td></tr><tr><td data-label="駅名"><b>いわて北三陸</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">久慈市</td></tr><tr><td data-label="駅名"><b>だいとう</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">一関市</td></tr><tr><td data-label="駅名"><b>もりおか渋民</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">盛岡市</td></tr><tr><td data-label="駅名"><b>ふなこし</b></td><td data-label="都道府県">岩手県</td><td data-label="所在地">下閉伊郡山田町</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">宮城県</p><h2>宮城県の道の駅（19駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>七ヶ宿</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">刈田郡七ヶ宿町</td></tr><tr><td data-label="駅名"><b>津山</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">登米市</td></tr><tr><td data-label="駅名"><b>三本木</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">大崎市</td></tr><tr><td data-label="駅名"><b>路田里はなやま</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">栗原市</td></tr><tr><td data-label="駅名"><b>大谷海岸</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">気仙沼市</td></tr><tr><td data-label="駅名"><b>おおさと</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">黒川郡大郷町</td></tr><tr><td data-label="駅名"><b>米山</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">登米市</td></tr><tr><td data-label="駅名"><b>あ・ら・伊達な道の駅</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">大崎市</td></tr><tr><td data-label="駅名"><b>林林館</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">登米市</td></tr><tr><td data-label="駅名"><b>上品の郷</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">石巻市</td></tr><tr><td data-label="駅名"><b>みなみかた</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">登米市</td></tr><tr><td data-label="駅名"><b>村田</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">柴田郡村田町</td></tr><tr><td data-label="駅名"><b>三滝堂</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">登米市</td></tr><tr><td data-label="駅名"><b>おおさき</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">大崎市</td></tr><tr><td data-label="駅名"><b>かくだ</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">角田市</td></tr><tr><td data-label="駅名"><b>おながわ</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">牡鹿郡女川町</td></tr><tr><td data-label="駅名"><b>さんさん南三陸</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">本吉郡南三陸町</td></tr><tr><td data-label="駅名"><b>硯上の里おがつ</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">石巻市</td></tr><tr><td data-label="駅名"><b>東松島</b></td><td data-label="都道府県">宮城県</td><td data-label="所在地">東松島市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">秋田県</p><h2>秋田県の道の駅（34駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>たかのす</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">北秋田市</td></tr><tr><td data-label="駅名"><b>ふたつい</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">能代市</td></tr><tr><td data-label="駅名"><b>にしめ</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">由利本荘市</td></tr><tr><td data-label="駅名"><b>やたて峠</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">大館市</td></tr><tr><td data-label="駅名"><b>はちもり</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">山本郡八峰町</td></tr><tr><td data-label="駅名"><b>かづの</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">鹿角市</td></tr><tr><td data-label="駅名"><b>かみおか</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">大仙市</td></tr><tr><td data-label="駅名"><b>ことおか</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">山本郡三種町</td></tr><tr><td data-label="駅名"><b>東由利</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">由利本荘市</td></tr><tr><td data-label="駅名"><b>かみこあに</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">北秋田郡上小阿仁村</td></tr><tr><td data-label="駅名"><b>象潟</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">にかほ市</td></tr><tr><td data-label="駅名"><b>なかせん</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">大仙市</td></tr><tr><td data-label="駅名"><b>おがち</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">湯沢市</td></tr><tr><td data-label="駅名"><b>てんのう</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">潟上市</td></tr><tr><td data-label="駅名"><b>岩城</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">由利本荘市</td></tr><tr><td data-label="駅名"><b>しょうわ</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">潟上市</td></tr><tr><td data-label="駅名"><b>みねはま</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">山本郡八峰町</td></tr><tr><td data-label="駅名"><b>さんない</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">横手市</td></tr><tr><td data-label="駅名"><b>おおうち</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">由利本荘市</td></tr><tr><td data-label="駅名"><b>あに</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">北秋田市</td></tr><tr><td data-label="駅名"><b>ひない</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">大館市</td></tr><tr><td data-label="駅名"><b>五城目</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">南秋田郡五城目町</td></tr><tr><td data-label="駅名"><b>清水の里・鳥海郷</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">由利本荘市</td></tr><tr><td data-label="駅名"><b>美郷</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">仙北郡美郷町</td></tr><tr><td data-label="駅名"><b>協和</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">大仙市</td></tr><tr><td data-label="駅名"><b>十文字</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">横手市</td></tr><tr><td data-label="駅名"><b>おおがた</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">南秋田郡大潟村</td></tr><tr><td data-label="駅名"><b>あきた港</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">秋田市</td></tr><tr><td data-label="駅名"><b>こさか七滝</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">鹿角郡小坂町</td></tr><tr><td data-label="駅名"><b>大館能代空港</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">北秋田市</td></tr><tr><td data-label="駅名"><b>うご</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">雄勝郡羽後町</td></tr><tr><td data-label="駅名"><b>おおゆ</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">鹿角市</td></tr><tr><td data-label="駅名"><b>おが</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">男鹿市</td></tr><tr><td data-label="駅名"><b>十和田湖</b></td><td data-label="都道府県">秋田県</td><td data-label="所在地">鹿角郡小坂町</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">山形県</p><h2>山形県の道の駅（24駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>月山</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">鶴岡市</td></tr><tr><td data-label="駅名"><b>河北</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西村山郡河北町</td></tr><tr><td data-label="駅名"><b>寒河江</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">寒河江市</td></tr><tr><td data-label="駅名"><b>あつみ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">鶴岡市</td></tr><tr><td data-label="駅名"><b>にしかわ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西村山郡西川町</td></tr><tr><td data-label="駅名"><b>いいで</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西置賜郡飯豊町</td></tr><tr><td data-label="駅名"><b>むらやま</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">村山市</td></tr><tr><td data-label="駅名"><b>とざわ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">最上郡戸沢村</td></tr><tr><td data-label="駅名"><b>鳥海</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">飽海郡遊佐町</td></tr><tr><td data-label="駅名"><b>田沢</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">米沢市</td></tr><tr><td data-label="駅名"><b>白い森おぐに</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西置賜郡小国町</td></tr><tr><td data-label="駅名"><b>おおえ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西村山郡大江町</td></tr><tr><td data-label="駅名"><b>庄内みかわ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">東田川郡三川町</td></tr><tr><td data-label="駅名"><b>たかはた</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">東置賜郡高畠町</td></tr><tr><td data-label="駅名"><b>天童温泉</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">天童市</td></tr><tr><td data-label="駅名"><b>尾花沢</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">尾花沢市</td></tr><tr><td data-label="駅名"><b>白鷹ヤナ公園</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西置賜郡白鷹町</td></tr><tr><td data-label="駅名"><b>あさひまち</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">西村山郡朝日町</td></tr><tr><td data-label="駅名"><b>しょうない</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">東田川郡庄内町</td></tr><tr><td data-label="駅名"><b>川のみなと長井</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">長井市</td></tr><tr><td data-label="駅名"><b>米沢</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">米沢市</td></tr><tr><td data-label="駅名"><b>やまがた蔵王</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">山形市</td></tr><tr><td data-label="駅名"><b>もがみ</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">最上郡最上町</td></tr><tr><td data-label="駅名"><b>新庄エコロジーガーデン原蚕の杜</b></td><td data-label="都道府県">山形県</td><td data-label="所在地">新庄市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">福島県</p><h2>福島県の道の駅（37駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>つちゆ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">福島市</td></tr><tr><td data-label="駅名"><b>川俣</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">伊達郡川俣町</td></tr><tr><td data-label="駅名"><b>たじま</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南会津郡南会津町</td></tr><tr><td data-label="駅名"><b>安達</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">二本松市</td></tr><tr><td data-label="駅名"><b>喜多の郷</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">喜多方市</td></tr><tr><td data-label="駅名"><b>裏磐梯</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">耶麻郡北塩原村</td></tr><tr><td data-label="駅名"><b>ならは</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">双葉郡楢葉町</td></tr><tr><td data-label="駅名"><b>そうま</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">相馬市</td></tr><tr><td data-label="駅名"><b>はなわ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">東白川郡塙町</td></tr><tr><td data-label="駅名"><b>会津柳津</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">河沼郡柳津町</td></tr><tr><td data-label="駅名"><b>ふくしま東和</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">二本松市</td></tr><tr><td data-label="駅名"><b>にしあいづ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">耶麻郡西会津町</td></tr><tr><td data-label="駅名"><b>尾瀬街道みしま宿</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">大沼郡三島町</td></tr><tr><td data-label="駅名"><b>たまかわ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">石川郡玉川村</td></tr><tr><td data-label="駅名"><b>羽鳥湖高原</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">岩瀬郡天栄村</td></tr><tr><td data-label="駅名"><b>南相馬</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南相馬市</td></tr><tr><td data-label="駅名"><b>しもごう</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南会津郡下郷町</td></tr><tr><td data-label="駅名"><b>ひらた</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">石川郡平田村</td></tr><tr><td data-label="駅名"><b>よつくら港</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">いわき市</td></tr><tr><td data-label="駅名"><b>ばんだい</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">耶麻郡磐梯町</td></tr><tr><td data-label="駅名"><b>ふるどの</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">石川郡古殿町</td></tr><tr><td data-label="駅名"><b>番屋</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南会津郡南会津町</td></tr><tr><td data-label="駅名"><b>季の里天栄</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">岩瀬郡天栄村</td></tr><tr><td data-label="駅名"><b>きらら289</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南会津郡南会津町</td></tr><tr><td data-label="駅名"><b>奥会津かねやま</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">大沼郡金山町</td></tr><tr><td data-label="駅名"><b>さくらの郷</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">二本松市</td></tr><tr><td data-label="駅名"><b>あいづ 湯川・会津坂下</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">河沼郡湯川村</td></tr><tr><td data-label="駅名"><b>からむし織の里しょうわ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">大沼郡昭和村</td></tr><tr><td data-label="駅名"><b>猪苗代</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">耶麻郡猪苗代町</td></tr><tr><td data-label="駅名"><b>国見 あつかしの郷</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">伊達郡国見町</td></tr><tr><td data-label="駅名"><b>いいたて村の道の駅までい館</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">相馬郡飯舘村</td></tr><tr><td data-label="駅名"><b>尾瀬檜枝岐</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">南会津郡檜枝岐村</td></tr><tr><td data-label="駅名"><b>伊達の郷りょうぜん</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">伊達市</td></tr><tr><td data-label="駅名"><b>なみえ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">双葉郡浪江町</td></tr><tr><td data-label="駅名"><b>ふくしま</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">福島市</td></tr><tr><td data-label="駅名"><b>いわき・ら・ら・ミュウ</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">いわき市</td></tr><tr><td data-label="駅名"><b>石川</b></td><td data-label="都道府県">福島県</td><td data-label="所在地">石川郡石川町</td></tr></tbody></table></div></section><section><div class="wrap"><div class="adslot"><b>旅の予約・近くの宿を探す</b><p>道の駅めぐりの宿泊予約・旅行予約サービスへの送客枠です（準備中）。ご予約は各サービスの公式サイトからお申し込みください。</p></div><div class="srcbox"><b>データの出典</b><br>国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）をもとに、駅名・都道府県・所在地（市町村）を転記しました。確認日：2026-11-17。所在地は登録一覧の表記に合わせ市町村名までを掲載しています。番地・営業時間・休館日・施設情報は変動するため、各駅の公式サイトと道の駅公式ポータル（全国「道の駅」連絡会）でご確認ください。</div></div></section></main><footer class="site"><div class="wrap">
+<p class="fname">全国道の駅データベース</p>
+<p>運営：全国道の駅データベース運営事務局</p>
+<p>掲載データは国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）に基づきます（確認日：2026-11-17）。所在地は市町村名までを掲載しています。営業時間・休館日・施設の最新情報は各駅の公式サイトでご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/hokkaido/">北海道の道の駅</a><a href="/tohoku/">東北の道の駅</a><a href="/kanto/">関東の道の駅</a><a href="/hokuriku-chubu/">北陸・中部の道の駅</a><a href="/kinki/">近畿の道の駅</a><a href="/chugoku/">中国の道の駅</a><a href="/shikoku/">四国の道の駅</a><a href="/kyushu-okinawa/">九州・沖縄の道の駅</a><a href="/guide/">使い方ガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a>
+</div>
+<p>© 全国道の駅データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

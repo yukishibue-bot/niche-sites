@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://michinoeki-db.vercel.app/sitemap.xml

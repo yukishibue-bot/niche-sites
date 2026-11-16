@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中国の道の駅一覧（108駅）｜全国道の駅データベース</title>
+<meta name="description" content="中国地方の道の駅 全108駅の一覧。鳥取県・島根県・岡山県・広島県・山口県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<link rel="canonical" href="https://michinoeki-db.vercel.app/chugoku/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="全国道の駅データベース">
+<meta property="og:title" content="中国の道の駅一覧（108駅）｜全国道の駅データベース">
+<meta property="og:description" content="中国地方の道の駅 全108駅の一覧。鳥取県・島根県・岡山県・広島県・山口県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<meta property="og:url" content="https://michinoeki-db.vercel.app/chugoku/">
+<meta property="og:image" content="https://michinoeki-db.vercel.app/assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="中国の道の駅一覧（108駅）｜全国道の駅データベース">
+<meta name="twitter:description" content="中国地方の道の駅 全108駅の一覧。鳥取県・島根県・岡山県・広島県・山口県の駅名・所在地（市町村）を国土交通省の登録一覧に基づいて掲載。出典・確認日付き。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
+  --line:#ececec; --hair:#f0f0f0;
+  --forest:#356b42; --forest-dark:#26502e; --forest-pale:#e7f3e3;
+  --grad:linear-gradient(120deg,#3f7d4e,#356b42);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--forest)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;color:var(--forest)}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#dcf0d4 0%,#eef7e9 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark)}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--forest)}
+.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark);margin:0}
+.mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+table.compare{width:100%;border-collapse:collapse;background:#fff}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#f2f7f0;font-size:.88rem;font-weight:700;color:var(--forest-dark)}
+table.compare td.price{font-weight:800;color:var(--forest-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tbody tr:nth-child(even){background:#fbfdf9}
+table.compare tr:last-child td{border-bottom:none}
+.kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--forest-pale);color:var(--forest-dark);white-space:nowrap}
+.kind.actual{background:#eef0e6;color:#4a5a2a}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
+  padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
+.adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
+.adslot p{margin:0;font-size:.85rem}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--forest)}
+.ccard .type{font-size:.8rem;color:var(--forest);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(53,107,66,.25)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+  padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.gcard li{margin-bottom:6px}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--forest)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+::selection{background:var(--forest-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid,.guide-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem;white-space:normal}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"全国道の駅データベース","url":"https://michinoeki-db.vercel.app/"}</script>
+
+</head><body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>MICHI-NO-EKI DATABASE</small>全国道の駅データベース</a>
+<nav class="main">
+<a href="/hokkaido/">北海道</a><a href="/tohoku/">東北</a><a href="/kanto/">関東</a><a href="/hokuriku-chubu/">北陸・中部</a><a href="/kinki/">近畿</a><a href="/chugoku/">中国</a><a href="/shikoku/">四国</a><a href="/kyushu-okinawa/">九州・沖縄</a>
+<a href="/guide/">使い方ガイド</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ 中国の道の駅</p></div><main><div class="wrap"><div class="page-hero"><p class="eyebrow">CHUGOKU — 108 STATIONS</p><h1>中国の道の駅一覧（108駅）</h1><p>中国地方の道の駅 全108駅です。出典は国土交通省「道の駅」登録一覧（令和8年9月4日現在）で、所在地は登録一覧の表記に合わせ市町村名までを掲載しています（確認日：2026-11-17）。</p></div></div><section><div class="wrap"><div class="sec-head"><p class="eyebrow">鳥取県</p><h2>鳥取県の道の駅（17駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>大栄</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡北栄町</td></tr><tr><td data-label="駅名"><b>三朝・楽市楽座</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡三朝町</td></tr><tr><td data-label="駅名"><b>ほうじょう</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡北栄町</td></tr><tr><td data-label="駅名"><b>ポート赤碕</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡琴浦町</td></tr><tr><td data-label="駅名"><b>はっとう</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">八頭郡八頭町</td></tr><tr><td data-label="駅名"><b>犬挟</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">倉吉市</td></tr><tr><td data-label="駅名"><b>はわい</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡湯梨浜町</td></tr><tr><td data-label="駅名"><b>神話の里 白うさぎ</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">鳥取市</td></tr><tr><td data-label="駅名"><b>清流茶屋 かわはら</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">鳥取市</td></tr><tr><td data-label="駅名"><b>若桜</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">八頭郡若桜町</td></tr><tr><td data-label="駅名"><b>大山恵みの里</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">西伯郡大山町</td></tr><tr><td data-label="駅名"><b>燕趙園</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡湯梨浜町</td></tr><tr><td data-label="駅名"><b>きなんせ岩美</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">岩美郡岩美町</td></tr><tr><td data-label="駅名"><b>奥大山</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">日野郡江府町</td></tr><tr><td data-label="駅名"><b>にちなん日野川の郷</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">日野郡日南町</td></tr><tr><td data-label="駅名"><b>琴の浦</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">東伯郡琴浦町</td></tr><tr><td data-label="駅名"><b>西いなば 気楽里</b></td><td data-label="都道府県">鳥取県</td><td data-label="所在地">鳥取市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">島根県</p><h2>島根県の道の駅（29駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>掛合の里</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">雲南市</td></tr><tr><td data-label="駅名"><b>頓原</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">飯石郡飯南町</td></tr><tr><td data-label="駅名"><b>ゆうひパーク浜田</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">浜田市</td></tr><tr><td data-label="駅名"><b>ゆうひパーク三隅</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">浜田市</td></tr><tr><td data-label="駅名"><b>邑南の里</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">邑智郡邑南町</td></tr><tr><td data-label="駅名"><b>グリーンロード大和</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">邑智郡美郷町</td></tr><tr><td data-label="駅名"><b>大社ご縁広場</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">出雲市</td></tr><tr><td data-label="駅名"><b>サンエイト美都</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">益田市</td></tr><tr><td data-label="駅名"><b>奥出雲おろちループ</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">仁多郡奥出雲町</td></tr><tr><td data-label="駅名"><b>広瀬・富田城</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">安来市</td></tr><tr><td data-label="駅名"><b>赤来高原</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">飯石郡飯南町</td></tr><tr><td data-label="駅名"><b>かきのきむら</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">鹿足郡吉賀町</td></tr><tr><td data-label="駅名"><b>キララ多伎</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">出雲市</td></tr><tr><td data-label="駅名"><b>湯の川</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">出雲市</td></tr><tr><td data-label="駅名"><b>シルクウェイにちはら</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">鹿足郡津和野町</td></tr><tr><td data-label="駅名"><b>秋鹿なぎさ公園</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">松江市</td></tr><tr><td data-label="駅名"><b>津和野温泉なごみの里</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">鹿足郡津和野町</td></tr><tr><td data-label="駅名"><b>さくらの里きすき</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">雲南市</td></tr><tr><td data-label="駅名"><b>本庄</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">松江市</td></tr><tr><td data-label="駅名"><b>匹見峡</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">益田市</td></tr><tr><td data-label="駅名"><b>酒蔵奥出雲交流館</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">仁多郡奥出雲町</td></tr><tr><td data-label="駅名"><b>インフォメーションセンターかわもと</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">邑智郡川本町</td></tr><tr><td data-label="駅名"><b>むいかいち温泉</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">鹿足郡吉賀町</td></tr><tr><td data-label="駅名"><b>ロード銀山</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">大田市</td></tr><tr><td data-label="駅名"><b>サンピコごうつ</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">江津市</td></tr><tr><td data-label="駅名"><b>おろちの里</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">雲南市</td></tr><tr><td data-label="駅名"><b>あらエッサ</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">安来市</td></tr><tr><td data-label="駅名"><b>たたらば壱番地</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">雲南市</td></tr><tr><td data-label="駅名"><b>ごいせ仁摩</b></td><td data-label="都道府県">島根県</td><td data-label="所在地">大田市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">岡山県</p><h2>岡山県の道の駅（17駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>かもがわ円城</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">加賀郡吉備中央町</td></tr><tr><td data-label="駅名"><b>がいせん桜 新庄宿</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">真庭郡新庄村</td></tr><tr><td data-label="駅名"><b>あわくらんど</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">英田郡西粟倉村</td></tr><tr><td data-label="駅名"><b>くめなん</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">久米郡久米南町</td></tr><tr><td data-label="駅名"><b>みやま公園</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">玉野市</td></tr><tr><td data-label="駅名"><b>一本松展望園</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">瀬戸内市</td></tr><tr><td data-label="駅名"><b>黒井山グリーンパーク</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">瀬戸内市</td></tr><tr><td data-label="駅名"><b>鯉が窪</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">新見市</td></tr><tr><td data-label="駅名"><b>蒜山高原</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">真庭市</td></tr><tr><td data-label="駅名"><b>風の家</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">真庭市</td></tr><tr><td data-label="駅名"><b>彩菜茶屋</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">美作市</td></tr><tr><td data-label="駅名"><b>奥津温泉</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">苫田郡鏡野町</td></tr><tr><td data-label="駅名"><b>久米の里</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">津山市</td></tr><tr><td data-label="駅名"><b>醍醐の里</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">真庭市</td></tr><tr><td data-label="駅名"><b>かよう</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">加賀郡吉備中央町</td></tr><tr><td data-label="駅名"><b>笠岡ベイファーム</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">笠岡市</td></tr><tr><td data-label="駅名"><b>山陽道やかげ宿</b></td><td data-label="都道府県">岡山県</td><td data-label="所在地">小田郡矢掛町</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">広島県</p><h2>広島県の道の駅（21駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>リストアステーション</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">庄原市</td></tr><tr><td data-label="駅名"><b>遊YOUさろん東城</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">庄原市</td></tr><tr><td data-label="駅名"><b>さんわ182ステーション</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">神石郡神石高原町</td></tr><tr><td data-label="駅名"><b>豊平どんぐり村</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">山県郡北広島町</td></tr><tr><td data-label="駅名"><b>来夢とごうち</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">山県郡安芸太田町</td></tr><tr><td data-label="駅名"><b>よがんす白竜</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">三原市</td></tr><tr><td data-label="駅名"><b>アリストぬまくま</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">福山市</td></tr><tr><td data-label="駅名"><b>スパ羅漢</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">廿日市市</td></tr><tr><td data-label="駅名"><b>ゆめランド布野</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">三次市</td></tr><tr><td data-label="駅名"><b>ふぉレスト君田</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">三次市</td></tr><tr><td data-label="駅名"><b>クロスロードみつぎ</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">尾道市</td></tr><tr><td data-label="駅名"><b>舞ロードIC千代田</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">山県郡北広島町</td></tr><tr><td data-label="駅名"><b>北の関宿安芸高田</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">安芸高田市</td></tr><tr><td data-label="駅名"><b>湖畔の里福富</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">東広島市</td></tr><tr><td data-label="駅名"><b>たけはら</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">竹原市</td></tr><tr><td data-label="駅名"><b>みはら神明の里</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">三原市</td></tr><tr><td data-label="駅名"><b>たかの</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">庄原市</td></tr><tr><td data-label="駅名"><b>世羅</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">世羅郡世羅町</td></tr><tr><td data-label="駅名"><b>びんご府中</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">府中市</td></tr><tr><td data-label="駅名"><b>三矢の里あきたかた</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">安芸高田市</td></tr><tr><td data-label="駅名"><b>西条のん太の酒蔵</b></td><td data-label="都道府県">広島県</td><td data-label="所在地">東広島市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="sec-head"><p class="eyebrow">山口県</p><h2>山口県の道の駅（24駅）</h2></div><table class="compare"><thead><tr><th>駅名</th><th>都道府県</th><th>所在地</th></tr></thead><tbody><tr><td data-label="駅名"><b>阿武町</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">阿武郡阿武町</td></tr><tr><td data-label="駅名"><b>萩往還</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>あさひ</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>あいお</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">山口市</td></tr><tr><td data-label="駅名"><b>ゆとりパークたまがわ</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>サザンセトとうわ</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">大島郡周防大島町</td></tr><tr><td data-label="駅名"><b>きくがわ</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">下関市</td></tr><tr><td data-label="駅名"><b>ハピネスふくえ</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>長門峡</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">山口市</td></tr><tr><td data-label="駅名"><b>ピュアラインにしき</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">岩国市</td></tr><tr><td data-label="駅名"><b>おふく</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">美祢市</td></tr><tr><td data-label="駅名"><b>みとう</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">美祢市</td></tr><tr><td data-label="駅名"><b>仁保の郷</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">山口市</td></tr><tr><td data-label="駅名"><b>萩しーまーと</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>願成就温泉</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">山口市</td></tr><tr><td data-label="駅名"><b>うり坊の郷katamata</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>蛍街道西ノ市</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">下関市</td></tr><tr><td data-label="駅名"><b>きらら あじす</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">山口市</td></tr><tr><td data-label="駅名"><b>萩・さんさん三見</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">萩市</td></tr><tr><td data-label="駅名"><b>北浦街道 豊北</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">下関市</td></tr><tr><td data-label="駅名"><b>ソレーネ周南</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">周南市</td></tr><tr><td data-label="駅名"><b>上関海峡</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">熊毛郡上関町</td></tr><tr><td data-label="駅名"><b>潮彩市場防府</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">防府市</td></tr><tr><td data-label="駅名"><b>センザキッチン</b></td><td data-label="都道府県">山口県</td><td data-label="所在地">長門市</td></tr></tbody></table></div></section><section><div class="wrap"><div class="adslot"><b>旅の予約・近くの宿を探す</b><p>道の駅めぐりの宿泊予約・旅行予約サービスへの送客枠です（準備中）。ご予約は各サービスの公式サイトからお申し込みください。</p></div><div class="srcbox"><b>データの出典</b><br>国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）をもとに、駅名・都道府県・所在地（市町村）を転記しました。確認日：2026-11-17。所在地は登録一覧の表記に合わせ市町村名までを掲載しています。番地・営業時間・休館日・施設情報は変動するため、各駅の公式サイトと道の駅公式ポータル（全国「道の駅」連絡会）でご確認ください。</div></div></section></main><footer class="site"><div class="wrap">
+<p class="fname">全国道の駅データベース</p>
+<p>運営：全国道の駅データベース運営事務局</p>
+<p>掲載データは国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）に基づきます（確認日：2026-11-17）。所在地は市町村名までを掲載しています。営業時間・休館日・施設の最新情報は各駅の公式サイトでご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/hokkaido/">北海道の道の駅</a><a href="/tohoku/">東北の道の駅</a><a href="/kanto/">関東の道の駅</a><a href="/hokuriku-chubu/">北陸・中部の道の駅</a><a href="/kinki/">近畿の道の駅</a><a href="/chugoku/">中国の道の駅</a><a href="/shikoku/">四国の道の駅</a><a href="/kyushu-okinawa/">九州・沖縄の道の駅</a><a href="/guide/">使い方ガイド</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a>
+</div>
+<p>© 全国道の駅データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

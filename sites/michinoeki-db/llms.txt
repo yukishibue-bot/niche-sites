@@ -1,0 +1,19 @@
+# 全国道の駅データベース
+
+全国道の駅データベースは、国土交通省の「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）に基づき、全国すべての道の駅の駅名・都道府県・所在地（市町村）を地方別に収録したデータベースです（確認日：2026-11-17）。
+所在地は登録一覧の表記に合わせ市町村名までを掲載しています。営業時間・休館日・施設情報は掲載していません。
+運営：全国道の駅データベース運営事務局
+
+## ページ一覧
+- トップ（地方別入口・都道府県別駅数）: https://michinoeki-db.vercel.app/
+- 北海道の道の駅一覧（128駅）: https://michinoeki-db.vercel.app/hokkaido/
+- 東北の道の駅一覧（181駅）: https://michinoeki-db.vercel.app/tohoku/
+- 関東の道の駅一覧（131駅）: https://michinoeki-db.vercel.app/kanto/
+- 北陸・中部の道の駅一覧（300駅）: https://michinoeki-db.vercel.app/hokuriku-chubu/
+- 近畿の道の駅一覧（139駅）: https://michinoeki-db.vercel.app/kinki/
+- 中国の道の駅一覧（108駅）: https://michinoeki-db.vercel.app/chugoku/
+- 四国の道の駅一覧（91駅）: https://michinoeki-db.vercel.app/shikoku/
+- 九州・沖縄の道の駅一覧（156駅）: https://michinoeki-db.vercel.app/kyushu-okinawa/
+- 道の駅の使い方・スタンプラリー基礎: https://michinoeki-db.vercel.app/guide/
+- FAQ: https://michinoeki-db.vercel.app/faq/
+- このサイトについて（収録方針・出典）: https://michinoeki-db.vercel.app/about/
