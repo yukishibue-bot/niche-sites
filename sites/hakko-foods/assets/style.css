@@ -118,3 +118,13 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-off
  *,*::before,*::after{transition:none !important;animation:none !important}
  .fcard:hover,.chip:hover,.btn:hover,.fbtn:hover{transform:none}
 }
+
+/* --- 2026-11-16 polish 2: item-page editorial, spec readability --- */
+::selection{background:var(--accent-pale)}
+.wrap>h1{font-size:clamp(34px,4.4vw,54px);border-bottom:3px solid var(--accent-pale);padding-bottom:16px}
+.spec .row:nth-child(even){background:#fdf9f2;margin:0 -24px;padding-left:24px;padding-right:24px}
+.spec dt{color:var(--accent-deep)}
+h2.sec{scroll-margin-top:96px}
+footer.site{border-top:3px solid var(--accent-pale)}
+.crumb{letter-spacing:.02em}
+@media(max-width:720px){.spec .row:nth-child(even){margin:0 -18px;padding-left:18px;padding-right:18px}}

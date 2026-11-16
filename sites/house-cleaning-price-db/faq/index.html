@@ -18,7 +18,7 @@
 
 <style>
 :root{
-  --ink:#222; --muted:#666; --faint:#8a8a8a;
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
   --line:#ececec; --hair:#f0f0f0;
   --teal:#0f766e; --teal-dark:#0b5f55; --teal-pale:#e2f2ee;
   --grad:linear-gradient(120deg,#1fa08c,#0f766e);
@@ -140,6 +140,15 @@ footer.site a{color:var(--teal)}
   table.compare td.price{font-size:1.15rem}
   nav.main a{padding:10px}
 }
+
+/* --- 2026-11-16 polish: price readability, a11y --- */
+:root{--faint:#6e6e6e}
+table.compare td.price{font-variant-numeric:tabular-nums;font-size:1.05rem;color:var(--teal-dark)}
+table.compare tbody tr:nth-child(even){background:#fafcfb}
+table.compare th{background:#eef6f3;color:var(--teal-dark)}
+::selection{background:var(--teal-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://house-cleaning-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://house-cleaning-price-db.vercel.app"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ハウスクリーニングの相場はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "大手各社の公式掲載料金（2026-11-16確認）では、エアコン壁掛け（お掃除機能なし）の中央値は14,245円、キッチンは19,690円、浴室は18,755円でした。メニューごとの中央値と価格帯は各メニューページに掲載しています。"}}, {"@type": "Question", "name": "同じメニューでも会社によって料金が違うのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "作業範囲（分解の程度や対象パーツ）、サイズ条件（間口・床面積など）、税込・税別の表記、複数台割引の有無が会社ごとに違うためです。本サイトでは各社の公式表記どおりに掲載し、条件は備考に明記しています。"}}, {"@type": "Question", "name": "掲載料金のほかに追加料金はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "会社や状況により、駐車場代、汚れの状態による追加費用、オプション料金がかかる場合があります。申し込み前に各社の公式サイトと見積もりでご確認ください。本サイトの料金は公式掲載の通常料金で、キャンペーン価格は含みません。"}}, {"@type": "Question", "name": "「公表なし」とはどういう意味ですか？", "acceptedAnswer": {"@type": "Answer", "text": "その会社の公式サイトで、該当メニューの料金を確認できなかったことを示します。推測で金額を埋めることはせず、確認できた範囲だけを掲載しています。「取扱なし」は公式ページで対象外と明記されていた場合の表示です。"}}, {"@type": "Question", "name": "相場の中央値はどうやって計算していますか？", "acceptedAnswer": {"@type": "Answer", "text": "収録した各社の公式掲載料金（税込）だけを使い、メニューごとに並べ替えた中央の値です。「〜（から）」表示の料金はその下限額で集計しています。算出方法の詳細は「このサイトについて」に掲載しています。"}}, {"@type": "Question", "name": "空室クリーニングと在宅のクリーニングは何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "空室クリーニングは引っ越し前後など荷物のない状態で家全体を清掃するメニューで、間取り・広さで料金が決まります。在宅の場合は箇所ごとの単品メニューや、水回りセットなどを組み合わせるのが一般的です。"}}]}</script>
 </head>

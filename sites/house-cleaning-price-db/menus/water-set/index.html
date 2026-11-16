@@ -18,7 +18,7 @@
 
 <style>
 :root{
-  --ink:#222; --muted:#666; --faint:#8a8a8a;
+  --ink:#222; --muted:#666; --faint:#6e6e6e;
   --line:#ececec; --hair:#f0f0f0;
   --teal:#0f766e; --teal-dark:#0b5f55; --teal-pale:#e2f2ee;
   --grad:linear-gradient(120deg,#1fa08c,#0f766e);
@@ -140,6 +140,15 @@ footer.site a{color:var(--teal)}
   table.compare td.price{font-size:1.15rem}
   nav.main a{padding:10px}
 }
+
+/* --- 2026-11-16 polish: price readability, a11y --- */
+:root{--faint:#6e6e6e}
+table.compare td.price{font-variant-numeric:tabular-nums;font-size:1.05rem;color:var(--teal-dark)}
+table.compare tbody tr:nth-child(even){background:#fafcfb}
+table.compare th{background:#eef6f3;color:var(--teal-dark)}
+::selection{background:var(--teal-pale)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--teal);outline-offset:3px;border-radius:4px}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ハウスクリーニング料金相場データベース", "url": "https://house-cleaning-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://house-cleaning-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "水回りセット", "item": "https://house-cleaning-price-db.vercel.app"}]}</script>
 </head>
