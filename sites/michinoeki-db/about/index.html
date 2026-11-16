@@ -143,6 +143,41 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-off
   table.compare td.price{font-size:1.15rem;white-space:normal}
   nav.main a{padding:10px}
 }
+
+/* --- audit fixes 2026-11-17 --- */
+.hero h1,.page-hero h1{text-wrap:balance}
+.hero-note{font-size:.8rem;color:var(--faint);margin:16px 0 0}
+.searchbox{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px 26px;margin:0 0 26px}
+.searchbox label{display:block;font-weight:800;font-size:.95rem;letter-spacing:-0.02em;margin-bottom:10px}
+.search-row{display:flex;gap:10px;flex-wrap:wrap}
+.search-row input[type="search"]{flex:1 1 260px;font-family:inherit;font-size:1rem;color:var(--ink);
+  padding:13px 16px;border:1px solid #d5d6d9;border-radius:11px;background:#fff}
+.search-row input[type="search"]:focus{outline:2px solid var(--forest);outline-offset:2px;border-color:var(--forest)}
+.search-count{font-size:.88rem;color:var(--muted);margin:12px 0 0}
+.search-count b{color:var(--forest-dark);font-variant-numeric:tabular-nums}
+table.compare tbody tr.is-hidden{display:none}
+.noresult{display:none;color:var(--muted);font-size:.93rem;margin:12px 0 0}
+.noresult.show{display:block}
+.toc{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px 26px;margin:28px 0 4px}
+.toc-title{font-weight:800;font-size:.95rem;letter-spacing:-0.02em;margin:0 0 10px}
+.toc ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.toc a{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);text-decoration:none;
+  font-size:.88rem;font-weight:700;padding:7px 14px;border-radius:30px;white-space:nowrap}
+.toc a:hover{background:#d9ecd2}
+section[id]{scroll-margin-top:96px}
+.mcard p.desc .pref{white-space:nowrap}
+.cards.regions{grid-template-columns:repeat(6,1fr)}
+.cards.regions .span3{grid-column:span 3}
+.cards.regions .span2{grid-column:span 2}
+.cards.regions .mcard.featured{background:linear-gradient(135deg,#f0f7ec,#e3efdb);border-color:#cfe0c4}
+.cards.regions .mcard.featured .leadprice{font-size:2.15rem}
+.cards.regions .mcard.semifeatured .leadprice{font-size:1.7rem}
+.cards.regions .mcard.featured h3{font-size:1.3rem}
+@media (max-width:720px){
+  .cards.regions{grid-template-columns:1fr}
+  .cards.regions .mcard{grid-column:auto}
+  .searchbox,.toc{padding:18px}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"全国道の駅データベース","url":"https://michinoeki-db.vercel.app/"}</script>
 

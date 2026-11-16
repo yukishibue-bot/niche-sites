@@ -143,6 +143,41 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-off
   table.compare td.price{font-size:1.15rem;white-space:normal}
   nav.main a{padding:10px}
 }
+
+/* --- audit fixes 2026-11-17 --- */
+.hero h1,.page-hero h1{text-wrap:balance}
+.hero-note{font-size:.8rem;color:var(--faint);margin:16px 0 0}
+.searchbox{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:22px 26px;margin:0 0 26px}
+.searchbox label{display:block;font-weight:800;font-size:.95rem;letter-spacing:-0.02em;margin-bottom:10px}
+.search-row{display:flex;gap:10px;flex-wrap:wrap}
+.search-row input[type="search"]{flex:1 1 260px;font-family:inherit;font-size:1rem;color:var(--ink);
+  padding:13px 16px;border:1px solid #d5d6d9;border-radius:11px;background:#fff}
+.search-row input[type="search"]:focus{outline:2px solid var(--forest);outline-offset:2px;border-color:var(--forest)}
+.search-count{font-size:.88rem;color:var(--muted);margin:12px 0 0}
+.search-count b{color:var(--forest-dark);font-variant-numeric:tabular-nums}
+table.compare tbody tr.is-hidden{display:none}
+.noresult{display:none;color:var(--muted);font-size:.93rem;margin:12px 0 0}
+.noresult.show{display:block}
+.toc{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:20px 26px;margin:28px 0 4px}
+.toc-title{font-weight:800;font-size:.95rem;letter-spacing:-0.02em;margin:0 0 10px}
+.toc ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.toc a{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);text-decoration:none;
+  font-size:.88rem;font-weight:700;padding:7px 14px;border-radius:30px;white-space:nowrap}
+.toc a:hover{background:#d9ecd2}
+section[id]{scroll-margin-top:96px}
+.mcard p.desc .pref{white-space:nowrap}
+.cards.regions{grid-template-columns:repeat(6,1fr)}
+.cards.regions .span3{grid-column:span 3}
+.cards.regions .span2{grid-column:span 2}
+.cards.regions .mcard.featured{background:linear-gradient(135deg,#f0f7ec,#e3efdb);border-color:#cfe0c4}
+.cards.regions .mcard.featured .leadprice{font-size:2.15rem}
+.cards.regions .mcard.semifeatured .leadprice{font-size:1.7rem}
+.cards.regions .mcard.featured h3{font-size:1.3rem}
+@media (max-width:720px){
+  .cards.regions{grid-template-columns:1fr}
+  .cards.regions .mcard{grid-column:auto}
+  .searchbox,.toc{padding:18px}
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"全国道の駅データベース","url":"https://michinoeki-db.vercel.app/"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "全国に道の駅はいくつありますか？", "acceptedAnswer": {"@type": "Answer", "text": "国土交通省によると、令和8年9月4日現在で1,234駅が登録されています。本サイトはその登録一覧に基づき、全駅を収録しています。"}}, {"@type": "Question", "name": "所在地はなぜ市町村までなのですか？", "acceptedAnswer": {"@type": "Answer", "text": "出典である国土交通省の登録一覧が市町村単位の表記のためです。番地は各駅の公式サイトや道の駅公式ポータル（全国「道の駅」連絡会）でご確認ください。"}}, {"@type": "Question", "name": "営業時間や休館日は載っていますか？", "acceptedAnswer": {"@type": "Answer", "text": "載せていません。営業時間・休館日・施設情報は駅ごとに変わりやすいため、各駅の公式サイトで最新情報をご確認ください。"}}, {"@type": "Question", "name": "駅数が一番多い都道府県はどこですか？", "acceptedAnswer": {"@type": "Answer", "text": "北海道の128駅です。次いで岐阜県55駅、長野県54駅となっています（国土交通省登録一覧・令和8年9月4日現在）。"}}, {"@type": "Question", "name": "道の駅のスタンプはどこで押せますか？", "acceptedAnswer": {"@type": "Answer", "text": "多くの駅に記念スタンプが設置されています。設置場所や利用できる時間は駅により異なるため、現地の案内と各駅の公式サイトでご確認ください。詳しくは使い方ガイドをご覧ください。"}}, {"@type": "Question", "name": "データの出典と更新について教えてください。", "acceptedAnswer": {"@type": "Answer", "text": "国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）が出典です。本サイトの確認日は2026-11-17です。新規登録などの公式発表に合わせて順次更新します。"}}]}</script>
@@ -166,7 +201,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--forest);outline-off
 </div></div>
 <section><div class="wrap">
 <div class="faq-item"><h3>Q. 全国に道の駅はいくつありますか？</h3><p>国土交通省によると、令和8年9月4日現在で1,234駅が登録されています。本サイトはその登録一覧に基づき、全駅を収録しています。</p></div><div class="faq-item"><h3>Q. 所在地はなぜ市町村までなのですか？</h3><p>出典である国土交通省の登録一覧が市町村単位の表記のためです。番地は各駅の公式サイトや道の駅公式ポータル（全国「道の駅」連絡会）でご確認ください。</p></div><div class="faq-item"><h3>Q. 営業時間や休館日は載っていますか？</h3><p>載せていません。営業時間・休館日・施設情報は駅ごとに変わりやすいため、各駅の公式サイトで最新情報をご確認ください。</p></div><div class="faq-item"><h3>Q. 駅数が一番多い都道府県はどこですか？</h3><p>北海道の128駅です。次いで岐阜県55駅、長野県54駅となっています（国土交通省登録一覧・令和8年9月4日現在）。</p></div><div class="faq-item"><h3>Q. 道の駅のスタンプはどこで押せますか？</h3><p>多くの駅に記念スタンプが設置されています。設置場所や利用できる時間は駅により異なるため、現地の案内と各駅の公式サイトでご確認ください。詳しくは使い方ガイドをご覧ください。</p></div><div class="faq-item"><h3>Q. データの出典と更新について教えてください。</h3><p>国土交通省「道の駅」登録一覧（令和8年9月4日現在・全国1,234駅）が出典です。本サイトの確認日は2026-11-17です。新規登録などの公式発表に合わせて順次更新します。</p></div>
-<div class="adslot"><b>旅の予約・近くの宿を探す</b><p>道の駅めぐりの宿泊予約・旅行予約サービスへの送客枠です（準備中）。ご予約は各サービスの公式サイトからお申し込みください。</p></div>
+<div class="adslot"><b>旅の予約・近くの宿を探す</b><p>道の駅めぐりの宿泊予約・旅行予約サービスへの送客枠です。ご予約は各サービスの公式サイトからお申し込みください。</p></div>
 </div></section>
 </main>
 <footer class="site"><div class="wrap">

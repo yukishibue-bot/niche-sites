@@ -105,7 +105,7 @@ table.compare tr:last-child td{border-bottom:none}
   padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
 .crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
 .crumb a{color:var(--faint)}
-.page-hero{padding:56px 0 0}
+.page-hero{padding:36px 0 0}
 .page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
 .page-hero p{color:var(--muted);max-width:780px}
 .srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
@@ -122,6 +122,12 @@ footer.site p{font-size:.88rem;margin:8px 0}
 footer.site a{color:var(--amber)}
 .foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{text-decoration:none;font-size:.9rem}
+section.first-sec{padding-top:32px}
+table.compare th:first-child,table.compare td:first-child{width:46%}
+table.sortable thead th{cursor:pointer;user-select:none}
+table.sortable thead th::after{content:" \2195";font-size:.72em;color:var(--faint);font-weight:400}
+table.sortable thead th[data-dir="asc"]::after{content:" \2191";color:var(--amber-dark);font-weight:700}
+table.sortable thead th[data-dir="desc"]::after{content:" \2193";color:var(--amber-dark);font-weight:700}
 ::selection{background:var(--amber-pale)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
 @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none !important;animation:none !important}html{scroll-behavior:auto}}
@@ -163,38 +169,38 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
 <h1>ウイスキーの買取相場</h1>
 <p>買取各社が公式サイトで公表しているウイスキーの買取価格を収録しています。業者によって公表価格が異なるため、業者ごとに表を分けています。いずれも未開栓を前提とした価格で、ボトルの状態・付属品・在庫状況・相場により実際の査定額は変動します。</p>
 </div></div>
-<section><div class="wrap">
+<section class="first-sec"><div class="wrap">
 <div class="sec-head"><h2>JOYLAB（ジョイラボ）の公表買取価格</h2>
 <p>JOYLAB公式「リアルタイムお酒買取価格・相場表」（最終更新日：2026/10/14）に掲載された店頭買取価格です。「現行品対象」は現行流通品を対象とした価格である旨の同表の注記です。確認日：2026-11-17。</p></div>
-<table class="compare"><thead><tr><th>銘柄</th><th>買取価格</th><th>区分</th><th>備考</th><th>出典</th></tr></thead><tbody>
-<tr><td data-label="銘柄">竹鶴 25年 箱付</td><td data-label="買取価格" class="price">160,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">ニッカ</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">山崎 18年 箱付</td><td data-label="買取価格" class="price">85,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">箱なし78,000円。現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">響 21年 箱付</td><td data-label="買取価格" class="price">68,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">箱なし61,000円。現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">白州 18年 箱付</td><td data-label="買取価格" class="price">65,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">箱なし58,000円。現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">竹鶴 21年</td><td data-label="買取価格" class="price">57,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">箱付60,000円</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">響 17年</td><td data-label="買取価格" class="price">48,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">マイレージ期限2018〜2019年のみ対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">マッカラン 18年 シェリーオーク 箱付</td><td data-label="買取価格" class="price">43,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">2021年以降リリースボトルが対象。箱なし40,000円</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">竹鶴 17年</td><td data-label="買取価格" class="price">30,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">ニッカ</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">バランタイン 30年 箱付（正規品）</td><td data-label="買取価格" class="price">30,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">並行品は29,000円</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">ロイヤルハウスホールド</td><td data-label="買取価格" class="price">21,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">サントリー</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">山崎 12年 箱付</td><td data-label="買取価格" class="price">19,800円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">箱なし18,800円。現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">白州 12年</td><td data-label="買取価格" class="price">19,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象。箱付同額</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">響 ブレンダーズチョイス</td><td data-label="買取価格" class="price">14,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">山崎 NV</td><td data-label="買取価格" class="price">9,600円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">白州 NV</td><td data-label="買取価格" class="price">9,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象。箱付同額</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">響 ジャパニーズハーモニー</td><td data-label="買取価格" class="price">9,300円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">マッカラン 12年 シェリーオーク 箱付</td><td data-label="買取価格" class="price">9,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">竹鶴 ピュアモルト 黒ラベル</td><td data-label="買取価格" class="price">7,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">ニッカ</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">イチローズモルト リミテッドエディション 箱付</td><td data-label="買取価格" class="price">6,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">マッカラン 12年 ダブルカスク 箱付</td><td data-label="買取価格" class="price">6,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">イチローズモルト ミズナラウッドリザーブ 箱付</td><td data-label="買取価格" class="price">6,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">余市 NV</td><td data-label="買取価格" class="price">4,300円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">ニッカ</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">宮城峡 NV</td><td data-label="買取価格" class="price">4,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">ニッカ</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">バランタイン 17年</td><td data-label="買取価格" class="price">3,700円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">知多</td><td data-label="買取価格" class="price">3,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"><span class="sub">現行品対象</span></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">シーバスリーガル 18年</td><td data-label="買取価格" class="price">3,500円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">ボウモア 12年</td><td data-label="買取価格" class="price">3,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">アードベッグ 10年</td><td data-label="買取価格" class="price">3,000円</td><td data-label="区分"><span class="kind">公表買取価格</span></td><td data-label="備考"></td><td data-label="出典"><a href="https://joylab.jp/assessment-table/" rel="nofollow noopener" target="_blank">出典：JOYLAB公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<table class="compare sortable"><thead><tr><th>銘柄</th><th data-dir="desc">買取価格</th><th>備考</th></tr></thead><tbody>
+<tr><td data-label="銘柄">竹鶴 25年 箱付</td><td data-label="買取価格" class="price">160,000円</td><td data-label="備考"><span class="sub">ニッカ</span></td></tr>
+<tr><td data-label="銘柄">山崎 18年 箱付</td><td data-label="買取価格" class="price">85,000円</td><td data-label="備考"><span class="sub">箱なし78,000円。現行品対象</span></td></tr>
+<tr><td data-label="銘柄">響 21年 箱付</td><td data-label="買取価格" class="price">68,000円</td><td data-label="備考"><span class="sub">箱なし61,000円。現行品対象</span></td></tr>
+<tr><td data-label="銘柄">白州 18年 箱付</td><td data-label="買取価格" class="price">65,000円</td><td data-label="備考"><span class="sub">箱なし58,000円。現行品対象</span></td></tr>
+<tr><td data-label="銘柄">竹鶴 21年</td><td data-label="買取価格" class="price">57,000円</td><td data-label="備考"><span class="sub">箱付60,000円</span></td></tr>
+<tr><td data-label="銘柄">響 17年</td><td data-label="買取価格" class="price">48,000円</td><td data-label="備考"><span class="sub">マイレージ期限2018〜2019年のみ対象</span></td></tr>
+<tr><td data-label="銘柄">マッカラン 18年 シェリーオーク 箱付</td><td data-label="買取価格" class="price">43,000円</td><td data-label="備考"><span class="sub">2021年以降リリースボトルが対象。箱なし40,000円</span></td></tr>
+<tr><td data-label="銘柄">竹鶴 17年</td><td data-label="買取価格" class="price">30,000円</td><td data-label="備考"><span class="sub">ニッカ</span></td></tr>
+<tr><td data-label="銘柄">バランタイン 30年 箱付（正規品）</td><td data-label="買取価格" class="price">30,000円</td><td data-label="備考"><span class="sub">並行品は29,000円</span></td></tr>
+<tr><td data-label="銘柄">ロイヤルハウスホールド</td><td data-label="買取価格" class="price">21,000円</td><td data-label="備考"><span class="sub">サントリー</span></td></tr>
+<tr><td data-label="銘柄">山崎 12年 箱付</td><td data-label="買取価格" class="price">19,800円</td><td data-label="備考"><span class="sub">箱なし18,800円。現行品対象</span></td></tr>
+<tr><td data-label="銘柄">白州 12年</td><td data-label="買取価格" class="price">19,500円</td><td data-label="備考"><span class="sub">現行品対象。箱付同額</span></td></tr>
+<tr><td data-label="銘柄">響 ブレンダーズチョイス</td><td data-label="買取価格" class="price">14,500円</td><td data-label="備考"><span class="sub">現行品対象</span></td></tr>
+<tr><td data-label="銘柄">山崎 NV</td><td data-label="買取価格" class="price">9,600円</td><td data-label="備考"><span class="sub">現行品対象</span></td></tr>
+<tr><td data-label="銘柄">白州 NV</td><td data-label="買取価格" class="price">9,500円</td><td data-label="備考"><span class="sub">現行品対象。箱付同額</span></td></tr>
+<tr><td data-label="銘柄">響 ジャパニーズハーモニー</td><td data-label="買取価格" class="price">9,300円</td><td data-label="備考"><span class="sub">現行品対象</span></td></tr>
+<tr><td data-label="銘柄">マッカラン 12年 シェリーオーク 箱付</td><td data-label="買取価格" class="price">9,000円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">竹鶴 ピュアモルト 黒ラベル</td><td data-label="買取価格" class="price">7,500円</td><td data-label="備考"><span class="sub">ニッカ</span></td></tr>
+<tr><td data-label="銘柄">イチローズモルト リミテッドエディション 箱付</td><td data-label="買取価格" class="price">6,500円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">マッカラン 12年 ダブルカスク 箱付</td><td data-label="買取価格" class="price">6,500円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">イチローズモルト ミズナラウッドリザーブ 箱付</td><td data-label="買取価格" class="price">6,000円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">余市 NV</td><td data-label="買取価格" class="price">4,300円</td><td data-label="備考"><span class="sub">ニッカ</span></td></tr>
+<tr><td data-label="銘柄">宮城峡 NV</td><td data-label="買取価格" class="price">4,000円</td><td data-label="備考"><span class="sub">ニッカ</span></td></tr>
+<tr><td data-label="銘柄">バランタイン 17年</td><td data-label="買取価格" class="price">3,700円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">知多</td><td data-label="買取価格" class="price">3,500円</td><td data-label="備考"><span class="sub">現行品対象</span></td></tr>
+<tr><td data-label="銘柄">シーバスリーガル 18年</td><td data-label="買取価格" class="price">3,500円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">ボウモア 12年</td><td data-label="買取価格" class="price">3,000円</td><td data-label="備考"></td></tr>
+<tr><td data-label="銘柄">アードベッグ 10年</td><td data-label="買取価格" class="price">3,000円</td><td data-label="備考"></td></tr>
 </tbody></table>
 <p class="note-list">※ 山崎 25年・白州 25年・響 30年は同表で「ASK（要問合せ）」のため、本サイトには価格を掲載していません。下記の買取大吉の表に参考価格があります。<br>
 ※ 出典：JOYLAB公式 https://joylab.jp/assessment-table/（確認日：2026-11-17）</p>
@@ -202,21 +208,21 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
 <section><div class="wrap">
 <div class="sec-head"><h2>買取大吉の買取参考価格（高額銘柄）</h2>
 <p>買取大吉公式「お酒買取強化ランキング」（更新日：2026年11月17日）に掲載された買取参考価格です。上記のJOYLABの価格とは別の業者の公表値であり、同じ銘柄でも金額が異なります。確認日：2026-11-17。</p></div>
-<table class="compare"><thead><tr><th>銘柄</th><th>買取価格</th><th>区分</th><th>備考</th><th>出典</th></tr></thead><tbody>
-<tr><td data-label="銘柄">マッカラン 30年 シェリーオーク ブルーラベル</td><td data-label="買取価格" class="price">1,000,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">スコッチ</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">ラフロイグ 40年</td><td data-label="買取価格" class="price">1,000,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">スコッチ</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">山崎 25年 箱付 新/旧ラベル</td><td data-label="買取価格" class="price">900,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">響 30年 箱付</td><td data-label="買取価格" class="price">430,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">ポートエレン 24年 1978-2002 2nd</td><td data-label="買取価格" class="price">400,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">スコッチ</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">ハイランドパーク 40年</td><td data-label="買取価格" class="price">400,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">スコッチ</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">マッカラン 25年 アニバーサリー 1969</td><td data-label="買取価格" class="price">400,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">スコッチ</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">白州 25年 箱付 旧ラベル</td><td data-label="買取価格" class="price">300,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">竹鶴 25年 箱付</td><td data-label="買取価格" class="price">180,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
-<tr><td data-label="銘柄">山崎 18年</td><td data-label="買取価格" class="price">70,000円</td><td data-label="区分"><span class="kind">買取参考価格</span></td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td><td data-label="出典"><a href="https://www.kaitori-daikichi.jp/list/sake/" rel="nofollow noopener" target="_blank">出典：買取大吉公式</a><span class="sub">確認日：2026-11-17</span></td></tr>
+<table class="compare sortable"><thead><tr><th>銘柄</th><th data-dir="desc">買取価格</th><th>備考</th></tr></thead><tbody>
+<tr><td data-label="銘柄">マッカラン 30年 シェリーオーク ブルーラベル</td><td data-label="買取価格" class="price">1,000,000円</td><td data-label="備考"><span class="sub">スコッチ</span></td></tr>
+<tr><td data-label="銘柄">ラフロイグ 40年</td><td data-label="買取価格" class="price">1,000,000円</td><td data-label="備考"><span class="sub">スコッチ</span></td></tr>
+<tr><td data-label="銘柄">山崎 25年 箱付 新/旧ラベル</td><td data-label="買取価格" class="price">900,000円</td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td></tr>
+<tr><td data-label="銘柄">響 30年 箱付</td><td data-label="買取価格" class="price">430,000円</td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td></tr>
+<tr><td data-label="銘柄">ポートエレン 24年 1978-2002 2nd</td><td data-label="買取価格" class="price">400,000円</td><td data-label="備考"><span class="sub">スコッチ</span></td></tr>
+<tr><td data-label="銘柄">ハイランドパーク 40年</td><td data-label="買取価格" class="price">400,000円</td><td data-label="備考"><span class="sub">スコッチ</span></td></tr>
+<tr><td data-label="銘柄">マッカラン 25年 アニバーサリー 1969</td><td data-label="買取価格" class="price">400,000円</td><td data-label="備考"><span class="sub">スコッチ</span></td></tr>
+<tr><td data-label="銘柄">白州 25年 箱付 旧ラベル</td><td data-label="買取価格" class="price">300,000円</td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td></tr>
+<tr><td data-label="銘柄">竹鶴 25年 箱付</td><td data-label="買取価格" class="price">180,000円</td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td></tr>
+<tr><td data-label="銘柄">山崎 18年</td><td data-label="買取価格" class="price">70,000円</td><td data-label="備考"><span class="sub">ジャパニーズウイスキー</span></td></tr>
 </tbody></table>
 <p class="note-list">※ 出典：買取大吉公式 https://www.kaitori-daikichi.jp/list/sake/（確認日：2026-11-17）<br>
 ※ 竹鶴 25年 箱付はJOYLAB 160,000円／買取大吉 180,000円、山崎 18年はJOYLAB（箱付）85,000円／買取大吉 70,000円と、業者により公表価格が異なります。</p>
-<div class="adslot"><b>無料査定を比較する</b><p>複数社の無料査定を比較できる送客枠です（準備中）。査定は各社の公式サイトからお申し込みください。</p></div>
+<div class="adslot"><b>無料査定を比較する</b><p>複数社の無料査定を比較できる送客枠です。査定は各社の公式サイトからお申し込みください。</p></div>
 <p><a class="btn-ghost" href="/brandy-wine/">ブランデー・ワインの相場を見る</a></p>
 </div></section>
 </main>
@@ -229,5 +235,32 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offs
 </div>
 <p>© お酒買取相場DB運営事務局</p>
 </div></footer>
+
+<script>
+(function(){
+  document.querySelectorAll('table.sortable').forEach(function(table){
+    var ths = table.querySelectorAll('thead th');
+    ths.forEach(function(th, idx){
+      th.addEventListener('click', function(){
+        var dir = th.getAttribute('data-dir') === 'asc' ? 'desc' : 'asc';
+        ths.forEach(function(o){ o.removeAttribute('data-dir'); });
+        th.setAttribute('data-dir', dir);
+        var tbody = table.querySelector('tbody');
+        var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+        var numeric = rows.length > 0 && rows[0].children[idx] && rows[0].children[idx].classList.contains('price');
+        rows.sort(function(a, b){
+          var av = a.children[idx] ? a.children[idx].textContent.trim() : '';
+          var bv = b.children[idx] ? b.children[idx].textContent.trim() : '';
+          var cmp;
+          if (numeric) { cmp = parseFloat(av.replace(/[^\d.]/g, '')) - parseFloat(bv.replace(/[^\d.]/g, '')); }
+          else { cmp = av.localeCompare(bv, 'ja'); }
+          return dir === 'asc' ? cmp : -cmp;
+        });
+        rows.forEach(function(r){ tbody.appendChild(r); });
+      });
+    });
+  });
+})();
+</script>
 </body>
 </html>

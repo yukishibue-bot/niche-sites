@@ -29,21 +29,27 @@ a{color:inherit}
 .nav a{color:#444;text-decoration:none;font-size:14px;font-weight:650}
 .nav a:hover,.nav a[aria-current="page"]{color:var(--teal-dark)}
 .hero{overflow:hidden;background:radial-gradient(circle at 90% 38%,#d6eae4 0%,#eaf3f0 30%,#fff 62%)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:72px 0 78px}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;padding:54px 0 58px}
 .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:999px;background:#fff;padding:7px 13px;color:var(--teal-dark);font-size:12px;font-weight:800;letter-spacing:.14em}
-.hero h1,.page-hero h1{margin:22px 0 18px;font-size:clamp(36px,5.2vw,62px);line-height:1.12;font-weight:800;letter-spacing:-.045em}
+.hero h1,.page-hero h1{margin:22px 0 18px;font-size:clamp(34px,4.4vw,54px);line-height:1.12;font-weight:800;letter-spacing:-.045em;text-wrap:balance}
 .hero h1 span{color:var(--teal)}
 .lead{max-width:640px;color:#4d4d4d;font-size:18px;line-height:1.9}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;padding:12px 22px;text-decoration:none;font-weight:800;border:1px solid var(--teal)}
 .btn.primary{background:var(--grad);color:#fff;box-shadow:0 10px 24px rgba(46,125,116,.25)}
 .btn.secondary{background:#fff;color:var(--teal-dark)}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}
 .stat{border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.9);padding:15px}
 .stat b{display:block;font-size:25px;line-height:1.1;letter-spacing:-.03em}
 .stat span{color:var(--muted);font-size:12px}
+.stat-note{margin:10px 2px 0;color:var(--muted);font-size:12.5px}
+.card .cond{margin:10px 0 0;border-radius:10px;background:var(--teal-pale);padding:8px 11px;color:var(--teal-dark);font-size:12.5px;font-weight:700;line-height:1.55}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px}
+.toc a{border:1px solid var(--line);border-radius:999px;background:#fff;padding:8px 14px;color:var(--teal-dark);font-size:13.5px;font-weight:750;text-decoration:none;box-shadow:0 4px 14px rgba(17,17,17,.04)}
+.toc a:hover{border-color:var(--teal)}
+.summary-note{margin:12px 2px 0;color:var(--muted);font-size:13px}
 .hero-photo{position:relative}
-.hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:26px;box-shadow:0 24px 60px rgba(17,17,17,.13)}
+.hero-photo img{display:block;width:100%;aspect-ratio:3/2;object-fit:cover;object-position:50% 30%;border-radius:26px;box-shadow:0 24px 60px rgba(17,17,17,.13)}
 .photo-tag{position:absolute;left:18px;bottom:18px;max-width:calc(100% - 36px);border-radius:14px;background:rgba(255,255,255,.94);padding:12px 15px;font-size:13px;line-height:1.55}
 .photo-tag b{color:var(--teal-dark)}
 .page-hero{padding:62px 0 20px;background:radial-gradient(circle at 88% 20%,#e2efec 0%,#fff 52%)}
@@ -99,7 +105,7 @@ footer{border-top:1px solid var(--line);background:#fafcfb;padding:44px 0 52px;c
 .foot-links{display:flex;flex-wrap:wrap;gap:8px 20px;margin:16px 0}
 .foot-links a{text-decoration:none}
 .foot-links a:hover{color:var(--teal-dark)}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr;padding:52px 0 58px}.grid3,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;padding:44px 0 48px}.grid3,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:720px){
  .head-in{align-items:flex-start;flex-direction:column;padding:14px 0}
  .nav{gap:4px 14px}
@@ -128,9 +134,17 @@ footer{border-top:1px solid var(--line);background:#fafcfb;padding:44px 0 52px;c
 <p>猫の保険料は、犬のような品種クラスではなく、年齢（年齢区分）で決まる会社が中心です。ここでは6社の公式保険料表・保険料の例を、条件と出典を明記して掲載しています。年齢区分の切り方や、一律になる年齢は会社ごとに異なります。</p>
 </div></div>
 
+<section><div class="container">
+<div class="section-head"><div class="kicker">Summary</div><h2>会社別サマリー（代表条件の保険料）</h2>
+<p>各社の代表的な条件での保険料を並べた早見表です。年齢・分類・補償割合・プランなどの条件は会社ごとに異なるため、金額だけの単純な比較には使えません。各社の詳細な表は、この下の会社別セクションをご覧ください。</p></div>
+<nav class="toc" aria-label="会社別セクションへの目次"><a href="#anicom">アニコム損保</a><a href="#ipet">第一アイペット損保</a><a href="#petfamily">ペット＆ファミリー損保</a><a href="#fpc">株式会社FPC</a><a href="#ps">PS保険</a><a href="#rakuten">楽天ペット保険</a></nav>
+<div class="table-wrap"><table><caption>猫・会社別サマリー（各社の代表条件・月払）<small>保険料はすべて各社の公式公表値です。条件が会社ごとに異なるため、同列の比較ではありません</small></caption><thead><tr><th scope="col">会社・商品</th><th scope="col">代表条件</th><th scope="col" class="num">月払保険料</th></tr></thead><tbody><tr><th scope="row" data-label="会社・商品"><a href="#anicom">アニコム損保「どうぶつ健保ふぁみりぃ」</a></th><td data-label="代表条件">猫・0歳・補償割合70%プラン</td><td class="num" data-label="月払保険料">3,330円</td></tr><tr><th scope="row" data-label="会社・商品"><a href="#ipet">第一アイペット損保「うちの子」</a></th><td data-label="代表条件">猫・0〜3歳・補償割合70%プラン</td><td class="num" data-label="月払保険料">2,990円</td></tr><tr><th scope="row" data-label="会社・商品"><a href="#petfamily">ペット＆ファミリー損保「げんきナンバーわんスリム」</a></th><td data-label="代表条件">猫・2歳・プラン50（補償割合50%）／公式サイト掲載の保険料の例</td><td class="num" data-label="月払保険料">1,410円</td></tr><tr><th scope="row" data-label="会社・商品"><a href="#fpc">株式会社FPC「ペットほけんフィット」</a></th><td data-label="代表条件">猫・0〜4歳・補償割合70%プラン</td><td class="num" data-label="月払保険料">1,190円</td></tr><tr><th scope="row" data-label="会社・商品"><a href="#ps">ペットメディカルサポート「PS保険」</a></th><td data-label="代表条件">猫・1歳・補償割合70%プラン／公式の保険料の目安</td><td class="num" data-label="月払保険料">1,950円</td></tr><tr><th scope="row" data-label="会社・商品"><a href="#rakuten">楽天ペット保険「スーパーペット保険」</a></th><td data-label="代表条件">猫・6歳・手術・入院プラン（補償割合90%）／公式掲載の例（最低水準の目安）</td><td class="num" data-label="月払保険料">1,340円〜</td></tr></tbody></table></div>
+<p class="summary-note">※ 代表条件は各社で異なります。補償内容・支払限度額・免責金額も会社ごとに異なるため、契約前に各社の詳細表と公式サイトをご確認ください。</p>
+</div></section>
+
 <section id="anicom"><div class="container">
 <div class="section-head"><div class="kicker">Anicom</div><h2>アニコム損保「どうぶつ健保ふぁみりぃ」・猫</h2>
-<p>猫は品種によらず、年齢で保険料が設定されています。新規の申込みは7歳11か月まで。下表は2027年4月改定の公式基本保険料表（スタンダードタイプ）の月払です。</p></div>
+<p>猫は品種によらず、年齢で保険料が設定されています。新規の申込みは7歳11か月まで。下表は公式基本保険料表（スタンダードタイプ）の月払です。この保険料表はアニコム損保が「2027年4月改定」版として公表しているもので、本サイトでは確認日（2026-11-17）時点で公式サイトに掲載されていたこの改定版を転記しています。</p></div>
 <div class="table-wrap"><table><caption>アニコム損保「どうぶつ健保ふぁみりぃ」猫の基本保険料（月払）<small>掲載は0〜10歳の抜粋です。11歳以降（20歳以上まで）の保険料は公式の基本保険料表に掲載されています</small></caption><thead><tr><th scope="col">年齢（始期日時点の満年齢）</th><th scope="col" class="num">70%プラン</th><th scope="col" class="num">50%プラン</th></tr></thead><tbody><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">0歳</th><td class="num" data-label="70%プラン">3,330円</td><td class="num" data-label="50%プラン">2,500円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">1歳</th><td class="num" data-label="70%プラン">3,170円</td><td class="num" data-label="50%プラン">2,380円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">2歳</th><td class="num" data-label="70%プラン">3,150円</td><td class="num" data-label="50%プラン">2,370円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">3歳</th><td class="num" data-label="70%プラン">3,190円</td><td class="num" data-label="50%プラン">2,390円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">4歳</th><td class="num" data-label="70%プラン">3,350円</td><td class="num" data-label="50%プラン">2,480円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">5歳</th><td class="num" data-label="70%プラン">3,470円</td><td class="num" data-label="50%プラン">2,570円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">6歳</th><td class="num" data-label="70%プラン">3,640円</td><td class="num" data-label="50%プラン">2,690円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">7歳</th><td class="num" data-label="70%プラン">3,860円</td><td class="num" data-label="50%プラン">2,850円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">8歳</th><td class="num" data-label="70%プラン">4,130円</td><td class="num" data-label="50%プラン">3,040円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">9歳</th><td class="num" data-label="70%プラン">4,460円</td><td class="num" data-label="50%プラン">3,270円</td></tr><tr><th scope="row" data-label="年齢（始期日時点の満年齢）">10歳</th><td class="num" data-label="70%プラン">4,820円</td><td class="num" data-label="50%プラン">3,530円</td></tr></tbody></table></div>
 <div class="srcbox"><b>出典・条件</b><br>出典：アニコム損害保険 公式「どうぶつ健保ふぁみりぃ 基本保険料表（スタンダードタイプ・2027年4月改定）」（確認日 2026-11-17）<br><a href="https://www.anicom-sompo.co.jp/news-release/wp-content/uploads/2026/11/pricelist_70.pdf" rel="nofollow noopener" target="_blank">https://www.anicom-sompo.co.jp/news-release/wp-content/uploads/2026/11/pricelist_70.pdf</a><ul class="checklist"><li>基本保険料には各種割増引とペット賠償責任特約の保険料は含まれていません。年払の保険料も公式表に掲載されています。</li></ul></div>
 </div></section>
