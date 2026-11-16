@@ -181,6 +181,71 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <h1>容量帯別の料金表</h1>
 <p>11社の公式サイトで公表された通常価格（税込）を、データ容量の帯ごとに並べました。段階制プランは段階ごとに、povoは都度購入トッピング（基本料0円）として掲載しています。キャンペーン価格・割引適用後の価格は含みません。確認日：2026-11-17。</p>
 </div></div>
+<section class="section" style="padding-top:0"><div class="srcbox" id="simBox">
+<p class="eyebrow" style="margin-bottom:10px">料金シミュレーター</p>
+<h2 style="font-size:clamp(22px,2.6vw,28px);margin:0 0 10px;font-weight:800;letter-spacing:-0.03em">あなたの使い方だと、最安はこれです</h2>
+<p style="color:var(--muted);margin:0 0 16px">収録している月額プラン全25件（通常価格のみ・キャンペーン含まず）から、使い方に合うプランを安い順に表示します。<b>表示額は割引前提ではないので、12か月目も同じ金額です。</b>段階制プランは、選んだ使用量が入る段階の価格で計算しています。</p>
+<label style="margin-right:16px;font-weight:700">月のデータ使用量
+<select id="simGb" style="margin-left:8px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:1rem">
+<option value="1">1GBまで</option><option value="3" selected>3GBまで</option><option value="5">5GBまで</option><option value="10">10GBまで</option><option value="20">20GBまで</option><option value="30">30GBまで</option><option value="50">50GBまで</option><option value="100">100GBまで</option><option value="9999">無制限に使いたい</option>
+</select></label>
+<label style="font-weight:700">通話
+<select id="simCall" style="margin-left:8px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:1rem">
+<option value="any">指定なし</option><option value="free">かけ放題系があるプラン</option>
+</select></label>
+<div style="overflow-x:auto;margin-top:16px"><table class="compare" style="min-width:640px"><thead><tr><th>プラン</th><th>容量</th><th>月額（税込）</th><th>年間総額</th><th>1GBあたり</th><th>通話の扱い</th></tr></thead><tbody id="simResult"></tbody></table></div>
+<p style="color:var(--faint);font-size:.8rem;margin:10px 0 0" id="simNote"></p>
+</div></section>
+<script>
+var SIM_PLANS = [{"name": "日本通信SIM合理的シンプル290プラン", "gb": 1.0, "price": 290, "call": "従量制 11円/30秒1GBを超えた分は1GBあたり220円が加算（上限設定可）"}, {"name": "HISモバイル自由自在3.0プラン", "gb": 1.0, "price": 550, "call": "従量制 9円/30秒その月の利用量が100MB未満の月は280円6分かけ放題オプ"}, {"name": "HISモバイル自由自在3.0プラン", "gb": 3.0, "price": 770, "call": "従量制 9円/30秒"}, {"name": "NUROモバイルバリュープラス VS", "gb": 3.0, "price": 792, "call": "従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）通話定額オ"}, {"name": "IIJmioギガプラン（音声SIM）", "gb": 2.0, "price": 850, "call": "従量制 11円/30秒通話定額5分+ 500円10分+ 700円かけ放題+ 1,"}, {"name": "LINEMOベストプラン", "gb": 3.0, "price": 990, "call": "従量制 22円/30秒使ったデータ量で決まる段階制通話準定額 550円通話定額 "}, {"name": "楽天モバイルRakuten最強プラン", "gb": 3.0, "price": 1078, "call": "Rakuten Linkアプリ利用で国内通話無料使ったデータ量で決まる段階制15"}, {"name": "mineoマイピタ（デュアルタイプ）", "gb": 3.0, "price": 1298, "call": "従量制 22円/30秒時間無制限かけ放題オプション 1,210円/月A・D・Sプ"}, {"name": "IIJmioギガプラン（音声SIM）", "gb": 5.0, "price": 950, "call": "従量制 11円/30秒通話定額5分+ 500円10分+ 700円かけ放題+ 1,"}, {"name": "NUROモバイルバリュープラス VM", "gb": 5.0, "price": 990, "call": "従量制 22円/30秒（NUROモバイルでんわ利用時 11円/30秒）通話定額オ"}, {"name": "HISモバイル自由自在3.0プラン", "gb": 7.0, "price": 990, "call": "従量制 9円/30秒"}, {"name": "IIJmioギガプラン（音声SIM）", "gb": 10.0, "price": 1400, "call": "従量制 11円/30秒通話定額5分+ 500円10分+ 700円かけ放題+ 1,"}, {"name": "mineoマイピタ（デュアルタイプ）", "gb": 7.0, "price": 1518, "call": "従量制 22円/30秒時間無制限かけ放題オプション 1,210円/月A・D・Sプ"}, {"name": "LINEMOベストプラン", "gb": 10.0, "price": 2090, "call": "従量制 22円/30秒使ったデータ量で決まる段階制（3GB超〜10GB）"}, {"name": "日本通信SIM合理的みんなのプラン", "gb": 20.0, "price": 1390, "call": "通話5分かけ放題 または 月70分無料通話 のいずれかを含む通話かけ放題オプショ"}, {"name": "IIJmioギガプラン（音声SIM）", "gb": 15.0, "price": 1600, "call": "従量制 11円/30秒通話定額5分+ 500円10分+ 700円かけ放題+ 1,"}, {"name": "HISモバイル自由自在3.0プラン", "gb": 20.0, "price": 1699, "call": "6分かけ放題込み（従量分 9円/30秒）"}, {"name": "mineoマイピタ（デュアルタイプ）", "gb": 15.0, "price": 1958, "call": "従量制 22円/30秒時間無制限かけ放題オプション 1,210円/月A・D・Sプ"}, {"name": "楽天モバイルRakuten最強プラン", "gb": 20.0, "price": 2178, "call": "Rakuten Linkアプリ利用で国内通話無料使ったデータ量で決まる段階制"}, {"name": "HISモバイル自由自在3.0プラン", "gb": 30.0, "price": 1999, "call": "6分かけ放題込み（従量分 9円/30秒）"}, {"name": "日本通信SIM合理的50GBプラン", "gb": 50.0, "price": 2178, "call": "通話5分かけ放題 または 月70分無料通話 のいずれかを含む通話かけ放題オプショ"}, {"name": "ahamoahamo", "gb": 30.0, "price": 2970, "call": "5分以内の国内通話無料込み（超過分 22円/30秒）2026年12月1日に料金改"}, {"name": "楽天モバイルRakuten最強プラン", "gb": 9999, "price": 3278, "call": "Rakuten Linkアプリ利用で国内通話無料20GBを超えた分はデータ無制限"}, {"name": "UQモバイルコミコミプランバリュー", "gb": 35.0, "price": 3828, "call": "1回10分以内の国内通話かけ放題込み（超過分 22円/30秒）通話放題オプション"}, {"name": "ahamoahamo＋大盛りオプション", "gb": 110.0, "price": 4950, "call": "5分以内の国内通話無料込み（超過分 22円/30秒）基本プラン2,970円＋大盛"}];
+(function(){
+  var fmt = function(n){ return n.toLocaleString('ja-JP') + '円'; };
+  function run(){
+    var use = parseFloat(document.getElementById('simGb').value);
+    var call = document.getElementById('simCall').value;
+    var list = SIM_PLANS.filter(function(p){ return p.gb >= use; });
+    if (call === 'free') list = list.filter(function(p){ return p.call.indexOf('かけ放題') >= 0 || p.call.indexOf('無料通話') >= 0 || p.call.indexOf('通話無料') >= 0; });
+    list.sort(function(a, b){ return a.price - b.price; });
+    var tb = document.getElementById('simResult');
+    tb.innerHTML = '';
+    list.slice(0, 10).forEach(function(p, i){
+      var tr = document.createElement('tr');
+      var gbLabel = p.gb >= 9999 ? '無制限' : (p.gb + 'GB');
+      var per = p.gb >= 9999 ? '—' : fmt(Math.round(p.price / p.gb));
+      tr.innerHTML = '<td><b>' + p.name + '</b>' + (i === 0 ? ' <span style="background:#e5484d;color:#fff;border-radius:6px;padding:2px 8px;font-size:.75rem;font-weight:700">最安</span>' : '') + '</td><td>' + gbLabel + '</td><td><b>' + fmt(p.price) + '</b></td><td>' + fmt(p.price * 12) + '</td><td>' + per + '</td><td style="font-size:.85rem">' + p.call + '</td>';
+      tb.appendChild(tr);
+    });
+    document.getElementById('simNote').textContent = list.length ? ('条件に合うプラン：' + list.length + '件（上位10件を表示）。通話オプションが別料金のプランは、オプション込みの総額が変わります。各プランの出典・確認日は下の表にあります。') : '条件に合うプランがありません。条件をゆるめてお試しください。';
+  }
+  document.getElementById('simGb').addEventListener('change', run);
+  document.getElementById('simCall').addEventListener('change', run);
+  run();
+  // add annual/per-GB columns to all plan tables
+  document.querySelectorAll('table').forEach(function(tb){
+    if (tb.closest('#simBox')) return;
+    var heads = tb.querySelectorAll('thead th');
+    var priceIdx = -1, gbIdx = -1;
+    heads.forEach(function(th, i){
+      if (th.textContent.indexOf('月額料金') >= 0) priceIdx = i;
+      if (th.textContent.indexOf('データ容量') >= 0) gbIdx = i;
+    });
+    if (priceIdx < 0) return;
+    var trh = tb.querySelector('thead tr');
+    ['年間総額', '1GBあたり'].forEach(function(label){ var th = document.createElement('th'); th.textContent = label; trh.appendChild(th); });
+    tb.querySelectorAll('tbody tr').forEach(function(tr){
+      var cells = tr.querySelectorAll('td');
+      if (!cells.length) return;
+      var pm = (cells[priceIdx] || {}).textContent.match(/([\d,]+)円/);
+      var gm = gbIdx >= 0 ? (cells[gbIdx] || {}).textContent.match(/([\d.]+)\s*GB/) : null;
+      var price = pm ? parseInt(pm[1].replace(/,/g, ''), 10) : null;
+      var gb = gm ? parseFloat(gm[1]) : null;
+      var a = document.createElement('td'); a.textContent = price ? fmt(price * 12) : '—';
+      var b = document.createElement('td'); b.textContent = (price && gb) ? fmt(Math.round(price / gb)) : '—';
+      tr.appendChild(a); tr.appendChild(b);
+    });
+  });
+})();
+</script>
 <section id="band3"><div class="wrap">
 <div class="sec-head"><h2>〜3GB</h2><p>Wi-Fi中心で外出時の通信が少ない人向けの帯です。日本通信SIMのシンプル290は1GBを超えた分が1GBあたり220円の加算方式です。</p></div>
 <table class="compare"><thead><tr><th>会社・プラン</th><th>データ容量</th><th>月額料金（税込）</th><th>通話の扱い</th><th>出典</th></tr></thead><tbody>

@@ -200,7 +200,14 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <p>当初◯年間だけ固定する「固定期間選択型」と、完済まで変わらない「全期間固定」では、金利の水準も仕組みも異なります。いずれも2026年11月適用・新規借入の公式発表の数値です。</p></div>
 <h2 class="sec-title">固定10年（固定期間選択型）</h2>
 <p class="sec-lead">当初10年間は金利が固定され、期間終了後はその時点の金利で変動金利に移行するか、再び固定期間を選ぶタイプです。</p>
-<div class="tablewrap"><table class="compare"><thead><tr><th>銀行・プラン</th><th>適用金利（年率）</th><th>条件・前提</th></tr></thead><tbody>
+<div class="tablewrap">
+<div class="srcbox" id="repayBar" style="margin-bottom:20px">
+<b style="font-size:1rem">この表の金利で、返済額を計算する</b>
+<p style="color:var(--muted);margin:6px 0 12px;font-size:.9rem">借入金額と期間を入れると、各行に毎月返済額と総返済額（元利均等・ボーナス返済なし・概算）を表示します。</p>
+<label style="margin-right:14px">借入金額 <input id="rbAmount" type="number" value="3500" step="50" min="100" style="width:110px;padding:8px;border:1px solid #ddd;border-radius:8px"> 万円</label>
+<label>返済期間 <input id="rbYears" type="number" value="35" step="1" min="1" max="50" style="width:70px;padding:8px;border:1px solid #ddd;border-radius:8px"> 年</label>
+</div>
+<table class="compare"><thead><tr><th>銀行・プラン</th><th>適用金利（年率）</th><th>条件・前提</th></tr></thead><tbody>
 <tr><td data-label="銀行・プラン">ドコモSMTBネット銀行<span class="sub">当初引下げプラン（対面相談コース）</span></td><td data-label="適用金利（年率）" class="price">年3.099%</td><td data-label="条件・前提">当初10年固定。審査結果により上乗せとなる場合があります。</td></tr>
 <tr><td data-label="銀行・プラン">auじぶん銀行<span class="sub">当初期間引下げプラン</span></td><td data-label="適用金利（年率）" class="price">年3.360%</td><td data-label="条件・前提">物件価格の80%以下・がん50%保障団信の特約付きの場合。</td></tr>
 <tr><td data-label="銀行・プラン">みずほ銀行<span class="sub">固定金利選択10年（全期間引下げプラン・ローン取扱手数料型）</span></td><td data-label="適用金利（年率）" class="price">年3.400%</td><td data-label="条件・前提">最大引下げ時の金利。引下げ幅は申込内容・審査結果によって決まります。</td></tr>
@@ -237,7 +244,65 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 </div>
 
 <div class="srcbox"><h3>金利データの出典（すべて公式発表）</h3><ul><li>三菱UFJ銀行 公式サイト（住宅ローンの金利表示）（確認日：2026-11-17）<span class="sub">https://www.bk.mufg.jp/</span></li><li>三井住友銀行「金利－住宅ローン」（確認日：2026-11-17）<span class="sub">https://www2.smbc.co.jp/kojin/jutaku_loan/kinri/</span></li><li>みずほ銀行「住宅ローンの金利一覧」（確認日：2026-11-17）<span class="sub">https://www.mizuhobank.co.jp/loan_housing/housingloancost/index.html</span></li><li>りそな銀行「住宅ローン金利」（確認日：2026-11-17）<span class="sub">https://www.resonabank.co.jp/kojin/jutaku/kinri/</span></li><li>イオン銀行「住宅ローン 金利プラン」（確認日：2026-11-17）<span class="sub">https://www.aeonbank.co.jp/housing-loan/refinance-plan/</span></li><li>ドコモSMTBネット銀行「対面相談コース」（確認日：2026-11-17）<span class="sub">https://www.netbk.co.jp/contents/lineup/home-loan/real/</span></li><li>SBI新生銀行「住宅ローンの金利一覧新規」（確認日：2026-11-17）<span class="sub">https://www.sbishinseibank.co.jp/retail/housing/interest/interest_rate_new/</span></li><li>auじぶん銀行「住宅ローン金利一覧」（確認日：2026-11-17）<span class="sub">https://spw.prod-at.allocation.jibunbank.co.jp/products/homeloan/rate/?lang=ja</span></li><li>楽天銀行「住宅ローン（金利選択型）」（確認日：2026-11-17）<span class="sub">https://www.rakuten-bank.co.jp/home-loan/refinance/homeloan.html</span></li><li>ソニー銀行 公式サイト「適用金利」（住宅ローン）（確認日：2026-11-17）</li><li>ゆうちょ銀行「ソニー銀行の住宅ローン」（銀行代理業者としての案内ページ。2026年11月適用金利を表示）（確認日：2026-11-17）<span class="sub">https://www.jp-bank.japanpost.jp/kojin/loan/kj_ln_sloan.html</span></li><li>住宅金融支援機構「最新の金利情報（フラット35等）」（確認日：2026-11-17）<span class="sub">https://www.simulation.jhf.go.jp/flat35/kinri/index.php/rates/top</span></li></ul></div>
-</div></main>
+</div>
+<script>
+(function(){
+  function fmt(n){ return Math.round(n).toLocaleString('ja-JP') + '円'; }
+  function calc(P, ratePct, years){
+    var r = ratePct / 100 / 12, n = years * 12;
+    if (r === 0) return { m: P / n, t: P };
+    var f = Math.pow(1 + r, n), pay = P * r * f / (f - 1);
+    return { m: pay, t: pay * n };
+  }
+  var tables = [];
+  document.querySelectorAll('table').forEach(function(tb){
+    var ths = tb.querySelectorAll('thead th');
+    var rateIdx = -1;
+    ths.forEach(function(th, i){ if (th.textContent.indexOf('適用金利') >= 0) rateIdx = i; });
+    if (rateIdx < 0) return;
+    var trh = tb.querySelector('thead tr');
+    ['毎月返済額', '総返済額'].forEach(function(label){
+      var th = document.createElement('th'); th.textContent = label; th.className = 'repay-col'; trh.appendChild(th);
+    });
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.textContent = '総返済額が安い順に並べ替え';
+    btn.style.cssText = 'margin:10px 0;padding:8px 14px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;font-size:.85rem';
+    btn.addEventListener('click', function(){
+      var tbody = tb.querySelector('tbody');
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b){ return (parseFloat(a.getAttribute('data-total')) || 1e18) - (parseFloat(b.getAttribute('data-total')) || 1e18); });
+      rows.forEach(function(r){ tbody.appendChild(r); });
+    });
+    tb.parentNode.insertBefore(btn, tb);
+    tables.push({ tb: tb, rateIdx: rateIdx });
+  });
+  function update(){
+    var P = (parseFloat(document.getElementById('rbAmount').value) || 0) * 10000;
+    var years = parseInt(document.getElementById('rbYears').value, 10) || 35;
+    tables.forEach(function(o){
+      o.tb.querySelectorAll('tbody tr').forEach(function(tr){
+        var cells = tr.querySelectorAll('td');
+        if (!cells.length) return;
+        var m = (cells[o.rateIdx] || {}).textContent.match(/([0-9]+\.[0-9]+)%/);
+        // remove old repay cells
+        tr.querySelectorAll('td.repay-col').forEach(function(td){ td.remove(); });
+        if (!m || !(P > 0)) { tr.removeAttribute('data-total'); return; }
+        var res = calc(P, parseFloat(m[1]), years);
+        tr.setAttribute('data-total', res.t);
+        [res.m, res.t].forEach(function(v){
+          var td = document.createElement('td'); td.className = 'repay-col'; td.textContent = fmt(v); tr.appendChild(td);
+        });
+      });
+    });
+  }
+  var bar = document.getElementById('repayBar');
+  if (bar && tables.length){
+    ['rbAmount', 'rbYears'].forEach(function(id){ document.getElementById(id).addEventListener('input', update); });
+    update();
+  }
+})();
+</script>
+</main>
 <footer><div class="wrap">
 <p class="fname">住宅ローン金利データベース</p>
 <p>運営：住宅ローン金利データベース運営事務局</p>

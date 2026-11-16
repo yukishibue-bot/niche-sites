@@ -147,6 +147,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"切手・骨董・コイン買取相場DB","url":"https://stamp-antique-coin-db.vercel.app/"}</script>
 
 <meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"切手・骨董品・古銭の買取相場カテゴリ","itemListElement":[{"@type":"ListItem","position":1,"name":"切手の買取相場","url":"https://stamp-antique-coin-db.vercel.app/stamps/"},{"@type":"ListItem","position":2,"name":"古銭・古紙幣・金貨の買取相場","url":"https://stamp-antique-coin-db.vercel.app/coins/"},{"@type":"ListItem","position":3,"name":"骨董品・鉄瓶の買取実績","url":"https://stamp-antique-coin-db.vercel.app/antiques/"}]}</script>
 </head><body>
 <header class="site"><div class="wrap">
 <a class="logo" href="/"><small>STAMP / ANTIQUE / COIN PRICE DB</small>切手・骨董・コイン買取相場DB</a>
@@ -231,7 +232,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <div class="tcard"><b>3. 上限額は目安と知る</b><p>公式相場の上限額は最良の状態を前提とした目安です。実際の査定額との差を前提に、複数社の査定を比べて判断しましょう。</p></div>
 </div>
 <p style="margin-top:22px"><a class="btn" href="/guide/">売る前にやることを見る</a></p>
-<div class="adslot"><b>無料査定を比較する</b><p>複数社の無料査定を比較できる送客枠です（準備中）。査定は各社の公式サイトからお申し込みください。</p></div>
+<div class="srcbox" style="background:#fdf9ec;border-color:#e8dcb0"><p style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#8a6d1f;margin:0 0 8px">PR ・ 広告</p><b style="font-size:1.05rem">手持ち品の査定額を知る</b><p style="color:var(--muted);margin:8px 0 14px">掲載相場は出典付きの参考価格です。実際の査定額は状態で変わるため、無料査定で確認できます。</p><a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGNCB+2GPQJM+35HU+BWVTE" rel="sponsored nofollow noopener" target="_blank">福ちゃんで無料査定を申し込む</a><p style="color:var(--faint);font-size:.78rem;margin:12px 0 0">広告（アフィリエイトプログラム）へのリンクです。査定・買取は福ちゃん（株式会社REGATE）のサービスです。</p></div>
 </div></section>
 
 <section><div class="wrap">
@@ -241,6 +242,40 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <div class="faq-item"><h3>Q. 古い鉄瓶は錆を落としてから売った方がいいですか？</h3><p>いいえ。鉄瓶は錆を取らず、そのまま査定に出すのが原則です。磨いたり錆を落としたりすると価値が下がる場合があります。共箱があれば一緒に残してください。</p></div>
 <p><a class="btn" href="/faq/">FAQをもっと見る</a></p>
 </div></section>
+
+<script>
+(function(){
+  document.querySelectorAll('table').forEach(function(tb){
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 10px';
+    var input = document.createElement('input');
+    input.type = 'search'; input.placeholder = 'この表を検索（品目名・年代など）';
+    input.style.cssText = 'flex:1;min-width:200px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:.95rem';
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.textContent = '価格が高い順に並べ替え';
+    btn.style.cssText = 'padding:9px 14px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;font-size:.85rem';
+    wrap.appendChild(input); wrap.appendChild(btn);
+    tb.parentNode.insertBefore(wrap, tb);
+    var tbody = tb.querySelector('tbody');
+    if (!tbody) return;
+    input.addEventListener('input', function(){
+      var q = input.value.trim();
+      tbody.querySelectorAll('tr').forEach(function(tr){
+        tr.style.display = (!q || tr.textContent.indexOf(q) >= 0) ? '' : 'none';
+      });
+    });
+    btn.addEventListener('click', function(){
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      function price(tr){
+        var m = tr.textContent.replace(/,/g, '').match(/(\d{3,})\s*円/);
+        return m ? parseInt(m[1], 10) : -1;
+      }
+      rows.sort(function(a, b){ return price(b) - price(a); });
+      rows.forEach(function(r){ tbody.appendChild(r); });
+    });
+  });
+})();
+</script>
 </main>
 <footer class="site"><div class="wrap">
 <p class="fname">切手・骨董・コイン買取相場DB</p>

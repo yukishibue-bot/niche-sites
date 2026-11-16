@@ -152,6 +152,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 }
 </style>
 <meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"金・貴金属買取相場データベース","url":"https://gold-kaitori-db.vercel.app/","description":"田中貴金属工業の公式公表価格だけを集めた、金・プラチナ・金貨の店頭小売価格と買取価格のデータベース。","publisher":{"@type":"Organization","name":"金・貴金属買取相場DB運営事務局"}}</script>
 </head>
 <body>
 <header class="site"><div class="wrap">
@@ -227,6 +228,36 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 <p class="note-list">※ コイン価格の出典：田中貴金属工業 公式「貴金属価格情報」（確認日：2026-11-17）。金貨の買取価格は2019年10月1日よりプレミアム廃止・一本化されています。</p>
 </div></section>
 
+<section class="section" style="padding-top:0"><div class="srcbox" id="goldCalc">
+<p class="eyebrow" style="margin-bottom:10px">買取価格計算機</p>
+<h2 style="font-size:clamp(22px,2.6vw,28px);margin:0 0 10px;font-weight:800;letter-spacing:-0.03em">持っている重さで、買取目安を計算する</h2>
+<p style="color:var(--muted);margin:0 0 16px">田中貴金属工業の公式公表価格（地金・1gあたり買取価格）に重さを掛けた目安です。実際の買取額は、品位・状態・買取店の手数料で変わります。品位が純金・純プラチナでない製品は、そのままでは計算できません（下の注記参照）。</p>
+<label style="margin-right:16px;font-weight:700">金属
+<select id="gcMetal" style="margin-left:8px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:1rem">
+<option value="gold">金（地金）</option><option value="plat">プラチナ（地金）</option>
+</select></label>
+<label style="font-weight:700">重さ
+<input id="gcGram" type="number" value="10" step="0.1" min="0.1" style="margin-left:8px;width:100px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:1rem"> g</label>
+<p style="margin:18px 0 0;font-size:clamp(24px,3vw,32px);font-weight:800" id="gcOut">—</p>
+<p style="color:var(--muted);margin:6px 0 0" id="gcDetail"></p>
+<p style="color:var(--faint);font-size:.8rem;margin:12px 0 0">計算に使う価格：金 21,470円/g（2026年11月16日17:00公表の買取価格）、プラチナ 8,040円/g（同17:00公表）。価格は日々（同日内でも時刻により）変動します。K18など品位のある製品は、純金価格×品位の割合（K18なら75%）が理論上の地金価値の目安になりますが、田中貴金属は品位別の店頭価格を公表していないため、この計算機では扱っていません。</p>
+</div></section>
+<script>
+(function(){
+  var PRICES = { gold: { buy: 21470, label: '金（地金）' }, plat: { buy: 8040, label: 'プラチナ（地金）' } };
+  function run(){
+    var m = PRICES[document.getElementById('gcMetal').value];
+    var g = parseFloat(document.getElementById('gcGram').value);
+    if (!(g > 0)) { document.getElementById('gcOut').textContent = '—'; return; }
+    var total = Math.round(m.buy * g);
+    document.getElementById('gcOut').textContent = '買取目安 ' + total.toLocaleString('ja-JP') + '円';
+    document.getElementById('gcDetail').textContent = m.label + ' 1gあたり買取 ' + m.buy.toLocaleString('ja-JP') + '円 × ' + g + 'g で計算しました（税込・地金価格ベースの目安）。';
+  }
+  document.getElementById('gcMetal').addEventListener('change', run);
+  document.getElementById('gcGram').addEventListener('input', run);
+  run();
+})();
+</script>
 <section class="section" style="padding-top:0"><div class="wrap">
 <div class="srcbox" style="background:#fdf9ec;border-color:#e8dcb0">
 <p class="eyebrow" style="margin-bottom:10px">PR ・ 無料査定</p>

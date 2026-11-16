@@ -179,9 +179,43 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--bronze);outline-off
 <p class="note-list">※ 出典：バイセル公式「古切手買取の相場」（https://buysell-kaitori.com/column/stamp-column-kitte12/）2025年11月時点の参考価格・上限額・未使用新品想定。確認日：2026-11-17。<br>
 ※ 見返り美人・月に雁の〜370円はバラ1枚の上限額です。シート（見返り美人は5枚シートなど）の場合は別途高くなる場合があります。<br>
 ※ 切手は台紙や封筒から剥がさず、シートはシートのまま査定に出してください。詳しくは<a href="/guide/">売る前のガイド</a>をご覧ください。</p>
-<div class="adslot"><b>無料査定を比較する</b><p>複数社の無料査定を比較できる送客枠です（準備中）。査定は各社の公式サイトからお申し込みください。</p></div>
+<div class="srcbox" style="background:#fdf9ec;border-color:#e8dcb0"><p style="font-size:.75rem;font-weight:700;letter-spacing:.08em;color:#8a6d1f;margin:0 0 8px">PR ・ 広告</p><b style="font-size:1.05rem">手持ち品の査定額を知る</b><p style="color:var(--muted);margin:8px 0 14px">掲載相場は出典付きの参考価格です。実際の査定額は状態で変わるため、無料査定で確認できます。</p><a class="btn" href="https://px.a8.net/svt/ejp?a8mat=4BGNCB+2GPQJM+35HU+BWVTE" rel="sponsored nofollow noopener" target="_blank">切手の無料査定を申し込む</a><p style="color:var(--faint);font-size:.78rem;margin:12px 0 0">広告（アフィリエイトプログラム）へのリンクです。査定・買取は福ちゃん（株式会社REGATE）のサービスです。</p></div>
 <p><a class="btn-ghost" href="/coins/">古銭・古紙幣の相場を見る</a> <a class="btn-ghost" href="/antiques/">骨董品（鉄瓶）の実績を見る</a></p>
 </div></section>
+
+<script>
+(function(){
+  document.querySelectorAll('table').forEach(function(tb){
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 10px';
+    var input = document.createElement('input');
+    input.type = 'search'; input.placeholder = 'この表を検索（品目名・年代など）';
+    input.style.cssText = 'flex:1;min-width:200px;padding:9px;border:1px solid #ddd;border-radius:8px;font-size:.95rem';
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.textContent = '価格が高い順に並べ替え';
+    btn.style.cssText = 'padding:9px 14px;border:1px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;font-size:.85rem';
+    wrap.appendChild(input); wrap.appendChild(btn);
+    tb.parentNode.insertBefore(wrap, tb);
+    var tbody = tb.querySelector('tbody');
+    if (!tbody) return;
+    input.addEventListener('input', function(){
+      var q = input.value.trim();
+      tbody.querySelectorAll('tr').forEach(function(tr){
+        tr.style.display = (!q || tr.textContent.indexOf(q) >= 0) ? '' : 'none';
+      });
+    });
+    btn.addEventListener('click', function(){
+      var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+      function price(tr){
+        var m = tr.textContent.replace(/,/g, '').match(/(\d{3,})\s*円/);
+        return m ? parseInt(m[1], 10) : -1;
+      }
+      rows.sort(function(a, b){ return price(b) - price(a); });
+      rows.forEach(function(r){ tbody.appendChild(r); });
+    });
+  });
+})();
+</script>
 </main>
 <footer class="site"><div class="wrap">
 <p class="fname">切手・骨董・コイン買取相場DB</p>
