@@ -23,9 +23,11 @@ h2.sec .en{display:block;font-size:12px;font-weight:700;letter-spacing:.2em;colo
 h3{font-size:17px;font-weight:700;margin:26px 0 8px}
 p.lead{color:#555;max-width:800px;font-size:17px}
 .meta{font-size:12.5px;color:var(--muted)}
-.hero{background:radial-gradient(circle at 90% 38%,#f3ddc4 0%,#faf0e2 30%,#fff 62%);border-radius:28px;padding:64px 40px 84px;margin:6px 0 4px}
+.hero{background:radial-gradient(circle at 8% 30%,#f3ddc4 0%,#faf0e2 30%,#fff 62%);border-radius:28px;padding:64px 40px 84px;margin:6px 0 4px;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
 .hero h1{margin:0 0 16px}
 .hero .lead{max-width:720px}
+.hero-photo{position:relative;min-height:300px}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:right center;border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08);display:block}
 .hero-stats{display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:30px}
 .hero-stats .hs{font-size:14px;color:#777}
 .hero-stats .hs b{color:var(--accent);font-size:21px;font-weight:800;margin:0 2px}
@@ -74,7 +76,8 @@ ul.plain li{margin-bottom:6px}
 .microbe p{margin:0;font-size:14px;color:#555}
 @media(max-width:720px){
 h1{font-size:clamp(28px,8vw,34px)}
-.hero{padding:44px 22px 54px;border-radius:22px}
+.hero{padding:44px 22px 54px;border-radius:22px;grid-template-columns:1fr;gap:26px}
+.hero-photo{min-height:0;height:240px}
 p.lead{font-size:16px}
 .logo{font-size:19px}
 .wrap{padding:0 20px}
