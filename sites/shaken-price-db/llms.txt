@@ -1,0 +1,18 @@
+# 車検費用相場データベース
+
+車検費用相場データベースは、車検費用を「法定費用」と「業者の基本料」に分けて公開するデータベースです。法定費用は国土交通省・金融庁の公表値、業者料金は公式掲載値のみを出典・確認日付きで収録し、総額の目安は算出根拠を明示しています。運営は車検費用相場データベース運営事務局。
+
+## 主要ページ
+- 車種区分一覧: https://shaken-price-db.vercel.app/class/
+- 法定費用（重量税・自賠責・検査手数料）: https://shaken-price-db.vercel.app/statutory-fees/
+- 業者別料金: https://shaken-price-db.vercel.app/operator/
+- よくある質問: https://shaken-price-db.vercel.app/faq/
+
+## 車種区分ごとの法定費用（標準条件）
+- 軽自動車: 法定費用 27,360円（重量税 6,600円＋自賠責 18,660円＋検査手数料 2,100円） https://shaken-price-db.vercel.app/class/kei/
+- 小型車（車両重量1.0トン以下）: 法定費用 37,060円（重量税 16,400円＋自賠責 18,560円＋検査手数料 2,100円） https://shaken-price-db.vercel.app/class/small/
+- 中型車（車両重量1.0トン超〜1.5トン以下）: 法定費用 45,260円（重量税 24,600円＋自賠責 18,560円＋検査手数料 2,100円） https://shaken-price-db.vercel.app/class/medium/
+- 大型車（車両重量1.5トン超〜2.0トン以下）: 法定費用 53,460円（重量税 32,800円＋自賠責 18,560円＋検査手数料 2,100円） https://shaken-price-db.vercel.app/class/large/
+- 特大車（車両重量2.0トン超〜2.5トン以下）: 法定費用 61,660円（重量税 41,000円＋自賠責 18,560円＋検査手数料 2,100円） https://shaken-price-db.vercel.app/class/xlarge/
+
+データ確認日: 2026-11-17
