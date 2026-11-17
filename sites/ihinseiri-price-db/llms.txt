@@ -1,0 +1,25 @@
+# 遺品整理料金相場データベース
+
+遺品整理料金相場データベースは、遺品整理の各社が公式サイトに掲載された料金目安（確認日：2026-11-17）だけを収録した料金相場データベースです。
+収録：6社・料金データ32件。確認できない料金は「公表なし」と明示しています。
+運営：遺品整理料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（間取り別相場・全社比較）: https://ihinseiri-price-db.vercel.app/
+- メモリーズの料金一覧: https://ihinseiri-price-db.vercel.app/companies/memories/
+- プログレスの料金一覧: https://ihinseiri-price-db.vercel.app/companies/progress/
+- リリーフの料金一覧: https://ihinseiri-price-db.vercel.app/companies/relief/
+- きずな屋の料金一覧: https://ihinseiri-price-db.vercel.app/companies/kizunaya/
+- 関西遺品整理サポートの料金一覧: https://ihinseiri-price-db.vercel.app/companies/kansai-ihinseiri-support/
+- 遺品あんしん整理の料金一覧: https://ihinseiri-price-db.vercel.app/companies/ihin-anshin-seiri/
+- 1K・1R（ワンルーム）の遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-1k/
+- 1DKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-1dk/
+- 1LDKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-1ldk/
+- 2DKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-2dk/
+- 2LDKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-2ldk/
+- 3DKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-3dk/
+- 3LDKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-3ldk/
+- 4DKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-4dk/
+- 4LDKの遺品整理料金相場: https://ihinseiri-price-db.vercel.app/menus/room-4ldk/
+- FAQ: https://ihinseiri-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://ihinseiri-price-db.vercel.app/about/
