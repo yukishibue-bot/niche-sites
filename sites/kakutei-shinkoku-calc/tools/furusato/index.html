@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ふるさと納税の控除上限額の目安｜確定申告計算ツール</title>
+<meta name="description" content="自己負担2,000円で済むふるさと納税の寄附上限額の目安を、年収と家族構成から計算。住民税の所得割額と所得税率をもとに、総務省の仕組みに基づいて算出します。">
+<link rel="canonical" href="https://kakutei-shinkoku-calc.vercel.app/tools/furusato/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="確定申告計算ツール">
+<meta property="og:title" content="ふるさと納税の控除上限額の目安｜確定申告計算ツール">
+<meta property="og:description" content="自己負担2,000円で済むふるさと納税の寄附上限額の目安を、年収と家族構成から計算。住民税の所得割額と所得税率をもとに、総務省の仕組みに基づいて算出します。">
+<meta property="og:url" content="https://kakutei-shinkoku-calc.vercel.app/tools/furusato/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ふるさと納税の控除上限額の目安｜確定申告計算ツール">
+<meta name="twitter:description" content="自己負担2,000円で済むふるさと納税の寄附上限額の目安を、年収と家族構成から計算。住民税の所得割額と所得税率をもとに、総務省の仕組みに基づいて算出します。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#8a8a8a;
+  --line:#ececec; --hair:#f0f0f0;
+  --blue:#2563a8; --blue-dark:#1c4e89; --blue-pale:#e3edf9;
+  --grad:linear-gradient(120deg,#4a90d9,#2563a8);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d9e7f7 0%,#eef4fb 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:right center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s;display:block;text-decoration:none;color:var(--ink)}
+.tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.tcard .en{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.tcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.tcard .go{margin-top:14px;font-weight:700;color:var(--blue);font-size:.92rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.step b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.step b .n{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-right:8px}
+.step p{margin:0;color:var(--muted);font-size:.93rem}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fafafa;font-size:.88rem;font-weight:700}
+table.compare td.num{text-align:right;font-weight:700;white-space:nowrap}
+table.compare tr:last-child td{border-bottom:none}
+table.breakdown{width:100%;border-collapse:collapse}
+table.breakdown th,table.breakdown td{padding:11px 6px;border-bottom:1px solid var(--hair);text-align:left;font-size:.96rem}
+table.breakdown td.num{text-align:right;font-weight:700;white-space:nowrap}
+table.breakdown tr.total td{border-bottom:none;border-top:2px solid var(--line);font-weight:800}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border:none;cursor:pointer;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s;font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(37,99,168,.25)}
+.btn-big{width:100%;padding:16px 24px;font-size:1rem;margin-top:8px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.calc-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:28px}
+.calc-card h2{margin:0 0 18px;font-size:1.2rem;font-weight:800;letter-spacing:-0.02em}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:700;font-size:.93rem;margin-bottom:6px}
+.field .hint{font-size:.8rem;color:var(--faint);margin-top:4px;line-height:1.6}
+.field input[type=number],.field input[type=text]{width:100%;font-size:16px;padding:13px 14px;border:1px solid #d8d8d8;
+  border-radius:11px;font-family:inherit;background:#fff;color:var(--ink)}
+.field input:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.unit{display:flex;align-items:center;gap:8px}
+.unit input{flex:1}
+.unit span{font-weight:700;color:var(--muted);white-space:nowrap}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{flex:1;min-width:130px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg .opt{display:block;text-align:center;padding:12px 10px;border:1px solid #d8d8d8;border-radius:11px;
+  font-weight:700;font-size:.93rem;cursor:pointer;transition:all .2s;background:#fff}
+.seg input:checked + .opt{background:var(--blue-pale);border-color:var(--blue);color:var(--blue-dark)}
+.checkline{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.93rem;margin:6px 0 14px}
+.checkline input{width:20px;height:20px;accent-color:var(--blue)}
+fieldset{border:1px solid var(--hair);border-radius:16px;padding:20px;margin:0 0 20px}
+fieldset legend{font-weight:800;font-size:.95rem;padding:0 8px;letter-spacing:-0.01em}
+fieldset .field:last-child{margin-bottom:4px}
+.counts{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.result-empty{color:var(--faint);text-align:center;padding:34px 10px;font-size:.95rem}
+.result-total{text-align:center;padding:10px 0 18px;border-bottom:1px solid var(--hair);margin-bottom:16px}
+.result-total .lbl{font-size:.85rem;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.result-total .amt{font-size:clamp(30px,4vw,42px);font-weight:800;letter-spacing:-0.03em;line-height:1.3;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.notice{background:#f7fafd;border:1px solid var(--blue-pale);border-radius:16px;padding:20px 24px;margin-top:26px}
+.notice b{display:block;margin-bottom:6px;font-size:.95rem}
+.notice p{margin:0;color:#445;font-size:.9rem}
+.src-list{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.src-list li{margin-bottom:6px}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#a3a3a3;text-align:center;
+  padding:18px;margin:32px 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:52px 0 8px}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0 0 12px;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px;margin:0}
+footer.site{background:#fafafa;margin-top:24px}
+footer.site .wrap{padding-top:44px;padding-bottom:44px}
+footer.site .fnav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+footer.site .fnav a{color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:600}
+footer.site p{color:var(--faint);font-size:.8rem;margin:6px 0}
+@media (max-width:960px){
+  .cards,.steps{grid-template-columns:1fr}
+  .calc-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .hero{padding:44px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-photo img{height:240px;object-position:center}
+  .hero-stats{gap:24px}
+  section{padding:52px 0}
+  .counts{grid-template-columns:1fr}
+  .calc-card{padding:22px 18px}
+  table.compare th,table.compare td{padding:11px 12px;font-size:.9rem}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "確定申告計算ツール", "url": "https://kakutei-shinkoku-calc.vercel.app/", "inLanguage": "ja", "publisher": {"@type": "Organization", "name": "確定申告計算ツール運営事務局"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://kakutei-shinkoku-calc.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "ふるさと納税の控除上限額の目安", "item": "https://kakutei-shinkoku-calc.vercel.app/tools/furusato/"}]}</script>
+</head>
+<body>
+
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>TAX CALCULATOR</small>確定申告計算ツール</a>
+<nav class="main">
+<a href="/tools/shotokuzei/">所得税の計算</a>
+<a href="/tools/furusato/">ふるさと納税</a>
+<a href="/tools/iryouhi/">医療費控除</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+
+
+<main>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ ふるさと納税の控除上限額の目安</p></div>
+<div class="wrap">
+<div class="page-hero">
+<p class="eyebrow">FURUSATO</p>
+<h1>ふるさと納税の控除上限額の目安</h1>
+<p>自己負担2,000円で済む寄附額（全額控除の対象になる上限）の目安を計算します。住民税の所得割額と所得税率から、総務省が示す仕組みに基づいて算出します。給与所得者の方向けです。</p>
+</div>
+<section style="padding:36px 0 72px">
+<div class="calc-grid">
+<div class="calc-card">
+<h2>条件を入力</h2>
+<div class="field"><label for="f-income">給与収入（年収・賞与込み）</label>
+<div class="unit"><input type="number" id="f-income" inputmode="decimal" placeholder="例：600"><span>万円</span></div></div>
+<div class="field"><label for="f-social">社会保険料の支払額（任意）</label>
+<div class="unit"><input type="number" id="f-social" inputmode="decimal" placeholder="空欄なら収入の15%で概算"><span>万円</span></div>
+<p class="hint">空欄の場合は、総務省の目安表と同じ前提（給与収入の15%）で概算します。</p></div>
+<fieldset><legend>家族構成</legend>
+<label class="checkline"><input type="checkbox" id="f-spouse">配偶者控除を受けている（配偶者に収入がない等）</label>
+<div class="counts">
+<div class="field"><label for="f-dep-general">一般の扶養親族（16歳以上）</label>
+<div class="unit"><input type="number" id="f-dep-general" inputmode="numeric" placeholder="0"><span>人</span></div></div>
+<div class="field"><label for="f-dep-specific">特定扶養親族（19歳以上23歳未満）</label>
+<div class="unit"><input type="number" id="f-dep-specific" inputmode="numeric" placeholder="0"><span>人</span></div></div>
+<div class="field"><label for="f-dep-elderly">老人扶養親族（70歳以上・別居）</label>
+<div class="unit"><input type="number" id="f-dep-elderly" inputmode="numeric" placeholder="0"><span>人</span></div></div>
+<div class="field"><label for="f-dep-cohabit">同居老親等（70歳以上・同居）</label>
+<div class="unit"><input type="number" id="f-dep-cohabit" inputmode="numeric" placeholder="0"><span>人</span></div></div>
+</div>
+</fieldset>
+<button class="btn btn-big" onclick="runFurusato()">上限額の目安を計算する</button>
+</div>
+<div class="calc-card">
+<h2>計算結果</h2>
+<div id="result"><p class="result-empty">左の条件を入力して計算すると、<br>控除上限額の目安と計算の内訳が表示されます。</p></div>
+</div>
+</div>
+
+<div class="notice"><b>計算結果は概算・目安です</b>
+<p>本ツールの結果は、入力された条件だけをもとにした概算です。正確な申告額は、国税庁の確定申告書等作成コーナーで計算するか、税務署・税理士にご確認ください。入力内容はブラウザ内でのみ処理され、サーバーへ送信・保存されることはありません。</p></div>
+
+<div style="margin-top:36px">
+<h3 style="font-weight:800;letter-spacing:-0.02em">計算の根拠</h3>
+<p style="color:var(--muted)">ふるさと納税の控除は、所得税からの控除、住民税からの控除（基本分）、住民税からの控除（特例分）の3つで構成され、特例分は住民税の所得割額の2割が上限です（総務省「ふるさと納税ポータルサイト」）。本ツールは「上限額の目安 ＝ 所得割額 × 20% ÷（90% − 所得税率 × 1.021）＋ 2,000円」の簡易式で計算します。所得税側の控除は令和7年分の制度、住民税の基礎控除は43万円で計算しています。住宅ローン控除や医療費控除を受けている方、給与以外の所得がある方は、実際の上限がこの目安より低くなる場合があります。</p>
+
+<ul class="src-list">
+<li>国税庁タックスアンサー No.2260「所得税の税率」（速算表）</li>
+<li>国税庁タックスアンサー No.1410「<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" rel="noopener" target="_blank">給与所得控除</a>」</li>
+<li>国税庁タックスアンサー No.1199「<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" rel="noopener" target="_blank">基礎控除</a>」</li>
+<li>国税庁タックスアンサー No.1191「配偶者控除」／ No.1195「配偶者特別控除」／ No.1180「扶養控除」／ No.1140「生命保険料控除」／ No.1120「医療費を支払ったとき（医療費控除）」</li>
+<li>総務省「ふるさと納税ポータルサイト」（控除の仕組み・全額控除される寄附額の目安）</li>
+<li>国税庁「<a href="https://www.keisan.nta.go.jp/" rel="noopener" target="_blank">確定申告書等作成コーナー</a>」（正確な申告額の計算はこちら）</li>
+</ul>
+<p style="color:var(--faint);font-size:.85rem">制度の確認日：2026-11-17（令和7年分＝2025年分の制度で計算しています）</p>
+
+</div>
+</section>
+</div>
+</main>
+
+
+<footer class="site"><div class="wrap">
+<div class="fnav">
+<a href="/tools/shotokuzei/">所得税の概算計算</a>
+<a href="/tools/furusato/">ふるさと納税の控除上限</a>
+<a href="/tools/iryouhi/">医療費控除の目安</a>
+<a href="/about/">このサイトについて・出典</a>
+</div>
+<p>運営：確定申告計算ツール運営事務局</p>
+<p>本サイトの計算結果は概算・目安です。実際の申告額とは異なる場合があります。正確な申告額は国税庁の確定申告書等作成コーナーで計算するか、税務署・税理士にご確認ください。計算はすべてお使いのブラウザ内で行われ、入力内容がサーバーに送信・保存されることはありません。</p>
+</div></footer>
+
+<script>
+// 確定申告計算ツール 計算ロジック（令和7年分＝2025年分の制度）
+// 出典：国税庁タックスアンサー No.2260（所得税の税率）/ No.1410（給与所得控除）/
+//       No.1199（基礎控除）/ No.1191（配偶者控除）/ No.1195（配偶者特別控除）/
+//       No.1180（扶養控除）/ No.1140（生命保険料控除）/ No.1120（医療費控除）、
+//       総務省ふるさと納税ポータル（控除の仕組み）。確認日：2026-11-17
+// このファイルはブラウザ表示と検算テストの両方から使う単一の正本。
+
+function floor1000(n) { return Math.floor(n / 1000) * 1000; }
+function floor100(n) { return Math.floor(n / 100) * 100; }
+
+// 給与所得控除（令和7年分・国税庁 No.1410）
+function salaryDeduction(income) {
+  if (income <= 0) return 0;
+  var d;
+  if (income <= 1900000) d = 650000;
+  else if (income <= 3600000) d = income * 0.3 + 80000;
+  else if (income <= 6600000) d = income * 0.2 + 440000;
+  else if (income <= 8500000) d = income * 0.1 + 1100000;
+  else d = 1950000;
+  return Math.min(Math.floor(d), income);
+}
+
+// 基礎控除（所得税・令和7年分。特例加算込み・国税庁 No.1199）
+function basicDeduction(totalIncome) {
+  if (totalIncome <= 1320000) return 950000;
+  if (totalIncome <= 3360000) return 880000;
+  if (totalIncome <= 4890000) return 680000;
+  if (totalIncome <= 6550000) return 630000;
+  if (totalIncome <= 23500000) return 580000;
+  if (totalIncome <= 24000000) return 480000;
+  if (totalIncome <= 24500000) return 320000;
+  if (totalIncome <= 25000000) return 160000;
+  return 0;
+}
+
+// 基礎控除（住民税）
+function basicDeductionResident(totalIncome) {
+  if (totalIncome <= 24000000) return 430000;
+  if (totalIncome <= 24500000) return 290000;
+  if (totalIncome <= 25000000) return 150000;
+  return 0;
+}
+
+// 所得税の速算表（国税庁 No.2260）
+var TAX_BRACKETS = [
+  { upTo: 1950000, rate: 0.05, ded: 0 },
+  { upTo: 3300000, rate: 0.10, ded: 97500 },
+  { upTo: 6950000, rate: 0.20, ded: 427500 },
+  { upTo: 9000000, rate: 0.23, ded: 636000 },
+  { upTo: 18000000, rate: 0.33, ded: 1536000 },
+  { upTo: 40000000, rate: 0.40, ded: 2796000 },
+  { upTo: Infinity, rate: 0.45, ded: 4796000 }
+];
+function taxBracket(taxable) {
+  for (var i = 0; i < TAX_BRACKETS.length; i++) {
+    if (taxable <= TAX_BRACKETS[i].upTo) return TAX_BRACKETS[i];
+  }
+  return TAX_BRACKETS[TAX_BRACKETS.length - 1];
+}
+// 所得税額（課税所得は千円未満切捨て済みの前提。税額は100円未満切捨て）
+function incomeTax(taxable) {
+  if (taxable <= 0) return 0;
+  var b = taxBracket(taxable);
+  return Math.max(0, floor100(taxable * b.rate - b.ded));
+}
+// 復興特別所得税（所得税額の2.1%、1円未満切捨て）
+function reconstructionTax(tax) { return Math.floor(tax * 0.021); }
+
+// 配偶者控除・配偶者特別控除（令和7年分・国税庁 No.1191 / No.1195）
+// ownIncome: 本人の合計所得金額 / spouseIncome: 配偶者の合計所得金額 / elderly: 配偶者が70歳以上
+// 戻り値 {amount, kind}
+function spouseDeduction(ownIncome, spouseIncome, elderly) {
+  if (spouseIncome === null || spouseIncome === undefined) return { amount: 0, kind: 'なし' };
+  if (ownIncome > 10000000) return { amount: 0, kind: '対象外（本人の合計所得が1,000万円超）' };
+  var col = ownIncome <= 9000000 ? 0 : (ownIncome <= 9500000 ? 1 : 2);
+  if (spouseIncome <= 580000) {
+    var table = elderly ? [480000, 320000, 160000] : [380000, 260000, 130000];
+    return { amount: table[col], kind: elderly ? '配偶者控除（老人控除対象配偶者）' : '配偶者控除' };
+  }
+  if (spouseIncome <= 1330000) {
+    var rows = [
+      [950000, 380000, 260000, 130000],
+      [1000000, 360000, 240000, 120000],
+      [1050000, 310000, 210000, 110000],
+      [1100000, 260000, 180000, 90000],
+      [1150000, 210000, 140000, 70000],
+      [1200000, 160000, 110000, 60000],
+      [1250000, 110000, 80000, 40000],
+      [1300000, 60000, 40000, 20000],
+      [1330000, 30000, 20000, 10000]
+    ];
+    for (var i = 0; i < rows.length; i++) {
+      if (spouseIncome <= rows[i][0]) return { amount: rows[i][1 + col], kind: '配偶者特別控除' };
+    }
+  }
+  return { amount: 0, kind: '対象外（配偶者の合計所得が133万円超）' };
+}
+
+// 扶養控除（所得税・国税庁 No.1180）
+// counts: {general: 一般(16歳以上), specific: 特定(19歳以上23歳未満), elderly: 老人(70歳以上), cohabit: 同居老親等}
+function dependentDeduction(counts) {
+  return (counts.general || 0) * 380000
+    + (counts.specific || 0) * 630000
+    + (counts.elderly || 0) * 480000
+    + (counts.cohabit || 0) * 580000;
+}
+// 扶養控除（住民税）
+function dependentDeductionResident(counts) {
+  return (counts.general || 0) * 330000
+    + (counts.specific || 0) * 450000
+    + (counts.elderly || 0) * 380000
+    + (counts.cohabit || 0) * 450000;
+}
+
+// 生命保険料控除（新契約の計算式・国税庁 No.1140）1区分分
+function lifeCategoryDeduction(pay) {
+  if (pay <= 0) return 0;
+  if (pay <= 20000) return Math.floor(pay);
+  if (pay <= 40000) return Math.floor(pay / 2) + 10000;
+  if (pay <= 80000) return Math.floor(pay / 4) + 20000;
+  return 40000;
+}
+// 生命保険料控除（一般生命・介護医療・個人年金の合計、上限12万円）
+function lifeInsuranceDeduction(general, care, annuity) {
+  var total = lifeCategoryDeduction(general) + lifeCategoryDeduction(care) + lifeCategoryDeduction(annuity);
+  return Math.min(total, 120000);
+}
+
+// 地震保険料控除（上限5万円）
+function quakeDeduction(pay) { return Math.min(Math.max(0, pay), 50000); }
+
+// 医療費控除（国税庁 No.1120）
+// paid: 支払った医療費 / reimbursed: 保険金などで補填される金額 / totalIncome: 総所得金額等
+function medicalDeduction(paid, reimbursed, totalIncome) {
+  var threshold = Math.min(totalIncome * 0.05, 100000);
+  var d = paid - reimbursed - threshold;
+  if (d <= 0) return 0;
+  return Math.min(Math.floor(d), 2000000);
+}
+
+// 所得税の概算計算（ツール1）
+// input: {type:'salary'|'business', salaryIncome, businessIncome, socialInsurance,
+//         hasSpouse, spouseIncome, spouseElderly,
+//         dependents:{general,specific,elderly,cohabit},
+//         life:{general,care,annuity}, quakePay, medicalDed}
+function calcIncomeTax(input) {
+  var salaryDed = 0, totalIncome;
+  if (input.type === 'salary') {
+    salaryDed = salaryDeduction(input.salaryIncome || 0);
+    totalIncome = (input.salaryIncome || 0) - salaryDed;
+  } else {
+    totalIncome = input.businessIncome || 0;
+  }
+  var spouse = input.hasSpouse
+    ? spouseDeduction(totalIncome, input.spouseIncome || 0, !!input.spouseElderly)
+    : { amount: 0, kind: 'なし' };
+  var life = lifeInsuranceDeduction(
+    (input.life && input.life.general) || 0,
+    (input.life && input.life.care) || 0,
+    (input.life && input.life.annuity) || 0
+  );
+  var deductions = {
+    basic: basicDeduction(totalIncome),
+    social: input.socialInsurance || 0,
+    spouse: spouse.amount,
+    spouseKind: spouse.kind,
+    dependents: dependentDeduction(input.dependents || {}),
+    life: life,
+    quake: quakeDeduction(input.quakePay || 0),
+    medical: input.medicalDed || 0,
+    other: input.otherDed || 0
+  };
+  var totalDed = deductions.basic + deductions.social + deductions.spouse
+    + deductions.dependents + deductions.life + deductions.quake + deductions.medical
+    + deductions.other;
+  var taxable = floor1000(Math.max(0, totalIncome - totalDed));
+  var tax = incomeTax(taxable);
+  var recon = reconstructionTax(tax);
+  return {
+    salaryDeduction: salaryDed,
+    totalIncome: totalIncome,
+    deductions: deductions,
+    totalDeductions: totalDed,
+    taxable: taxable,
+    rate: taxBracket(taxable).rate,
+    tax: tax,
+    reconstruction: recon,
+    total: tax + recon
+  };
+}
+
+// ふるさと納税 控除上限額の目安（ツール2）
+// 上限目安 = 住民税所得割額 × 20% ÷（90% − 所得税率 × 1.021）+ 2,000円（総務省の仕組みに基づく簡易式）
+// input: {salaryIncome, socialInsurance(nullなら収入の15%で概算), hasSpouse(配偶者控除あり),
+//         dependents:{general,specific,elderly,cohabit}}
+function calcFurusato(input) {
+  var income = input.salaryIncome || 0;
+  var salaryDed = salaryDeduction(income);
+  var totalIncome = income - salaryDed;
+  var social = (input.socialInsurance === null || input.socialInsurance === undefined)
+    ? Math.round(income * 0.15) : input.socialInsurance;
+  var dep = input.dependents || {};
+  // 所得税側（限界税率を求める）
+  var spouseIT = input.hasSpouse ? 380000 : 0;
+  var taxableIT = floor1000(Math.max(0,
+    totalIncome - basicDeduction(totalIncome) - social - spouseIT - dependentDeduction(dep)));
+  var rate = taxBracket(taxableIT).rate;
+  // 住民税側（所得割額を求める。配偶者控除は住民税33万円）
+  var spouseRT = input.hasSpouse ? 330000 : 0;
+  var taxableRT = floor1000(Math.max(0,
+    totalIncome - basicDeductionResident(totalIncome) - social - spouseRT - dependentDeductionResident(dep)));
+  var shotokuWari = Math.floor(taxableRT * 0.10);
+  var denom = 0.9 - rate * 1.021;
+  var limit = denom > 0 ? Math.floor(shotokuWari * 0.2 / denom) + 2000 : 2000;
+  return {
+    salaryDeduction: salaryDed,
+    totalIncome: totalIncome,
+    socialInsurance: social,
+    taxableForRate: taxableIT,
+    rate: rate,
+    taxableResident: taxableRT,
+    shotokuWari: shotokuWari,
+    limit: limit
+  };
+}
+
+// 医療費控除の目安と節税額の目安（ツール3）
+function calcMedical(input) {
+  var ded = medicalDeduction(input.paid || 0, input.reimbursed || 0, input.totalIncome || 0);
+  var threshold = Math.min((input.totalIncome || 0) * 0.05, 100000);
+  // 節税目安：課税所得を「総所得 − 基礎控除」で簡易推定して限界税率を出す
+  var taxable = floor1000(Math.max(0, (input.totalIncome || 0) - basicDeduction(input.totalIncome || 0)));
+  var rate = taxBracket(taxable).rate;
+  var saving = Math.floor(ded * (rate * 1.021 + 0.10));
+  return { deduction: ded, threshold: threshold, rate: rate, savingEstimate: saving };
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    salaryDeduction, basicDeduction, basicDeductionResident, taxBracket, incomeTax,
+    reconstructionTax, spouseDeduction, dependentDeduction, dependentDeductionResident,
+    lifeCategoryDeduction, lifeInsuranceDeduction, quakeDeduction, medicalDeduction,
+    calcIncomeTax, calcFurusato, calcMedical, floor1000, floor100
+  };
+}
+
+
+function man(id){var v=parseFloat(document.getElementById(id).value);return isNaN(v)?0:Math.round(v*10000);}
+function cnt(id){var v=parseInt(document.getElementById(id).value,10);return (isNaN(v)||v<0)?0:v;}
+function yen(n){return n.toLocaleString('ja-JP')+'円';}
+function row(label,value){return '<tr><td>'+label+'</td><td class="num">'+value+'</td></tr>';}
+function showResult(html){var r=document.getElementById('result');r.innerHTML=html;r.scrollIntoView({behavior:'smooth',block:'start'});}
+
+
+function runFurusato(){
+  var socialVal=parseFloat(document.getElementById('f-social').value);
+  var r=calcFurusato({
+    salaryIncome:man('f-income'),
+    socialInsurance:isNaN(socialVal)?null:Math.round(socialVal*10000),
+    hasSpouse:document.getElementById('f-spouse').checked,
+    dependents:{general:cnt('f-dep-general'),specific:cnt('f-dep-specific'),elderly:cnt('f-dep-elderly'),cohabit:cnt('f-dep-cohabit')}
+  });
+  var h='<div class="result-total"><div class="lbl">全額控除になる寄附額の上限（目安）</div><div class="amt">'+yen(r.limit)+'</div></div>';
+  h+='<table class="breakdown">';
+  h+=row('給与所得控除','−'+yen(r.salaryDeduction));
+  h+=row('給与所得',yen(r.totalIncome));
+  h+=row('社会保険料控除（計算に使用）','−'+yen(r.socialInsurance));
+  h+=row('住民税の課税所得',yen(r.taxableResident));
+  h+=row('住民税の所得割額（10%）',yen(r.shotokuWari));
+  h+=row('所得税の適用税率',Math.round(r.rate*100)+'%');
+  h+='<tr class="total"><td>上限額の目安（自己負担2,000円を含む）</td><td class="num">'+yen(r.limit)+'</td></tr>';
+  h+='</table>';
+  h+='<p style="color:var(--faint);font-size:.85rem;margin:14px 0 0">年収が変わったり、医療費控除など他の控除を受けたりすると上限は下がります。目安いっぱいではなく、少し余裕を持った金額にするのが安全です。</p>';
+  showResult(h);
+}
+
+</script>
+</body>
+</html>

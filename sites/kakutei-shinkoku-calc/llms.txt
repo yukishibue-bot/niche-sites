@@ -1,0 +1,11 @@
+# 確定申告計算ツール
+
+確定申告に関わる計算をブラウザ上で行う無料ツールサイト。令和7年分（2025年分）の税制に基づき、国税庁タックスアンサー・総務省の公開情報で計算します。計算結果は概算・目安です。運営：確定申告計算ツール運営事務局。
+
+## ツール
+- 所得税の概算計算: https://kakutei-shinkoku-calc.vercel.app/tools/shotokuzei/ （給与収入・事業所得、主要な所得控除に対応）
+- ふるさと納税の控除上限額の目安: https://kakutei-shinkoku-calc.vercel.app/tools/furusato/
+- 医療費控除の目安計算: https://kakutei-shinkoku-calc.vercel.app/tools/iryouhi/
+
+## その他
+- このサイトについて・出典: https://kakutei-shinkoku-calc.vercel.app/about/

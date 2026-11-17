@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて｜確定申告計算ツール</title>
+<meta name="description" content="確定申告計算ツールの運営情報、計算の前提、免責、出典（国税庁タックスアンサー・総務省）について。">
+<link rel="canonical" href="https://kakutei-shinkoku-calc.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="確定申告計算ツール">
+<meta property="og:title" content="このサイトについて｜確定申告計算ツール">
+<meta property="og:description" content="確定申告計算ツールの運営情報、計算の前提、免責、出典（国税庁タックスアンサー・総務省）について。">
+<meta property="og:url" content="https://kakutei-shinkoku-calc.vercel.app/about/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="このサイトについて｜確定申告計算ツール">
+<meta name="twitter:description" content="確定申告計算ツールの運営情報、計算の前提、免責、出典（国税庁タックスアンサー・総務省）について。">
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#8a8a8a;
+  --line:#ececec; --hair:#f0f0f0;
+  --blue:#2563a8; --blue-dark:#1c4e89; --blue-pale:#e3edf9;
+  --grad:linear-gradient(120deg,#4a90d9,#2563a8);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d9e7f7 0%,#eef4fb 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:right center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s;display:block;text-decoration:none;color:var(--ink)}
+.tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.tcard .en{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.tcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.tcard .go{margin-top:14px;font-weight:700;color:var(--blue);font-size:.92rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:26px}
+.step b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.step b .n{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-right:8px}
+.step p{margin:0;color:var(--muted);font-size:.93rem}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fafafa;font-size:.88rem;font-weight:700}
+table.compare td.num{text-align:right;font-weight:700;white-space:nowrap}
+table.compare tr:last-child td{border-bottom:none}
+table.breakdown{width:100%;border-collapse:collapse}
+table.breakdown th,table.breakdown td{padding:11px 6px;border-bottom:1px solid var(--hair);text-align:left;font-size:.96rem}
+table.breakdown td.num{text-align:right;font-weight:700;white-space:nowrap}
+table.breakdown tr.total td{border-bottom:none;border-top:2px solid var(--line);font-weight:800}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border:none;cursor:pointer;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s;font-family:inherit}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(37,99,168,.25)}
+.btn-big{width:100%;padding:16px 24px;font-size:1rem;margin-top:8px}
+.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
+.calc-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:28px}
+.calc-card h2{margin:0 0 18px;font-size:1.2rem;font-weight:800;letter-spacing:-0.02em}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:700;font-size:.93rem;margin-bottom:6px}
+.field .hint{font-size:.8rem;color:var(--faint);margin-top:4px;line-height:1.6}
+.field input[type=number],.field input[type=text]{width:100%;font-size:16px;padding:13px 14px;border:1px solid #d8d8d8;
+  border-radius:11px;font-family:inherit;background:#fff;color:var(--ink)}
+.field input:focus{outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue)}
+.unit{display:flex;align-items:center;gap:8px}
+.unit input{flex:1}
+.unit span{font-weight:700;color:var(--muted);white-space:nowrap}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{flex:1;min-width:130px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg .opt{display:block;text-align:center;padding:12px 10px;border:1px solid #d8d8d8;border-radius:11px;
+  font-weight:700;font-size:.93rem;cursor:pointer;transition:all .2s;background:#fff}
+.seg input:checked + .opt{background:var(--blue-pale);border-color:var(--blue);color:var(--blue-dark)}
+.checkline{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.93rem;margin:6px 0 14px}
+.checkline input{width:20px;height:20px;accent-color:var(--blue)}
+fieldset{border:1px solid var(--hair);border-radius:16px;padding:20px;margin:0 0 20px}
+fieldset legend{font-weight:800;font-size:.95rem;padding:0 8px;letter-spacing:-0.01em}
+fieldset .field:last-child{margin-bottom:4px}
+.counts{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.result-empty{color:var(--faint);text-align:center;padding:34px 10px;font-size:.95rem}
+.result-total{text-align:center;padding:10px 0 18px;border-bottom:1px solid var(--hair);margin-bottom:16px}
+.result-total .lbl{font-size:.85rem;color:var(--muted);font-weight:700;letter-spacing:.06em}
+.result-total .amt{font-size:clamp(30px,4vw,42px);font-weight:800;letter-spacing:-0.03em;line-height:1.3;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.notice{background:#f7fafd;border:1px solid var(--blue-pale);border-radius:16px;padding:20px 24px;margin-top:26px}
+.notice b{display:block;margin-bottom:6px;font-size:.95rem}
+.notice p{margin:0;color:#445;font-size:.9rem}
+.src-list{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
+.src-list li{margin-bottom:6px}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#a3a3a3;text-align:center;
+  padding:18px;margin:32px 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:52px 0 8px}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0 0 12px;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px;margin:0}
+footer.site{background:#fafafa;margin-top:24px}
+footer.site .wrap{padding-top:44px;padding-bottom:44px}
+footer.site .fnav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+footer.site .fnav a{color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:600}
+footer.site p{color:var(--faint);font-size:.8rem;margin:6px 0}
+@media (max-width:960px){
+  .cards,.steps{grid-template-columns:1fr}
+  .calc-grid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .hero{padding:44px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:28px}
+  .hero-photo img{height:240px;object-position:center}
+  .hero-stats{gap:24px}
+  section{padding:52px 0}
+  .counts{grid-template-columns:1fr}
+  .calc-card{padding:22px 18px}
+  table.compare th,table.compare td{padding:11px 12px;font-size:.9rem}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "確定申告計算ツール", "url": "https://kakutei-shinkoku-calc.vercel.app/", "inLanguage": "ja", "publisher": {"@type": "Organization", "name": "確定申告計算ツール運営事務局"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://kakutei-shinkoku-calc.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "このサイトについて", "item": "https://kakutei-shinkoku-calc.vercel.app/about/"}]}</script>
+</head>
+<body>
+
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>TAX CALCULATOR</small>確定申告計算ツール</a>
+<nav class="main">
+<a href="/tools/shotokuzei/">所得税の計算</a>
+<a href="/tools/furusato/">ふるさと納税</a>
+<a href="/tools/iryouhi/">医療費控除</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+
+
+<main>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ このサイトについて</p></div>
+<div class="wrap">
+<div class="page-hero">
+<p class="eyebrow">ABOUT</p>
+<h1>このサイトについて</h1>
+<p>「確定申告計算ツール」は、確定申告に関わる計算を、根拠を示しながらブラウザ上で完結できるようにした無料の計算ツールサイトです。</p>
+</div>
+<section style="padding:36px 0 72px">
+<h3 style="font-weight:800;letter-spacing:-0.02em">運営</h3>
+<p style="color:var(--muted)">運営：確定申告計算ツール運営事務局</p>
+<h3 style="font-weight:800;letter-spacing:-0.02em">計算の前提</h3>
+<p style="color:var(--muted)">税率・控除額は令和7年分（2025年分）の制度に基づき、国税庁タックスアンサーと総務省の公開情報で確認しています（確認日：2026-11-17）。令和8年分以降の制度には対応していません。住宅ローン控除などの税額控除、特定親族特別控除、雑損控除、分離課税の所得（配当・退職など）、青色申告特別控除は計算に含まれません。</p>
+<h3 style="font-weight:800;letter-spacing:-0.02em">免責</h3>
+<p style="color:var(--muted)">本サイトの計算結果は概算・目安であり、正確な申告額を保証するものではありません。実際の申告額は、国税庁の確定申告書等作成コーナーで計算するか、税務署・税理士にご確認ください。</p>
+<h3 style="font-weight:800;letter-spacing:-0.02em">プライバシー</h3>
+<p style="color:var(--muted)">計算はすべてお使いのブラウザ内で行われます。入力した金額や家族構成がサーバーに送信・保存されることはありません。</p>
+<h3 style="font-weight:800;letter-spacing:-0.02em">出典</h3>
+
+<ul class="src-list">
+<li>国税庁タックスアンサー No.2260「所得税の税率」（速算表）</li>
+<li>国税庁タックスアンサー No.1410「<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" rel="noopener" target="_blank">給与所得控除</a>」</li>
+<li>国税庁タックスアンサー No.1199「<a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" rel="noopener" target="_blank">基礎控除</a>」</li>
+<li>国税庁タックスアンサー No.1191「配偶者控除」／ No.1195「配偶者特別控除」／ No.1180「扶養控除」／ No.1140「生命保険料控除」／ No.1120「医療費を支払ったとき（医療費控除）」</li>
+<li>総務省「ふるさと納税ポータルサイト」（控除の仕組み・全額控除される寄附額の目安）</li>
+<li>国税庁「<a href="https://www.keisan.nta.go.jp/" rel="noopener" target="_blank">確定申告書等作成コーナー</a>」（正確な申告額の計算はこちら）</li>
+</ul>
+<p style="color:var(--faint);font-size:.85rem">制度の確認日：2026-11-17（令和7年分＝2025年分の制度で計算しています）</p>
+
+</section>
+</div>
+</main>
+
+
+<footer class="site"><div class="wrap">
+<div class="fnav">
+<a href="/tools/shotokuzei/">所得税の概算計算</a>
+<a href="/tools/furusato/">ふるさと納税の控除上限</a>
+<a href="/tools/iryouhi/">医療費控除の目安</a>
+<a href="/about/">このサイトについて・出典</a>
+</div>
+<p>運営：確定申告計算ツール運営事務局</p>
+<p>本サイトの計算結果は概算・目安です。実際の申告額とは異なる場合があります。正確な申告額は国税庁の確定申告書等作成コーナーで計算するか、税務署・税理士にご確認ください。計算はすべてお使いのブラウザ内で行われ、入力内容がサーバーに送信・保存されることはありません。</p>
+</div></footer>
+
+
+</body>
+</html>

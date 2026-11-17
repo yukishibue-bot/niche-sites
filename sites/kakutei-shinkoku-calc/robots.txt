@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kakutei-shinkoku-calc.vercel.app/sitemap.xml
