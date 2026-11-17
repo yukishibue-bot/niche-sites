@@ -1,0 +1,19 @@
+# 葬儀費用相場データベース
+
+葬儀費用相場データベースは、葬儀各社の公式サイトに掲載されたプラン料金（確認日：2026-11-17）だけを収録した葬儀費用の相場データベースです。
+収録：5社・公式プラン21件。確認できない料金は「公表なし」と明示しています。
+運営：葬儀費用相場データベース運営事務局
+
+## ページ一覧
+- トップ（形式別相場・直葬プラン比較・別途費用）: https://funeral-price-db.vercel.app/
+- 小さなお葬式のプラン料金一覧: https://funeral-price-db.vercel.app/companies/chisana-osohshiki/
+- イオンのお葬式のプラン料金一覧: https://funeral-price-db.vercel.app/companies/aeon-osohshiki/
+- よりそうお葬式のプラン料金一覧: https://funeral-price-db.vercel.app/companies/yorisou-osohshiki/
+- さがみ典礼（家族葬のファミラル）のプラン料金一覧: https://funeral-price-db.vercel.app/companies/sagami-tenrei/
+- 公益社のプラン料金一覧: https://funeral-price-db.vercel.app/companies/koekisha/
+- 直葬・火葬式の費用相場: https://funeral-price-db.vercel.app/formats/chokuso/
+- 一日葬の費用相場: https://funeral-price-db.vercel.app/formats/ichinichiso/
+- 家族葬の費用相場: https://funeral-price-db.vercel.app/formats/kazokuso/
+- 一般葬の費用相場: https://funeral-price-db.vercel.app/formats/ippanso/
+- FAQ: https://funeral-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://funeral-price-db.vercel.app/about/
