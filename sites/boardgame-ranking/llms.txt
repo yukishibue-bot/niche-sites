@@ -6,36 +6,36 @@
 出典：BoardGameGeek https://boardgamegeek.com/browse/boardgame
 
 ## ページ
-- ランキングTOP30: https://boardgame-ranking.vercel.app/
-- 出典・順位の決まり方: https://boardgame-ranking.vercel.app/about/
-- よくある質問: https://boardgame-ranking.vercel.app/faq/
-- BGG1位 Brass: Birmingham: https://boardgame-ranking.vercel.app/games/brass-birmingham/
-- BGG2位 Ark Nova: https://boardgame-ranking.vercel.app/games/ark-nova/
-- BGG3位 Pandemic Legacy: Season 1: https://boardgame-ranking.vercel.app/games/pandemic-legacy-season-1/
-- BGG4位 Gloomhaven: https://boardgame-ranking.vercel.app/games/gloomhaven/
-- BGG5位 Dune: Imperium – Uprising: https://boardgame-ranking.vercel.app/games/dune-imperium-uprising/
-- BGG6位 Dune: Imperium: https://boardgame-ranking.vercel.app/games/dune-imperium/
-- BGG7位 Twilight Imperium: Fourth Edition: https://boardgame-ranking.vercel.app/games/twilight-imperium-fourth-edition/
-- BGG8位 War of the Ring: Second Edition: https://boardgame-ranking.vercel.app/games/war-of-the-ring-second-edition/
-- BGG9位 Terraforming Mars: https://boardgame-ranking.vercel.app/games/terraforming-mars/
-- BGG10位 Star Wars: Rebellion: https://boardgame-ranking.vercel.app/games/star-wars-rebellion/
-- BGG11位 Spirit Island: https://boardgame-ranking.vercel.app/games/spirit-island/
-- BGG12位 Gloomhaven: Jaws of the Lion: https://boardgame-ranking.vercel.app/games/gloomhaven-jaws-of-the-lion/
-- BGG13位 Gaia Project: https://boardgame-ranking.vercel.app/games/gaia-project/
-- BGG14位 SETI: Search for Extraterrestrial Intelligence: https://boardgame-ranking.vercel.app/games/seti/
-- BGG15位 Slay the Spire: The Board Game: https://boardgame-ranking.vercel.app/games/slay-the-spire/
-- BGG16位 Twilight Struggle: https://boardgame-ranking.vercel.app/games/twilight-struggle/
-- BGG17位 The Castles of Burgundy: https://boardgame-ranking.vercel.app/games/the-castles-of-burgundy/
-- BGG18位 The Lord of the Rings: Duel for Middle-earth: https://boardgame-ranking.vercel.app/games/lotr-duel-for-middle-earth/
-- BGG19位 Through the Ages: A New Story of Civilization: https://boardgame-ranking.vercel.app/games/through-the-ages/
-- BGG20位 Frosthaven: https://boardgame-ranking.vercel.app/games/frosthaven/
-- BGG21位 Great Western Trail: https://boardgame-ranking.vercel.app/games/great-western-trail/
-- BGG22位 Brass: Lancashire: https://boardgame-ranking.vercel.app/games/brass-lancashire/
-- BGG23位 Eclipse: Second Dawn for the Galaxy: https://boardgame-ranking.vercel.app/games/eclipse-second-dawn/
-- BGG24位 7 Wonders Duel: https://boardgame-ranking.vercel.app/games/7-wonders-duel/
-- BGG25位 Nemesis: https://boardgame-ranking.vercel.app/games/nemesis/
-- BGG26位 A Feast for Odin: https://boardgame-ranking.vercel.app/games/a-feast-for-odin/
-- BGG27位 Scythe: https://boardgame-ranking.vercel.app/games/scythe/
-- BGG28位 Clank! Legacy: Acquisitions Incorporated: https://boardgame-ranking.vercel.app/games/clank-legacy/
-- BGG29位 Concordia: https://boardgame-ranking.vercel.app/games/concordia/
-- BGG30位 Lost Ruins of Arnak: https://boardgame-ranking.vercel.app/games/lost-ruins-of-arnak/
+- ランキングTOP30: https://boardgame-ranking-jade.vercel.app/
+- 出典・順位の決まり方: https://boardgame-ranking-jade.vercel.app/about/
+- よくある質問: https://boardgame-ranking-jade.vercel.app/faq/
+- BGG1位 Brass: Birmingham: https://boardgame-ranking-jade.vercel.app/games/brass-birmingham/
+- BGG2位 Ark Nova: https://boardgame-ranking-jade.vercel.app/games/ark-nova/
+- BGG3位 Pandemic Legacy: Season 1: https://boardgame-ranking-jade.vercel.app/games/pandemic-legacy-season-1/
+- BGG4位 Gloomhaven: https://boardgame-ranking-jade.vercel.app/games/gloomhaven/
+- BGG5位 Dune: Imperium – Uprising: https://boardgame-ranking-jade.vercel.app/games/dune-imperium-uprising/
+- BGG6位 Dune: Imperium: https://boardgame-ranking-jade.vercel.app/games/dune-imperium/
+- BGG7位 Twilight Imperium: Fourth Edition: https://boardgame-ranking-jade.vercel.app/games/twilight-imperium-fourth-edition/
+- BGG8位 War of the Ring: Second Edition: https://boardgame-ranking-jade.vercel.app/games/war-of-the-ring-second-edition/
+- BGG9位 Terraforming Mars: https://boardgame-ranking-jade.vercel.app/games/terraforming-mars/
+- BGG10位 Star Wars: Rebellion: https://boardgame-ranking-jade.vercel.app/games/star-wars-rebellion/
+- BGG11位 Spirit Island: https://boardgame-ranking-jade.vercel.app/games/spirit-island/
+- BGG12位 Gloomhaven: Jaws of the Lion: https://boardgame-ranking-jade.vercel.app/games/gloomhaven-jaws-of-the-lion/
+- BGG13位 Gaia Project: https://boardgame-ranking-jade.vercel.app/games/gaia-project/
+- BGG14位 SETI: Search for Extraterrestrial Intelligence: https://boardgame-ranking-jade.vercel.app/games/seti/
+- BGG15位 Slay the Spire: The Board Game: https://boardgame-ranking-jade.vercel.app/games/slay-the-spire/
+- BGG16位 Twilight Struggle: https://boardgame-ranking-jade.vercel.app/games/twilight-struggle/
+- BGG17位 The Castles of Burgundy: https://boardgame-ranking-jade.vercel.app/games/the-castles-of-burgundy/
+- BGG18位 The Lord of the Rings: Duel for Middle-earth: https://boardgame-ranking-jade.vercel.app/games/lotr-duel-for-middle-earth/
+- BGG19位 Through the Ages: A New Story of Civilization: https://boardgame-ranking-jade.vercel.app/games/through-the-ages/
+- BGG20位 Frosthaven: https://boardgame-ranking-jade.vercel.app/games/frosthaven/
+- BGG21位 Great Western Trail: https://boardgame-ranking-jade.vercel.app/games/great-western-trail/
+- BGG22位 Brass: Lancashire: https://boardgame-ranking-jade.vercel.app/games/brass-lancashire/
+- BGG23位 Eclipse: Second Dawn for the Galaxy: https://boardgame-ranking-jade.vercel.app/games/eclipse-second-dawn/
+- BGG24位 7 Wonders Duel: https://boardgame-ranking-jade.vercel.app/games/7-wonders-duel/
+- BGG25位 Nemesis: https://boardgame-ranking-jade.vercel.app/games/nemesis/
+- BGG26位 A Feast for Odin: https://boardgame-ranking-jade.vercel.app/games/a-feast-for-odin/
+- BGG27位 Scythe: https://boardgame-ranking-jade.vercel.app/games/scythe/
+- BGG28位 Clank! Legacy: Acquisitions Incorporated: https://boardgame-ranking-jade.vercel.app/games/clank-legacy/
+- BGG29位 Concordia: https://boardgame-ranking-jade.vercel.app/games/concordia/
+- BGG30位 Lost Ruins of Arnak: https://boardgame-ranking-jade.vercel.app/games/lost-ruins-of-arnak/
