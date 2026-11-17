@@ -1,0 +1,22 @@
+# クリーニング料金相場データベース
+
+クリーニング料金相場データベースは、クリーニングチェーン各社の公式サイトに掲載された通常料金（確認日：2026-11-17）だけを収録した、衣類クリーニングの料金相場データベースです。店舗型と宅配型を区別して掲載しています。
+収録：4社・料金データ25件。確認できない料金は「公表なし」と明示しています。
+運営：クリーニング料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（アイテム別相場・全社比較）: https://laundry-price-db.vercel.app/
+- ポニークリーニングの料金一覧: https://laundry-price-db.vercel.app/companies/pony/
+- ホワイト急便パールドライの料金一覧: https://laundry-price-db.vercel.app/companies/pearldry/
+- 白洋舍の料金一覧: https://laundry-price-db.vercel.app/companies/hakuyosha/
+- リネットの料金一覧: https://laundry-price-db.vercel.app/companies/lenet/
+- ワイシャツのクリーニング料金相場: https://laundry-price-db.vercel.app/menus/yshirt/
+- スーツ上下のクリーニング料金相場: https://laundry-price-db.vercel.app/menus/suit/
+- ジャケット・上着（単品）のクリーニング料金相場: https://laundry-price-db.vercel.app/menus/jacket/
+- コートのクリーニング料金相場: https://laundry-price-db.vercel.app/menus/coat/
+- ダウンジャケットのクリーニング料金相場: https://laundry-price-db.vercel.app/menus/down/
+- セーター・カーディガンのクリーニング料金相場: https://laundry-price-db.vercel.app/menus/sweater/
+- ワンピースのクリーニング料金相場: https://laundry-price-db.vercel.app/menus/onepiece/
+- 礼服上下のクリーニング料金相場: https://laundry-price-db.vercel.app/menus/formal/
+- FAQ: https://laundry-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://laundry-price-db.vercel.app/about/
