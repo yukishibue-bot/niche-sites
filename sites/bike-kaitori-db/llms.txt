@@ -1,0 +1,45 @@
+# バイク買取相場データベース
+
+> バイクの買取相場を、買取業者の公式サイトに掲載された価格データだけでまとめたデータベース。運営：バイク買取相場データベース運営事務局。確認日：2026-11-17。
+
+## このサイトのデータについて
+- 収録価格はすべて公式掲載の数字（平均買取相場・買取上限・実落札の中央値・買取事例）。
+- 「買取上限」は最も高く売れた水準で、平均的な価格ではありません。平均帯・中央値とセットで表示しています。
+- 出典：バイクパッション（業者間オークション落札データ）、カチエックス（実落札データ）、バイクワン公式ブログ（オークション相場）。
+- 収録：23車種・相場データ24件・買取事例8件。
+
+## クラス別ページ
+- 原付・原付二種（〜125cc）の買取相場: https://bike-kaitori-db.vercel.app/classes/small/
+- 250ccクラス（126〜250cc）の買取相場: https://bike-kaitori-db.vercel.app/classes/quarter/
+- 400ccクラス（251〜400cc）の買取相場: https://bike-kaitori-db.vercel.app/classes/middle/
+- 大型クラス（401cc〜）の買取相場: https://bike-kaitori-db.vercel.app/classes/large/
+
+## 車種別ページ
+- ミント（ヤマハ・50cc）の買取相場: https://bike-kaitori-db.vercel.app/models/mint/
+- スーパー9S（KYMCO・50cc）の買取相場: https://bike-kaitori-db.vercel.app/models/super-9s/
+- レオンチーノ125（ベネリ・125cc）の買取相場: https://bike-kaitori-db.vercel.app/models/leoncino125/
+- WR125R（ヤマハ・125cc）の買取相場: https://bike-kaitori-db.vercel.app/models/wr125r/
+- アヴェニス150（スズキ・150cc）の買取相場: https://bike-kaitori-db.vercel.app/models/avenis150/
+- NSR250R SP（ホンダ・250cc）の買取相場: https://bike-kaitori-db.vercel.app/models/nsr250r-sp/
+- CB400SF HYPER VTEC Revo（NC42）（ホンダ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/cb400sf-revo/
+- CB400スーパーボルドール（NC42）（ホンダ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/cb400sb-nc42/
+- SR400（ヤマハ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/sr400/
+- CB400SF HYPER VTEC（NC39）（ホンダ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/cb400sf-nc39/
+- CB400スーパーボルドール（NC39）（ホンダ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/cb400sb-nc39/
+- CB400SF 初代（NC31）（ホンダ・399cc）の買取相場: https://bike-kaitori-db.vercel.app/models/cb400sf-nc31/
+- インペリアーレ400（ベネリ・374cc）の買取相場: https://bike-kaitori-db.vercel.app/models/imperiale400/
+- NINJA H2 CARBON（カワサキ・998cc）の買取相場: https://bike-kaitori-db.vercel.app/models/ninja-h2-carbon/
+- MT-10SP（ヤマハ・998cc）の買取相場: https://bike-kaitori-db.vercel.app/models/mt-10sp/
+- M1000XR（BMW・999cc）の買取相場: https://bike-kaitori-db.vercel.app/models/m1000xr/
+- ゴールドウイング ツアー（ホンダ・1833cc）の買取相場: https://bike-kaitori-db.vercel.app/models/goldwing-tour/
+- ゴールドウイング GL1800（ホンダ・1832cc）の買取相場: https://bike-kaitori-db.vercel.app/models/goldwing-gl1800/
+- GSX-R1000（スズキ・999cc）の買取相場: https://bike-kaitori-db.vercel.app/models/gsx-r1000/
+- Z2（750RS）（カワサキ・746cc）の買取相場: https://bike-kaitori-db.vercel.app/models/z2/
+- Z1（カワサキ・903cc）の買取相場: https://bike-kaitori-db.vercel.app/models/z1/
+- Gold Wing F6C（ホンダ・1832cc）の買取相場: https://bike-kaitori-db.vercel.app/models/goldwing-f6c/
+- XV1900レイダー（ヤマハ・1854cc）の買取相場: https://bike-kaitori-db.vercel.app/models/xv1900-raider/
+
+## その他
+- 買取事例（実績）一覧: https://bike-kaitori-db.vercel.app/records/
+- よくある質問: https://bike-kaitori-db.vercel.app/faq/
+- 出典と算出方法: https://bike-kaitori-db.vercel.app/about/
