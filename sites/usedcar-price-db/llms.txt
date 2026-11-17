@@ -1,0 +1,39 @@
+# 中古車相場データベース
+
+中古車相場データベースは、人気車種の中古車価格帯を、グーネットの車種別ページに表示された掲載台数・車両価格帯・平均価格（確認日：2026-11-17）から集計したデータベースです。
+収録：24車種・掲載台数合計137,248台。全車種で集計の母数・出典URL・確認日を明示しています。中央値は全件データが必要なため算出していません。
+運営：中古車相場データベース運営事務局
+
+## ページ一覧
+- トップ（カテゴリ別相場一覧）: https://usedcar-price-db.vercel.app/
+- 軽自動車の相場: https://usedcar-price-db.vercel.app/categories/kei/
+- コンパクトカーの相場: https://usedcar-price-db.vercel.app/categories/compact/
+- ミニバンの相場: https://usedcar-price-db.vercel.app/categories/minivan/
+- SUVの相場: https://usedcar-price-db.vercel.app/categories/suv/
+- セダン・ハイブリッドの相場: https://usedcar-price-db.vercel.app/categories/sedan/
+- ホンダ N-BOXの相場: https://usedcar-price-db.vercel.app/models/n-box/
+- スズキ スペーシアの相場: https://usedcar-price-db.vercel.app/models/spacia/
+- スズキ ハスラーの相場: https://usedcar-price-db.vercel.app/models/hustler/
+- ダイハツ ムーヴの相場: https://usedcar-price-db.vercel.app/models/move/
+- スズキ ワゴンRの相場: https://usedcar-price-db.vercel.app/models/wagon-r/
+- 日産 デイズの相場: https://usedcar-price-db.vercel.app/models/dayz/
+- 日産 ルークスの相場: https://usedcar-price-db.vercel.app/models/roox/
+- スズキ ジムニーの相場: https://usedcar-price-db.vercel.app/models/jimny/
+- トヨタ ヤリスの相場: https://usedcar-price-db.vercel.app/models/yaris/
+- ホンダ フィットの相場: https://usedcar-price-db.vercel.app/models/fit/
+- トヨタ アクアの相場: https://usedcar-price-db.vercel.app/models/aqua/
+- スズキ スイフトの相場: https://usedcar-price-db.vercel.app/models/swift/
+- トヨタ ノアの相場: https://usedcar-price-db.vercel.app/models/noah/
+- トヨタ ヴォクシーの相場: https://usedcar-price-db.vercel.app/models/voxy/
+- 日産 セレナの相場: https://usedcar-price-db.vercel.app/models/serena/
+- ホンダ フリードの相場: https://usedcar-price-db.vercel.app/models/freed/
+- トヨタ ハリアーの相場: https://usedcar-price-db.vercel.app/models/harrier/
+- トヨタ RAV4の相場: https://usedcar-price-db.vercel.app/models/rav4/
+- ホンダ ヴェゼルの相場: https://usedcar-price-db.vercel.app/models/vezel/
+- マツダ CX-5の相場: https://usedcar-price-db.vercel.app/models/cx-5/
+- スバル フォレスターの相場: https://usedcar-price-db.vercel.app/models/forester/
+- 日産 エクストレイルの相場: https://usedcar-price-db.vercel.app/models/x-trail/
+- トヨタ ライズの相場: https://usedcar-price-db.vercel.app/models/raize/
+- トヨタ プリウスの相場: https://usedcar-price-db.vercel.app/models/prius/
+- FAQ: https://usedcar-price-db.vercel.app/faq/
+- このサイトについて（集計方法・出典）: https://usedcar-price-db.vercel.app/about/

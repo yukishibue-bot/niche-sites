@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://usedcar-price-db.vercel.app/sitemap.xml
