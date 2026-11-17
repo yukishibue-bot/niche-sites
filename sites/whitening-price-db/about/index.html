@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて（出典・算出方法）｜ホワイトニング料金相場DB</title>
+<meta name="description" content="ホワイトニング料金相場データベースの出典一覧、確認日、中央値・価格帯の算出方法、単位の扱い、医療広告ガイドラインへの配慮、運営情報を掲載。">
+<link rel="canonical" href="https://whitening-price-db.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ホワイトニング料金相場データベース">
+<meta property="og:title" content="このサイトについて（出典・算出方法）｜ホワイトニング料金相場DB">
+<meta property="og:description" content="ホワイトニング料金相場データベースの出典一覧、確認日、中央値・価格帯の算出方法、単位の扱い、医療広告ガイドラインへの配慮、運営情報を掲載。">
+<meta property="og:url" content="https://whitening-price-db.vercel.app/about/">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="このサイトについて（出典・算出方法）｜ホワイトニング料金相場DB">
+<meta name="twitter:description" content="ホワイトニング料金相場データベースの出典一覧、確認日、中央値・価格帯の算出方法、単位の扱い、医療広告ガイドラインへの配慮、運営情報を掲載。">
+
+<style>
+:root{
+  --ink:#222; --muted:#666; --faint:#8a8a8a;
+  --line:#ececec; --hair:#f0f0f0;
+  --blue:#0e7cc4; --blue-dark:#0a5a8c; --blue-pale:#e3f1f9;
+  --grad:linear-gradient(120deg,#38a3d1,#0e7cc4);
+  --shadow:0 8px 28px rgba(17,17,17,.05);
+  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--blue)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f5f5f5}
+.hero{background:radial-gradient(circle at 90% 38%,#d9edf8 0%,#eef6fb 30%,#fff 62%);padding:64px 0 84px}
+.eyebrow{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);font-size:13px;font-weight:700;
+  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:var(--faint)}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-photo{margin:0}
+.hero-photo img{display:block;width:100%;height:440px;object-fit:cover;object-position:right center;
+  border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
+section{padding:72px 0}
+.sec-head{margin-bottom:28px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:inline-block;background:var(--blue-pale);color:var(--blue-dark);letter-spacing:.08em;
+  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--blue)}
+.mcard .median{font-size:1.7rem;font-weight:800;letter-spacing:-0.03em;color:var(--blue);margin:0}
+.mcard .median small{font-size:.85rem;color:var(--muted);font-weight:600;letter-spacing:0}
+.mcard .range{color:var(--muted);font-size:.9rem;margin:4px 0 0}
+.bar{position:relative;height:8px;background:#e8f2f9;border-radius:99px;margin:18px 0 8px}
+.bar .fill{position:absolute;top:0;bottom:0;background:var(--grad);border-radius:99px;opacity:.8}
+.bar .tick{position:absolute;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;
+  background:var(--grad);border:3px solid #fff;box-shadow:0 1px 5px rgba(17,17,17,.22)}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fafafa;font-size:.88rem;font-weight:700}
+table.compare td.price{font-weight:800;color:var(--blue);white-space:nowrap}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+.none{color:var(--muted)}
+table.compare tr:last-child td{border-bottom:none}
+.adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#a3a3a3;text-align:center;
+  padding:18px;margin:32px 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.company-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard h3{margin:0 0 4px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--blue)}
+.ccard .type{font-size:.8rem;color:var(--blue);font-weight:700;margin:0}
+.ccard p{font-size:.9rem;color:var(--muted);margin:8px 0 0}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(14,124,196,.25)}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:var(--blue)}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-photo img{height:240px}
+  section{padding:52px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats{gap:24px}
+  .trust,.cards,.company-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "ホワイトニング料金相場データベース", "url": "https://whitening-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://whitening-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "このサイトについて", "item": "https://whitening-price-db.vercel.app"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>WHITENING PRICE DB</small>ホワイトニング料金相場DB</a>
+<nav class="main">
+<a href="/#types">種別別の相場</a>
+<a href="/#clinics">医院別料金</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ このサイトについて</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">ABOUT</p>
+<h1>このサイトについて</h1>
+<p>ホワイトニング料金相場データベースは、歯科医院・クリニックが公式サイトに掲載しているホワイトニングの通常料金だけを収録した、独立した料金データベースです。特定の医院の宣伝を目的としたサイトではありません。</p>
+</div></div>
+<section><div class="wrap">
+<div class="sec-head"><h2>出典と確認日</h2>
+<p>料金はすべて下記の公式ページで確認しました（確認日：2026-11-17）。キャンペーン価格・初回限定価格・モニター価格は収録せず、通常価格を掲載しています。</p></div>
+<table class="compare"><thead><tr><th>医院</th><th>出典URL（公式）</th></tr></thead>
+<tbody><tr><td data-label="医院">スターホワイトニング</td><td data-label="出典URL"><a href="https://starwhitening.jp/" rel="nofollow noopener" target="_blank">https://starwhitening.jp/</a></td></tr><tr><td data-label="医院">ホワイトエッセンス</td><td data-label="出典URL"><a href="https://www.whiteessence.com/" rel="nofollow noopener" target="_blank">https://www.whiteessence.com/</a></td></tr><tr><td data-label="医院">湘南美容歯科</td><td data-label="出典URL"><a href="https://www.sbc-dental.com/" rel="nofollow noopener" target="_blank">https://www.sbc-dental.com/</a></td></tr><tr><td data-label="医院">湘南美容歯科</td><td data-label="出典URL"><a href="https://www.sbc-dental.com/price/" rel="nofollow noopener" target="_blank">https://www.sbc-dental.com/price/</a></td></tr><tr><td data-label="医院">銀座デンタルホワイト</td><td data-label="出典URL"><a href="https://ginza-dw.com/" rel="nofollow noopener" target="_blank">https://ginza-dw.com/</a></td></tr><tr><td data-label="医院">Oh my teeth</td><td data-label="出典URL"><a href="https://www.oh-my-teeth.com/" rel="nofollow noopener" target="_blank">https://www.oh-my-teeth.com/</a></td></tr><tr><td data-label="医院">Oh my teeth</td><td data-label="出典URL"><a href="https://www.oh-my-teeth.com/posts/in-office-whitening" rel="nofollow noopener" target="_blank">https://www.oh-my-teeth.com/posts/in-office-whitening</a></td></tr></tbody></table>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head"><h2>相場（中央値・価格帯）の算出方法</h2></div>
+<div class="trust">
+<div class="tcard"><b>中央値</b><p>種別ごとに、収録した各医院の公式掲載料金（税込）を小さい順に並べた中央の値です。収録件数が偶数の場合は、中央2件の平均です。</p></div>
+<div class="tcard"><b>単位の違いについて</b><p>ホワイトニングの料金は、照射1回・来院1回・歯の本数・コース一式など、医院ごとに単位が異なります。本サイトでは単位をそろえる換算は行わず、掲載価格のまま集計し、各データに単位を明記しています。</p></div>
+<div class="tcard"><b>コース料金の扱い</b><p>複数回分をまとめたチケットやコースは、1回あたりに割り戻さず、掲載された総額のまま収録しています。備考に含まれる内容を記載しています。</p></div>
+</div>
+<p class="note-list">・「公表なし」は、公式サイトで該当種別の料金を確認できなかった項目です。推測による金額の補完は行っていません。<br>
+・ホワイトニングは自由診療（公的医療保険の適用外）です。料金は医院ごとに設定されています。<br>
+・料金は変更される場合があります。お申し込み前に各医院の公式サイトで最新の料金をご確認ください。</p>
+<div class="adslot">PR（広告枠）</div>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head"><h2>医療広告ガイドラインへの配慮</h2>
+<p>本サイトは料金情報の整理のみを目的とし、施術の効果を断定・保証する表現、体験談・口コミの転載、ビフォーアフター写真、特定の医院を優位に扱う煽り表現は掲載していません。掲載しているのは、料金・種別・回数・対象本数など、公式サイトに記載された事実情報のみです。</p>
+</div>
+<div class="srcbox">
+運営：ホワイトニング料金相場データベース運営事務局<br>
+当サイトは料金情報の提供を目的としたデータベースであり、診療の予約・申し込みは受け付けていません。ご予約は各医院の公式サイトからお願いいたします。
+</div>
+</section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">ホワイトニング料金相場データベース</p>
+<p>運営：ホワイトニング料金相場データベース運営事務局</p>
+<p>掲載料金は各医院の公式サイトで確認した通常価格（確認日：2026-11-17）です。ホワイトニングは自由診療（保険適用外）であり、料金は変更される場合があります。お申し込み前に各医院の公式サイトで最新の料金をご確認ください。本サイトは料金情報の整理を目的としたもので、特定の医院や施術を推奨するものではありません。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（出典・算出方法）</a>
+</div>
+<p>© ホワイトニング料金相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+# ホワイトニング料金相場データベース
+
+ホワイトニング料金相場データベースは、歯科医院・クリニックの公式サイトに掲載されたホワイトニングの通常料金（確認日：2026-11-17）だけを収録した料金相場データベースです。
+収録：5医院・料金データ18件。確認できない料金は「公表なし」と明示しています。効果の断定や体験談は掲載していません。
+運営：ホワイトニング料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（種別別相場・全医院比較）: https://whitening-price-db.vercel.app/
+- スターホワイトニングの料金一覧: https://whitening-price-db.vercel.app/clinics/star-whitening/
+- ホワイトエッセンスの料金一覧: https://whitening-price-db.vercel.app/clinics/white-essence/
+- 湘南美容歯科の料金一覧: https://whitening-price-db.vercel.app/clinics/sbc-dental/
+- 銀座デンタルホワイトの料金一覧: https://whitening-price-db.vercel.app/clinics/ginza-dental-white/
+- Oh my teethの料金一覧: https://whitening-price-db.vercel.app/clinics/oh-my-teeth/
+- オフィスホワイトニングの料金相場: https://whitening-price-db.vercel.app/types/office/
+- ホームホワイトニングの料金相場: https://whitening-price-db.vercel.app/types/home/
+- デュアルホワイトニングの料金相場: https://whitening-price-db.vercel.app/types/dual/
+- FAQ: https://whitening-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://whitening-price-db.vercel.app/about/
