@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hikkoshi-price-db.vercel.app/sitemap.xml

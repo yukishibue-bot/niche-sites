@@ -1,0 +1,15 @@
+# 引っ越し見積もり相場データベース
+
+運営：引っ越し見積もり相場データベース運営事務局
+確認日：2026-11-17
+
+大手引っ越し会社が公式サイトに掲載している料金・料金例だけを集めたデータベース。
+料金を掲載していない会社・項目は「公表なし」と明示し、推測の数字は掲載しない。
+「相場」（中央値・範囲）は収録した公式料金例だけから算出している。
+
+## ページ
+- トップ（条件別データ・全社比較）: https://hikkoshi-price-db.vercel.app/
+- 条件別データ: https://hikkoshi-price-db.vercel.app/menu/pack-near/ / https://hikkoshi-price-db.vercel.app/menu/pack-far/ / https://hikkoshi-price-db.vercel.app/menu/pack2-near/ / https://hikkoshi-price-db.vercel.app/menu/pack2-far/ / https://hikkoshi-price-db.vercel.app/menu/single-light/ / https://hikkoshi-price-db.vercel.app/menu/single-standard/ / https://hikkoshi-price-db.vercel.app/menu/single-large/ / https://hikkoshi-price-db.vercel.app/menu/surcharge-weekend/ / https://hikkoshi-price-db.vercel.app/menu/surcharge-peak/ / https://hikkoshi-price-db.vercel.app/menu/family-near/
+- 会社別データ: https://hikkoshi-price-db.vercel.app/company/nittsu/ / https://hikkoshi-price-db.vercel.app/company/watashi/ / https://hikkoshi-price-db.vercel.app/company/art/ / https://hikkoshi-price-db.vercel.app/company/sakai/ / https://hikkoshi-price-db.vercel.app/company/arisan/ / https://hikkoshi-price-db.vercel.app/company/heart/
+- よくある質問: https://hikkoshi-price-db.vercel.app/faq/
+- このサイトについて: https://hikkoshi-price-db.vercel.app/about/
