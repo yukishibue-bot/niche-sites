@@ -18,12 +18,12 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "金の買取価格は毎日変わりますか？", "acceptedAnswer": {"@type": "Answer", "text": "はい。田中貴金属工業の店頭価格は営業日に公表され、相場が大きく動くと日中でも変わります。2026年11月16日は金の買取価格が9:30に21,839円/g、14:00に21,732円/g、17:00に21,470円/gと変わりました。当サイトの価格は公表日時点の記録です。"}}, {"@type": "Question", "name": "地金価格と買取価格は何が違うのですか？", "acceptedAnswer": {"@type": "Answer", "text": "店頭には「買う価格（小売価格）」と「売る価格（買取価格）」の2つがあり、買取価格の方が低く設定されています。手元の地金を換算するときは買取価格を使います。また、地金の売却には手数料が別途かかる場合があります。"}}, {"@type": "Question", "name": "金貨1オンスの買取価格はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "田中貴金属工業の公式公表価格では、ウィーン金貨ハーモニー／メイプルリーフ金貨の1オンスの店頭買取価格は653,138円です（確認日：2026-11-17・税込）。金貨は1gあたりではなく、種類とサイズごとに1枚の価格が公表されています。"}}, {"@type": "Question", "name": "プラチナコインの買取価格に2種類あるのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式価格表では「プレミアム有」の店頭買取価格と、「プレミアム無」の地金再生買取価格の2つが公表されています。1オンスでは店頭買取価格254,550円、地金再生買取価格240,144円です（確認日：2026-11-17・税込）。どちらが適用されるかは査定条件によります。"}}, {"@type": "Question", "name": "銀（シルバー）の価格は載っていますか？", "acceptedAnswer": {"@type": "Answer", "text": "現在は未収録です。今回の構築時点（2026-11-17）で田中貴金属工業の公式ページから銀の最新の公表値を確認できなかったため、他サイトの転載値は使わず掲載を見送りました。公式に確認でき次第追加します。"}}, {"@type": "Question", "name": "掲載されている価格で必ず売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。当サイトの価格は公式公表価格の記録であり、価格を保証するものではありません。実際の買取価格は品物の状態・品位・重さ・査定時期と各社の条件により変わります。売却前に当日の公式価格と複数社の査定をご確認ください。"}}]}</script>
 <style>
 :root{
-  --ink:#222; --muted:#666; --faint:#6e6e6e;
-  --line:#ececec; --hair:#f0f0f0;
-  --gold:#a07d10; --gold-dark:#7c5f06; --gold-pale:#f7efdb;
-  --grad:linear-gradient(120deg,#b8860b,#96700a);
-  --shadow:0 8px 28px rgba(17,17,17,.05);
-  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+  --ink:#0f172a; --muted:#475569; --faint:#64748b;
+  --line:#e5eaf0; --hair:#edf1f5;
+  --gold:#0e9f8a; --gold-dark:#0b7a6a; --gold-pale:#e6f7f3;
+  --grad:linear-gradient(90deg,#a3e635,#14b8a6 52%,#2563eb);
+  --shadow:0 8px 28px rgba(15,23,42,.06);
+  --shadow-hover:0 14px 34px rgba(15,23,42,.10);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -39,13 +39,15 @@ header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padd
 nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
 nav.main a:hover{background:#f5f5f5}
-.hero{background:radial-gradient(circle at 90% 38%,#f3e5bd 0%,#f9f3de 30%,#fff 62%);padding:64px 0 84px}
-.eyebrow{display:inline-block;background:var(--gold-pale);color:var(--gold-dark);font-size:13px;font-weight:700;
-  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero{background:linear-gradient(160deg,#050a14 0%,#0b0f1e 55%,#0d1530 100%);padding:72px 0 88px;color:#fff}
+.eyebrow{display:block;background:none;color:#0e9f8a;font-size:13px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:0;border-radius:0;margin:0 0 16px}
+.eyebrow::after{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--grad);margin-top:10px}
 .hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
 .hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
 .hero-stats{display:flex;gap:40px;flex-wrap:wrap}
-.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--gold-dark)}
+.hero-stats .stat b{display:block;font-size:2rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-stats .stat span{font-size:.82rem;color:var(--faint)}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
 .hero-photo{margin:0}
@@ -65,23 +67,25 @@ section{padding:72px 0}
 .mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
   padding:26px 28px;transition:transform .2s,box-shadow .2s}
 .mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
-.mcard .en{display:inline-block;background:var(--gold-pale);color:var(--gold-dark);letter-spacing:.08em;
-  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard .en{display:block;background:none;color:#0e9f8a;letter-spacing:.16em;
+  font-size:11.5px;font-weight:800;padding:0;border-radius:0;margin:0;text-transform:uppercase}
+.mcard .en::after{content:"";display:block;width:32px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
 .mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
 .mcard h3 a{color:var(--ink);text-decoration:none}
 .mcard h3 a:hover{color:var(--gold)}
-.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--gold-dark);margin:0}
+.mcard .leadprice{font-size:1.5rem;font-weight:800;letter-spacing:-0.03em;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
 .mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
 table.compare{width:100%;border-collapse:collapse;background:#fff}
 table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
-table.compare th{background:#faf6ea;font-size:.88rem;font-weight:700;color:var(--gold-dark)}
+table.compare th{background:#f2f5f8;font-size:.88rem;font-weight:700;color:#0f172a}
 table.compare td.price{font-weight:800;color:var(--gold-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
 table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
-table.compare tbody tr:nth-child(even){background:#fdfbf5}
+table.compare tbody tr:nth-child(even){background:#f7f9fb}
 table.compare tr:last-child td{border-bottom:none}
 .kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--gold-pale);color:var(--gold-dark);white-space:nowrap}
-.kind.actual{background:#eef0e6;color:#4a5a2a}
+.kind.actual{background:#e0f5f1;color:#0b7a6a}
 .adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
   padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
 .adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
@@ -99,17 +103,17 @@ table.compare tr:last-child td{border-bottom:none}
   padding:24px 26px;margin-bottom:14px}
 .faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
 .faq-item p{margin:0;color:var(--muted)}
-.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:999px;padding:14px 24px;
   font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(150,112,10,.25)}
-.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(20,184,166,.30)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:999px;
   padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
 .crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
 .crumb a{color:var(--faint)}
 .page-hero{padding:56px 0 0}
 .page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
 .page-hero p{color:var(--muted);max-width:780px}
-.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox{background:#f7f9fb;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
 .srcbox b{color:var(--ink)}
 .note-list{color:var(--muted);font-size:.93rem}
 .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -117,10 +121,10 @@ table.compare tr:last-child td{border-bottom:none}
 .gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
 .gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
 .gcard li{margin-bottom:6px}
-footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
-footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site{background:#0b0f1e;color:#cbd5e1;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
 footer.site p{font-size:.88rem;margin:8px 0}
-footer.site a{color:var(--gold)}
+footer.site a{color:#2dd4bf}
 .foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{text-decoration:none;font-size:.9rem}
 ::selection{background:var(--gold-pale)}

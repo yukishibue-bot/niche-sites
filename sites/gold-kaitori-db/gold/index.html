@@ -17,12 +17,12 @@
 <meta name="twitter:description" content="田中貴金属工業公式の金地金店頭価格（1g・2026年11月16日公表）と、ウィーン金貨ハーモニー／メイプルリーフ金貨のサイズ別店頭価格（小売・買取）。">
 <style>
 :root{
-  --ink:#222; --muted:#666; --faint:#6e6e6e;
-  --line:#ececec; --hair:#f0f0f0;
-  --gold:#a07d10; --gold-dark:#7c5f06; --gold-pale:#f7efdb;
-  --grad:linear-gradient(120deg,#b8860b,#96700a);
-  --shadow:0 8px 28px rgba(17,17,17,.05);
-  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+  --ink:#0f172a; --muted:#475569; --faint:#64748b;
+  --line:#e5eaf0; --hair:#edf1f5;
+  --gold:#0e9f8a; --gold-dark:#0b7a6a; --gold-pale:#e6f7f3;
+  --grad:linear-gradient(90deg,#a3e635,#14b8a6 52%,#2563eb);
+  --shadow:0 8px 28px rgba(15,23,42,.06);
+  --shadow-hover:0 14px 34px rgba(15,23,42,.10);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -38,13 +38,15 @@ header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padd
 nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
 nav.main a:hover{background:#f5f5f5}
-.hero{background:radial-gradient(circle at 90% 38%,#f3e5bd 0%,#f9f3de 30%,#fff 62%);padding:64px 0 84px}
-.eyebrow{display:inline-block;background:var(--gold-pale);color:var(--gold-dark);font-size:13px;font-weight:700;
-  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero{background:linear-gradient(160deg,#050a14 0%,#0b0f1e 55%,#0d1530 100%);padding:72px 0 88px;color:#fff}
+.eyebrow{display:block;background:none;color:#0e9f8a;font-size:13px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:0;border-radius:0;margin:0 0 16px}
+.eyebrow::after{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--grad);margin-top:10px}
 .hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
 .hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
 .hero-stats{display:flex;gap:40px;flex-wrap:wrap}
-.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--gold-dark)}
+.hero-stats .stat b{display:block;font-size:2rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-stats .stat span{font-size:.82rem;color:var(--faint)}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
 .hero-photo{margin:0}
@@ -52,7 +54,7 @@ nav.main a:hover{background:#f5f5f5}
   border-radius:16px;box-shadow:0 8px 28px rgba(17,17,17,.08)}
 section{padding:72px 0}
 section.tight-top{padding-top:20px}
-table.compare tr.latest td{background:#faf3da}
+table.compare tr.latest td{background:#eafaf5}
 table.compare tr.latest td.price{font-size:1.18rem}
 .sec-head{margin-bottom:28px}
 .sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
@@ -67,23 +69,25 @@ table.compare tr.latest td.price{font-size:1.18rem}
 .mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
   padding:26px 28px;transition:transform .2s,box-shadow .2s}
 .mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
-.mcard .en{display:inline-block;background:var(--gold-pale);color:var(--gold-dark);letter-spacing:.08em;
-  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard .en{display:block;background:none;color:#0e9f8a;letter-spacing:.16em;
+  font-size:11.5px;font-weight:800;padding:0;border-radius:0;margin:0;text-transform:uppercase}
+.mcard .en::after{content:"";display:block;width:32px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
 .mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
 .mcard h3 a{color:var(--ink);text-decoration:none}
 .mcard h3 a:hover{color:var(--gold)}
-.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--gold-dark);margin:0}
+.mcard .leadprice{font-size:1.5rem;font-weight:800;letter-spacing:-0.03em;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
 .mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
 table.compare{width:100%;border-collapse:collapse;background:#fff}
 table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
-table.compare th{background:#faf6ea;font-size:.88rem;font-weight:700;color:var(--gold-dark)}
+table.compare th{background:#f2f5f8;font-size:.88rem;font-weight:700;color:#0f172a}
 table.compare td.price{font-weight:800;color:var(--gold-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
 table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
-table.compare tbody tr:nth-child(even){background:#fdfbf5}
+table.compare tbody tr:nth-child(even){background:#f7f9fb}
 table.compare tr:last-child td{border-bottom:none}
 .kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--gold-pale);color:var(--gold-dark);white-space:nowrap}
-.kind.actual{background:#eef0e6;color:#4a5a2a}
+.kind.actual{background:#e0f5f1;color:#0b7a6a}
 .adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
   padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
 .adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
@@ -101,17 +105,17 @@ table.compare tr:last-child td{border-bottom:none}
   padding:24px 26px;margin-bottom:14px}
 .faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
 .faq-item p{margin:0;color:var(--muted)}
-.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:999px;padding:14px 24px;
   font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(150,112,10,.25)}
-.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(20,184,166,.30)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:999px;
   padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
 .crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
 .crumb a{color:var(--faint)}
 .page-hero{padding:56px 0 0}
 .page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
 .page-hero p{color:var(--muted);max-width:780px}
-.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox{background:#f7f9fb;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
 .srcbox b{color:var(--ink)}
 .note-list{color:var(--muted);font-size:.93rem}
 .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -119,10 +123,10 @@ table.compare tr:last-child td{border-bottom:none}
 .gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
 .gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
 .gcard li{margin-bottom:6px}
-footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
-footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site{background:#0b0f1e;color:#cbd5e1;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
 footer.site p{font-size:.88rem;margin:8px 0}
-footer.site a{color:var(--gold)}
+footer.site a{color:#2dd4bf}
 .foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{text-decoration:none;font-size:.9rem}
 ::selection{background:var(--gold-pale)}
@@ -185,7 +189,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offse
 
 </main>
 <section class="section" style="padding-top:0"><div class="wrap">
-<div class="srcbox" style="background:#fdf9ec;border-color:#e8dcb0">
+<div class="srcbox" style="background:#eefaf6;border-color:#bfe8dd">
 <p class="eyebrow" style="margin-bottom:10px">PR ・ 無料査定</p>
 <h2 style="font-size:clamp(22px,2.6vw,28px);margin:0 0 12px;font-weight:800;letter-spacing:-0.03em">手持ちの金・貴金属の査定額を知る</h2>
 <p style="color:var(--muted);margin:0 0 18px">公表価格はあくまで店頭価格の目安です。実際の買取額は品物の状態や付属品で変わります。買取専門店「福ちゃん」（株式会社REGATE）では、WEBまたは電話で無料査定の申込みができます。</p>
