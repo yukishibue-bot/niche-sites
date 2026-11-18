@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて（出典・算出方法）｜家庭教師料金相場DB</title>
+<meta name="description" content="家庭教師料金相場データベースの出典一覧、確認日、1時間あたり換算と中央値の算出方法、「公表なし」の扱い、運営情報を掲載。">
+<link rel="canonical" href="https://kateikyoshi-price-db.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="家庭教師料金相場データベース">
+<meta property="og:title" content="このサイトについて（出典・算出方法）｜家庭教師料金相場DB">
+<meta property="og:description" content="家庭教師料金相場データベースの出典一覧、確認日、1時間あたり換算と中央値の算出方法、「公表なし」の扱い、運営情報を掲載。">
+<meta property="og:url" content="https://kateikyoshi-price-db.vercel.app/about/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="このサイトについて（出典・算出方法）｜家庭教師料金相場DB">
+<meta name="twitter:description" content="家庭教師料金相場データベースの出典一覧、確認日、1時間あたり換算と中央値の算出方法、「公表なし」の扱い、運営情報を掲載。">
+<style>
+:root{
+  --ink:#0f172a; --body:#3c4a5e; --muted:#5b6b82; --faint:#8494ab;
+  --line:#e6ecf3; --hair:#eef2f7; --pale:#f4f7fa;
+  --dark:#070d1a; --dark2:#0b1526;
+  --accent:#0284c7; --accent-dark:#0369a1;
+  --grad:linear-gradient(90deg,#2563eb,#0ea5e9);
+  --shadow:0 10px 30px rgba(11,21,38,.07);
+  --shadow-hover:0 16px 38px rgba(11,21,38,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--body);font-size:16px;line-height:1.85;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--accent-dark)}
+img{max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.64rem;letter-spacing:.18em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;align-items:center}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
+nav.main a:hover{background:#f2f6fa}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--grad);color:#fff;border-radius:999px;
+  min-height:52px;padding:12px 30px;font-size:15px;font-weight:700;text-decoration:none;border:none;
+  transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(14,116,233,.28)}
+.btn.ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.75)}
+.btn.ghost:hover{box-shadow:inset 0 0 0 2px #fff}
+.btn.small{min-height:48px;padding:10px 24px;font-size:14px}
+.hero{background:radial-gradient(circle at 88% 20%,#12305e 0%,var(--dark2) 42%,var(--dark) 78%);color:#dbe6f3;padding:84px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.eyebrow{font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0}
+.hero .eyebrow{color:#38bdf8}
+.grule{width:42px;height:4px;border-radius:99px;background:var(--grad);margin:14px 0 0}
+.sec-head .grule{margin-left:auto;margin-right:auto}
+.hero h1{font-size:clamp(34px,4.2vw,54px);line-height:1.32;margin:22px 0 20px;font-weight:800;letter-spacing:-0.02em;color:#fff}
+.hero h1 .gtext,.sec-head h2 .gtext{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.05rem;margin:0 0 34px;color:#b9c9dd;max-width:560px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-note{font-size:.82rem;color:#7e93ad;margin:20px 0 0}
+.hero-card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.35);color:var(--body)}
+.hero-card img{display:block;width:100%;height:250px;object-fit:cover}
+.hero-card .hc-body{padding:26px 30px 30px}
+.hero-card .hc-label{font-size:.8rem;font-weight:700;color:var(--faint);letter-spacing:.06em;margin:0}
+.hero-card .hc-num{font-size:clamp(46px,5vw,60px);font-weight:800;line-height:1.15;letter-spacing:-0.03em;margin:4px 0 2px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-card .hc-num small{font-size:1.05rem;font-weight:700}
+.hero-card .hc-sub{font-size:.9rem;color:var(--muted);margin:0}
+.hero-card .hc-stats{display:flex;gap:0;margin-top:20px;border-top:1px solid var(--hair);padding-top:18px;flex-wrap:wrap}
+.hero-card .hc-stats div{flex:1;min-width:96px}
+.hero-card .hc-stats b{display:block;font-size:1.25rem;color:var(--ink);font-weight:800;letter-spacing:-0.02em}
+.hero-card .hc-stats span{font-size:.74rem;color:var(--faint)}
+section{padding:96px 0}
+section.alt{background:var(--pale)}
+.sec-head{text-align:center;margin-bottom:44px}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);margin:16px 0 0;line-height:1.45;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.sec-head p.intro{color:var(--muted);margin:16px auto 0;max-width:780px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:28px;transition:transform .2s,box-shadow .2s}
+.tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.tcard .num{font-size:.85rem;font-weight:800;letter-spacing:.14em;color:var(--accent);margin:0 0 10px}
+.tcard b{display:block;font-size:1.05rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.mcard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:30px 32px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{font-size:11.5px;font-weight:800;letter-spacing:.16em;color:var(--accent);margin:0}
+.mcard h3{margin:10px 0 6px;font-size:1.3rem;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--accent-dark)}
+.mcard .median{font-size:clamp(40px,4vw,52px);font-weight:800;letter-spacing:-0.03em;line-height:1.2;margin:8px 0 2px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mcard .median small{font-size:.95rem;font-weight:700}
+.mcard .range{color:var(--muted);font-size:.9rem;margin:4px 0 0}
+.bar{position:relative;height:8px;background:#e3edf7;border-radius:99px;margin:20px 0 8px}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;width:100%;background:var(--grad);border-radius:99px;opacity:.75}
+.bar .tick{position:absolute;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;
+  background:var(--grad);border:3px solid #fff;box-shadow:0 1px 5px rgba(11,21,38,.25)}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:15px 18px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare thead th{background:var(--dark2);color:#fff;font-size:.88rem;font-weight:700;border-bottom:none}
+table.compare td.price{font-weight:800;color:var(--ink);white-space:nowrap}
+table.compare td.price .hourly{display:block;font-weight:700;color:var(--accent-dark);font-size:.92rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+.none{color:var(--muted)}
+table.compare tbody tr:last-child td{border-bottom:none}
+.adslot{border:1px dashed #cfdae6;border-radius:18px;color:#9db0c4;text-align:center;
+  padding:18px;margin:36px 0 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.company-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.ccard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:30px 32px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.ccard.featured{border:2px solid #0ea5e9}
+.badge{position:absolute;top:-14px;left:28px;background:var(--grad);color:#fff;font-size:.74rem;font-weight:800;
+  letter-spacing:.06em;padding:5px 14px;border-radius:999px;box-shadow:0 6px 16px rgba(14,116,233,.3)}
+.ccard .type{font-size:.8rem;color:var(--accent-dark);font-weight:700;margin:0}
+.ccard h3{margin:6px 0 4px;font-size:1.25rem;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--accent-dark)}
+.ccard p{font-size:.92rem;color:var(--muted);margin:8px 0 0}
+.ccard .meta{font-size:.85rem;color:var(--faint)}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
+  padding:24px 28px;margin-bottom:14px;text-align:left}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.faq-item p{margin:0;color:var(--muted)}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:64px 0 0;text-align:center}
+.page-hero .grule{margin-left:auto;margin-right:auto}
+.page-hero h1{font-size:clamp(28px,3.6vw,42px);margin:18px 0 0;line-height:1.42;font-weight:800;letter-spacing:-0.02em;color:var(--ink)}
+.page-hero p{color:var(--muted);max-width:800px;margin-left:auto;margin-right:auto}
+.page-hero .big-stats{display:flex;gap:44px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+.page-hero .big-stats .stat b{display:block;font-size:clamp(38px,4.4vw,54px);line-height:1.2;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page-hero .big-stats .stat span{font-size:.82rem;color:var(--faint)}
+.srcbox{background:var(--pale);border:1px solid var(--line);border-radius:18px;padding:24px 28px;font-size:.92rem;text-align:left}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem;text-align:left}
+.closing{background:radial-gradient(circle at 85% 15%,#12305e 0%,var(--dark2) 45%,var(--dark) 80%);color:#dbe6f3;text-align:center}
+.closing h2{color:#fff;font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-0.02em;line-height:1.45;margin:16px 0 0}
+.closing .sec-head p.intro{color:#b9c9dd}
+.closing .grule{margin-left:auto;margin-right:auto}
+footer.site{background:var(--dark);color:#8fa3bb;padding:52px 0 40px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:#7dd3fc}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:56px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-card img{height:200px}
+  section{padding:60px 0}
+  .page-hero{padding:46px 0 0}
+  .page-hero .big-stats{gap:24px}
+  .trust,.cards,.company-grid{grid-template-columns:1fr}
+  .sec-head{text-align:left}
+  .sec-head .grule{margin-left:0}
+  .closing .sec-head{text-align:center}
+  .closing .grule{margin-left:auto}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.12rem;white-space:normal}
+  nav.main a{padding:10px}
+  .btn{width:100%}
+  .hero-cta .btn{width:auto;flex:1}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "家庭教師料金相場データベース", "url": "https://kateikyoshi-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://kateikyoshi-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "このサイトについて", "item": "https://kateikyoshi-price-db.vercel.app"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>KATEIKYOSHI PRICE DB</small>家庭教師料金相場DB</a>
+<nav class="main">
+<a href="/#grades">学年別の相場</a>
+<a href="/#companies">会社別料金</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ このサイトについて</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">About</p><div class="grule"></div>
+<h1>このサイトについて</h1>
+<p>家庭教師料金相場データベースは、大手家庭教師センターが公式サイトに掲載している料金だけを収録した、独立した料金データベースです。特定の会社の宣伝を目的としたサイトではありません。</p>
+</div></div>
+<section><div class="wrap">
+<div class="sec-head"><p class="eyebrow">Sources</p><div class="grule"></div><h2>出典と<span class="gtext">確認日</span></h2><p class="intro">料金はすべて下記の公式ページで確認しました（確認日：2026-11-18）。</p></div>
+<table class="compare"><thead><tr><th>会社</th><th>出典URL（公式）</th></tr></thead>
+<tbody><tr><td data-label="会社">家庭教師のノーバス</td><td data-label="出典URL"><a href="https://www.nohvas.com/" rel="nofollow noopener" target="_blank">https://www.nohvas.com/</a></td></tr><tr><td data-label="会社">家庭教師のノーバス</td><td data-label="出典URL"><a href="https://www.nohvas.com/about/price/" rel="nofollow noopener" target="_blank">https://www.nohvas.com/about/price/</a></td></tr><tr><td data-label="会社">家庭教師のガンバ</td><td data-label="出典URL"><a href="https://xn--u9jwg7dyfm49t3cd8zao40b.jp/" rel="nofollow noopener" target="_blank">https://xn--u9jwg7dyfm49t3cd8zao40b.jp/</a></td></tr><tr><td data-label="会社">家庭教師のガンバ</td><td data-label="出典URL"><a href="https://xn--u9jwg7dyfm49t3cd8zao40b.jp/fee.html" rel="nofollow noopener" target="_blank">https://xn--u9jwg7dyfm49t3cd8zao40b.jp/fee.html</a></td></tr><tr><td data-label="会社">家庭教師のトライ</td><td data-label="出典URL"><a href="https://trygroup.co.jp/" rel="nofollow noopener" target="_blank">https://trygroup.co.jp/</a></td></tr><tr><td data-label="会社">家庭教師のトライ</td><td data-label="出典URL"><a href="https://www.try-online.jp/" rel="nofollow noopener" target="_blank">https://www.try-online.jp/</a></td></tr><tr><td data-label="会社">学研の家庭教師</td><td data-label="出典URL"><a href="https://www.kame.co.jp/lp-service01/ac10/" rel="nofollow noopener" target="_blank">https://www.kame.co.jp/lp-service01/ac10/</a></td></tr></tbody></table>
+<p class="note-list">※ トライのオンライン個別指導塾の料金は、公式サイト「料金について」の掲載値です。同ページは自動アクセスが制限されているため、公式掲載値を引用する複数の独立したメディアの記載と照合のうえ収録しました。訪問型の授業料は公式に金額が公表されていないため「公表なし（見積もり制）」としています。</p>
+</div></section>
+<section class="alt"><div class="wrap">
+<div class="sec-head"><p class="eyebrow">Method</p><div class="grule"></div><h2>相場（中央値・価格帯）の<span class="gtext">算出方法</span></h2></div>
+<div class="trust">
+<div class="tcard"><b>1時間あたり換算</b><p>会社ごとに単位が異なるため、公式掲載金額をその料金に含まれる指導時間で割り、1時間あたりに換算しています（月額は月あたりの総指導時間で割ります）。換算は当サイトの計算であり、公式掲載の金額・単位も各ページに併記しています。</p></div>
+<div class="tcard"><b>中央値</b><p>学年区分ごとに、換算した1時間あたり料金を小さい順に並べた中央の値です。収録件数が偶数の場合は中央2件の平均です。下限表記（〜）の金額は下限のまま換算しています。</p></div>
+<div class="tcard"><b>「公表なし」の扱い</b><p>公式サイトで確認できなかった項目は金額を補完せず「公表なし」と表示します。公式料金表そのものを確認できなかった会社は収録していません。</p></div>
+</div>
+<div class="adslot">PR（広告枠）</div>
+</div></section>
+<section><div class="wrap">
+<div class="srcbox">
+運営：家庭教師料金相場データベース運営事務局<br>
+当サイトは料金情報の提供を目的としたデータベースであり、家庭教師の申し込み・仲介は受け付けていません。お申し込みは各社の公式サイトからお願いいたします。料金は変更される場合があります。契約前に各社の公式サイトと見積もりで最新の金額・条件をご確認ください。
+</div>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">家庭教師料金相場データベース</p>
+<p>運営：家庭教師料金相場データベース運営事務局</p>
+<p>掲載料金は各社の公式サイトで確認した金額（確認日：2026-11-18）です。料金体系（月額・コマ単価・時間単価）は会社ごとに異なり、「1時間あたり」は当サイトが公式掲載金額から換算した目安です。料金は変更される場合があります。お申し込み前に各社の公式サイトで最新の料金をご確認ください。本サイトは料金情報の整理を目的としたもので、特定の会社を推奨するものではありません。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（出典・算出方法）</a>
+</div>
+<p>© 家庭教師料金相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

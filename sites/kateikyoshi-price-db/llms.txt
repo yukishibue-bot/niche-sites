@@ -1,0 +1,17 @@
+# 家庭教師料金相場データベース
+
+家庭教師料金相場データベースは、大手家庭教師センターの公式サイトに掲載された料金（確認日：2026-11-18）だけを収録した料金相場データベースです。
+収録：4社・指導料データ20件。単位の異なる料金は1時間あたりに換算して比較でき、換算方法を公開しています。確認できない料金は「公表なし」と明示しています。
+運営：家庭教師料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（学年別相場・中学生の会社別比較）: https://kateikyoshi-price-db.vercel.app/
+- 家庭教師のノーバスの料金一覧: https://kateikyoshi-price-db.vercel.app/company/nohvas/
+- 家庭教師のガンバの料金一覧: https://kateikyoshi-price-db.vercel.app/company/ganba/
+- 家庭教師のトライの料金一覧: https://kateikyoshi-price-db.vercel.app/company/try/
+- 学研の家庭教師の料金一覧: https://kateikyoshi-price-db.vercel.app/company/gakken/
+- 小学生の家庭教師料金相場: https://kateikyoshi-price-db.vercel.app/grade/shogakusei/
+- 中学生の家庭教師料金相場: https://kateikyoshi-price-db.vercel.app/grade/chugakusei/
+- 高校生の家庭教師料金相場: https://kateikyoshi-price-db.vercel.app/grade/kokosei/
+- FAQ: https://kateikyoshi-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://kateikyoshi-price-db.vercel.app/about/
