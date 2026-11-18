@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pet-hotel-price-db.vercel.app/sitemap.xml
