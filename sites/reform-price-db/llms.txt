@@ -1,0 +1,18 @@
+# リフォーム費用相場データベース
+
+リフォーム費用相場データベースは、公的統計と大手リフォーム会社の公式サイトに掲載された費用目安（確認日：2026-11-18）だけを収録したリフォーム費用の相場データベースです。
+収録：7部位・費用データ43件・出典5件。確認できない項目は「公表なし」と明示しています。
+運営：リフォーム費用相場データベース運営事務局
+
+## ページ一覧
+- トップ（部位別相場・公的統計・早見表）: https://reform-price-db.vercel.app/
+- キッチンのリフォーム費用相場: https://reform-price-db.vercel.app/category/kitchen/
+- 浴室・お風呂のリフォーム費用相場: https://reform-price-db.vercel.app/category/bath/
+- トイレのリフォーム費用相場: https://reform-price-db.vercel.app/category/toilet/
+- 洗面所のリフォーム費用相場: https://reform-price-db.vercel.app/category/washroom/
+- リビング・内装のリフォーム費用相場: https://reform-price-db.vercel.app/category/living/
+- 外壁・屋根・外構のリフォーム費用相場: https://reform-price-db.vercel.app/category/exterior/
+- 全面リフォーム・リノベーションのリフォーム費用相場: https://reform-price-db.vercel.app/category/full/
+- データの出典: https://reform-price-db.vercel.app/sources/
+- FAQ: https://reform-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://reform-price-db.vercel.app/about/
