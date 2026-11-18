@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sauna-ranking.vercel.app/sitemap.xml

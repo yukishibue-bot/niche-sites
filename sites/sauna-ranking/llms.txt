@@ -1,0 +1,26 @@
+# サウナランキング
+
+> 全国の有名サウナ施設12件を、施設の公表スペック（料金・サウナ室温度・水風呂温度・外気浴の有無）で比べる情報サイト。並び順は公表数値の順序のみで、独自のおすすめ順は作っていない。全データに出典と確認日（2026-11-18）を明記。
+
+運営：サウナランキング運営事務局
+
+## ページ
+- トップ（施設一覧）: https://sauna-ranking.vercel.app/
+- サウナ室温度が高い順: https://sauna-ranking.vercel.app/ranking/sauna-temp/
+- 水風呂が冷たい順: https://sauna-ranking.vercel.app/ranking/water-temp/
+- 基本料金が安い順: https://sauna-ranking.vercel.app/ranking/price/
+- 全施設スペック比較表: https://sauna-ranking.vercel.app/compare/
+- 出典・並び順の方針: https://sauna-ranking.vercel.app/about/
+- よくある質問: https://sauna-ranking.vercel.app/faq/
+- サウナ＆カプセルホテル北欧（東京・上野）: https://sauna-ranking.vercel.app/facilities/hokuou/
+- スカイスパYOKOHAMA（神奈川・横浜）: https://sauna-ranking.vercel.app/facilities/skyspa-yokohama/
+- かるまる池袋（東京・池袋）: https://sauna-ranking.vercel.app/facilities/karumaru-ikebukuro/
+- サウナラボ神田（東京・神田）: https://sauna-ranking.vercel.app/facilities/saunalab-kanda/
+- ウェルビー栄（愛知・名古屋 栄）: https://sauna-ranking.vercel.app/facilities/wellbe-sakae/
+- サウナしきじ（静岡・静岡市）: https://sauna-ranking.vercel.app/facilities/sauna-shikiji/
+- ニコーリフレ（北海道・札幌 すすきの）: https://sauna-ranking.vercel.app/facilities/nikoh-refre/
+- ジートピア（千葉・船橋）: https://sauna-ranking.vercel.app/facilities/gtopia/
+- 湯らっくす（熊本・熊本市）: https://sauna-ranking.vercel.app/facilities/yurax/
+- 黄金湯（東京・錦糸町）: https://sauna-ranking.vercel.app/facilities/koganeyu/
+- 草加健康センター（埼玉・草加）: https://sauna-ranking.vercel.app/facilities/soka-kenko-center/
+- 神戸サウナ＆スパ（兵庫・神戸 三宮）: https://sauna-ranking.vercel.app/facilities/kobe-sauna/
