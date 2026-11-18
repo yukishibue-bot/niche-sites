@@ -1,0 +1,20 @@
+# ネイルサロン料金相場データベース
+
+大手ネイルサロンチェーンの公式料金表をもとにした、施術別の料金相場データベース。運営：ネイルサロン料金相場データベース運営事務局。確認日：2026-11-18。
+
+## 施術別の相場
+- ハンドジェル（ワンカラー）: https://nail-salon-price-db.vercel.app/types/onecolor/ （中央値5,555円）
+- ハンドジェル（定額デザイン）: https://nail-salon-price-db.vercel.app/types/design/ （中央値8,030円）
+- フットジェル: https://nail-salon-price-db.vercel.app/types/foot/ （中央値5,990円）
+- ジェルオフ（オフのみ）: https://nail-salon-price-db.vercel.app/types/off/ （中央値3,300円）
+- ネイルケア: https://nail-salon-price-db.vercel.app/types/care/ （中央値3,850円）
+
+## 収録サロン
+- FASTNAIL（ファストネイル）: https://nail-salon-price-db.vercel.app/salons/fastnail/
+- はあとねいる: https://nail-salon-price-db.vercel.app/salons/heartnail/
+- ネイルクイック: https://nail-salon-price-db.vercel.app/salons/nailquick/
+- NAIL STATION（ネイルステーション）: https://nail-salon-price-db.vercel.app/salons/nailstation/
+
+## その他
+- よくある質問: https://nail-salon-price-db.vercel.app/faq/
+- 運営者情報: https://nail-salon-price-db.vercel.app/about/
