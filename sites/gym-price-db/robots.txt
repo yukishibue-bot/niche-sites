@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gym-price-db.vercel.app/sitemap.xml

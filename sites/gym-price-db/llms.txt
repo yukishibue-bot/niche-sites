@@ -1,0 +1,14 @@
+# フィットネスジム料金相場データベース
+
+大手フィットネスジムの公式サイトに掲載された料金（月会費・入会時の費用・年額プラン）だけを集めた料金相場データベース。全データに出典URLと確認日を明記。
+
+- [月会費の相場](https://gym-price-db.vercel.app/menus/monthly/)
+- [入会時にかかる費用の相場](https://gym-price-db.vercel.app/menus/initial/)
+- [年額プラン・年額費用の相場](https://gym-price-db.vercel.app/menus/annual/)
+- [chocoZAP（チョコザップ）の料金](https://gym-price-db.vercel.app/companies/chocozap/)
+- [FIT365（フィット365）の料金](https://gym-price-db.vercel.app/companies/fit365/)
+- [エニタイムフィットネスの料金](https://gym-price-db.vercel.app/companies/anytime/)
+- [コナミスポーツクラブの料金](https://gym-price-db.vercel.app/companies/konami/)
+- [ゴールドジムの料金](https://gym-price-db.vercel.app/companies/goldsgym/)
+- [よくある質問](https://gym-price-db.vercel.app/faq/)
+- [このサイトについて](https://gym-price-db.vercel.app/about/)
