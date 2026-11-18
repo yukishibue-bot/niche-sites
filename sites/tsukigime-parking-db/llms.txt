@@ -1,0 +1,36 @@
+# 月極駐車場相場データベース
+
+月極駐車場相場データベースは、主要20都市の月極駐車場の月額を、総務省統計局「小売物価統計調査」の2025年 年平均（車庫借料：屋根なし・アスファルト舗装・小型自動車）から転記したデータベースです。
+最高額は東京都区部の27,287円、収録20都市の中央値は14,200円。屋根付き・機械式は公的統計の対象外のため「公表なし」と明示しています。全都市で出典URL・確認日（2026-11-18）を明示。
+運営：月極駐車場相場データベース運営事務局
+
+## ページ一覧
+- トップ（全国ランキング・地域別相場）: https://tsukigime-parking-db.vercel.app/
+- 北海道・東北の相場: https://tsukigime-parking-db.vercel.app/regions/hokkaido-tohoku/
+- 関東の相場: https://tsukigime-parking-db.vercel.app/regions/kanto/
+- 中部の相場: https://tsukigime-parking-db.vercel.app/regions/chubu/
+- 近畿の相場: https://tsukigime-parking-db.vercel.app/regions/kinki/
+- 中国・四国の相場: https://tsukigime-parking-db.vercel.app/regions/chugoku-shikoku/
+- 九州・沖縄の相場: https://tsukigime-parking-db.vercel.app/regions/kyushu-okinawa/
+- 東京都区部の相場: https://tsukigime-parking-db.vercel.app/cities/tokyo-23ku/
+- 府中市の相場: https://tsukigime-parking-db.vercel.app/cities/fuchu/
+- 高松市の相場: https://tsukigime-parking-db.vercel.app/cities/takamatsu/
+- 川崎市の相場: https://tsukigime-parking-db.vercel.app/cities/kawasaki/
+- 那覇市の相場: https://tsukigime-parking-db.vercel.app/cities/naha/
+- 大阪市の相場: https://tsukigime-parking-db.vercel.app/cities/osaka/
+- 横浜市の相場: https://tsukigime-parking-db.vercel.app/cities/yokohama/
+- 神戸市の相場: https://tsukigime-parking-db.vercel.app/cities/kobe/
+- 千葉市の相場: https://tsukigime-parking-db.vercel.app/cities/chiba/
+- 盛岡市の相場: https://tsukigime-parking-db.vercel.app/cities/morioka/
+- 宇都宮市の相場: https://tsukigime-parking-db.vercel.app/cities/utsunomiya/
+- 京都市の相場: https://tsukigime-parking-db.vercel.app/cities/kyoto/
+- 福岡市の相場: https://tsukigime-parking-db.vercel.app/cities/fukuoka/
+- 青森市の相場: https://tsukigime-parking-db.vercel.app/cities/aomori/
+- 仙台市の相場: https://tsukigime-parking-db.vercel.app/cities/sendai/
+- 札幌市の相場: https://tsukigime-parking-db.vercel.app/cities/sapporo/
+- 広島市の相場: https://tsukigime-parking-db.vercel.app/cities/hiroshima/
+- さいたま市の相場: https://tsukigime-parking-db.vercel.app/cities/saitama/
+- 金沢市の相場: https://tsukigime-parking-db.vercel.app/cities/kanazawa/
+- 名古屋市の相場: https://tsukigime-parking-db.vercel.app/cities/nagoya/
+- FAQ: https://tsukigime-parking-db.vercel.app/faq/
+- このサイトについて（集計方法・出典）: https://tsukigime-parking-db.vercel.app/about/
