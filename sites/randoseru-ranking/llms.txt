@@ -1,0 +1,19 @@
+# ランドセルランキング
+
+ランドセルランキングは、ランドセルメーカーが公式サイト等で公表している価格・重さ・素材・A4フラットファイル対応（確認日：2026-11-18）だけを収録した比較データベースです。
+収録：7メーカー・19モデル。独自の評価による順位付けは行わず、並びは公表価格の安い順・公表重量の軽い順の並べ替えとメーカー別一覧のみです。確認できない項目は「公表なし」と明示しています。
+運営：ランドセルランキング運営事務局
+
+## ページ一覧
+- トップ（全モデル比較・価格の安い順）: https://randoseru-ranking.vercel.app/
+- 価格の安い順一覧: https://randoseru-ranking.vercel.app/price/
+- 軽い順一覧: https://randoseru-ranking.vercel.app/weight/
+- セイバン（天使のはね）のランドセル一覧: https://randoseru-ranking.vercel.app/makers/seiban/
+- 土屋鞄製造所のランドセル一覧: https://randoseru-ranking.vercel.app/makers/tsuchiya/
+- フィットちゃん（株式会社ハシモト）のランドセル一覧: https://randoseru-ranking.vercel.app/makers/fitchan/
+- 池田屋のランドセル一覧: https://randoseru-ranking.vercel.app/makers/ikedaya/
+- 生田鞄のランドセル一覧: https://randoseru-ranking.vercel.app/makers/ikuta/
+- 鞄工房山本のランドセル一覧: https://randoseru-ranking.vercel.app/makers/yamamoto/
+- 中村鞄製作所のランドセル一覧: https://randoseru-ranking.vercel.app/makers/nakamura/
+- FAQ: https://randoseru-ranking.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://randoseru-ranking.vercel.app/about/

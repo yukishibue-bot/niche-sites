@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://randoseru-ranking.vercel.app/sitemap.xml
