@@ -1,0 +1,23 @@
+# ドライヘッドスパ料金相場データベース
+
+ドライヘッドスパ料金相場データベースは、ドライヘッドスパ専門店チェーン各社の公式サイト・公式予約ページに掲載されたコース料金（確認日：2026-11-18）だけを収録した、ドライヘッドスパの料金相場データベースです。新規限定などの条件付き価格は条件を明記して収録しています。
+収録：5社・時間別料金データ11件（＋時間の明記がない掲載コース4件）。確認できない料金は「公表なし」と明示しています。
+運営：ドライヘッドスパ料金相場データベース運営事務局
+
+## ページ一覧
+- トップ（時間別相場・全社比較）: https://headspa-price-db.vercel.app/
+- 王様の昼寝の料金一覧: https://headspa-price-db.vercel.app/companies/ousama-no-hirune/
+- ヘッドミントの料金一覧: https://headspa-price-db.vercel.app/companies/headmint/
+- アタマファクトリーの料金一覧: https://headspa-price-db.vercel.app/companies/atama-factory/
+- 癒し〜ぷの料金一覧: https://headspa-price-db.vercel.app/companies/iyasheep/
+- 悟空のきもちの料金一覧: https://headspa-price-db.vercel.app/companies/goku-nokimochi/
+- 30分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min30/
+- 40分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min40/
+- 50分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min50/
+- 60分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min60/
+- 70分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min70/
+- 85分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min85/
+- 90分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min90/
+- 120分コースのドライヘッドスパ料金相場: https://headspa-price-db.vercel.app/courses/min120/
+- FAQ: https://headspa-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://headspa-price-db.vercel.app/about/

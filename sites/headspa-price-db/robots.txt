@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://headspa-price-db.vercel.app/sitemap.xml
