@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて｜整体料金相場データベース</title>
+<meta name="description" content="整体料金相場データベースの運営方針とデータの集め方。公式料金のみ収録、出典と確認日の明記など、編集方針を説明します。">
+<link rel="canonical" href="https://seitai-price-db.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="整体料金相場データベース">
+<meta property="og:title" content="このサイトについて｜整体料金相場データベース">
+<meta property="og:description" content="整体料金相場データベースの運営方針とデータの集め方。公式料金のみ収録、出典と確認日の明記など、編集方針を説明します。">
+<meta property="og:url" content="https://seitai-price-db.vercel.app/about/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="このサイトについて｜整体料金相場データベース">
+<meta name="twitter:description" content="整体料金相場データベースの運営方針とデータの集め方。公式料金のみ収録、出典と確認日の明記など、編集方針を説明します。">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "整体料金相場データベース", "url": "https://seitai-price-db.vercel.app/"}</script>
+<style>
+:root{
+  --dark:#0B0F1E; --dark2:#050A14; --ink:#0F172A; --body:#475569; --mut:#64748B;
+  --line:#E5EAF0; --pale:#F7F9FB; --pale2:#F2F5F8;
+  --grad:linear-gradient(90deg,#2DD4BF,#14B8A6,#0F766E);
+  --teal:#0E9F8A; --teal-d:#0F766E;
+  --shadow:0 10px 30px rgba(11,15,30,.06);
+  --shadow-lg:0 18px 44px rgba(11,15,30,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;color:var(--body);line-height:1.85;background:#fff;-webkit-font-smoothing:antialiased}
+a{color:var(--teal-d);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+h1,h2,h3{color:var(--ink);font-weight:800;letter-spacing:-.02em;line-height:1.35}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.eyebrow{font-size:.82rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);text-align:center}
+.eyebrow.left{text-align:left}
+.rule{width:40px;height:4px;border-radius:2px;background:var(--grad);margin:14px auto 0}
+.rule.left{margin:14px 0 0}
+.sec-head{max-width:760px;margin:0 auto 44px;text-align:center}
+.sec-head h2{font-size:clamp(1.75rem,4vw,2.5rem);margin-top:16px}
+.sec-head p{margin-top:14px;font-size:1.02rem}
+.sec-head.left{margin:0 0 36px;text-align:left}
+section{padding:96px 0}
+section.pale{background:var(--pale)}
+section.dark{background:var(--dark);color:#CBD5E1}
+section.dark h2,section.dark h3{color:#fff}
+section.dark .sec-head p{color:#94A3B8}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:800;color:var(--ink);font-size:1.06rem;letter-spacing:-.02em}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:26px;font-size:.92rem;font-weight:600}
+nav.main a{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 30px;border-radius:999px;font-weight:700;font-size:.98rem;border:1px solid transparent;transition:.2s}
+.btn:hover{text-decoration:none;transform:translateY(-1px)}
+.btn-grad{background:var(--grad);color:#fff;box-shadow:0 10px 24px rgba(20,184,166,.28)}
+.btn-ghost{background:#fff;color:var(--ink);border-color:var(--line)}
+.btn-white{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-sm{height:44px;padding:0 22px;font-size:.9rem}
+/* hero */
+.hero{background:radial-gradient(1100px 520px at 85% -10%,rgba(20,184,166,.22),transparent 60%),var(--dark);color:#CBD5E1;padding:84px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hero .eyebrow{text-align:left}
+.hero h1{color:#fff;font-size:clamp(2.1rem,5vw,3.3rem);margin-top:18px}
+.hero p.lead{margin-top:20px;font-size:1.06rem;color:#A7B4C8;max-width:34em}
+.hero-cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.hero-note{margin-top:18px;font-size:.85rem;color:#7C8DA6}
+.hero-card{background:#fff;border-radius:22px;box-shadow:var(--shadow-lg);overflow:hidden;color:var(--body)}
+.hero-card img{width:100%;height:230px;object-fit:cover}
+.hero-card-in{padding:26px 28px 28px}
+.hero-card .cap{font-size:.85rem;font-weight:700;letter-spacing:.08em;color:var(--teal)}
+.bignum{font-size:clamp(2.9rem,6vw,3.9rem);font-weight:800;line-height:1.1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bignum small{font-size:1.15rem;font-weight:800}
+.hero-stats{display:flex;gap:26px;margin-top:14px;flex-wrap:wrap}
+.hero-stats div b{display:block;color:var(--ink);font-size:1.25rem}
+.hero-stats div span{font-size:.82rem;color:var(--mut)}
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:28px;transition:.2s;position:relative}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card h3{font-size:1.3rem}
+.card .type{display:inline-block;font-size:.78rem;font-weight:700;color:var(--teal-d);background:#E6F7F3;border-radius:999px;padding:3px 12px;margin-bottom:12px}
+.card p{font-size:.95rem;margin-top:10px}
+.card .price-line{margin-top:16px;padding-top:16px;border-top:1px solid var(--pale2);display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.card .price-line b{color:var(--ink);font-size:1.3rem}
+.card .more{font-weight:700;font-size:.92rem;white-space:nowrap}
+.card.feature{border:2px solid var(--teal)}
+.badge{position:absolute;top:-13px;left:24px;background:var(--grad);color:#fff;font-size:.76rem;font-weight:700;border-radius:999px;padding:4px 14px}
+/* tables */
+table.cmp{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.cmp th,table.cmp td{padding:15px 18px;text-align:left;font-size:.97rem;border-bottom:1px solid var(--pale2)}
+table.cmp thead th{background:var(--dark);color:#fff;font-weight:700;border-bottom:none}
+table.cmp tbody tr:last-child td{border-bottom:none}
+table.cmp td.price{font-weight:800;color:var(--ink);white-space:nowrap;font-size:1.05rem}
+table.cmp td .cond{display:block;font-size:.8rem;color:var(--mut);font-weight:400}
+.axis-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.axis-card{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:26px;transition:.2s}
+.axis-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.axis-card .num{font-size:.85rem;font-weight:800;color:var(--teal);letter-spacing:.1em}
+.axis-card h3{font-size:1.18rem;margin-top:8px}
+.axis-card .med{margin-top:12px}
+.axis-card .med b{font-size:2rem;font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.axis-card p{font-size:.9rem;margin-top:8px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:28px}
+.step .num{font-size:.9rem;font-weight:800;color:#2DD4BF;letter-spacing:.12em}
+.step h3{margin-top:10px;font-size:1.15rem}
+.step p{font-size:.93rem;margin-top:8px;color:#A7B4C8}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px 28px;margin-bottom:16px;box-shadow:var(--shadow)}
+.faq-item h3{font-size:1.08rem}
+.faq-item p{margin-top:8px;font-size:.96rem}
+.note-box{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px;box-shadow:var(--shadow)}
+.note-box ul{margin:8px 0 0 1.2em}
+.note-box li{font-size:.95rem;margin-top:6px}
+.src{font-size:.88rem;color:var(--mut);margin-top:18px}
+.ad-slot{border:1.5px dashed #C9D4E0;border-radius:16px;color:#8CA0B5;text-align:center;padding:26px;font-size:.85rem;background:#FBFCFD}
+.crumb{font-size:.85rem;color:var(--mut);padding:22px 0 0}
+.crumb a{color:var(--mut)}
+.page-hero{background:radial-gradient(900px 420px at 85% -10%,rgba(20,184,166,.20),transparent 60%),var(--dark);color:#CBD5E1;padding:64px 0 72px}
+.page-hero h1{color:#fff;font-size:clamp(1.9rem,4.4vw,2.7rem);margin-top:16px}
+.page-hero p{margin-top:14px;max-width:44em;color:#A7B4C8}
+.page-hero .eyebrow{text-align:left}
+footer.site{background:var(--dark2);color:#94A3B8;padding:64px 0 40px;font-size:.9rem}
+footer.site .f-grid{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap}
+footer.site a{color:#CBD5E1}
+footer.site .f-logo{color:#fff;font-weight:800;font-size:1.05rem}
+footer.site nav{display:flex;gap:22px;flex-wrap:wrap}
+footer.site .copy{margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.08);font-size:.82rem}
+@media (max-width:720px){
+  html{font-size:16px}
+  section{padding:64px 0}
+  .hero{padding:56px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .cards,.axis-grid,.steps{grid-template-columns:1fr}
+  nav.main{display:none}
+  .btn{height:48px;padding:0 24px}
+  table.cmp,table.cmp thead,table.cmp tbody,table.cmp tr,table.cmp td{display:block;width:100%}
+  table.cmp thead{display:none}
+  table.cmp tr{border-bottom:1px solid var(--pale2);padding:10px 4px}
+  table.cmp td{border-bottom:none;padding:7px 16px}
+  table.cmp td::before{content:attr(data-label);display:block;font-size:.76rem;font-weight:700;color:var(--teal-d);letter-spacing:.06em;margin-bottom:2px}
+  table.cmp td.price{font-size:1.15rem}
+  .hero-card img{height:190px}
+}
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap hd-in">
+<a class="logo" href="/">整体料金相場<span>DB</span></a>
+<nav class="main">
+<a href="/#companies">チェーン別料金</a>
+<a href="/#axes">コース別の比較</a>
+<a href="/faq/">よくある質問</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+<a class="btn btn-grad btn-sm" href="/#zenshin60">60分の相場を見る</a>
+</div></header>
+<div class="wrap"><div class="crumb"><a href="/">ホーム</a> ｜ このサイトについて</div></div><div class="page-hero"><div class="wrap">
+<div class="eyebrow">ABOUT</div><div class="rule left"></div>
+<h1>このサイトに<span class="grad-text">ついて</span></h1>
+<p>整体料金相場データベースは、整体・もみほぐしの大手チェーンが公式サイトで案内している料金を集め、相場として見られるように整理したデータベースです。</p>
+</div></div>
+<section><div class="wrap"><div style="max-width:840px;margin:0 auto">
+<div class="note-box">
+<h3 style="font-size:1.1rem">データの集め方</h3>
+<ul>
+<li>収録するのは、各社の公式サイトに掲載された料金だけです。口コミサイトなどに載っている料金は収録していません。</li>
+<li>全データに出典（公式ページ）と確認日（2026-11-18）を明記しています。</li>
+<li>公式に料金が確認できなかったチェーン・項目は、推測で埋めずに掲載していません。</li>
+<li>中央値は、このサイトに収録した料金データだけから算出しています。</li>
+</ul>
+</div>
+<div class="note-box" style="margin-top:24px">
+<h3 style="font-size:1.1rem">料金情報の扱いについて</h3>
+<ul>
+<li>このサイトは料金情報の整理に限定しています。施術の効能・効果については記載していません。</li>
+<li>料金は改定される場合があります。予約前に各社の公式ページで最新の料金をご確認ください。</li>
+<li>整体・整骨院などの施術は医療行為ではありません。体の不調が続く場合は、医療機関への相談もご検討ください。</li>
+</ul>
+</div>
+<div class="note-box" style="margin-top:24px">
+<h3 style="font-size:1.1rem">運営</h3>
+<ul>
+<li>運営：整体料金相場データベース運営事務局</li>
+<li>広告：このサイトには広告（PR表記）を掲載する場合があります。広告の有無で料金データの並びや数値を変えることはありません。</li>
+</ul>
+</div>
+</div></div></section>
+<footer class="site"><div class="wrap">
+<div class="f-grid">
+<div>
+<div class="f-logo">整体料金相場データベース</div>
+<p style="margin-top:10px;max-width:26em">大手チェーンの公式料金だけを集めた、整体料金の相場データベースです。</p>
+</div>
+<nav>
+<a href="/#companies">チェーン別料金</a>
+<a href="/#axes">コース別の比較</a>
+<a href="/faq/">よくある質問</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div>
+<div class="copy">運営：整体料金相場データベース運営事務局｜料金データ確認日：2026-11-18｜掲載料金は各社の公式ページで確認したものです。最新情報は各社の公式ページでご確認ください。</div>
+</div></footer>
+</body>
+</html>

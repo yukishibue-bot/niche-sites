@@ -1,0 +1,13 @@
+# 整体料金相場データベース
+
+整体料金相場データベースは、整体・もみほぐしの大手チェーン4社（カラダファクトリー、りらくる、グイット、ラフィネ）の公式料金を収録した相場データベースです。運営は整体料金相場データベース運営事務局。料金データの確認日は2026-11-18です。
+
+## 主なページ
+- トップ（全身60分の中央値と料金比較）: https://seitai-price-db.vercel.app/
+- チェーン別料金: https://seitai-price-db.vercel.app/companies/karada-factory/ , https://seitai-price-db.vercel.app/companies/rirakuru/ , https://seitai-price-db.vercel.app/companies/gooit/ , https://seitai-price-db.vercel.app/companies/raffine/
+- コース別の比較: https://seitai-price-db.vercel.app/courses/zenshin-60/ ほか
+- よくある質問: https://seitai-price-db.vercel.app/faq/
+- このサイトについて: https://seitai-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式ページで確認できた料金のみで、全データに出典と確認日を明記しています。中央値は収録データからの算出です。
