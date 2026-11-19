@@ -1,0 +1,13 @@
+# メンズ脱毛相場データベース
+
+メンズ脱毛相場データベースは、メンズ脱毛の主要5社（ゴリラクリニック、メンズリゼ、湘南美容クリニック、エミナルクリニックメンズ＝医療脱毛、RINX＝サロン脱毛）の公式料金72件を収録した相場データベースです。運営はメンズ脱毛相場データベース運営事務局。料金データの確認日は2026-11-19です。
+
+## 主なページ
+- トップ（ヒゲ3部位・6回コースの中央値と料金比較）: https://mens-datsumo-price-db.vercel.app/
+- 会社別料金: https://mens-datsumo-price-db.vercel.app/companies/gorilla-clinic/ , https://mens-datsumo-price-db.vercel.app/companies/mens-rize/ , https://mens-datsumo-price-db.vercel.app/companies/shonan-beauty/ , https://mens-datsumo-price-db.vercel.app/companies/eminal-mens/ , https://mens-datsumo-price-db.vercel.app/companies/rinx/
+- 部位別の比較: https://mens-datsumo-price-db.vercel.app/parts/hige-3-6/ ほか6グループ
+- よくある質問: https://mens-datsumo-price-db.vercel.app/faq/
+- このサイトについて: https://mens-datsumo-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式ページで確認できた料金のみで、全データに出典と確認日を明記しています。中央値は収録データからの算出です。医療脱毛とサロン脱毛は方式が異なるため分けて収録し、順位付けはしていません。

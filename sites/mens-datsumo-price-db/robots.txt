@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mens-datsumo-price-db.vercel.app/sitemap.xml
