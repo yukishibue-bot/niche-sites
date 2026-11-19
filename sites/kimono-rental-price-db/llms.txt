@@ -1,0 +1,10 @@
+# 着物レンタル相場データベース
+
+主要レンタル各社の公式プラン料金をもとに、着物の種類別（小紋・訪問着・振袖・袴・留袖）のレンタル相場と中央値をまとめたデータベース。
+確認日: 2026-11-19 / 運営: 着物レンタル相場データベース運営事務局
+
+- 小紋・街着物: 中央値 4,829円（3,300円〜8,030円、6件） https://kimono-rental-price-db.vercel.app/types/komon/
+- 訪問着: 中央値 18,095円（11,000円〜26,290円、4件） https://kimono-rental-price-db.vercel.app/types/homongi/
+- 振袖: 中央値 41,195円（11,000円〜87,890円、4件） https://kimono-rental-price-db.vercel.app/types/furisode/
+- 袴: 中央値 31,790円（7,150円〜40,590円、3件） https://kimono-rental-price-db.vercel.app/types/hakama/
+- 留袖: 中央値 28,600円（28,600円〜28,600円、1件） https://kimono-rental-price-db.vercel.app/types/tomesode/
