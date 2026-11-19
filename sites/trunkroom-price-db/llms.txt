@@ -1,0 +1,10 @@
+# トランクルーム相場データベース
+
+運営会社の公式料金表から収録した、トランクルームの月額料金データベース。確認日: 2026-11-19。
+
+- サイズ別の中央値（トップ）: https://trunkroom-price-db.vercel.app/
+- 屋内型2帖台の中央値: 17,930円（収録15区画）
+- 屋外型1帖台の中央値: 8,500円（収録2区画）
+- 宅配型の最安単価: 320円/箱
+- タイプの違い: https://trunkroom-price-db.vercel.app/types/
+- 集計方法・出典: https://trunkroom-price-db.vercel.app/about/
