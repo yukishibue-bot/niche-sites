@@ -1,0 +1,14 @@
+# 家事代行料金相場データベース
+
+家事代行各社の公式サイトに掲載された料金（定期・スポットの1時間あたり料金、最低利用時間、交通費）だけを集めた料金相場データベース。全データに出典URLと確認日を明記。
+
+- [定期の1時間あたり料金の相場](https://kaji-daiko-price-db.vercel.app/menus/regular/)
+- [スポットの1時間あたり料金の相場](https://kaji-daiko-price-db.vercel.app/menus/spot/)
+- [CaSy（カジー）の料金](https://kaji-daiko-price-db.vercel.app/companies/casy/)
+- [タスカジの料金](https://kaji-daiko-price-db.vercel.app/companies/taskaji/)
+- [ベアーズの料金](https://kaji-daiko-price-db.vercel.app/companies/bears/)
+- [カジタク（掃除代行）の料金](https://kaji-daiko-price-db.vercel.app/companies/kajitaku/)
+- [ダスキン メリーメイドの料金](https://kaji-daiko-price-db.vercel.app/companies/duskin/)
+- [よくある質問](https://kaji-daiko-price-db.vercel.app/faq/)
+- [このサイトについて](https://kaji-daiko-price-db.vercel.app/about/)
+- [プライバシーポリシー](https://kaji-daiko-price-db.vercel.app/privacy/)
