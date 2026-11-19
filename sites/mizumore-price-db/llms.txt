@@ -1,0 +1,18 @@
+# 水漏れ修理相場データベース
+
+水漏れ修理相場データベースは、水道修理の大手3社が公式サイトに掲載した作業料金（確認日：2026-11-19）だけを収録した水漏れ修理の料金相場データベースです。
+収録：7カテゴリ・料金データ45件・出典3社。確認できない項目は「公表なし」と明示しています。
+運営：水漏れ修理相場データベース運営事務局
+
+## ページ一覧
+- トップ（作業別相場・費用の条件・早見表）: https://mizumore-price-db.vercel.app/
+- 蛇口・水栓の部品交換の料金相場: https://mizumore-price-db.vercel.app/category/faucet-parts/
+- 蛇口・水栓の交換の料金相場: https://mizumore-price-db.vercel.app/category/faucet-replace/
+- トイレのつまり・部品交換の料金相場: https://mizumore-price-db.vercel.app/category/toilet/
+- 排水管・排水口のつまりの料金相場: https://mizumore-price-db.vercel.app/category/drain/
+- 配管の修理・交換の料金相場: https://mizumore-price-db.vercel.app/category/pipes/
+- 漏水調査の料金相場: https://mizumore-price-db.vercel.app/category/leak-survey/
+- 給湯器の修理・交換の料金相場: https://mizumore-price-db.vercel.app/category/water-heater/
+- データの出典: https://mizumore-price-db.vercel.app/sources/
+- FAQ: https://mizumore-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://mizumore-price-db.vercel.app/about/

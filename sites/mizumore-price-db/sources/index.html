@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>データの出典｜水漏れ修理相場DB</title>
+<meta name="description" content="水漏れ修理相場データベースの出典一覧。クラシアン・イースマイル・生活水道センターの公式料金、出張費・見積もり・深夜割増の条件、確認日、「公表なし」の扱いを説明。">
+<link rel="canonical" href="https://mizumore-price-db.vercel.app/sources/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="水漏れ修理相場データベース">
+<meta property="og:title" content="データの出典｜水漏れ修理相場DB">
+<meta property="og:description" content="水漏れ修理相場データベースの出典一覧。クラシアン・イースマイル・生活水道センターの公式料金、出張費・見積もり・深夜割増の条件、確認日、「公表なし」の扱いを説明。">
+<meta property="og:url" content="https://mizumore-price-db.vercel.app/sources/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="データの出典｜水漏れ修理相場DB">
+<meta name="twitter:description" content="水漏れ修理相場データベースの出典一覧。クラシアン・イースマイル・生活水道センターの公式料金、出張費・見積もり・深夜割増の条件、確認日、「公表なし」の扱いを説明。">
+<style>
+:root{
+  --ink:#0d1b26; --muted:#4b6172; --faint:#7d93a3;
+  --line:#dce8ef; --hair:#eaf2f6;
+  --accent:#0369a1; --accent-dark:#075985; --accent-pale:#e8f4fa;
+  --grad:linear-gradient(90deg,#075985,#0284c7 52%,#38bdf8);
+  --shadow:0 8px 28px rgba(7,40,61,.07);
+  --shadow-hover:0 14px 34px rgba(7,40,61,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:999px;transition:background .2s}
+nav.main a:hover{background:#eef6fa}
+.hero{background:linear-gradient(160deg,#04121d 0%,#062a42 55%,#073a56 100%);padding:72px 0 88px;color:#fff}
+.eyebrow{display:block;background:none;color:#38bdf8;font-size:13px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:0;border-radius:0;margin:0 0 16px}
+.eyebrow::after{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--grad);margin-top:10px}
+section .eyebrow{color:var(--accent)}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em;text-wrap:balance}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 30px;color:#d7e6ef}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 36px}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:clamp(30px,3.4vw,46px);line-height:1.2;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:#9db8c7}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-card{background:#fff;border-radius:20px;padding:14px;box-shadow:0 22px 50px rgba(0,0,0,.38);color:var(--ink)}
+.hero-card img{display:block;width:100%;height:300px;object-fit:cover;object-position:center;border-radius:14px}
+.hero-card .hc-body{padding:16px 10px 8px}
+.hero-card .hc-label{font-size:.8rem;color:var(--muted);margin:0}
+.hero-card .hc-num{font-size:clamp(36px,3.6vw,52px);font-weight:800;letter-spacing:-0.03em;line-height:1.25;margin:2px 0 6px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-card .hc-note{font-size:.82rem;color:var(--faint);margin:0}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:999px;padding:14px 28px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(2,132,199,.32)}
+.btn-ghost{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:999px;
+  padding:14px 28px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ghost.dark{border-color:#c3d5df;color:var(--ink)}
+section{padding:80px 0}
+section.alt{background:#f3f8fb}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:block;background:none;color:var(--accent);letter-spacing:.16em;
+  font-size:11.5px;font-weight:800;padding:0;border-radius:0;margin:0;text-transform:uppercase}
+.mcard .en::after{content:"";display:block;width:32px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--accent)}
+.mcard .median{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.3;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mcard .median small{font-size:.85rem;color:var(--muted);font-weight:600;letter-spacing:0;-webkit-text-fill-color:var(--muted)}
+.mcard .range{color:var(--muted);font-size:.9rem;margin:6px 0 0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.bar{position:relative;height:8px;background:#d9ebf4;border-radius:99px;margin:18px 0 8px}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;width:100%;background:var(--grad);border-radius:99px;opacity:.75}
+.bar .tick{position:absolute;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;
+  background:var(--grad);border:3px solid #fff;box-shadow:0 1px 5px rgba(7,40,61,.25)}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#eef6fa;font-size:.88rem;font-weight:700}
+table.compare tbody tr:nth-child(even){background:#f7fafc}
+table.compare td.price{font-weight:800;color:var(--accent-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
+table.compare td.price .unit{display:block;font-weight:600;color:var(--muted);font-size:.78rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tr:last-child td{border-bottom:none}
+.adslot{border:1px dashed #bfd4df;border-radius:16px;color:#87a0af;text-align:center;
+  padding:18px;margin:32px 0;font-size:.82rem;letter-spacing:.08em;background:#fff}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.page-stats{display:flex;gap:36px;flex-wrap:wrap;margin:26px 0 8px}
+.page-stats .stat b{display:block;font-size:clamp(26px,3vw,38px);line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page-stats .stat span{font-size:.8rem;color:var(--faint)}
+.srcbox{background:#f3f8fb;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.closing{background:linear-gradient(160deg,#04121d,#062a42 60%,#073a56);color:#fff;padding:80px 0;text-align:center}
+.closing h2{font-size:clamp(24px,3vw,34px);margin:0 0 14px;font-weight:800;letter-spacing:-0.03em}
+.closing h2 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.closing p{color:#c3d7e2;max-width:680px;margin:0 auto 28px}
+footer.site{background:#050f16;color:#b7cbd6;padding:48px 0 38px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:#38bdf8}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-card img{height:230px}
+  section{padding:54px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats,.page-stats{gap:24px}
+  .trust,.cards,.cards.three{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.15rem}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "水漏れ修理相場データベース", "url": "https://mizumore-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://mizumore-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "出典", "item": "https://mizumore-price-db.vercel.app"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>PLUMBING PRICE DB</small>水漏れ修理相場DB</a>
+<nav class="main">
+<a href="/category/faucet-parts/">蛇口・水栓の部品交換</a><a href="/category/faucet-replace/">蛇口・水栓の交換</a><a href="/category/toilet/">トイレのつまり・部品交換</a><a href="/category/drain/">排水管・排水口のつまり</a>
+<a href="/sources/">出典</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">このサイトについて</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ 出典</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">SOURCES</p>
+<h1>データの出典</h1>
+<p>このデータベースの数字は、すべて下記の各社公式サイトで公表されている値です（確認日：2026-11-19）。会社ごとに料金の組み立てが異なるため、当サイトでは出典と条件を明示し、数字だけを切り取って比べないようにしています。</p>
+</div></div>
+<section><div class="wrap">
+<div class="cards"><div class="mcard"><p class="en">水道修理会社 公式サイト</p><h3>クラシアン</h3><p class="desc">公式サイトのトップページに、場所別（トイレ・キッチン・お風呂・洗面所・排水管・排水口・蛇口・給湯器・屋外水栓など）の作業料金が「8,800円（税込）＋事務手数料〜」と公表されています。出張・点検・見積もり・キャンセルは費用なしと公式に案内されています。</p><p class="desc">収録データ：4件／確認日：2026-11-19<br><a href="https://www.qracian.co.jp/" rel="nofollow noopener" target="_blank">https://www.qracian.co.jp/</a></p></div><div class="mcard"><p class="en">水道修理会社 公式サイト</p><h3>イースマイル</h3><p class="desc">公式サイトの営業所ページに、作業内容ごとの作業料金表（税込）が掲載されています。本サイトでは千葉営業所（千葉市）の公式ページに掲載された料金表で確認しました。出張料・見積もり・キャンセル・深夜早朝の割増はすべて0円と公式に明記されています。</p><p class="desc">収録データ：19件／確認日：2026-11-19<br><a href="https://www.esmile-24.com/" rel="nofollow noopener" target="_blank">https://www.esmile-24.com/</a></p></div><div class="mcard"><p class="en">水道工事会社 公式サイト</p><h3>生活水道センター</h3><p class="desc">公式サイトに基本料金5,000円（税込）〜と案内され、地域ページには施工内容ごとの施工料金表（税込）が掲載されています。本サイトでは川崎市高津区の公式ページに掲載された料金表で確認しました。施工料金のほかに廃材諸経費・部品代・特殊作業費が別途かかる場合があります。</p><p class="desc">収録データ：22件／確認日：2026-11-19<br><a href="https://www.suidou.org/" rel="nofollow noopener" target="_blank">https://www.suidou.org/</a></p></div></div>
+</div></section>
+<section class="alt"><div class="wrap">
+<div class="sec-head"><h2>各社の費用の条件</h2>
+<p>作業料金のほかにかかる費用の、公式サイトでの表記です。</p></div>
+<table class="compare"><thead><tr><th>会社</th><th>料金の組み立て</th><th>出張費</th><th>見積もり</th><th>深夜・早朝割増</th></tr></thead><tbody><tr><td data-label="会社">クラシアン</td><td data-label="料金の組み立て">作業料金 8,800円（税込）〜 ＋事務手数料</td><td data-label="出張費">無料</td><td data-label="見積もり">無料（点検・見積もり・キャンセルとも費用なしと公式表記）</td><td data-label="深夜・早朝割増">公式サイトに金額の公表なし</td></tr><tr><td data-label="会社">イースマイル</td><td data-label="料金の組み立て">作業料金 8,800円（税込）〜 ＋部品代</td><td data-label="出張費">0円</td><td data-label="見積もり">0円（見積もり・キャンセルとも0円と公式表記）</td><td data-label="深夜・早朝割増">0円（深夜・早朝の割増なしと公式表記）</td></tr><tr><td data-label="会社">生活水道センター</td><td data-label="料金の組み立て">基本料金 5,000円（税込）〜 ＋施工料金・部品代など</td><td data-label="出張費">基本料金に含む形で案内</td><td data-label="見積もり">現地調査のうえ無料見積もり</td><td data-label="深夜・早朝割増">公式サイトで確認できず（公表なし）</td></tr></tbody></table>
+<div class="trust" style="margin-top:24px"><div class="tcard"><b>クラシアン</b><p>場所別の作業料金は公式トップページで確認しました。事務手数料の金額は公式サイトに記載がなく、依頼時に確認が必要です。深夜・早朝の割増についても金額の公表はありませんでした。</p></div><div class="tcard"><b>イースマイル</b><p>料金表は公式の営業所ページ（千葉市）に掲載された作業料金（税込）です。公式サイトにはWEB割引3,000円の表記があり、適用時は実質5,500円〜と案内されています。本サイトの収録値は割引前の作業料金です。</p></div><div class="tcard"><b>生活水道センター</b><p>施工料金表は公式の地域ページ（川崎市高津区）に掲載された料金表（税込）です。別途、廃材諸経費・部品代・特殊作業費がかかる場合があります。キャンセルは作業前まで無料です（特定商取引法に基づく表記による）。</p></div></div>
+<div class="adslot">PR（広告枠）</div>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head"><h2>「公表なし」について</h2></div>
+<div class="trust">
+<div class="tcard"><b>クラシアンの事務手数料</b><p>作業料金に加えて事務手数料がかかることは公式に明記されていますが、その金額は公式サイトに公表がありませんでした。依頼時に金額を確認してください。</p></div>
+<div class="tcard"><b>深夜・早朝の割増金額</b><p>イースマイルは割増0円と明記していますが、クラシアンと生活水道センターは、確認した公式ページに割増料金の金額の記載がありませんでした（公表なし）。</p></div>
+<div class="tcard"><b>生活水道センターの漏水調査単価</b><p>現地訪問・漏水調査のうえ無料見積もりと案内されていますが、調査そのものの単価は公式料金表に公表がありませんでした。そのため漏水調査のカテゴリには収録していません。</p></div>
+</div>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">水漏れ修理相場データベース</p>
+<p>運営：水漏れ修理相場データベース運営事務局</p>
+<p>掲載している料金は、各社の公式サイトで公表されている作業料金・施工料金の目安です（確認日：2026-11-19）。実際の料金は症状や作業内容によって変わります。依頼の前に、部品代や手数料まで含めた総額の見積もりを確認してください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/sources/">出典一覧</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（出典・算出方法）</a>
+</div>
+<p>© 水漏れ修理相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
