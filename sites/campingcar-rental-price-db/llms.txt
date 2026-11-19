@@ -1,0 +1,14 @@
+# キャンピングカーレンタル相場データベース
+
+キャンピングカーレンタル各社の公式サイトに掲載された料金（クラス別・平日／週末／ハイシーズン）だけを集めた料金相場データベース。全データに出典URLと確認日を明記。
+
+- [軽キャンパー・車中泊車のレンタル相場](https://campingcar-rental-price-db.vercel.app/classes/kei/)
+- [バンコンのレンタル相場](https://campingcar-rental-price-db.vercel.app/classes/vancon/)
+- [キャブコンのレンタル相場](https://campingcar-rental-price-db.vercel.app/classes/cabcon/)
+- [モーターホームのレンタル相場](https://campingcar-rental-price-db.vercel.app/classes/motorhome/)
+- [Japan C.R.C.（福井C.R.C.）の料金](https://campingcar-rental-price-db.vercel.app/companies/japancrc-fukui/)
+- [Japan C.R.C.（京急蒲田C.R.C.）の料金](https://campingcar-rental-price-db.vercel.app/companies/japancrc-keikyukamata/)
+- [北海道ノマドレンタカーの料金](https://campingcar-rental-price-db.vercel.app/companies/nomad/)
+- [バンテックレンタカーの料金](https://campingcar-rental-price-db.vercel.app/companies/vantech/)
+- [よくある質問](https://campingcar-rental-price-db.vercel.app/faq/)
+- [このサイトについて](https://campingcar-rental-price-db.vercel.app/about/)
