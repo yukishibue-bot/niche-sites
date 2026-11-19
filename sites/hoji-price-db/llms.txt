@@ -1,0 +1,23 @@
+# 法事・法要相場データベース
+
+法事・法要相場データベースは、法事・法要にかかる費用を、各社・各施設の公式公表料金（確認日：2026-11-19）と公表資料だけで整理したデータベースです。
+収録：会社5社・会場3施設、公表プラン料金14件、目安10項目。確認できない料金は「公表なし」と明示しています。
+運営：法事・法要相場データベース運営事務局
+
+## ページ一覧
+- トップ（項目別相場・法要プラン比較・回忌の節目）: https://hoji-price-db.vercel.app/
+- 法要の手配・プラン: https://hoji-price-db.vercel.app/categories/hoyo/
+- 法要後の会食: https://hoji-price-db.vercel.app/categories/kaishoku/
+- 引き物・お返し: https://hoji-price-db.vercel.app/categories/hikimono/
+- お布施の目安: https://hoji-price-db.vercel.app/categories/ofuse/
+- イオンのお葬式の法事・法要プラン: https://hoji-price-db.vercel.app/companies/aeon/
+- 涙そうそうの法事・法要プラン: https://hoji-price-db.vercel.app/companies/namidasoso/
+- よりそうお坊さん便の法事・法要プラン: https://hoji-price-db.vercel.app/companies/yoriso-obosan/
+- てらくる（小さなお葬式）の法事・法要プラン: https://hoji-price-db.vercel.app/companies/terakuru/
+- 公益社の法事・法要プラン: https://hoji-price-db.vercel.app/companies/koekisha/
+- ホテル京セラの法要会食プラン: https://hoji-price-db.vercel.app/venues/hotel-kyocera/
+- ANAクラウンプラザホテル札幌の法要会食プラン: https://hoji-price-db.vercel.app/venues/ana-cp-sapporo/
+- 横浜ベイホテル東急の法要会食プラン: https://hoji-price-db.vercel.app/venues/yokohama-bay-tokyu/
+- 回忌の数え方と法要の節目: https://hoji-price-db.vercel.app/kaiki/
+- FAQ: https://hoji-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法・運営者情報）: https://hoji-price-db.vercel.app/about/
