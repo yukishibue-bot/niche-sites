@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
 <title>医療費控除の目安計算｜確定申告計算ツール</title>
 <meta name="description" content="1年間に支払った医療費から、医療費控除の対象額と節税の目安を計算。国税庁の計算式（総所得金額等の5%と10万円の小さい方が足切り）に基づきます。">
 <link rel="canonical" href="https://kakutei-shinkoku-calc.vercel.app/tools/iryouhi/">
@@ -87,6 +88,21 @@ table.breakdown tr.total td{border-bottom:none;border-top:2px solid var(--line);
   font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s;font-family:inherit}
 .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(37,99,168,.25)}
 .btn-big{width:100%;padding:16px 24px;font-size:1rem;margin-top:8px}
+.btn-pill{display:inline-flex;align-items:center;justify-content:center;height:50px;padding:0 26px;border-radius:999px;
+  background:var(--grad);color:#fff;font-size:.95rem;font-weight:800;text-decoration:none;white-space:nowrap;
+  box-shadow:0 10px 24px rgba(37,99,168,.25);transition:transform .2s,box-shadow .2s}
+.btn-pill:hover{transform:translateY(-1px);box-shadow:0 14px 30px rgba(37,99,168,.3);color:#fff}
+.btn-pill.ghost{background:#fff;color:var(--ink);border:1.5px solid #d5d6d9;box-shadow:none}
+.btn-pill.ghost:hover{border-color:var(--blue);color:var(--blue)}
+.btn-pill.sm{height:42px;padding:0 20px;font-size:.88rem}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.ctaband{background:linear-gradient(120deg,#1c4e89,#123058);color:#d7e5f5}
+.ctaband .wrap{padding-top:52px;padding-bottom:52px;text-align:center}
+.ctaband h2{color:#fff;margin:0 0 8px;font-size:clamp(22px,3vw,30px);font-weight:800;letter-spacing:-0.03em;line-height:1.45}
+.ctaband p{color:#a9c3e4;max-width:640px;margin:0 auto}
+.ctaband .cta-row{justify-content:center}
+.ctaband .btn-pill.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.ctaband .btn-pill.ghost:hover{border-color:#fff;color:#fff}
 .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start}
 .calc-card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:28px}
 .calc-card h2{margin:0 0 18px;font-size:1.2rem;font-weight:800;letter-spacing:-0.02em}
@@ -161,6 +177,7 @@ footer.site p{color:var(--faint);font-size:.8rem;margin:6px 0}
 <a href="/tools/iryouhi/">医療費控除</a>
 <a href="/about/">このサイトについて</a>
 </nav>
+<a class="btn-pill sm" href="/tools/shotokuzei/">所得税を計算する</a>
 </div></header>
 
 
@@ -215,6 +232,15 @@ footer.site p{color:var(--faint);font-size:.8rem;margin:6px 0}
 </div>
 </main>
 
+<section class="ctaband"><div class="wrap">
+<h2>ほかの計算も、根拠つきでその場で</h2>
+<p>所得税の概算、ふるさと納税の控除上限、医療費控除の目安。3つのツールはすべて無料・登録不要で、入力はブラウザ内だけで処理されます。</p>
+<div class="cta-row">
+<a class="btn-pill" href="/tools/shotokuzei/">所得税の概算計算</a>
+<a class="btn-pill ghost" href="/tools/furusato/">ふるさと納税の控除上限</a>
+<a class="btn-pill ghost" href="/tools/iryouhi/">医療費控除の目安</a>
+</div>
+</div></section>
 
 <footer class="site"><div class="wrap">
 <div class="fnav">
