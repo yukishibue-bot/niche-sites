@@ -1,0 +1,18 @@
+# レンタルスペース相場データベース
+
+レンタルスペース相場データベースは、事業者の公式サイトと公式料金表に掲載された1時間あたり料金（確認日：2026-11-19）だけを収録したレンタルスペースの料金相場データベースです。
+収録：5用途・料金データ31件・出典9件。確認できない項目は「公表なし」と分かる形にしています。
+運営：レンタルスペース相場データベース運営事務局
+
+## ページ一覧
+- トップ（用途別相場・人数別要約・早見表）: https://rental-space-price-db.vercel.app/
+- 会議・セミナーのレンタルスペース料金相場: https://rental-space-price-db.vercel.app/category/meeting/
+- 撮影スタジオのレンタルスペース料金相場: https://rental-space-price-db.vercel.app/category/photo/
+- パーティー・イベントのレンタルスペース料金相場: https://rental-space-price-db.vercel.app/category/party/
+- ダンス・レッスンのレンタルスペース料金相場: https://rental-space-price-db.vercel.app/category/dance/
+- キッチン・料理教室のレンタルスペース料金相場: https://rental-space-price-db.vercel.app/category/kitchen/
+- 収容人数別の料金相場: https://rental-space-price-db.vercel.app/capacity/
+- データの出典: https://rental-space-price-db.vercel.app/sources/
+- FAQ: https://rental-space-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://rental-space-price-db.vercel.app/about/
+- プライバシーポリシー: https://rental-space-price-db.vercel.app/privacy/
