@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://massage-price-db.vercel.app/sitemap.xml
