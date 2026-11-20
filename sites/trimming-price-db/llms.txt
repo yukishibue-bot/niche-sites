@@ -1,0 +1,22 @@
+# トリミング相場データベース
+
+ペットサロンのトリミング料金相場を、ペットサロン・ペットショップチェーン各社の公式サイトに掲載された料金（税込・基本料金）だけから集計したデータベースです。サイズ・代表犬種とコース（シャンプー／カット）別の中央値を、出典と確認日つきで公開しています。
+
+## 主なページ
+- トップ（区分別の相場・料金比較）: https://trimming-price-db.vercel.app/
+- 小型犬・カットコースの料金相場: https://trimming-price-db.vercel.app/menus/small-cut/
+- 小型犬・シャンプーコースの料金相場: https://trimming-price-db.vercel.app/menus/small-shampoo/
+- 超小型犬・カットコースの料金相場: https://trimming-price-db.vercel.app/menus/tiny-cut/
+- 超小型犬・シャンプーコースの料金相場: https://trimming-price-db.vercel.app/menus/tiny-shampoo/
+- 中型犬・シャンプーコースの料金相場: https://trimming-price-db.vercel.app/menus/medium-shampoo/
+- 中型犬・カットコースの料金相場: https://trimming-price-db.vercel.app/menus/medium-cut/
+- 大型犬・シャンプーコースの料金相場: https://trimming-price-db.vercel.app/menus/large-shampoo/
+- 大型犬・カットコースの料金相場: https://trimming-price-db.vercel.app/menus/large-cut/
+- ひごペットフレンドリー（イオンモール橿原ウエストビレッジ店）の料金: https://trimming-price-db.vercel.app/companies/higopet/
+- ペットフォレスト（上尾店）の料金: https://trimming-price-db.vercel.app/companies/petforest/
+- ワンラブ（ディスワン小牧岩崎店）の料金: https://trimming-price-db.vercel.app/companies/onelove/
+- ペッツワン（エステカーサ西友平塚店）の料金: https://trimming-price-db.vercel.app/companies/petsone/
+- よくある質問: https://trimming-price-db.vercel.app/faq/
+- このサイトについて・データの集め方: https://trimming-price-db.vercel.app/about/
+
+運営: トリミング相場データベース運営事務局

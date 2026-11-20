@@ -1,0 +1,13 @@
+# 翻訳料金相場データベース
+
+翻訳料金相場データベースは、翻訳会社5社（WIPジャパン、ファーストネット翻訳サービス、通訳翻訳舎、Laney & Iizuka Linguistics、ユレイタス）が公式サイトで公開している翻訳単価を収録した相場データベースです。運営は翻訳料金相場データベース運営事務局。料金データの確認日は2026-11-20です。
+
+## 主なページ
+- トップ（日英翻訳・原文1文字あたり単価の中央値と単価比較）: https://honyaku-price-db.vercel.app/
+- 会社別の単価: https://honyaku-price-db.vercel.app/companies/wip-japan/ , https://honyaku-price-db.vercel.app/companies/firstnet/ , https://honyaku-price-db.vercel.app/companies/honyakusha/ , https://honyaku-price-db.vercel.app/companies/laney-iizuka/ , https://honyaku-price-db.vercel.app/companies/ulatus/
+- 言語ペア別の比較: https://honyaku-price-db.vercel.app/pairs/nichiei-char/ ほか
+- よくある質問: https://honyaku-price-db.vercel.app/faq/
+- このサイトについて: https://honyaku-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式ページで確認できた単価のみで、全データに出典と確認日を明記しています。単価の単位（原文1文字／原文1ワード／原文100文字／原文50ワード／訳文1ワード）は区別して表示し、単位の違う数字を混ぜて中央値を出すことはしていません。各社の単価の多くは下限（「〜」）表示です。

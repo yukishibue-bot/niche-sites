@@ -1,0 +1,23 @@
+# 民泊相場データベース
+
+民泊相場データベースは、民泊の運営代行会社・清掃代行会社が公式サイトに掲載した料金（確認日：2026-11-20）だけを収録した民泊運営の料金相場データベースです。宿泊料金そのものは変動が大きいため扱っていません。
+収録：6カテゴリ・料金データ23件・出典6社。完全代行の手数料率の中央値は15%（公表料率4件から算出）。確認できない項目は「公表なし」と明示しています。
+運営：民泊相場データベース運営事務局
+
+## ページ一覧
+- トップ（項目別相場・会社一覧・清掃単価）: https://minpaku-price-db.vercel.app/
+- 完全代行の手数料率の相場: https://minpaku-price-db.vercel.app/category/management-full/
+- 部分代行・レベニューマネジメントの手数料率の相場: https://minpaku-price-db.vercel.app/category/management-partial/
+- 月額固定・最低月額・システム利用料の相場: https://minpaku-price-db.vercel.app/category/monthly-fees/
+- 初期費用の相場: https://minpaku-price-db.vercel.app/category/initial-fees/
+- 清掃代行単価（月契約・1回あたり）の相場: https://minpaku-price-db.vercel.app/category/cleaning-monthly/
+- 清掃代行単価（スポット・1回あたり）の相場: https://minpaku-price-db.vercel.app/category/cleaning-spot/
+- SEKAI STAYの料金: https://minpaku-price-db.vercel.app/company/sekaistay/
+- 民泊RevRiseの料金: https://minpaku-price-db.vercel.app/company/revrise/
+- PREMIER HOSTの料金: https://minpaku-price-db.vercel.app/company/premierhost/
+- PIRIKA BASEの料金: https://minpaku-price-db.vercel.app/company/pirikabase/
+- ネクストクリエイツの料金: https://minpaku-price-db.vercel.app/company/nextcreate/
+- Hoan Clean Hokkaidoの料金: https://minpaku-price-db.vercel.app/company/hoanclean/
+- データの出典: https://minpaku-price-db.vercel.app/sources/
+- FAQ: https://minpaku-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://minpaku-price-db.vercel.app/about/

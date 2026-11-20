@@ -1,0 +1,18 @@
+# カーリース相場データベース
+
+カーリース相場データベースは、カーリース各社の公式サイトに掲載された新車の月額料金（確認日：2026-11-20）を、条件を明記して収録した相場データベースです。
+収録：7区分・月額データ77件・出典2件。条件の違う数字を混ぜた中央値は出していません。
+運営：カーリース相場データベース運営事務局
+
+## ページ一覧
+- トップ（ボディタイプ別相場・ボーナス併用の影響・条件比較）: https://car-lease-price-db.vercel.app/
+- 軽自動車の月額相場: https://car-lease-price-db.vercel.app/category/kei/
+- コンパクトカーの月額相場: https://car-lease-price-db.vercel.app/category/compact/
+- コンパクトSUVの月額相場: https://car-lease-price-db.vercel.app/category/compact-suv/
+- SUV（ミドルサイズ以上）の月額相場: https://car-lease-price-db.vercel.app/category/suv/
+- ミニバンの月額相場: https://car-lease-price-db.vercel.app/category/minivan/
+- セダン・ワゴン・スポーツの月額相場: https://car-lease-price-db.vercel.app/category/sedan-sports/
+- ボーナス併用で月額はどう変わるか（KINTO・ヤリス）の月額相場: https://car-lease-price-db.vercel.app/category/bonus-compare/
+- データの出典: https://car-lease-price-db.vercel.app/sources/
+- FAQ: https://car-lease-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://car-lease-price-db.vercel.app/about/

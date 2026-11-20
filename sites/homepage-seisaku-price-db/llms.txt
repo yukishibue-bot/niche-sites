@@ -1,0 +1,13 @@
+# ホームページ制作費用相場データベース
+
+ホームページ制作費用相場データベースは、ホームページ制作会社・サービス4社の公式料金プラン13件を収録した制作費用の相場データベースです。運営はホームページ制作費用相場データベース運営事務局。料金データの確認日は2026-11-20です。
+
+## 主なページ
+- トップ（費用の早見表とコーポレート月額の中央値）: https://homepage-seisaku-price-db.vercel.app/
+- 会社・サービス別料金: https://homepage-seisaku-price-db.vercel.app/companies/akibare-hp/ , https://homepage-seisaku-price-db.vercel.app/companies/propagate/ , https://homepage-seisaku-price-db.vercel.app/companies/kurumi/ , https://homepage-seisaku-price-db.vercel.app/companies/colorme-shop/
+- 種別ごとの比較: https://homepage-seisaku-price-db.vercel.app/types/corporate/ , https://homepage-seisaku-price-db.vercel.app/types/lp/ , https://homepage-seisaku-price-db.vercel.app/types/ec/
+- よくある質問: https://homepage-seisaku-price-db.vercel.app/faq/
+- このサイトについて: https://homepage-seisaku-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式ページで確認できた料金プランのみで、全データに出典と確認日を明記しています。中央値は収録データからの算出で、税別表示は税込換算しています。月額制と納品型は分けて集計しています。

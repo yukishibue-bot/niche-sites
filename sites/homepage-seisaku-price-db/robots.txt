@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://homepage-seisaku-price-db.vercel.app/sitemap.xml

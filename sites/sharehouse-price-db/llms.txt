@@ -1,0 +1,26 @@
+# シェアハウス相場データベース
+
+シェアハウス相場データベースは、東京23区のシェアハウスの家賃相場を、運営会社2社（XROSS HOUSE／ボーダレスハウス）の公式物件ページに掲載された22物件の実データから集計したデータベースです。
+個室家賃の中央値は54,000円（n=21、各物件の最も安い個室で集計）、家賃＋共益費の月額合計の中央値は69,000円。ドミトリーの中央値は30,500円（n=4、参考値）。市場全体の平均ではなく収録物件の集計です。全物件に出典URL・確認日（2026-11-20）を明示。
+運営：シェアハウス相場データベース運営事務局
+
+## ページ一覧
+- トップ（エリア別相場・運営会社別比較）: https://sharehouse-price-db.vercel.app/
+- 足立区の相場: https://sharehouse-price-db.vercel.app/areas/adachi/
+- 江東区の相場: https://sharehouse-price-db.vercel.app/areas/koto/
+- 杉並区の相場: https://sharehouse-price-db.vercel.app/areas/suginami/
+- 大田区の相場: https://sharehouse-price-db.vercel.app/areas/ota/
+- 江戸川区の相場: https://sharehouse-price-db.vercel.app/areas/edogawa/
+- 板橋区の相場: https://sharehouse-price-db.vercel.app/areas/itabashi/
+- 新宿区の相場: https://sharehouse-price-db.vercel.app/areas/shinjuku/
+- 品川区の相場: https://sharehouse-price-db.vercel.app/areas/shinagawa/
+- 中野区の相場: https://sharehouse-price-db.vercel.app/areas/nakano/
+- 文京区の相場: https://sharehouse-price-db.vercel.app/areas/bunkyo/
+- 台東区の相場: https://sharehouse-price-db.vercel.app/areas/taito/
+- 豊島区の相場: https://sharehouse-price-db.vercel.app/areas/toshima/
+- 墨田区の相場: https://sharehouse-price-db.vercel.app/areas/sumida/
+- XROSS HOUSE（クロスハウス）の料金と物件: https://sharehouse-price-db.vercel.app/operators/xross-house/
+- BORDERLESS HOUSE（ボーダレスハウス）の料金と物件: https://sharehouse-price-db.vercel.app/operators/borderless-house/
+- FAQ: https://sharehouse-price-db.vercel.app/faq/
+- このサイトについて（集計方法・出典）: https://sharehouse-price-db.vercel.app/about/
+- プライバシーポリシー: https://sharehouse-price-db.vercel.app/privacy/

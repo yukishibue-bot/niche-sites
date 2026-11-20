@@ -1,0 +1,17 @@
+# 害虫駆除相場データベース
+
+害虫駆除相場データベースは、害虫駆除の各社が公式サイトに掲載した料金（確認日：2026-11-20）だけを収録した害虫駆除の料金相場データベースです。
+収録：6カテゴリ・料金データ27件・出典5社。シロアリ駆除の㎡単価の中央値は1,925円／㎡（公表単価4件から算出）。確認できない項目は「公表なし」と明示しています。
+運営：害虫駆除相場データベース運営事務局
+
+## ページ一覧
+- トップ（対象別相場・費用の条件・早見表）: https://gaichu-kujo-price-db.vercel.app/
+- シロアリ駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/shiroari/
+- ゴキブリ駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/gokiburi/
+- ハチ・蜂の巣駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/hachi/
+- ネズミ駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/nezumi/
+- トコジラミ駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/tokojirami/
+- ムカデ・アリ・ダニ等の駆除の料金相場: https://gaichu-kujo-price-db.vercel.app/category/other/
+- データの出典: https://gaichu-kujo-price-db.vercel.app/sources/
+- FAQ: https://gaichu-kujo-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://gaichu-kujo-price-db.vercel.app/about/

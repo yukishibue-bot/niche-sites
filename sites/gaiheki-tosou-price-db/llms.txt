@@ -1,0 +1,16 @@
+# 外壁塗装費用相場データベース
+
+外壁塗装費用相場データベースは、塗装会社・リフォーム会社の公式サイトに掲載されたプラン料金と、公式に公表された相場データ（確認日：2026-11-20）だけを収録した外壁塗装の費用相場データベースです。
+収録：5カテゴリ・プラン／単価19件・工程／付帯単価20件・坪数別相場7件・出典5件。確認できない項目は「公表なし」と明示しています。
+運営：外壁塗装費用相場データベース運営事務局
+
+## ページ一覧
+- トップ（グレード別相場・坪数別相場・工程単価・早見表）: https://gaiheki-tosou-price-db.vercel.app/
+- シリコン塗料プラン（延床30坪）の費用相場: https://gaiheki-tosou-price-db.vercel.app/category/silicon/
+- ラジカル制御型プラン（延床30坪）の費用相場: https://gaiheki-tosou-price-db.vercel.app/category/radical/
+- フッ素塗料プラン（延床30坪）の費用相場: https://gaiheki-tosou-price-db.vercel.app/category/fluorine/
+- 無機塗料プラン（延床30坪）の費用相場: https://gaiheki-tosou-price-db.vercel.app/category/inorganic/
+- 塗料グレード別 ㎡単価（3回塗り）の費用相場: https://gaiheki-tosou-price-db.vercel.app/category/unit-paint/
+- データの出典: https://gaiheki-tosou-price-db.vercel.app/sources/
+- FAQ: https://gaiheki-tosou-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://gaiheki-tosou-price-db.vercel.app/about/

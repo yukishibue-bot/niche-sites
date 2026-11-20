@@ -1,0 +1,18 @@
+# ペット火葬相場データベース
+
+ペット火葬相場データベースは、ペット火葬にかかる費用を、各事業者の公式公表料金（税込・確認日：2026-11-20）だけで整理したデータベースです。
+収録：事業者3社、公表プラン料金106件（全収録117件、「公表なし」を含む）。確認できない料金は「公表なし」と明示しています。
+運営：ペット火葬相場データベース運営事務局
+
+## ページ一覧
+- トップ（方法別相場・猫・小型犬の料金比較・収録事業者）: https://pet-kasou-price-db.vercel.app/
+- 立会火葬の料金相場: https://pet-kasou-price-db.vercel.app/categories/tachiai/
+- 一任個別火葬の料金相場: https://pet-kasou-price-db.vercel.app/categories/ichinin/
+- 合同火葬の料金相場: https://pet-kasou-price-db.vercel.app/categories/godo/
+- セレモニープランの料金相場: https://pet-kasou-price-db.vercel.app/categories/ceremony/
+- 体重で見る相場（区分別の中央値と対応表）: https://pet-kasou-price-db.vercel.app/weights/
+- 八千代ペット霊園 方丈苑妙見寺の料金表: https://pet-kasou-price-db.vercel.app/companies/yachiyo-pet-reien/
+- ペットセレモニーの料金表: https://pet-kasou-price-db.vercel.app/companies/pet-ceremony/
+- おみおくりペット火葬の料金表: https://pet-kasou-price-db.vercel.app/companies/omiokuri-pet/
+- FAQ: https://pet-kasou-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法・運営者情報）: https://pet-kasou-price-db.vercel.app/about/

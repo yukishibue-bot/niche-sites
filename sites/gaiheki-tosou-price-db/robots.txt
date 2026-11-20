@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gaiheki-tosou-price-db.vercel.app/sitemap.xml

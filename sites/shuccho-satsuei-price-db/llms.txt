@@ -1,0 +1,13 @@
+# 出張撮影相場データベース
+
+出張撮影相場データベースは、出張撮影サービス5つ（fotowa、ラブグラフ、OurPhoto、ふぉとる、LIFESNAP）の公式プラン料金を収録した相場データベースです。運営は出張撮影相場データベース運営事務局。料金データの確認日は2026-11-20です。
+
+## 主なページ
+- トップ（代表プランの中央値と料金比較）: https://shuccho-satsuei-price-db.vercel.app/
+- サービス別料金: https://shuccho-satsuei-price-db.vercel.app/services/fotowa/ , https://shuccho-satsuei-price-db.vercel.app/services/lovegraph/ , https://shuccho-satsuei-price-db.vercel.app/services/ourphoto/ , https://shuccho-satsuei-price-db.vercel.app/services/photoru/ , https://shuccho-satsuei-price-db.vercel.app/services/lifesnap/
+- プラン別の比較: https://shuccho-satsuei-price-db.vercel.app/plans/standard/ ほか
+- よくある質問: https://shuccho-satsuei-price-db.vercel.app/faq/
+- このサイトについて: https://shuccho-satsuei-price-db.vercel.app/about/
+
+## データの方針
+掲載は各サービスの公式ページで確認できたプラン料金のみで、全データに出典と確認日を明記しています。公式表示が税別のものは税込に換算し、その旨を明記しています。確認できなかった項目は「公表なし」としています。中央値は収録データからの算出です。

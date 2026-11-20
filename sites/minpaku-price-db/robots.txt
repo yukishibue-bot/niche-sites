@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://minpaku-price-db.vercel.app/sitemap.xml

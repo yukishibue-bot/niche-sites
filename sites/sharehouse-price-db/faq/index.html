@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<title>よくある質問｜シェアハウス相場DB</title>
+<meta name="description" content="東京23区のシェアハウスの家賃相場、共益費や初期費用の目安、ドミトリーの相場、このサイトの集計方法についてのFAQ。">
+<link rel="canonical" href="https://sharehouse-price-db.vercel.app/faq/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="シェアハウス相場データベース">
+<meta property="og:title" content="よくある質問｜シェアハウス相場DB">
+<meta property="og:description" content="東京23区のシェアハウスの家賃相場、共益費や初期費用の目安、ドミトリーの相場、このサイトの集計方法についてのFAQ。">
+<meta property="og:url" content="https://sharehouse-price-db.vercel.app/faq/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="よくある質問｜シェアハウス相場DB">
+<meta name="twitter:description" content="東京23区のシェアハウスの家賃相場、共益費や初期費用の目安、ドミトリーの相場、このサイトの集計方法についてのFAQ。">
+<style>
+:root{
+  --ink:#0f172a; --body:#475569; --faint:#94a3b8;
+  --line:#e5eaf0; --hair:#eef2f6;
+  --soft:#f2f5f8; --soft2:#f7f9fb;
+  --dark:#050a14; --dark2:#0b0f1e; --dark-card:#171b2e;
+  --grad:linear-gradient(120deg,#34d399,#0d9488 55%,#115e59);
+  --acc:#0d9488; --acc-soft:#e6f4f1;
+  --shadow:0 10px 30px rgba(11,25,55,.07);
+  --shadow-hover:0 18px 42px rgba(11,25,55,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--body);font-size:16px;line-height:1.85;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--acc)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+h1,h2,h3{color:var(--ink)}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+header.site{position:sticky;top:0;z-index:20;background:rgba(5,10,20,.94);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.02rem;color:#fff;text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.64rem;letter-spacing:.22em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:#cbd5e1;text-decoration:none;font-size:.9rem;padding:8px 11px;border-radius:999px;transition:background .2s,color .2s}
+nav.main a:hover{background:rgba(255,255,255,.1);color:#fff}
+.hero{background:radial-gradient(circle at 88% 12%,rgba(13,148,136,.42) 0%,rgba(13,148,136,0) 46%),
+  radial-gradient(circle at 6% 96%,rgba(52,211,153,.26) 0%,rgba(52,211,153,0) 44%),var(--dark);
+  padding:84px 0 96px;color:#cbd5e1}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#0d9488;margin:0}
+.hero .eyebrow{color:#5eead4}
+.hero h1{color:#fff;font-size:clamp(34px,4.4vw,54px);line-height:1.32;margin:16px 0 20px;font-weight:800;letter-spacing:-0.02em}
+.hero p.lead{font-size:1.05rem;max-width:600px;margin:0 0 34px;color:#cbd5e1}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;background:var(--grad);color:#fff;
+  border-radius:999px;padding:14px 30px;font-size:15px;font-weight:700;text-decoration:none;border:none;
+  transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(13,148,136,.35)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;background:transparent;color:#fff;
+  border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:14px 30px;font-size:15px;font-weight:700;text-decoration:none}
+.btn-ghost:hover{border-color:#fff}
+.btn-ghost.light{background:#fff;color:var(--ink);border:1.5px solid #d7dee8}
+.hero-card{background:#fff;border-radius:22px;padding:22px 22px 8px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.hero-card figure{margin:0 0 6px}
+.hero-card img{display:block;width:100%;height:230px;object-fit:cover;border-radius:14px}
+.hero-stat{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:15px 6px;border-bottom:1px solid var(--hair)}
+.hero-stat:last-child{border-bottom:none}
+.hero-stat .lbl{font-size:.86rem;color:var(--body);font-weight:600}
+.hero-stat .lbl small{display:block;color:var(--faint);font-weight:400;font-size:.76rem}
+.bignum{font-size:clamp(34px,3.4vw,46px);font-weight:800;letter-spacing:-0.02em;line-height:1.1;white-space:nowrap;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bignum small{font-size:.42em;font-weight:700;letter-spacing:0}
+section{padding:88px 0}
+section.soft{background:var(--soft)}
+section.dark{background:var(--dark2);color:#cbd5e1}
+section.dark h2,section.dark h3{color:#fff}
+.sec-head{text-align:center;margin:0 auto 44px;max-width:760px}
+.sec-head .u-line{width:42px;height:4px;border-radius:99px;background:var(--grad);margin:13px auto 0}
+.sec-head h2{font-size:clamp(27px,3.4vw,40px);margin:18px 0 0;line-height:1.45;font-weight:800;letter-spacing:-0.02em}
+.sec-head p{margin:16px 0 0}
+.sec-head.left{text-align:left;margin-left:0}
+.sec-head.left .u-line{margin-left:0}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:30px 28px;transition:transform .2s,box-shadow .2s}
+.tcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.tcard .num{font-size:.82rem;font-weight:800;letter-spacing:.14em;color:var(--acc);margin:0 0 10px}
+.tcard b{display:block;color:var(--ink);font-size:1.06rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.01em}
+.tcard p{margin:0;font-size:.94rem}
+.tcard.featured{border:2px solid var(--acc)}
+.badge{position:absolute;top:-13px;left:24px;background:var(--grad);color:#fff;font-size:.72rem;font-weight:800;
+  letter-spacing:.1em;padding:5px 14px;border-radius:999px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.ccard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.ccard .en{display:inline-block;background:var(--acc-soft);color:#115e59;letter-spacing:.1em;
+  font-size:11px;font-weight:800;padding:4px 12px;border-radius:999px;margin:0}
+.ccard h3{margin:12px 0 6px;font-size:1.14rem;font-weight:800;letter-spacing:-0.01em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--acc)}
+.ccard .fee{font-size:1.9rem;font-weight:800;letter-spacing:-0.02em;line-height:1.2;margin:2px 0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ccard .fee small{font-size:.8rem;color:var(--faint);font-weight:600;letter-spacing:0;-webkit-text-fill-color:var(--faint)}
+.ccard p{font-size:.92rem;margin:6px 0 0}
+.bar{position:relative;height:8px;background:#e2e8f0;border-radius:99px;margin:16px 0 7px}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;background:var(--grad);border-radius:99px}
+.bar-labels{display:flex;justify-content:space-between;font-size:.76rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:15px 18px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare thead th{background:var(--dark2);color:#fff;font-size:.88rem;font-weight:700;border-bottom:none}
+table.compare td.fee{font-weight:800;color:var(--acc);white-space:nowrap;font-size:1.04rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--faint);font-size:.8rem}
+table.compare td.rank{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+table.compare tr:last-child td{border-bottom:none}
+table.compare tr.top td{background:#f2faf8}
+.adslot{border:1.5px dashed #cbd5e1;border-radius:18px;color:#a3b0c2;text-align:center;
+  padding:18px;margin:36px 0 0;font-size:.82rem;letter-spacing:.1em;background:transparent}
+section.dark .adslot{border-color:#334155;color:#64748b}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
+  padding:24px 28px;margin-bottom:14px;text-align:left}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800}
+.faq-item p{margin:0;font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--dark-card);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:30px 28px}
+.step .num{font-size:.84rem;font-weight:800;letter-spacing:.16em;margin:0 0 12px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.step b{display:block;color:#fff;font-size:1.05rem;margin-bottom:8px;font-weight:800}
+.step p{margin:0;font-size:.93rem;color:#aebdd2}
+.crumb{font-size:.85rem;color:var(--faint);padding:24px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:60px 0 0}
+.page-hero h1{font-size:clamp(28px,3.6vw,42px);margin:14px 0 12px;line-height:1.4;font-weight:800;letter-spacing:-0.02em}
+.page-hero p{max-width:800px;margin:0}
+.stat-row{display:flex;gap:44px;flex-wrap:wrap;margin-top:30px}
+.stat-row .stat .v{font-size:clamp(30px,3vw,42px);font-weight:800;letter-spacing:-0.02em;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-row .stat .v.plain{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+.stat-row .stat span{display:block;font-size:.8rem;color:var(--faint);margin-top:2px}
+.srcbox{background:var(--soft2);border:1px solid var(--line);border-radius:18px;padding:24px 28px;font-size:.93rem}
+.srcbox b{color:var(--ink)}
+.srcbox a{overflow-wrap:anywhere}
+.note-list{font-size:.92rem}
+.type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.type-card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:30px 28px;text-align:center}
+.type-card .t{font-weight:800;color:var(--ink);font-size:1.05rem;margin:0 0 6px}
+.type-card .status{font-size:1.55rem;font-weight:800;letter-spacing:-0.01em;margin:6px 0}
+.type-card .status.ok{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.type-card .status.none{color:#b6c2d2}
+.type-card p{font-size:.9rem;margin:6px 0 0;text-align:left}
+.cta-band{text-align:center}
+.cta-band h2{color:#fff;font-size:clamp(26px,3.2vw,38px);margin:18px 0 14px;font-weight:800;line-height:1.45}
+.cta-band p{max-width:640px;margin:0 auto 30px}
+.cta-band .eyebrow{color:#5eead4}
+.cta-band .u-line{width:42px;height:4px;border-radius:99px;background:var(--grad);margin:13px auto 0}
+footer.site{background:var(--dark);color:#94a3b8;padding:52px 0 40px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.01em;margin:0}
+footer.site p{font-size:.88rem;margin:10px 0}
+footer.site a{color:#5eead4}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:56px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-card img{height:190px}
+  section{padding:56px 0}
+  .page-hero{padding:44px 0 0}
+  .stat-row{gap:26px}
+  .trust,.cards,.steps,.type-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:18px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 14px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.74rem;color:var(--faint);font-weight:700}
+  table.compare td.fee{font-size:1.2rem}
+  nav.main a{padding:9px 10px}
+  .btn,.btn-ghost{width:100%}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "シェアハウス相場データベース", "url": "https://sharehouse-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://sharehouse-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "FAQ", "item": "https://sharehouse-price-db.vercel.app"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "東京23区のシェアハウスの家賃相場はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "当サイトが運営会社2社の公式サイトから収録した個室21物件では、家賃（最も安い個室）の中央値は54,000円でした。最も安い物件は39,000円、最も高い物件は76,000円です。ただし、これは収録物件だけの集計で、23区すべてのシェアハウスの平均ではありません。運営会社によって家賃帯が大きく異なり、XROSS HOUSEは39,000〜62,000円、ボーダレスハウスは66,000〜76,000円に分布していました。"}}, {"@type": "Question", "name": "家賃のほかに毎月かかる費用はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "共益費（水道・電気・ガス・インターネット・共用備品を含むことが多い）が家賃とは別にかかります。収録物件では、XROSS HOUSEが一律15,000円（ほかにあんしんサポート料1,500円）、ボーダレスハウスは物件ごとに13,000〜16,000円でした。家賃と共益費を合わせた月額の中央値は69,000円です。家賃だけで比べると順位が逆転することがあるため、月額の合計で比べるのが確実です。"}}, {"@type": "Question", "name": "初期費用はどのくらいかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "収録した2社では、XROSS HOUSEが30,000円（初期費用のみ。敷金・礼金・仲介手数料は0円）、ボーダレスハウスが45,000円（礼金30,000円＋クリーニング費15,000円。初月の日割り賃料・水道光熱費が別途）でした。一般の賃貸でかかる敷金・礼金・仲介手数料（家賃の数か月分）が不要な分、初期費用は抑えられます。保証会社を使う場合は、別途保証料がかかることがあります。"}}, {"@type": "Question", "name": "ドミトリー（相部屋）の相場はいくらですか？", "acceptedAnswer": {"@type": "Answer", "text": "収録物件のうちドミトリーがあるのは4物件で、家賃は24,800〜39,000円、中央値は30,500円でした（n=4と少ないため参考値です）。個室の中央値54,000円と比べると、月2万円ほど抑えられます。共益費は個室と同じ金額がかかるのが一般的です。"}}, {"@type": "Question", "name": "このサイトの数字はどうやって集計していますか？", "acceptedAnswer": {"@type": "Answer", "text": "運営会社の公式サイトに掲載された個別物件のページを、2026-11-20に1件ずつ確認して転記しました。物件ごとに「その物件で最も安い個室の家賃」を代表値とし、中央値はその代表値を並べた真ん中の値です。家賃に幅がある物件は下限を代表値にし、幅自体も各物件の欄に併記しています。全物件に出典URLと確認日を付けています。"}}, {"@type": "Question", "name": "エリアによってどのくらい違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "収録物件の範囲では、足立区の中央値が40,000円（n=3）と最も低く、豊島区が73,000円（n=3）と最も高い結果でした。ただし豊島区は高価格帯のボーダレスハウスが2物件含まれており、同じ豊島区でもXROSS HOUSEの要町は49,000円です。エリアの差よりも、運営会社と駅からの距離の影響が大きい点に注意してください。n=1のエリアは参考値です。"}}, {"@type": "Question", "name": "表示されている家賃は税込ですか？", "acceptedAnswer": {"@type": "Answer", "text": "各運営会社の公式ページの表示どおりに転記しています。XROSS HOUSEの物件ページでは、共益費とあんしんサポート料を含む月額合計が税込の形で提示されています（あんしんサポート料は税別1,364円＝税込1,500円の表示）。ボーダレスハウスの水道光熱費も公式ページの表示額です。契約前には、公式ページで最新の金額と税の扱いをご確認ください。"}}, {"@type": "Question", "name": "空室状況や申し込みはこのサイトでできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。当サイトは相場情報の提供のみで、物件の仲介や申し込みの受付は行っていません。家賃は変動し、満室の物件も含まれています。空室の確認と申し込みは、各物件の出典リンク先である運営会社の公式サイトから行ってください。"}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>SHARE HOUSE PRICE DB</small>シェアハウス相場DB</a>
+<nav class="main">
+<a href="/areas/shinjuku/">新宿区</a><a href="/areas/toshima/">豊島区</a><a href="/areas/adachi/">足立区</a><a href="/areas/itabashi/">板橋区</a><a href="/areas/shinagawa/">品川区</a><a href="/areas/bunkyo/">文京区</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">集計方法・出典</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ FAQ</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">FAQ</p>
+<h1>よくある質問</h1>
+<p>シェアハウスの相場の見方と、このデータベースの数字の扱いについての質問にお答えします。</p>
+</div></div>
+<section><div class="wrap">
+<div style="max-width:860px;margin:0 auto">
+<div class="faq-item"><h3>Q. 東京23区のシェアハウスの家賃相場はいくらですか？</h3><p>当サイトが運営会社2社の公式サイトから収録した個室21物件では、家賃（最も安い個室）の中央値は54,000円でした。最も安い物件は39,000円、最も高い物件は76,000円です。ただし、これは収録物件だけの集計で、23区すべてのシェアハウスの平均ではありません。運営会社によって家賃帯が大きく異なり、XROSS HOUSEは39,000〜62,000円、ボーダレスハウスは66,000〜76,000円に分布していました。</p></div><div class="faq-item"><h3>Q. 家賃のほかに毎月かかる費用はありますか？</h3><p>共益費（水道・電気・ガス・インターネット・共用備品を含むことが多い）が家賃とは別にかかります。収録物件では、XROSS HOUSEが一律15,000円（ほかにあんしんサポート料1,500円）、ボーダレスハウスは物件ごとに13,000〜16,000円でした。家賃と共益費を合わせた月額の中央値は69,000円です。家賃だけで比べると順位が逆転することがあるため、月額の合計で比べるのが確実です。</p></div><div class="faq-item"><h3>Q. 初期費用はどのくらいかかりますか？</h3><p>収録した2社では、XROSS HOUSEが30,000円（初期費用のみ。敷金・礼金・仲介手数料は0円）、ボーダレスハウスが45,000円（礼金30,000円＋クリーニング費15,000円。初月の日割り賃料・水道光熱費が別途）でした。一般の賃貸でかかる敷金・礼金・仲介手数料（家賃の数か月分）が不要な分、初期費用は抑えられます。保証会社を使う場合は、別途保証料がかかることがあります。</p></div><div class="faq-item"><h3>Q. ドミトリー（相部屋）の相場はいくらですか？</h3><p>収録物件のうちドミトリーがあるのは4物件で、家賃は24,800〜39,000円、中央値は30,500円でした（n=4と少ないため参考値です）。個室の中央値54,000円と比べると、月2万円ほど抑えられます。共益費は個室と同じ金額がかかるのが一般的です。</p></div><div class="faq-item"><h3>Q. このサイトの数字はどうやって集計していますか？</h3><p>運営会社の公式サイトに掲載された個別物件のページを、2026-11-20に1件ずつ確認して転記しました。物件ごとに「その物件で最も安い個室の家賃」を代表値とし、中央値はその代表値を並べた真ん中の値です。家賃に幅がある物件は下限を代表値にし、幅自体も各物件の欄に併記しています。全物件に出典URLと確認日を付けています。</p></div><div class="faq-item"><h3>Q. エリアによってどのくらい違いますか？</h3><p>収録物件の範囲では、足立区の中央値が40,000円（n=3）と最も低く、豊島区が73,000円（n=3）と最も高い結果でした。ただし豊島区は高価格帯のボーダレスハウスが2物件含まれており、同じ豊島区でもXROSS HOUSEの要町は49,000円です。エリアの差よりも、運営会社と駅からの距離の影響が大きい点に注意してください。n=1のエリアは参考値です。</p></div><div class="faq-item"><h3>Q. 表示されている家賃は税込ですか？</h3><p>各運営会社の公式ページの表示どおりに転記しています。XROSS HOUSEの物件ページでは、共益費とあんしんサポート料を含む月額合計が税込の形で提示されています（あんしんサポート料は税別1,364円＝税込1,500円の表示）。ボーダレスハウスの水道光熱費も公式ページの表示額です。契約前には、公式ページで最新の金額と税の扱いをご確認ください。</p></div><div class="faq-item"><h3>Q. 空室状況や申し込みはこのサイトでできますか？</h3><p>できません。当サイトは相場情報の提供のみで、物件の仲介や申し込みの受付は行っていません。家賃は変動し、満室の物件も含まれています。空室の確認と申し込みは、各物件の出典リンク先である運営会社の公式サイトから行ってください。</p></div>
+</div>
+<div class="adslot">PR（広告枠）</div>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">シェアハウス相場データベース</p>
+<p>運営：シェアハウス相場データベース運営事務局</p>
+<p>掲載している家賃・共益費・初期費用は、運営会社の公式サイトに掲載された物件ページの表示を2026-11-20に確認して転記したものです。市場全体の平均ではなく、収録物件（22物件）の中での集計です。家賃は変動し、満室の物件も含まれます。空室の確認と申し込みは、各物件の出典リンク先である運営会社の公式サイトで行ってください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（集計方法・出典）</a><a href="/privacy/">プライバシーポリシー</a>
+</div>
+<p>© シェアハウス相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shuccho-satsuei-price-db.vercel.app/sitemap.xml

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gaichu-kujo-price-db.vercel.app/sitemap.xml
