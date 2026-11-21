@@ -1,0 +1,16 @@
+# 太陽光発電費用相場データベース
+
+太陽光発電費用相場データベースは、経済産業省の委員会・検討会が公表した費用データ（確認日：2026-11-21）と、販売店の公式サイトに掲載されたパネルの定価だけを収録した、住宅用太陽光発電の費用データベースです。蓄電池の価格は太陽光発電とは分けて掲載しています。
+収録：5カテゴリ・データ31件・出典3件。国の費用データは税抜の集計です。確認できない項目は「公表なし」と明示しています。
+運営：太陽光発電費用相場データベース運営事務局
+
+## ページ一覧
+- トップ（費用データ早見表・容量別の総額・単価の推移・売電価格）: https://taiyoko-hatsuden-price-db.vercel.app/
+- kW単価（新築・既築の平均）: https://taiyoko-hatsuden-price-db.vercel.app/category/unit-price/
+- 費用の内訳（新築・2025年設置の平均）: https://taiyoko-hatsuden-price-db.vercel.app/category/breakdown/
+- 太陽光パネルの定価（メーカー別）: https://taiyoko-hatsuden-price-db.vercel.app/category/panels/
+- 家庭用蓄電池の価格（太陽光とは別）: https://taiyoko-hatsuden-price-db.vercel.app/category/battery/
+- 設置したあとの費用: https://taiyoko-hatsuden-price-db.vercel.app/category/running/
+- データの出典: https://taiyoko-hatsuden-price-db.vercel.app/sources/
+- FAQ: https://taiyoko-hatsuden-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://taiyoko-hatsuden-price-db.vercel.app/about/
