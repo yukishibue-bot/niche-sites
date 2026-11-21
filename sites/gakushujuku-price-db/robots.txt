@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gakushujuku-price-db.vercel.app/sitemap.xml

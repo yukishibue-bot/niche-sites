@@ -1,0 +1,21 @@
+# 学習塾相場データベース
+
+学習塾相場データベースは、学習塾が公式に公表している料金（確認日：2026-11-21）だけを収録した料金相場データベースです。
+収録：8社・授業料データ83件。個別指導は1時間あたりに換算して比較でき、換算方法を公開しています。確認できない料金は「公表なし」と明示しています。
+運営：学習塾相場データベース運営事務局
+
+## ページ一覧
+- トップ（学年・指導形態別の相場・中学生／個別指導の塾別比較）: https://gakushujuku-price-db.vercel.app/
+- 明光義塾の料金一覧: https://gakushujuku-price-db.vercel.app/company/meiko/
+- 森塾の料金一覧: https://gakushujuku-price-db.vercel.app/company/morijuku/
+- ナビ個別指導学院の料金一覧: https://gakushujuku-price-db.vercel.app/company/navi/
+- 創英ゼミナールの料金一覧: https://gakushujuku-price-db.vercel.app/company/soei/
+- 自立学習REDの料金一覧: https://gakushujuku-price-db.vercel.app/company/red/
+- 臨海セミナーの料金一覧: https://gakushujuku-price-db.vercel.app/company/rinkai/
+- 城南コベッツの料金一覧: https://gakushujuku-price-db.vercel.app/company/covez/
+- 東京個別指導学院の料金一覧: https://gakushujuku-price-db.vercel.app/company/tkg/
+- 小学生の学習塾料金相場: https://gakushujuku-price-db.vercel.app/grade/shogakusei/
+- 中学生の学習塾料金相場: https://gakushujuku-price-db.vercel.app/grade/chugakusei/
+- 高校生の学習塾料金相場: https://gakushujuku-price-db.vercel.app/grade/kokosei/
+- FAQ: https://gakushujuku-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://gakushujuku-price-db.vercel.app/about/

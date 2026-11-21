@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fuyohin-kaitori-price-db.vercel.app/sitemap.xml

@@ -1,0 +1,19 @@
+# スマホ修理相場データベース
+
+スマホ修理相場データベースは、スマホ修理の各社が公式サイトに掲載した料金（確認日：2026-11-21・すべて税込）だけを収録したスマホ修理の料金相場データベースです。
+収録：8カテゴリ・料金データ206件・出典3社。iPhone画面修理（Apple正規・保証対象外）の中央値は57,800円（収録34件から算出）。確認できない機種・メーカーは「未収録」と明示しています。
+運営：スマホ修理相場データベース運営事務局
+
+## ページ一覧
+- トップ（修理別相場・窓口の違い・早見表）: https://sumaho-shuri-price-db.vercel.app/
+- iPhone 画面修理（Apple正規）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-screen-official/
+- iPhone 画面修理（修理専門店）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-screen-shop/
+- iPhone バッテリー交換（Apple正規）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-battery-official/
+- iPhone バッテリー交換（修理専門店）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-battery-shop/
+- Galaxy 画面修理（メーカー公式）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/galaxy-screen/
+- Galaxy バッテリー交換（メーカー公式）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/galaxy-battery/
+- iPhone 充電ポート修理（修理専門店）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-port/
+- iPhone 背面カメラ修理（修理専門店）の料金相場: https://sumaho-shuri-price-db.vercel.app/category/iphone-camera/
+- データの出典: https://sumaho-shuri-price-db.vercel.app/sources/
+- FAQ: https://sumaho-shuri-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://sumaho-shuri-price-db.vercel.app/about/

@@ -1,0 +1,21 @@
+# 英会話相場データベース
+
+オンライン英会話と通学型スクールの公式サイトに掲載された料金（オンライン月額・通学グループ月謝・マンツーマン単価・入会金）を、料金体系ごとに分けて集めた料金相場データベース。全データに出典URLと確認日を明記。
+
+- [オンライン「毎日プラン」の月額の相場](https://eikaiwa-price-db.vercel.app/menus/online/)
+- [通学・グループレッスンの月謝の相場](https://eikaiwa-price-db.vercel.app/menus/group/)
+- [マンツーマンの1レッスンあたりの相場](https://eikaiwa-price-db.vercel.app/menus/mantoman/)
+- [入会金・入学金の相場](https://eikaiwa-price-db.vercel.app/menus/initial/)
+- [Kimini英会話の料金](https://eikaiwa-price-db.vercel.app/companies/kimini/)
+- [DMM英会話の料金](https://eikaiwa-price-db.vercel.app/companies/dmm/)
+- [ネイティブキャンプの料金](https://eikaiwa-price-db.vercel.app/companies/nativecamp/)
+- [レアジョブ英会話の料金](https://eikaiwa-price-db.vercel.app/companies/rarejob/)
+- [NOVAの料金](https://eikaiwa-price-db.vercel.app/companies/nova/)
+- [英会話イーオン（AEON）の料金](https://eikaiwa-price-db.vercel.app/companies/aeon/)
+- [シェーン英会話の料金](https://eikaiwa-price-db.vercel.app/companies/shane/)
+- [ECC外語学院の料金](https://eikaiwa-price-db.vercel.app/companies/ecc/)
+- [Gabaマンツーマン英会話の料金](https://eikaiwa-price-db.vercel.app/companies/gaba/)
+- [ロゼッタストーン・ラーニングセンターの料金](https://eikaiwa-price-db.vercel.app/companies/rosetta/)
+- [ベルリッツの料金](https://eikaiwa-price-db.vercel.app/companies/berlitz/)
+- [よくある質問](https://eikaiwa-price-db.vercel.app/faq/)
+- [このサイトについて](https://eikaiwa-price-db.vercel.app/about/)

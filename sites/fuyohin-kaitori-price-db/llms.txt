@@ -1,0 +1,18 @@
+# 不用品買取相場データベース
+
+不用品買取相場データベースは、買取各社が公式サイトに公表した買取実績・買取価格表（確認日：2026-11-21）だけを収録した買取相場データベースです。
+収録：3社・実績/価格データ86件。公式に公表されていない品目は収録していません。
+運営：不用品買取相場データベース運営事務局
+
+## ページ一覧
+- トップ（カテゴリ別相場・高額実績）: https://fuyohin-kaitori-price-db.vercel.app/
+- ブランドバッグの買取相場: https://fuyohin-kaitori-price-db.vercel.app/categories/brand-bag/
+- ブランド時計の買取相場: https://fuyohin-kaitori-price-db.vercel.app/categories/brand-watch/
+- ブランド服・古着の買取相場: https://fuyohin-kaitori-price-db.vercel.app/categories/brand-clothing/
+- アクセサリー・ジュエリーの買取相場: https://fuyohin-kaitori-price-db.vercel.app/categories/accessory/
+- スマートフォン（iPhone）の買取相場: https://fuyohin-kaitori-price-db.vercel.app/categories/smartphone/
+- なんぼやの買取実績・価格: https://fuyohin-kaitori-price-db.vercel.app/companies/nanboya/
+- エコリングの買取実績・価格: https://fuyohin-kaitori-price-db.vercel.app/companies/eco-ring/
+- イオシスの買取実績・価格: https://fuyohin-kaitori-price-db.vercel.app/companies/iosys/
+- FAQ: https://fuyohin-kaitori-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://fuyohin-kaitori-price-db.vercel.app/about/
