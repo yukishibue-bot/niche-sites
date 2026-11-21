@@ -1,0 +1,17 @@
+# オーダー家具相場データベース
+
+オーダー家具相場データベースは、オーダー家具メーカー・工房の公式サイトに掲載された価格例（確認日：2026-11-21）だけを収録したオーダー家具の製作費相場データベースです。
+収録：6種類・価格例30件・出典2件。すべての価格例にサイズ・仕様・出典を併記し、確認できない項目は「公表なし」と明示しています。
+運営：オーダー家具相場データベース運営事務局
+
+## ページ一覧
+- トップ（種類別相場・前提情報・早見表）: https://order-kagu-price-db.vercel.app/
+- 食器棚・カップボードのオーダー価格相場: https://order-kagu-price-db.vercel.app/category/cupboard/
+- テレビボードのオーダー価格相場: https://order-kagu-price-db.vercel.app/category/tvboard/
+- 本棚・デスクのオーダー価格相場: https://order-kagu-price-db.vercel.app/category/bookshelf/
+- 壁面収納・キャビネットのオーダー価格相場: https://order-kagu-price-db.vercel.app/category/wall/
+- テーブルのオーダー価格相場: https://order-kagu-price-db.vercel.app/category/table/
+- チェスト・カウンター下収納のオーダー価格相場: https://order-kagu-price-db.vercel.app/category/other/
+- データの出典: https://order-kagu-price-db.vercel.app/sources/
+- FAQ: https://order-kagu-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://order-kagu-price-db.vercel.app/about/

@@ -1,0 +1,17 @@
+# コワーキングスペース相場データベース
+
+コワーキングスペース相場データベースは、事業者の公式サイトと公式料金資料に掲載された料金（確認日：2026-11-21）だけを収録したコワーキングスペースの料金相場データベースです。月額会員とドロップイン（1日利用）に絞り、時間貸しのレンタルスペースは扱いません。
+収録：4プラン種別・料金データ27件・出典5事業者。確認できない項目は推測で補っていません。
+運営：コワーキングスペース相場データベース運営事務局
+
+## ページ一覧
+- トップ（プラン種別別相場・早見表）: https://coworking-price-db.vercel.app/
+- フリーアドレス（月額）のコワーキング料金相場: https://coworking-price-db.vercel.app/category/free-address/
+- 固定席・半個室（月額）のコワーキング料金相場: https://coworking-price-db.vercel.app/category/fixed-desk/
+- 個室・レンタルオフィス（月額）のコワーキング料金相場: https://coworking-price-db.vercel.app/category/private-office/
+- ドロップイン（1日）のコワーキング料金相場: https://coworking-price-db.vercel.app/category/drop-in/
+- 事業者別の料金データ: https://coworking-price-db.vercel.app/operators/
+- データの出典: https://coworking-price-db.vercel.app/sources/
+- FAQ: https://coworking-price-db.vercel.app/faq/
+- このサイトについて（出典・算出方法）: https://coworking-price-db.vercel.app/about/
+- プライバシーポリシー: https://coworking-price-db.vercel.app/privacy/

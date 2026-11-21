@@ -1,0 +1,13 @@
+# 動画制作費用相場データベース
+
+動画制作費用相場データベースは、動画制作会社・サービス6社の公式料金プラン26件を収録した制作費用の相場データベースです。運営は動画制作費用相場データベース運営事務局。料金データの確認日は2026-11-21です。
+
+## 主なページ
+- トップ（費用の早見表と短尺動画の単発中央値）: https://douga-seisaku-price-db.vercel.app/
+- 会社・サービス別料金: https://douga-seisaku-price-db.vercel.app/companies/movilab/ , https://douga-seisaku-price-db.vercel.app/companies/sakumovi/ , https://douga-seisaku-price-db.vercel.app/companies/pinmov/ , https://douga-seisaku-price-db.vercel.app/companies/movisaku/ , https://douga-seisaku-price-db.vercel.app/companies/proox/ , https://douga-seisaku-price-db.vercel.app/companies/leapai/
+- 作り方ごとの比較: https://douga-seisaku-price-db.vercel.app/types/short/ , https://douga-seisaku-price-db.vercel.app/types/bundle/ , https://douga-seisaku-price-db.vercel.app/types/monthly/ , https://douga-seisaku-price-db.vercel.app/types/full/
+- よくある質問: https://douga-seisaku-price-db.vercel.app/faq/
+- このサイトについて: https://douga-seisaku-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式ページで確認できた料金プランのみで、全データに出典と確認日を明記しています。金額は公式ページの表記のまま掲載し、中央値は収録データからの算出で、税別表示は税込換算しています。税区分の明記がない会社の金額と、価格帯で公表されたプランは中央値の母数に含めていません。含まれる工程（企画・撮影・編集）と条件（尺・本数）は金額と分けて併記しています。

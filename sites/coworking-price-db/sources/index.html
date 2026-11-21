@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>データの出典｜コワーキング相場DB</title>
+<meta name="description" content="コワーキングスペース相場データベースの出典一覧。BIZcomfort／Basis Point／fabbit／billage／co-baの公式サイトと公式料金資料、確認日、代表拠点の考え方を説明。">
+<meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<link rel="canonical" href="https://coworking-price-db.vercel.app/sources/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="コワーキングスペース相場データベース">
+<meta property="og:title" content="データの出典｜コワーキング相場DB">
+<meta property="og:description" content="コワーキングスペース相場データベースの出典一覧。BIZcomfort／Basis Point／fabbit／billage／co-baの公式サイトと公式料金資料、確認日、代表拠点の考え方を説明。">
+<meta property="og:url" content="https://coworking-price-db.vercel.app/sources/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="データの出典｜コワーキング相場DB">
+<meta name="twitter:description" content="コワーキングスペース相場データベースの出典一覧。BIZcomfort／Basis Point／fabbit／billage／co-baの公式サイトと公式料金資料、確認日、代表拠点の考え方を説明。">
+<style>
+:root{
+  --ink:#0f172a; --muted:#475569; --faint:#7c8aa0;
+  --line:#e8e2d9; --hair:#f0ebe3;
+  --pale:#f8f6f2;
+  --accent:#ea580c; --accent-dark:#c2410c; --accent-pale:#fdf3e3;
+  --grad:linear-gradient(90deg,#f59e0b,#f97316 55%,#ea580c);
+  --shadow:0 8px 28px rgba(30,20,8,.06);
+  --shadow-hover:0 14px 34px rgba(30,20,8,.12);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--ink);font-size:16px;line-height:1.9;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--accent)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);border-bottom:1px solid var(--hair);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.05rem;color:var(--ink);text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.66rem;letter-spacing:.16em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;align-items:center}
+nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:999px;transition:background .2s}
+nav.main a:hover{background:var(--pale)}
+nav.main a.cta{background:var(--grad);color:#fff;font-weight:700;padding:9px 18px}
+nav.main a.cta:hover{opacity:.92;background:var(--grad)}
+.hero{background:linear-gradient(160deg,#050a14 0%,#0b1526 55%,#141021 100%);padding:72px 0 88px;color:#fff}
+.eyebrow{display:block;background:none;color:#fbbf24;font-size:13px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:0;border-radius:0;margin:0 0 16px}
+.eyebrow::after{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--grad);margin-top:10px}
+section .eyebrow{color:#d97706}
+.hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em;text-wrap:balance}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 30px;color:#cbd5e1}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 36px}
+.hero-stats{display:flex;gap:40px;flex-wrap:wrap}
+.hero-stats .stat b{display:block;font-size:clamp(30px,3.4vw,46px);line-height:1.2;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-stats .stat span{font-size:.82rem;color:#94a3b8}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero-card{background:#fff;color:var(--ink);border-radius:20px;padding:16px 16px 20px;box-shadow:0 18px 44px rgba(0,0,0,.35)}
+.hero-card img{display:block;width:100%;height:250px;object-fit:cover;object-position:center;border-radius:12px}
+.hero-card figcaption{font-size:.72rem;color:var(--faint);margin-top:8px}
+.hero-card .hc-body{padding:14px 8px 0}
+.hero-card .hc-label{font-size:.8rem;color:var(--muted);margin:0}
+.hero-card .hc-big{font-size:clamp(34px,3.6vw,50px);font-weight:800;letter-spacing:-0.03em;line-height:1.25;margin:2px 0 4px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-card .hc-big small{font-size:1rem;font-weight:700}
+.hero-card .hc-note{font-size:.82rem;color:var(--muted);margin:0 0 12px}
+.hero-card ul.hc-list{list-style:none;margin:0;padding:12px 0 0;border-top:1px solid var(--hair)}
+.hero-card ul.hc-list li{display:flex;justify-content:space-between;font-size:.9rem;padding:4px 0}
+.hero-card ul.hc-list li b{font-variant-numeric:tabular-nums}
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:999px;padding:14px 28px;
+  font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(234,88,12,.30)}
+.btn-ghost{display:inline-block;background:transparent;border:1px solid rgba(255,255,255,.45);color:#fff;border-radius:999px;
+  padding:14px 28px;font-size:14px;font-weight:700;text-decoration:none}
+.btn-ghost.dark{border-color:#cbd5e1;color:var(--ink)}
+section{padding:80px 0}
+section.alt{background:var(--pale)}
+section.dark{background:linear-gradient(160deg,#050a14,#0b1526);color:#fff}
+section.dark .eyebrow{color:#fbbf24}
+section.dark p{color:#cbd5e1}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(24px,3vw,32px);margin:0;line-height:1.45;font-weight:800;letter-spacing:-0.03em}
+.sec-head p{color:var(--muted);margin:12px 0 0;max-width:760px}
+section.dark .sec-head p{color:#cbd5e1}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust .tcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px;transition:transform .2s,box-shadow .2s}
+.trust .tcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.trust .tcard b{display:block;font-size:1.02rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.02em}
+.trust .tcard .step{display:block;font-size:.78rem;font-weight:800;letter-spacing:.14em;margin-bottom:10px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.trust .tcard p{margin:0;color:var(--muted);font-size:.93rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.mcard .en{display:block;background:none;color:#d97706;letter-spacing:.16em;
+  font-size:11.5px;font-weight:800;padding:0;border-radius:0;margin:0;text-transform:uppercase}
+.mcard .en::after{content:"";display:block;width:32px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
+.mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
+.mcard h3 a{color:var(--ink);text-decoration:none}
+.mcard h3 a:hover{color:var(--accent)}
+.mcard .median{font-size:clamp(28px,3vw,40px);font-weight:800;letter-spacing:-0.03em;line-height:1.3;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mcard .median small{font-size:.85rem;color:var(--muted);font-weight:600;letter-spacing:0;-webkit-text-fill-color:var(--muted)}
+.mcard .range{color:var(--muted);font-size:.9rem;margin:6px 0 0}
+.mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
+.bar{position:relative;height:8px;background:#eee7db;border-radius:99px;margin:18px 0 8px}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;width:100%;background:var(--grad);border-radius:99px;opacity:.75}
+.bar .tick{position:absolute;top:50%;transform:translate(-50%,-50%);width:15px;height:15px;border-radius:50%;
+  background:var(--grad);border:3px solid #fff;box-shadow:0 1px 5px rgba(30,20,8,.25)}
+.bar-labels{display:flex;justify-content:space-between;font-size:.78rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);
+  border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare th{background:#fdf6ec;font-size:.88rem;font-weight:700}
+table.compare tbody tr:nth-child(even){background:#fdfbf8}
+table.compare td.price{font-weight:800;color:var(--accent-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.02rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
+table.compare tr:last-child td{border-bottom:none}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
+  padding:24px 26px;margin-bottom:14px}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
+.faq-item p{margin:0;color:var(--muted)}
+.crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:56px 0 0}
+.page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
+.page-hero p{color:var(--muted);max-width:780px}
+.page-stats{display:flex;gap:36px;flex-wrap:wrap;margin:26px 0 8px}
+.page-stats .stat b{display:block;font-size:clamp(26px,3vw,38px);line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page-stats .stat span{font-size:.8rem;color:var(--faint)}
+.srcbox{background:var(--pale);border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox b{color:var(--ink)}
+.note-list{color:var(--muted);font-size:.93rem}
+.closing{text-align:center}
+.closing h2{font-size:clamp(26px,3.4vw,38px);margin:0 0 14px;font-weight:800;letter-spacing:-0.03em;line-height:1.4}
+.closing p{max-width:640px;margin:0 auto 28px}
+footer.site{background:#050a14;color:#94a3b8;padding:48px 0 38px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
+footer.site p{font-size:.88rem;margin:8px 0}
+footer.site a{color:#fbbf24}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:48px 0 60px}
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-card img{height:200px}
+  section{padding:54px 0}
+  .page-hero{padding:44px 0 0}
+  .hero-stats,.page-stats{gap:24px}
+  .trust,.cards,.cards.three{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 12px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.75rem;color:var(--faint);font-weight:700}
+  table.compare td.price{font-size:1.12rem}
+  nav.main a{padding:10px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "コワーキングスペース相場データベース", "url": "https://coworking-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://coworking-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "出典", "item": "https://coworking-price-db.vercel.app"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>COWORKING PRICE DB</small>コワーキング相場DB</a>
+<nav class="main">
+<a href="/category/free-address/">フリーアドレス（月額）</a><a href="/category/fixed-desk/">固定席・半個室（月額）</a><a href="/category/private-office/">個室・レンタルオフィス（月額）</a><a href="/category/drop-in/">ドロップイン（1日）</a>
+<a href="/operators/">事業者別</a>
+<a href="/sources/">出典</a>
+<a href="/faq/">FAQ</a>
+<a href="/#categories" class="cta">プラン別の相場を見る</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ 出典</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">SOURCES</p>
+<h1>データの出典</h1>
+<p>このデータベースの数字は、すべて下記の事業者の公式サイト・公式料金資料で公表されている値です（確認日：2026-11-21）。比較サイトやまとめ記事の数字は転記していません。</p>
+</div></div>
+<section><div class="wrap">
+<div class="cards"><div class="mcard"><p class="en">コワーキング・レンタルオフィス運営会社の公式サイト</p><h3>BIZcomfort（ビズコンフォート）</h3><p class="desc">株式会社WOOCが全国約200拠点を展開するシェアオフィス。各拠点ページでプラン別の月額料金（毎日／土日祝／全拠点／1分）と、個室の空室・月額利用料を公表しています。本サイトでは東京・三ノ輪と東京・永田町（平河町）の2拠点を代表拠点として収録しました。</p><p class="desc">収録データ：11件／確認日：2026-11-21<br><a href="https://bizcomfort.jp/" rel="nofollow noopener" target="_blank">https://bizcomfort.jp/</a></p></div><div class="mcard"><p class="en">コワーキングスペース運営会社の公式サイト</p><h3>Basis Point（ベーシスポイント）</h3><p class="desc">Ascent Business Consulting株式会社が都内7か所と名古屋に展開するコワーキングスペース。各店舗ページでドロップイン料金と月額プラン（All day／Weekday／Holiday等）を公表しています。本サイトでは新橋銀座口店を代表店舗として収録しました。</p><p class="desc">収録データ：5件／確認日：2026-11-21<br><a href="https://basispoint.tokyo/" rel="nofollow noopener" target="_blank">https://basispoint.tokyo/</a></p></div><div class="mcard"><p class="en">コワーキング・レンタルオフィス運営会社の公式料金資料</p><h3>fabbit（ファビット）</h3><p class="desc">全国にコワーキングスペースとレンタルオフィスを展開するfabbit。拠点ごとに公式の料金資料（PDF）を公開しています。本サイトでは青山拠点の公式料金資料から、フリーアクセスプランと1DAY PASSを収録しました。</p><p class="desc">収録データ：2件／確認日：2026-11-21<br><a href="https://fabbit.co.jp/" rel="nofollow noopener" target="_blank">https://fabbit.co.jp/</a></p></div><div class="mcard"><p class="en">シェアオフィス運営会社の公式サイト</p><h3>billage（ビレッジ）</h3><p class="desc">株式会社MJEが全国12拠点を展開するシェアオフィス。各拠点ページでコワーキングのライト／スタンダードプラン、固定席、レンタルオフィスの料金を公表しています。本サイトでは札幌（ばらと北一条ビル）を代表拠点として収録しました。</p><p class="desc">収録データ：5件／確認日：2026-11-21<br><a href="https://billage.space/" rel="nofollow noopener" target="_blank">https://billage.space/</a></p></div><div class="mcard"><p class="en">コワーキングスペース運営会社の公式料金表</p><h3>co-ba（コーバ）</h3><p class="desc">株式会社ツクルバが展開するコワーキングスペースco-ba。拠点ごとに公式料金表（PDF）を公開しています。本サイトでは調布拠点の料金表（2025年11月1日版）から会員プランとドロップインを収録しました。</p><p class="desc">収録データ：4件／確認日：2026-11-21<br><a href="https://content.co-ba.net/wp-content/uploads/2025/10/cobachofu-pricelist-20251101.pdf" rel="nofollow noopener" target="_blank">https://content.co-ba.net/wp-content/uploads/2025/10/cobachofu-pricelist-20251101.pdf</a></p></div></div>
+</div></section>
+<section class="alt"><div class="wrap">
+<div class="sec-head"><h2>収録の範囲と「公表なし」について</h2></div>
+<div class="trust">
+<div class="tcard"><b>代表拠点の料金です</b><p>コワーキングの料金は拠点ごとに異なります。チェーンについては代表拠点（BIZcomfortは三ノ輪・平河町、Basis Pointは新橋銀座口店、billageは札幌、fabbitは青山、co-baは調布）の公式料金を収録し、拠点名を明記しています。他の拠点の料金は各事業者の公式ページで確認してください。</p></div>
+<div class="tcard"><b>税込・税抜の区別</b><p>公式ページに税の内訳が明示されていない料金は、「公式ページに税の内訳の明示なし」と表示しています。税抜か税込かを推測で決めることはしていません。</p></div>
+<div class="tcard"><b>収録していない料金</b><p>WeWorkやリージャスなど、公式サイトで料金を公表していない事業者は収録していません。また、時間単位の従量課金（1時間・30分・1分単位）は、1日料金と単位が異なるため料金表には入れず、FAQで紹介しています。</p></div>
+</div>
+</div></section>
+
+<section class="dark"><div class="wrap"><div class="closing">
+<p class="eyebrow" style="display:inline-block">PRICE DATA</p>
+<h2>契約する前に、相場を知る。<br>それだけで月額の判断はぶれません。</h2>
+<p>このデータベースの数字はすべて、事業者の公式ページで確認した公表値です。プラン種別ごとの中央値とレンジを見て、検討中のスペースの料金が高いのか安いのかを確かめてください。</p>
+<a class="btn" href="/#categories">プラン別の相場を見る</a>
+</div></div></section>
+
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">コワーキングスペース相場データベース</p>
+<p>運営：コワーキングスペース相場データベース運営事務局</p>
+<p>掲載している料金は、各事業者の公式サイト・公式料金資料で公表されている料金です（確認日：2026-11-21）。税込・税抜の区別はレコードごとに表示しています。実際の料金はプラン条件・キャンペーン・空き状況で変わるため、申し込みの前に公式ページで最新の料金を確認してください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/operators/">事業者別の相場</a><a href="/sources/">出典一覧</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて</a><a href="/privacy/">プライバシーポリシー</a>
+</div>
+<p>© コワーキングスペース相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>
