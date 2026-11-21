@@ -1,0 +1,13 @@
+# 脱毛サロン相場データベース
+
+脱毛サロン相場データベースは、女性向け脱毛サロン5社（ストラッシュ、恋肌、ジェイエステティック、ミュゼ、ディオーネ）の公式料金34件を収録した相場データベースです。運営は脱毛サロン相場データベース運営事務局。料金データの確認日は2026-11-21です。
+
+## 主なページ
+- トップ（全身脱毛（顔・VIO込み）6回コースの中央値と料金比較）: https://datsumo-salon-price-db.vercel.app/
+- サロン別料金: https://datsumo-salon-price-db.vercel.app/companies/stlassh/ , https://datsumo-salon-price-db.vercel.app/companies/koihada/ , https://datsumo-salon-price-db.vercel.app/companies/j-esthe/ , https://datsumo-salon-price-db.vercel.app/companies/musee/ , https://datsumo-salon-price-db.vercel.app/companies/dione/
+- 回数別の比較: https://datsumo-salon-price-db.vercel.app/parts/zenshin-6/ ほか4グループ
+- よくある質問: https://datsumo-salon-price-db.vercel.app/faq/
+- このサイトについて: https://datsumo-salon-price-db.vercel.app/about/
+
+## データの方針
+掲載は各社の公式情報で確認できた料金のみで、全データに出典と確認日を明記しています。「月額」表示は分割払いの金額であることが多いため総額を掲載しています。中央値は収録データからの算出で、収録2社のグループは参考値と明記しています。サロン脱毛と医療脱毛は方式が異なるため、このサイトではサロン脱毛の料金だけを収録しています。

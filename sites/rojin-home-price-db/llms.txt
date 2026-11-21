@@ -1,0 +1,33 @@
+# 老人ホーム費用相場データベース
+
+老人ホーム費用相場データベースは、有料老人ホームとサービス付き高齢者向け住宅の入居一時金・月額費用を、運営5社の公式公表料金（収録14施設・プラン24件）から集計したデータベースです。
+介護付有料老人ホームの入居一時金の中央値は9,000,000円（入居金プラン n=6）、月額費用の中央値は255,114円（同n=6）。月払いプランの月額中央値は374,587円（参考値 n=7）。サービス付き高齢者向け住宅の月額中央値は139,457円（最安住戸タイプ n=4）。入居時の費用と月額費用は分けて集計し、支払方式の違う数字は混ぜていません。市場全体の平均ではなく収録施設の集計です。全施設に出典URL・確認日（2026-11-21）を明示。
+運営：老人ホーム費用相場データベース運営事務局
+
+## ページ一覧
+- トップ（種別別相場・全施設一覧）: https://rojin-home-price-db.vercel.app/
+- 介護付有料老人ホームの相場: https://rojin-home-price-db.vercel.app/types/kaigo-tsuki/
+- 住宅型有料老人ホームの相場: https://rojin-home-price-db.vercel.app/types/jutaku-gata/
+- サービス付き高齢者向け住宅の相場: https://rojin-home-price-db.vercel.app/types/sakaju/
+- 株式会社ニチイケアパレスの料金と収録施設: https://rojin-home-price-db.vercel.app/operators/nichii/
+- 株式会社ベネッセスタイルケアの料金と収録施設: https://rojin-home-price-db.vercel.app/operators/benesse/
+- SOMPOケア株式会社の料金と収録施設: https://rojin-home-price-db.vercel.app/operators/sompo/
+- 株式会社長谷工シニアウェルデザインの料金と収録施設: https://rojin-home-price-db.vercel.app/operators/haseko/
+- 株式会社学研ココファンの料金と収録施設: https://rojin-home-price-db.vercel.app/operators/gakken/
+- ニチイホーム 目白の料金: https://rojin-home-price-db.vercel.app/facilities/nichii-mejiro/
+- ニチイホーム 溝の口の料金: https://rojin-home-price-db.vercel.app/facilities/nichii-mizonokuchi/
+- ニチイホーム 東浦和の料金: https://rojin-home-price-db.vercel.app/facilities/nichii-higashiurawa/
+- ニチイホーム 海老名の料金: https://rojin-home-price-db.vercel.app/facilities/nichii-ebina/
+- リハビリホームボンセジュール徳重の料金: https://rojin-home-price-db.vercel.app/facilities/benesse-tokushige/
+- アリア碑文谷の料金: https://rojin-home-price-db.vercel.app/facilities/benesse-himonya/
+- そんぽの家 溝の口の料金: https://rojin-home-price-db.vercel.app/facilities/sompo-mizonokuchi/
+- ブランシエール港北の料金: https://rojin-home-price-db.vercel.app/facilities/haseko-kohoku/
+- ここち江坂の料金: https://rojin-home-price-db.vercel.app/facilities/benesse-esaka/
+- ココファン松戸六実の料金: https://rojin-home-price-db.vercel.app/facilities/gakken-matsudo/
+- そんぽの家Sふじみ野の料金: https://rojin-home-price-db.vercel.app/facilities/sompo-fujimino/
+- ココファン湘南の料金: https://rojin-home-price-db.vercel.app/facilities/gakken-shonan/
+- ココファン川口榛松の料金: https://rojin-home-price-db.vercel.app/facilities/gakken-kawaguchi/
+- ココファンメゾン浜見平の料金: https://rojin-home-price-db.vercel.app/facilities/gakken-hamamidaira/
+- FAQ: https://rojin-home-price-db.vercel.app/faq/
+- このサイトについて（集計方法・出典）: https://rojin-home-price-db.vercel.app/about/
+- プライバシーポリシー: https://rojin-home-price-db.vercel.app/privacy/

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="_Cl3dykdJT_y5_Ea0K1ZLRhkz50O_8cl7t365VP74uA">
+<title>このサイトについて（集計方法・出典）｜老人ホーム費用相場DB</title>
+<meta name="description" content="老人ホーム費用相場データベースの集計方法、出典一覧（運営5社の公式公表料金・全14施設）、代表プランと中央値の決め方、運営情報を掲載。">
+<link rel="canonical" href="https://rojin-home-price-db.vercel.app/about/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="老人ホーム費用相場データベース">
+<meta property="og:title" content="このサイトについて（集計方法・出典）｜老人ホーム費用相場DB">
+<meta property="og:description" content="老人ホーム費用相場データベースの集計方法、出典一覧（運営5社の公式公表料金・全14施設）、代表プランと中央値の決め方、運営情報を掲載。">
+<meta property="og:url" content="https://rojin-home-price-db.vercel.app/about/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="このサイトについて（集計方法・出典）｜老人ホーム費用相場DB">
+<meta name="twitter:description" content="老人ホーム費用相場データベースの集計方法、出典一覧（運営5社の公式公表料金・全14施設）、代表プランと中央値の決め方、運営情報を掲載。">
+<style>
+:root{
+  --ink:#0f172a; --body:#475569; --faint:#94a3b8;
+  --line:#e5eaf0; --hair:#eef2f6;
+  --soft:#f2f5f8; --soft2:#f7f9fb;
+  --dark:#050a14; --dark2:#0b0f1e; --dark-card:#171b2e;
+  --grad:linear-gradient(120deg,#e8a33d,#c96f2e 55%,#9a4a1f);
+  --acc:#b05e22; --acc-soft:#faf0e4;
+  --shadow:0 10px 30px rgba(11,25,55,.07);
+  --shadow-hover:0 18px 42px rgba(11,25,55,.13);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Kaku Gothic ProN",Arial,sans-serif;
+  color:var(--body);font-size:16px;line-height:1.85;background:#fff;-webkit-text-size-adjust:100%}
+a{color:var(--acc)}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+h1,h2,h3{color:var(--ink)}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+header.site{position:sticky;top:0;z-index:20;background:rgba(5,10,20,.94);backdrop-filter:blur(8px)}
+header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:13px;padding-bottom:13px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.02rem;color:#fff;text-decoration:none;line-height:1.4;letter-spacing:-0.02em}
+.logo small{display:block;font-size:.64rem;letter-spacing:.22em;font-weight:700;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
+nav.main a{color:#cbd5e1;text-decoration:none;font-size:.9rem;padding:8px 11px;border-radius:999px;transition:background .2s,color .2s}
+nav.main a:hover{background:rgba(255,255,255,.1);color:#fff}
+.hero{background:radial-gradient(circle at 88% 12%,rgba(201,111,46,.42) 0%,rgba(201,111,46,0) 46%),
+  radial-gradient(circle at 6% 96%,rgba(232,163,61,.26) 0%,rgba(232,163,61,0) 44%),var(--dark);
+  padding:84px 0 96px;color:#cbd5e1}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center}
+.eyebrow{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#b05e22;margin:0}
+.hero .eyebrow{color:#eec27f}
+.hero h1{color:#fff;font-size:clamp(34px,4.4vw,54px);line-height:1.32;margin:16px 0 20px;font-weight:800;letter-spacing:-0.02em}
+.hero p.lead{font-size:1.05rem;max-width:600px;margin:0 0 34px;color:#cbd5e1}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;background:var(--grad);color:#fff;
+  border-radius:999px;padding:14px 30px;font-size:15px;font-weight:700;text-decoration:none;border:none;
+  transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 26px rgba(176,94,34,.35)}
+.btn-ghost{display:inline-flex;align-items:center;justify-content:center;min-height:52px;background:transparent;color:#fff;
+  border:1.5px solid rgba(255,255,255,.55);border-radius:999px;padding:14px 30px;font-size:15px;font-weight:700;text-decoration:none}
+.btn-ghost:hover{border-color:#fff}
+.btn-ghost.light{background:#fff;color:var(--ink);border:1.5px solid #d7dee8}
+.hero-card{background:#fff;border-radius:22px;padding:22px 22px 8px;box-shadow:0 30px 60px rgba(0,0,0,.35)}
+.hero-card figure{margin:0 0 6px}
+.hero-card img{display:block;width:100%;height:230px;object-fit:cover;border-radius:14px}
+.hero-stat{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding:15px 6px;border-bottom:1px solid var(--hair)}
+.hero-stat:last-child{border-bottom:none}
+.hero-stat .lbl{font-size:.86rem;color:var(--body);font-weight:600}
+.hero-stat .lbl small{display:block;color:var(--faint);font-weight:400;font-size:.76rem}
+.bignum{font-size:clamp(34px,3.4vw,46px);font-weight:800;letter-spacing:-0.02em;line-height:1.1;white-space:nowrap;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.bignum small{font-size:.42em;font-weight:700;letter-spacing:0}
+section{padding:88px 0}
+section.soft{background:var(--soft)}
+section.dark{background:var(--dark2);color:#cbd5e1}
+section.dark h2,section.dark h3{color:#fff}
+.sec-head{text-align:center;margin:0 auto 44px;max-width:760px}
+.sec-head .u-line{width:42px;height:4px;border-radius:99px;background:var(--grad);margin:13px auto 0}
+.sec-head h2{font-size:clamp(27px,3.4vw,40px);margin:18px 0 0;line-height:1.45;font-weight:800;letter-spacing:-0.02em}
+.sec-head p{margin:16px 0 0}
+.sec-head.left{text-align:left;margin-left:0}
+.sec-head.left .u-line{margin-left:0}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.tcard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:30px 28px;transition:transform .2s,box-shadow .2s}
+.tcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.tcard .num{font-size:.82rem;font-weight:800;letter-spacing:.14em;color:var(--acc);margin:0 0 10px}
+.tcard b{display:block;color:var(--ink);font-size:1.06rem;margin-bottom:8px;font-weight:800;letter-spacing:-0.01em}
+.tcard p{margin:0;font-size:.94rem}
+.tcard.featured{border:2px solid var(--acc)}
+.badge{position:absolute;top:-13px;left:24px;background:var(--grad);color:#fff;font-size:.72rem;font-weight:800;
+  letter-spacing:.1em;padding:5px 14px;border-radius:999px}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.ccard{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);
+  padding:26px 28px;transition:transform .2s,box-shadow .2s}
+.ccard:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.ccard .en{display:inline-block;background:var(--acc-soft);color:#9a4a1f;letter-spacing:.1em;
+  font-size:11px;font-weight:800;padding:4px 12px;border-radius:999px;margin:0}
+.ccard h3{margin:12px 0 6px;font-size:1.14rem;font-weight:800;letter-spacing:-0.01em}
+.ccard h3 a{color:var(--ink);text-decoration:none}
+.ccard h3 a:hover{color:var(--acc)}
+.ccard .fee{font-size:1.9rem;font-weight:800;letter-spacing:-0.02em;line-height:1.2;margin:2px 0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ccard .fee small{font-size:.8rem;color:var(--faint);font-weight:600;letter-spacing:0;-webkit-text-fill-color:var(--faint)}
+.ccard p{font-size:.92rem;margin:6px 0 0}
+.bar{position:relative;height:8px;background:#e2e8f0;border-radius:99px;margin:16px 0 7px}
+.bar .fill{position:absolute;top:0;bottom:0;left:0;background:var(--grad);border-radius:99px}
+.bar-labels{display:flex;justify-content:space-between;font-size:.76rem;color:var(--faint)}
+table.compare{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1px solid var(--line);
+  border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+table.compare th,table.compare td{padding:15px 18px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
+table.compare thead th{background:var(--dark2);color:#fff;font-size:.88rem;font-weight:700;border-bottom:none}
+table.compare td.fee{font-weight:800;color:var(--acc);white-space:nowrap;font-size:1.04rem}
+table.compare td .sub{display:block;font-weight:400;color:var(--faint);font-size:.8rem}
+table.compare td.rank{font-weight:800;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+table.compare tr:last-child td{border-bottom:none}
+table.compare tr.top td{background:#fbf4ea}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
+  padding:24px 28px;margin-bottom:14px;text-align:left}
+.faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800}
+.faq-item p{margin:0;font-size:.95rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--dark-card);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:30px 28px}
+.step .num{font-size:.84rem;font-weight:800;letter-spacing:.16em;margin:0 0 12px;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.step b{display:block;color:#fff;font-size:1.05rem;margin-bottom:8px;font-weight:800}
+.step p{margin:0;font-size:.93rem;color:#aebdd2}
+.crumb{font-size:.85rem;color:var(--faint);padding:24px 0 0}
+.crumb a{color:var(--faint)}
+.page-hero{padding:60px 0 0}
+.page-hero h1{font-size:clamp(28px,3.6vw,42px);margin:14px 0 12px;line-height:1.4;font-weight:800;letter-spacing:-0.02em}
+.page-hero p{max-width:800px;margin:0}
+.stat-row{display:flex;gap:44px;flex-wrap:wrap;margin-top:30px}
+.stat-row .stat .v{font-size:clamp(30px,3vw,42px);font-weight:800;letter-spacing:-0.02em;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat-row .stat .v.plain{background:none;color:var(--ink);-webkit-text-fill-color:var(--ink)}
+.stat-row .stat span{display:block;font-size:.8rem;color:var(--faint);margin-top:2px}
+.srcbox{background:var(--soft2);border:1px solid var(--line);border-radius:18px;padding:24px 28px;font-size:.93rem}
+.srcbox b{color:var(--ink)}
+.srcbox a{overflow-wrap:anywhere}
+.note-list{font-size:.92rem}
+.type-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.type-card{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:30px 28px;text-align:center}
+.type-card .t{font-weight:800;color:var(--ink);font-size:1.05rem;margin:0 0 6px}
+.type-card .status{font-size:1.55rem;font-weight:800;letter-spacing:-0.01em;margin:6px 0}
+.type-card .status.ok{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.type-card .status.none{color:#b6c2d2}
+.type-card p{font-size:.9rem;margin:6px 0 0;text-align:left}
+.fac-block{margin:0 0 54px}
+.fac-block h3{font-size:1.3rem;font-weight:800;margin:0 0 4px;letter-spacing:-0.01em}
+.fac-block h3 a{color:var(--ink);text-decoration:none}
+.fac-block h3 a:hover{color:var(--acc)}
+.fac-block .meta{font-size:.88rem;color:var(--faint);margin:0 0 14px}
+.cta-band{text-align:center}
+.cta-band h2{color:#fff;font-size:clamp(26px,3.2vw,38px);margin:18px 0 14px;font-weight:800;line-height:1.45}
+.cta-band p{max-width:640px;margin:0 auto 30px}
+.cta-band .eyebrow{color:#eec27f}
+.cta-band .u-line{width:42px;height:4px;border-radius:99px;background:var(--grad);margin:13px auto 0}
+footer.site{background:var(--dark);color:#94a3b8;padding:52px 0 40px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.01em;margin:0}
+footer.site p{font-size:.88rem;margin:10px 0}
+footer.site a{color:#eec27f}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:16px 0}
+.foot-links a{text-decoration:none;font-size:.9rem}
+@media (max-width:720px){
+  .hero{padding:56px 0 64px}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-card img{height:190px}
+  section{padding:56px 0}
+  .page-hero{padding:44px 0 0}
+  .stat-row{gap:26px}
+  .trust,.cards,.steps,.type-grid{grid-template-columns:1fr}
+  table.compare{border:none;background:transparent;box-shadow:none;overflow:visible}
+  table.compare,table.compare tbody,table.compare tr,table.compare td{display:block;width:100%}
+  table.compare thead{display:none}
+  table.compare tr{background:#fff;border:1px solid var(--line);border-radius:18px;
+    box-shadow:var(--shadow);padding:14px 8px;margin-bottom:14px}
+  table.compare td{border-bottom:none;padding:5px 14px}
+  table.compare td::before{content:attr(data-label);display:block;font-size:.74rem;color:var(--faint);font-weight:700}
+  table.compare td.fee{font-size:1.2rem}
+  nav.main a{padding:9px 10px}
+  .btn,.btn-ghost{width:100%}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "老人ホーム費用相場データベース", "url": "https://rojin-home-price-db.vercel.app/"}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "トップ", "item": "https://rojin-home-price-db.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "このサイトについて", "item": "https://rojin-home-price-db.vercel.app"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/"><small>ROJIN HOME PRICE DB</small>老人ホーム費用相場DB</a>
+<nav class="main">
+<a href="/types/kaigo-tsuki/">介護付有料老人ホーム</a><a href="/types/jutaku-gata/">住宅型有料老人ホーム</a><a href="/types/sakaju/">サービス付き高齢者向け住宅</a>
+<a href="/faq/">FAQ</a>
+<a href="/about/">集計方法・出典</a>
+</nav>
+</div></header>
+<div class="wrap"><p class="crumb"><a href="/">トップ</a> ＞ このサイトについて</p></div>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<p class="eyebrow">About</p>
+<h1>このサイトについて</h1>
+<p>老人ホーム費用相場データベースは、有料老人ホームとサービス付き高齢者向け住宅の入居一時金・月額費用を、運営会社の公式公表料金だけで横並びに確認できる独立した相場データベースです。施設の仲介や入居の申し込みを受け付けるサイトではありません。</p>
+</div></div>
+<section><div class="wrap">
+<div class="sec-head left"><p class="eyebrow">Method</p><div class="u-line"></div><h2>集計方法</h2></div>
+<div class="trust">
+<div class="tcard"><p class="num">01</p><b>使ったデータ</b><p>運営会社の公式サイトの施設ページと重要事項説明書、国土交通省「サービス付き高齢者向け住宅情報提供システム」の登録情報、神奈川県「介護情報サービスかながわ」（介護サービス情報公表制度）を、2026-11-21に1件ずつ確認して転記しました。収録は運営5社・14施設・プラン24件です。</p></div>
+<div class="tcard"><p class="num">02</p><b>代表プランと中央値</b><p>施設ごとに代表プランを1つ決めました。入居金プランがある施設はその基本プラン、月払いのみの施設はそのプラン、サ高住は最も安い住戸タイプです。中央値は、種別と支払方式をそろえた母数ごとに別々に計算しています。入居時の費用と月額費用を混ぜた集計はしていません。</p></div>
+<div class="tcard"><p class="num">03</p><b>載せ方を工夫したもの・載せていないもの</b><p>範囲でしか公表されていない料金（ブランシエール港北）は範囲のまま載せ、中央値の母数に入れていません。収録が2施設の住宅型は、支払方式が異なるため中央値を出さず実額を併記しています。公式に金額の公表が確認できなかった施設・プランは、推測で補わず収録していません。</p></div>
+</div>
+<p class="note-list">・この集計は収録施設のサンプルであり、全国の老人ホームの平均ではありません。収録は首都圏と大阪・名古屋の施設が中心で、地域によって相場は異なります。<br>
+・ベネッセスタイルケアの施設の料金は、2026年10月1日時点の重要事項説明書の内容です。ニチイケアパレスの入居金は、基準年齢75歳以上・想定居住期間5年を前提とした金額です。年齢や居室タイプで金額は変わります。<br>
+・月額費用に介護保険サービス費の自己負担は含まれていません。税の扱い（税込・非課税）は各施設の公表資料の表示どおりに備考へ転記しています。<br>
+・料金は改定されることがあります。契約前には、各施設の出典ページで最新の金額・空室・条件をご確認ください。</p>
+</div></section>
+<section class="soft"><div class="wrap">
+<div class="sec-head left"><p class="eyebrow">Sources</p><div class="u-line"></div><h2>出典一覧</h2><p>全14施設の代表プランの金額と出典です。当サイトの確認日はすべて2026-11-21です。</p></div>
+<table class="compare"><thead><tr><th>施設</th><th>入居時の費用（代表プラン）</th><th>月額費用（代表プラン）</th><th>出典</th></tr></thead>
+<tbody><tr><td data-label="施設">ニチイホーム 目白<span class="sub">介護付有料老人ホーム／株式会社ニチイケアパレス／東京都豊島区西池袋2-21-5</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 13,800,000円</td><td data-label="月額費用（代表プラン）" class="fee">258,840円</td><td data-label="出典"><a href="https://www.nichii-carepalace.co.jp/shisetsu/area/tokyo/ikebukuro.html" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ニチイホーム 溝の口<span class="sub">介護付有料老人ホーム／株式会社ニチイケアパレス／神奈川県川崎市高津区溝口1-24-23</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 9,600,000円</td><td data-label="月額費用（代表プラン）" class="fee">257,940円</td><td data-label="出典"><a href="https://www.nichii-carepalace.co.jp/shisetsu/area/kanagawa/mizonokuchi.html" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ニチイホーム 東浦和<span class="sub">介護付有料老人ホーム／株式会社ニチイケアパレス／埼玉県さいたま市</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 5,800,000円</td><td data-label="月額費用（代表プラン）" class="fee">221,840円</td><td data-label="出典"><a href="https://www.nichii-carepalace.co.jp/shisetsu/area/saitama/higashiurawa.html" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ニチイホーム 海老名<span class="sub">介護付有料老人ホーム／株式会社ニチイケアパレス／神奈川県海老名市</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 8,400,000円</td><td data-label="月額費用（代表プラン）" class="fee">231,840円</td><td data-label="出典"><a href="https://www.nichii-carepalace.co.jp/shisetsu/area/kanagawa/ebina.html" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">リハビリホームボンセジュール徳重<span class="sub">介護付有料老人ホーム／株式会社ベネッセスタイルケア／愛知県名古屋市緑区</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 5,900,000円</td><td data-label="月額費用（代表プラン）" class="fee">252,287円</td><td data-label="出典"><a href="https://kaigo.benesse-style-care.co.jp/saved_data/pdf/facility/315/jusetsu_b-tokushige.pdf" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">アリア碑文谷<span class="sub">介護付有料老人ホーム／株式会社ベネッセスタイルケア／東京都目黒区碑文谷3-14-7</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 28,500,000円</td><td data-label="月額費用（代表プラン）" class="fee">304,260円</td><td data-label="出典"><a href="https://kaigo.benesse-style-care.co.jp/saved_data/pdf/facility/116/jusetsu_a-himonya.pdf" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">そんぽの家 溝の口<span class="sub">介護付有料老人ホーム／SOMPOケア株式会社／神奈川県川崎市高津区新作4-16-6</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居一時金なし</td><td data-label="月額費用（代表プラン）" class="fee">221,024円</td><td data-label="出典"><a href="https://kaigo.rakuraku.or.jp/search-office/detail.html?JGNO=ST1475301022&amp;SVCD=330&amp;THNO=00000" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ブランシエール港北<span class="sub">介護付有料老人ホーム／株式会社長谷工シニアウェルデザイン／神奈川県横浜市都筑区中川中央1-39-11</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居一時金 1,164,000円〜2,976,000円（範囲公表）</td><td data-label="月額費用（代表プラン）" class="fee">316,370円〜467,370円</td><td data-label="出典"><a href="https://kaigo.rakuraku.or.jp/search-office/detail.html?JGNO=ST1473800173&amp;SVCD=330&amp;THNO=00000" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ここち江坂<span class="sub">住宅型有料老人ホーム／株式会社ベネッセスタイルケア／大阪府吹田市</span></td><td data-label="入居時の費用（代表プラン）" class="fee">入居金 2,950,000円</td><td data-label="月額費用（代表プラン）" class="fee">269,440円</td><td data-label="出典"><a href="https://kaigo.benesse-style-care.co.jp/saved_data/pdf/facility/311/jusetsu_c-esaka.pdf" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ココファン松戸六実<span class="sub">住宅型有料老人ホーム／株式会社学研ココファン／千葉県松戸市六実5-26-1</span></td><td data-label="入居時の費用（代表プラン）" class="fee">敷金 140,000円</td><td data-label="月額費用（代表プラン）" class="fee">201,030円</td><td data-label="出典"><a href="https://www.cocofump.co.jp/data/facility/facility_overview_important_explanation_pdf_for_senior_housing/1413cee0-a1e6-4cbc-a513-a0a4aec6d2b3" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">そんぽの家Sふじみ野<span class="sub">サービス付き高齢者向け住宅／SOMPOケア株式会社／埼玉県ふじみ野市南台1-15-12</span></td><td data-label="入居時の費用（代表プラン）" class="fee">敷金 81,000円〜220,000円</td><td data-label="月額費用（代表プラン）" class="fee">133,000円〜277,000円</td><td data-label="出典"><a href="https://www.satsuki-jutaku.mlit.go.jp/search/op_detail.php?house_id=28918" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ココファン湘南<span class="sub">サービス付き高齢者向け住宅／株式会社学研ココファン／神奈川県藤沢市大庭5560-1</span></td><td data-label="入居時の費用（代表プラン）" class="fee">敷金 182,000円〜310,000円</td><td data-label="月額費用（代表プラン）" class="fee">143,943円〜217,200円</td><td data-label="出典"><a href="https://www.satsuki-jutaku.mlit.go.jp/search/detail.php?house_id=9854&amp;print=true" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ココファン川口榛松<span class="sub">サービス付き高齢者向け住宅／株式会社学研ココファン／埼玉県川口市榛松1-3-32</span></td><td data-label="入居時の費用（代表プラン）" class="fee">敷金 128,000円〜166,000円</td><td data-label="月額費用（代表プラン）" class="fee">134,971円〜164,257円</td><td data-label="出典"><a href="https://www.satsuki-jutaku.mlit.go.jp/search/detail.php?house_id=4780&amp;print=true" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr><tr><td data-label="施設">ココファンメゾン浜見平<span class="sub">サービス付き高齢者向け住宅／株式会社学研ココファン／神奈川県茅ヶ崎市松尾6-72</span></td><td data-label="入居時の費用（代表プラン）" class="fee">敷金 140,000円〜184,000円</td><td data-label="月額費用（代表プラン）" class="fee">161,000円〜183,000円</td><td data-label="出典"><a href="https://www.satsuki-jutaku.mlit.go.jp/search/detail.php?house_id=24340&amp;print=true" rel="nofollow noopener" target="_blank">公式の公表ページ</a></td></tr></tbody></table>
+</div></section>
+<section><div class="wrap">
+<div class="sec-head left"><p class="eyebrow">Operator</p><div class="u-line"></div><h2>運営</h2></div>
+<div class="srcbox">
+運営：老人ホーム費用相場データベース運営事務局<br>
+当サイトは相場情報の提供を目的としたデータベースであり、老人ホームの運営・仲介は行っていません。個別の施設の空室状況や契約については、各運営会社へお問い合わせください。
+</div>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+<p class="fname">老人ホーム費用相場データベース</p>
+<p>運営：老人ホーム費用相場データベース運営事務局</p>
+<p>掲載している料金は、運営会社の公式サイト・重要事項説明書、国や自治体の公表制度に掲載された金額を2026-11-21に確認して転記したものです。市場全体の平均ではなく、収録した14施設の公表料金の集計です。料金は改定されることがあります。入居一時金と月額費用は分けて集計しており、支払方式の違うプランの数字は混ぜていません。契約の前には、各施設の出典リンク先で最新の金額と条件をご確認ください。</p>
+<div class="foot-links">
+<a href="/">トップ</a><a href="/faq/">FAQ</a><a href="/about/">このサイトについて（集計方法・出典）</a><a href="/privacy/">プライバシーポリシー</a>
+</div>
+<p>© 老人ホーム費用相場データベース運営事務局</p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://datsumo-salon-price-db.vercel.app/sitemap.xml
