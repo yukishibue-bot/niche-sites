@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BMETRK8BX6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-BMETRK8BX6');
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>道の駅「かきのきむら」（島根県・鹿足郡吉賀町）｜全国道の駅データベース</title>
@@ -17,12 +25,12 @@
 <meta name="twitter:description" content="島根県鹿足郡吉賀町にある道の駅「かきのきむら」のデータページ。第11回に登録（平成8年8月）。出典は国土交通省「道の駅」登録一覧（確認日：2026-11-17）。">
 <style>
 :root{
-  --ink:#222; --muted:#666; --faint:#6e6e6e;
-  --line:#ececec; --hair:#f0f0f0;
-  --forest:#356b42; --forest-dark:#26502e; --forest-pale:#e7f3e3;
-  --grad:linear-gradient(120deg,#3f7d4e,#356b42);
-  --shadow:0 8px 28px rgba(17,17,17,.05);
-  --shadow-hover:0 14px 34px rgba(17,17,17,.09);
+  --ink:#0f172a; --muted:#475569; --faint:#64748b;
+  --line:#e5eaf0; --hair:#edf1f5;
+  --forest:#2e7d46; --forest-dark:#1e5c31; --forest-pale:#e7f3e3;
+  --grad:linear-gradient(90deg,#1e8a46,#5da32c 52%,#a3e635);
+  --shadow:0 8px 28px rgba(15,23,42,.06);
+  --shadow-hover:0 14px 34px rgba(15,23,42,.10);
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -38,13 +46,15 @@ header.site .wrap{display:flex;align-items:center;gap:18px;padding-top:12px;padd
 nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto}
 nav.main a{color:var(--ink);text-decoration:none;font-size:.92rem;padding:8px 12px;border-radius:11px;transition:background .2s}
 nav.main a:hover{background:#f5f5f5}
-.hero{background:radial-gradient(circle at 90% 38%,#dcf0d4 0%,#eef7e9 30%,#fff 62%);padding:64px 0 84px}
-.eyebrow{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);font-size:13px;font-weight:700;
-  letter-spacing:.08em;padding:5px 14px;border-radius:30px;margin:0 0 16px}
+.hero{background:linear-gradient(160deg,#050a14 0%,#0b0f1e 55%,#0d1530 100%);padding:72px 0 88px;color:#fff}
+.eyebrow{display:block;background:none;color:#2e7d46;font-size:13px;font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;padding:0;border-radius:0;margin:0 0 16px}
+.eyebrow::after{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--grad);margin-top:10px}
 .hero h1{font-size:clamp(32px,4vw,50px);line-height:1.35;margin:0 0 20px;font-weight:800;letter-spacing:-0.03em}
 .hero p.lead{font-size:1.06rem;max-width:720px;margin:0 0 36px;color:#444}
 .hero-stats{display:flex;gap:40px;flex-wrap:wrap}
-.hero-stats .stat b{display:block;font-size:1.75rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark)}
+.hero-stats .stat b{display:block;font-size:2rem;line-height:1.25;font-weight:800;letter-spacing:-0.03em;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero-stats .stat span{font-size:.82rem;color:var(--faint)}
 .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
 .hero-photo{margin:0}
@@ -64,23 +74,25 @@ section{padding:72px 0}
 .mcard{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);
   padding:26px 28px;transition:transform .2s,box-shadow .2s}
 .mcard:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
-.mcard .en{display:inline-block;background:var(--forest-pale);color:var(--forest-dark);letter-spacing:.08em;
-  font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;margin:0}
+.mcard .en{display:block;background:none;color:#2e7d46;letter-spacing:.16em;
+  font-size:11.5px;font-weight:800;padding:0;border-radius:0;margin:0;text-transform:uppercase}
+.mcard .en::after{content:"";display:block;width:32px;height:3px;border-radius:2px;background:var(--grad);margin-top:8px}
 .mcard h3{margin:12px 0 10px;font-size:1.15rem;font-weight:800;letter-spacing:-0.02em}
 .mcard h3 a{color:var(--ink);text-decoration:none}
 .mcard h3 a:hover{color:var(--forest)}
-.mcard .leadprice{font-size:1.35rem;font-weight:800;letter-spacing:-0.03em;color:var(--forest-dark);margin:0}
+.mcard .leadprice{font-size:1.5rem;font-weight:800;letter-spacing:-0.03em;margin:0;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .mcard .leadprice small{font-size:.82rem;color:var(--muted);font-weight:600;letter-spacing:0}
 .mcard p.desc{color:var(--muted);font-size:.9rem;margin:8px 0 0}
 table.compare{width:100%;border-collapse:collapse;background:#fff}
 table.compare th,table.compare td{padding:14px 16px;border-bottom:1px solid var(--hair);text-align:left;vertical-align:top}
-table.compare th{background:#f2f7f0;font-size:.88rem;font-weight:700;color:var(--forest-dark)}
+table.compare th{background:#f2f5f8;font-size:.88rem;font-weight:700;color:#0f172a}
 table.compare td.price{font-weight:800;color:var(--forest-dark);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:1.05rem}
 table.compare td .sub{display:block;font-weight:400;color:var(--muted);font-size:.82rem}
-table.compare tbody tr:nth-child(even){background:#fbfdf9}
+table.compare tbody tr:nth-child(even){background:#f7f9fb}
 table.compare tr:last-child td{border-bottom:none}
 .kind{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:30px;background:var(--forest-pale);color:var(--forest-dark);white-space:nowrap}
-.kind.actual{background:#eef0e6;color:#4a5a2a}
+.kind.actual{background:#dff2e1;color:#1e5c31}
 .adslot{border:1px dashed #dcdcdc;border-radius:16px;color:#8a8a8a;text-align:center;
   padding:28px 18px;margin:32px 0;font-size:.9rem;background:#fff}
 .adslot b{display:block;color:#555;font-size:1rem;margin-bottom:6px}
@@ -98,17 +110,17 @@ table.compare tr:last-child td{border-bottom:none}
   padding:24px 26px;margin-bottom:14px}
 .faq-item h3{margin:0 0 6px;font-size:1.02rem;font-weight:800;letter-spacing:-0.02em}
 .faq-item p{margin:0;color:var(--muted)}
-.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:11px;padding:14px 24px;
+.btn{display:inline-block;background:var(--grad);color:#fff;border-radius:999px;padding:14px 24px;
   font-size:14px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(53,107,66,.25)}
-.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:11px;
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(46,125,70,.30)}
+.btn-ghost{display:inline-block;background:#fff;border:1px solid #d5d6d9;color:var(--ink);border-radius:999px;
   padding:14px 24px;font-size:14px;font-weight:700;text-decoration:none}
 .crumb{font-size:.85rem;color:var(--faint);padding:22px 0 0}
 .crumb a{color:var(--faint)}
 .page-hero{padding:56px 0 0}
 .page-hero h1{font-size:clamp(28px,3.4vw,40px);margin:0;line-height:1.4;font-weight:800;letter-spacing:-0.03em}
 .page-hero p{color:var(--muted);max-width:780px}
-.srcbox{background:#fafafa;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
+.srcbox{background:#f7f9fb;border:1px solid var(--line);border-radius:16px;padding:22px 26px;font-size:.92rem}
 .srcbox b{color:var(--ink)}
 .note-list{color:var(--muted);font-size:.93rem}
 .guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
@@ -116,10 +128,10 @@ table.compare tr:last-child td{border-bottom:none}
 .gcard h3{margin:0 0 10px;font-size:1.05rem;font-weight:800;letter-spacing:-0.02em}
 .gcard ul{margin:0;padding-left:1.2em;color:var(--muted);font-size:.93rem}
 .gcard li{margin-bottom:6px}
-footer.site{background:#fafafa;color:#555;padding:44px 0 36px}
-footer.site .fname{font-weight:800;color:var(--ink);font-size:1.05rem;letter-spacing:-0.02em}
+footer.site{background:#0b0f1e;color:#cbd5e1;padding:44px 0 36px}
+footer.site .fname{font-weight:800;color:#fff;font-size:1.05rem;letter-spacing:-0.02em}
 footer.site p{font-size:.88rem;margin:8px 0}
-footer.site a{color:var(--forest)}
+footer.site a{color:#4ade80}
 .foot-links{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0}
 .foot-links a{text-decoration:none;font-size:.9rem}
 ::selection{background:var(--forest-pale)}
@@ -178,6 +190,15 @@ section[id]{scroll-margin-top:96px}
   .cards.regions .mcard{grid-column:auto}
   .searchbox,.toc{padding:18px}
 }
+
+/* Nyle型 2026-11-17 */
+.hero h1{color:#fff}
+.hero h1 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.lead{color:#cbd5e1}
+.hero .eyebrow{color:#4ade80}
+.hero-stats .stat span{color:#94a3b8}
+.hero-note{color:#94a3b8}
+.hero-photo img{border:6px solid #fff;border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.45)}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"全国道の駅データベース","url":"https://michinoeki-db.vercel.app/"}</script>
 
